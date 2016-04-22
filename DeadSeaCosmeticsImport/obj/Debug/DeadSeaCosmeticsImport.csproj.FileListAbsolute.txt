@@ -1,0 +1,9 @@
+E:\Work\DeadSeaCosmeticsImport\DeadSeaCosmeticsImport\bin\Debug\DeadSeaCosmeticsImport.exe.config
+E:\Work\DeadSeaCosmeticsImport\DeadSeaCosmeticsImport\bin\Debug\DeadSeaCosmeticsImport.exe
+E:\Work\DeadSeaCosmeticsImport\DeadSeaCosmeticsImport\bin\Debug\DeadSeaCosmeticsImport.pdb
+E:\Work\DeadSeaCosmeticsImport\DeadSeaCosmeticsImport\bin\Debug\HtmlAgilityPack.dll
+E:\Work\DeadSeaCosmeticsImport\DeadSeaCosmeticsImport\bin\Debug\HtmlAgilityPack.pdb
+E:\Work\DeadSeaCosmeticsImport\DeadSeaCosmeticsImport\bin\Debug\HtmlAgilityPack.xml
+E:\Work\DeadSeaCosmeticsImport\DeadSeaCosmeticsImport\obj\Debug\DeadSeaCosmeticsImport.csprojResolveAssemblyReference.cache
+E:\Work\DeadSeaCosmeticsImport\DeadSeaCosmeticsImport\obj\Debug\DeadSeaCosmeticsImport.exe
+E:\Work\DeadSeaCosmeticsImport\DeadSeaCosmeticsImport\obj\Debug\DeadSeaCosmeticsImport.pdb
