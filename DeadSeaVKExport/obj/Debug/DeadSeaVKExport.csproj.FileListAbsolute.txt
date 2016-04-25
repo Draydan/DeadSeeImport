@@ -1,0 +1,14 @@
+E:\Work\DeadSeaCosmeticsImport\DeadSeaVKExport\bin\Debug\DeadSeaVKExport.exe.config
+E:\Work\DeadSeaCosmeticsImport\DeadSeaVKExport\bin\Debug\DeadSeaVKExport.exe
+E:\Work\DeadSeaCosmeticsImport\DeadSeaVKExport\bin\Debug\DeadSeaVKExport.pdb
+E:\Work\DeadSeaCosmeticsImport\DeadSeaVKExport\bin\Debug\HtmlAgilityPack.dll
+E:\Work\DeadSeaCosmeticsImport\DeadSeaVKExport\bin\Debug\Newtonsoft.Json.dll
+E:\Work\DeadSeaCosmeticsImport\DeadSeaVKExport\bin\Debug\VkNet.dll
+E:\Work\DeadSeaCosmeticsImport\DeadSeaVKExport\bin\Debug\HtmlAgilityPack.pdb
+E:\Work\DeadSeaCosmeticsImport\DeadSeaVKExport\bin\Debug\HtmlAgilityPack.xml
+E:\Work\DeadSeaCosmeticsImport\DeadSeaVKExport\bin\Debug\Newtonsoft.Json.xml
+E:\Work\DeadSeaCosmeticsImport\DeadSeaVKExport\bin\Debug\VkNet.pdb
+E:\Work\DeadSeaCosmeticsImport\DeadSeaVKExport\bin\Debug\VkNet.xml
+E:\Work\DeadSeaCosmeticsImport\DeadSeaVKExport\obj\Debug\DeadSeaVKExport.exe
+E:\Work\DeadSeaCosmeticsImport\DeadSeaVKExport\obj\Debug\DeadSeaVKExport.pdb
+E:\Work\DeadSeaCosmeticsImport\DeadSeaVKExport\obj\Debug\DeadSeaVKExport.csprojResolveAssemblyReference.cache

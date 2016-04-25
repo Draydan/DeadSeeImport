@@ -8,6 +8,9 @@ using System.Net;
 using System.Net.Http;
 using System.IO;
 using System.Text.RegularExpressions;
+using VkNet;
+using VkNet.Enums.Filters;
+using VkNet.Model.RequestParams;
 
 
 namespace DeadSeaCosmeticsImport
@@ -21,17 +24,46 @@ namespace DeadSeaCosmeticsImport
         const string resultsDir = "results";
         const string imagesDir = resultsDir + "\\images";
         const string resultFile = "_result.rus.html";
+        const int TranslationsToPrint = 4;
+
         static bool locker = false;
         static DateTime now = DateTime.Now;
         static int counter = 1;
         static int sleepTime = 500;
         static List<Good>  goodsList = new List<Good>();
 
+        static VkApi vk;
+
+
+
+        static VkApi Auth()
+        {
+            #region settings
+            ulong appID = 5432233;                      // ID приложения
+            string email = "yuokol@yandex.ru";         // email или телефон
+            string pass = "laif81";               // пароль для авторизации
+            Settings scope = Settings.All;      // Приложение имеет доступ к маркет 
+
+            #endregion
+
+            var vk = new VkApi();
+            vk.Authorize(new ApiAuthParams
+            {
+                ApplicationId = appID,
+                Login = email,
+                Password = pass,
+                Settings = scope
+            });
+
+            return vk;
+        }
 
         class Good
         {
             public string category;
+            public string categoryRus;
             public string title;
+            public string titleRus;
             public string price;
             public string desc;
             public string details;
@@ -66,8 +98,8 @@ namespace DeadSeaCosmeticsImport
                         //foreach (Good g in goodsList)
                         Good g = this;
                     {
-                        swRes.WriteLine("<tr><td>{0}</td><td>{1}</td><td>{2}</td><td>{3}</td><td>{4}</td><td><img src=images\\{5}></td></tr>", 
-                            g.category, g.title, g.price, g.desc, g.details, g.imageFileName);
+                        swRes.WriteLine("<tr><td>{0} <br> {6}</td><td>{1} <br> {7}</td><td>{2}</td><td>{3}</td><td>{4}</td><td><img src=images\\{5}></td></tr>", 
+                            g.category, g.title, g.price, g.desc, g.details, g.imageFileName, g.categoryRus, g.titleRus);
                         swRes.Flush();
                     }
                 }
@@ -81,6 +113,8 @@ namespace DeadSeaCosmeticsImport
             goodsList = new List<Good>();
             string resultFileName = string.Format("{1}\\{2}", counter++, resultsDir, resultFile);
             File.Delete(resultFileName);
+
+            vk = Auth();
 
             Parsing(string.Format("{0}/{1}", rootURL, rootURLdir), 0);
             Console.ReadLine();
@@ -294,6 +328,13 @@ namespace DeadSeaCosmeticsImport
                             //Parsing(string.Format("https://translate.yandex.net/api/v1.5/tr.json/translate?key={0}&text={1}&lang=en-ru",
                             //    "trnsl.1.1.20160420T200115Z.006bede5b131c604.4256886cd58598ea537df059cd532b6b141910cf",
                             //    desc + ";;;" + details), 5, category, title);
+                            Parsing(string.Format("https://translate.yandex.net/api/v1.5/tr.json/translate?key={0}&text={1}&lang=en-ru",
+    "trnsl.1.1.20160420T200115Z.006bede5b131c604.4256886cd58598ea537df059cd532b6b141910cf",
+    category), 6, category, title, "category-");
+
+                            Parsing(string.Format("https://translate.yandex.net/api/v1.5/tr.json/translate?key={0}&text={1}&lang=en-ru",
+    "trnsl.1.1.20160420T200115Z.006bede5b131c604.4256886cd58598ea537df059cd532b6b141910cf",
+    title), 7, category, title, "title-");
 
                             Parsing(string.Format("https://translate.yandex.net/api/v1.5/tr.json/translate?key={0}&text={1}&lang=en-ru",
     "trnsl.1.1.20160420T200115Z.006bede5b131c604.4256886cd58598ea537df059cd532b6b141910cf",
@@ -331,7 +372,7 @@ namespace DeadSeaCosmeticsImport
                             Good g = goodsList.First(x => x.title == titleCurr);
                             g.desc = getTextFromJson(translation);
                             g.translated++;
-                            if (g.translated == 2)
+                            if (g.translated == TranslationsToPrint)
                                 g.Print();
                             //goodsList.Remove(g);
                             //goodsList.Add(g);
@@ -345,11 +386,32 @@ namespace DeadSeaCosmeticsImport
                             Good g = goodsList.First(x => x.title == titleCurr);
                             g.details = getTextFromJson(translation);
                             g.translated++;
-                            if (g.translated == 2)
+                            if (g.translated == TranslationsToPrint)
                                 g.Print();
-                            //goodsList.(x => x.title == titleCurr) = g;
-                            //goodsList.Remove(g);
-                            //goodsList.Add(g);
+                            break;
+                        }
+                    case 6:
+                        {
+                            HtmlNode transDiv = resultat.DocumentNode;
+                            string translation = transDiv.InnerText;
+                            Trace(translation);
+                            Good g = goodsList.First(x => x.title == titleCurr);
+                            g.categoryRus = getTextFromJson(translation);
+                            g.translated++;
+                            if (g.translated == TranslationsToPrint)
+                                g.Print();
+                            break;
+                        }
+                    case 7:
+                        {
+                            HtmlNode transDiv = resultat.DocumentNode;
+                            string translation = transDiv.InnerText;
+                            Trace(translation);
+                            Good g = goodsList.First(x => x.title == titleCurr);
+                            g.titleRus = getTextFromJson(translation);
+                            g.translated++;
+                            if (g.translated == TranslationsToPrint)
+                                g.Print();
                             break;
                         }
                 }
@@ -381,3 +443,4 @@ namespace DeadSeaCosmeticsImport
 
     }
 }
+
