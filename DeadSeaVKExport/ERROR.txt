@@ -1,0 +1,149 @@
+START
+sleeping with lock for
+Bath Products
+sleeping with lock for
+sleeping with lock for
+Image:
+/sites/default/files/products/images/canaan-mineral-mud-soap-dead-sea-cosmetics.
+gif
+Product:
+Canaan Mineral Mud Soap, Dead Sea Cosmetics
+Desc:
+Price
+$7.95
+Details:
+sleeping with lock for
+finished with https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.
+1.1.20160420T200115Z.006bede5b131c604.4256886cd58598ea537df059cd532b6b141910cf&t
+ext=Bath Products&lang=en-ru
+sleeping with lock for
+finished with https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.
+1.1.20160420T200115Z.006bede5b131c604.4256886cd58598ea537df059cd532b6b141910cf&t
+ext=Canaan Mineral Mud Soap, Dead Sea Cosmetics&lang=en-ru
+sleeping with lock for
+finished with https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.
+1.1.20160420T200115Z.006bede5b131c604.4256886cd58598ea537df059cd532b6b141910cf&t
+ext=Canaan has a variety of amazing dead sea products, but who knew that plain o
+ld bar soap could be made into such a pleasant experience? Canaan's Mineral Mud
+Soap combines the essential's for cleaning the skin with a variety of ingredient
+s that make the experience much more than just that.&lang=en-ru
+sleeping with lock for
+uploadServer.UploadUrl=https://pu.vk.com/c626122/upload.php?act=do_add&mid=90907
+11&aid=-53&gid=118485025&hash=ffd63768ae34096a66645499fc68709a&rhash=263aeae1ea0
+ae588bb0b43871088eac2&swfupload=1&api=1&market_main_photo=1
+uploading e:\Work\DeadSeaCosmeticsImport\DeadSeaCosmeticsImport\bin\Debug\result
+s\images\canaan-mineral-mud-soap-dead-sea-cosmetics.gif
+System.Net.WebException: Исключение во время запроса WebClient. ---> System.IO.I
+OException: Не удается записать данные в транспортное соединение: Удаленный хост
+ принудительно разорвал существующее подключение. ---> System.Net.Sockets.Socket
+Exception: Удаленный хост принудительно разорвал существующее подключение
+   в System.Net.Sockets.Socket.Send(Byte[] buffer, Int32 offset, Int32 size, Soc
+ketFlags socketFlags)
+   в System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 s
+ize)
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 s
+ize)
+   в System.Net.Security._SslStream.StartWriting(Byte[] buffer, Int32 offset, In
+t32 count, AsyncProtocolRequest asyncRequest)
+   в System.Net.Security._SslStream.ProcessWrite(Byte[] buffer, Int32 offset, In
+t32 count, AsyncProtocolRequest asyncRequest)
+   в System.Net.TlsStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   в System.Net.PooledStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   в System.Net.ConnectStream.InternalWrite(Boolean async, Byte[] buffer, Int32
+offset, Int32 size, AsyncCallback callback, Object state)
+   в System.Net.ConnectStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   в System.Net.WebClient.UploadBitsState.WriteBytes()
+   в System.Net.WebClient.UploadBits(WebRequest request, Stream readStream, Byte
+[] buffer, Int32 chunkSize, Byte[] header, Byte[] footer, CompletionDelegate upl
+oadCompletionDelegate, CompletionDelegate downloadCompletionDelegate, AsyncOpera
+tion asyncOp)
+   в System.Net.WebClient.UploadFile(Uri address, String method, String fileName
+)
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Net.WebClient.UploadFile(Uri address, String method, String fileName
+)
+   в System.Net.WebClient.UploadFile(String address, String fileName)
+   в DeadSeaVKExport.ProductVKExporter.ExportProduct(String title, String desc,
+String titleCategory, String sprice, String imageFileName) в E:\Work\DeadSeaCosm
+eticsImport\DeadSeaVKExport\ProductVKExporter.cs:строка 105
+   в DeadSeaCosmeticsImport.DSImport.Good.Print() в E:\Work\DeadSeaCosmeticsImpo
+rt\DeadSeaCosmeticsImport\DSImport.cs:строка 91
+   в DeadSeaCosmeticsImport.DSImport.<Parsing>d__21.MoveNext() в E:\Work\DeadSea
+CosmeticsImport\DeadSeaCosmeticsImport\DSImport.cs:строка 386
+finished with http://www.israel-catalog.com/dead-sea-cosmetics/chic-cosmetics/ca
+naan-dead-sea-minerals-herbs/canaan-mineral-mud-soap
+sleeping with lock for
+Image:
+/sites/default/files/products/images/canaan-mineral-enriched-soap-bar-dead-sea-p
+roducts.gif
+Product:
+Canaan Mineral Enriched Soap Bar, Dead Sea Products
+Desc:
+Price
+$7.95
+Details:
+sleeping with lock for
+finished with https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.
+1.1.20160420T200115Z.006bede5b131c604.4256886cd58598ea537df059cd532b6b141910cf&t
+ext=Bath Products&lang=en-ru
+sleeping with lock for
+finished with https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.
+1.1.20160420T200115Z.006bede5b131c604.4256886cd58598ea537df059cd532b6b141910cf&t
+ext=Canaan Mineral Enriched Soap Bar, Dead Sea Products&lang=en-ru
+sleeping with lock for
+finished with https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.
+1.1.20160420T200115Z.006bede5b131c604.4256886cd58598ea537df059cd532b6b141910cf&t
+ext=Canaan Mineral Enriched Soap Bar is one of Canaan's most considerate product
+s, as its uniqueness comes from the fact that it has taken an ordinary bar of so
+ap necessary for everybody's daily use, and made it into a dead sea pleasure.&la
+ng=en-ru
+sleeping with lock for
+uploadServer.UploadUrl=https://pu.vk.com/c626122/upload.php?act=do_add&mid=90907
+11&aid=-53&gid=118485025&hash=ffd63768ae34096a66645499fc68709a&rhash=263aeae1ea0
+ae588bb0b43871088eac2&swfupload=1&api=1&market_main_photo=1
+uploading e:\Work\DeadSeaCosmeticsImport\DeadSeaCosmeticsImport\bin\Debug\result
+s\images\canaan-mineral-enriched-soap-bar-dead-sea-products.gif
+System.Net.WebException: Запрос был прерван: Запрос отменен.
+   в System.Net.WebClient.UploadFile(Uri address, String method, String fileName
+)
+   в System.Net.WebClient.UploadFile(String address, String fileName)
+   в DeadSeaVKExport.ProductVKExporter.ExportProduct(String title, String desc,
+String titleCategory, String sprice, String imageFileName) в E:\Work\DeadSeaCosm
+eticsImport\DeadSeaVKExport\ProductVKExporter.cs:строка 105
+   в DeadSeaCosmeticsImport.DSImport.Good.Print() в E:\Work\DeadSeaCosmeticsImpo
+rt\DeadSeaCosmeticsImport\DSImport.cs:строка 91
+   в DeadSeaCosmeticsImport.DSImport.<Parsing>d__21.MoveNext() в E:\Work\DeadSea
+CosmeticsImport\DeadSeaCosmeticsImport\DSImport.cs:строка 386
+finished with http://www.israel-catalog.com/dead-sea-cosmetics/chic-cosmetics/ca
+naan-dead-sea-minerals-herbs/canaan-mineral-enriched-soap-bar-dead-sea-products
+sleeping with lock for
+Image:
+/sites/default/files/products/images/canaan-bath-salts-dead-sea-products.gif
+Product:
+Canaan Bath Salts, Dead Sea Products
+Desc:
+Price
+$7.95
+Details:
+sleeping with lock for
+finished with https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.
+1.1.20160420T200115Z.006bede5b131c604.4256886cd58598ea537df059cd532b6b141910cf&t
+ext=Bath Products&lang=en-ru
+sleeping with lock for
+finished with https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.
+1.1.20160420T200115Z.006bede5b131c604.4256886cd58598ea537df059cd532b6b141910cf&t
+ext=Canaan Bath Salts, Dead Sea Products&lang=en-ru
+sleeping with lock for
+finished with https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.
+1.1.20160420T200115Z.006bede5b131c604.4256886cd58598ea537df059cd532b6b141910cf&t
+ext=Canaan's Bath Salts contain a magical mixture of minerals from the dead sea
+and their unique complex, which together create a terrific bathing experience th
+e closest possible to the dead sea experience itself from the comfort of your ow
+n home.&lang=en-ru
+sleeping with lock for
+uploadServer.UploadUrl=https://pu.vk.com/c626122/upload.php?act=do_add&mid=90907
+11&aid=-53&gid=118485025&hash=ffd63768ae34096a66645499fc68709a&rhash=263aeae1ea0
+ae588bb0b43871088eac2&swfupload=1&api=1&market_main_photo=1
+uploading e:\Work\DeadSeaCosmeticsImport\DeadSeaCosmeticsImport\bin\Debug\result
+s\images\canaan-bath-salts-dead-sea-products.gif

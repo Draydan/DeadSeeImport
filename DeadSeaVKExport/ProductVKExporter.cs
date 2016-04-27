@@ -10,12 +10,12 @@ using VkNet.Model.RequestParams;
 
 namespace DeadSeaVKExport
 {
-    public class Album
+    public class MarketEntity
     {
         public long ID;
         public string Title;
 
-        public Album(long id, string _title)
+        public MarketEntity(long id, string _title)
         {
             ID = id;
             Title = _title;
@@ -30,7 +30,8 @@ namespace DeadSeaVKExport
         private long GroupID;
         private string imageDir = @"e:\Work\DeadSeaCosmeticsImport\DeadSeaCosmeticsImport\bin\Debug\results\images\";
 
-        List<Album> AlbumList;
+        List<MarketEntity> AlbumList;
+        List<MarketEntity> ProductList;
 
         public ProductVKExporter()
         {
@@ -41,6 +42,7 @@ namespace DeadSeaVKExport
             GroupID = dsg.Id.Value;
 
             LoadAlbumIDs();
+            LoadProductsIDs();
         }
 
         void CleanPrevGoods()
@@ -50,24 +52,41 @@ namespace DeadSeaVKExport
 
         void LoadAlbumIDs()
         {
-            AlbumList = new List<Album>();
+            AlbumList = new List<MarketEntity>();
             var albums = vk.Markets.GetAlbums(-GroupID);
             foreach (var a in albums)
-                AlbumList.Add(new Album(a.Id.Value, a.Title));
+            {
+                AlbumList.Add(new MarketEntity(a.Id.Value, a.Title));
+                Console.WriteLine(a.Title);
+            }
         }
 
-        public void AddProductToAlbum(string titleProduct, long ProductID, string imageFilePath, string titleAlbum)
+        void LoadProductsIDs()
         {
-            if (AlbumList.Any(x => x.Title == titleAlbum))
+            ProductList = new List<MarketEntity>();
+            var goods = vk.Markets.Get(-GroupID);
+            foreach (var a in goods)
             {
-                long AlbumID = AlbumList.First(x => x.Title == titleAlbum).ID;
-                vk.Markets.AddToAlbum(-GroupID, ProductID, new[] { AlbumID });
+                ProductList.Add(new MarketEntity(a.Id.Value, a.Title));
+                Console.WriteLine(a.Title);
             }
-            else
+        }
+        public void AddProductToAlbum(string titleProduct, long ProductID, string titleAlbum, long ImageID)
+        {
+            if (AlbumList.Where(x => x.Title == titleAlbum).Count() >= 2)
             {
-                long AlbumID = vk.Markets.AddAlbum(-GroupID, titleAlbum);
+                foreach (var alb in AlbumList.Where(x => x.Title == titleAlbum))
+                {
+                    vk.Markets.DeleteAlbum(-GroupID, alb.ID);
+                }
+                //long AlbumID = AlbumList.First(x => x.Title == titleAlbum).ID;
+                //vk.Markets.AddToAlbum(-GroupID, ProductID, new[] { AlbumID });
+            }
+            //else
+            {
+                long AlbumID = vk.Markets.AddAlbum(-GroupID, titleAlbum, ImageID);
                 vk.Markets.AddToAlbum(-GroupID, ProductID, new[] { AlbumID });
-                AlbumList.Add(new Album(AlbumID, titleAlbum));
+                AlbumList.Add(new MarketEntity(AlbumID, titleAlbum));
             }
         }
 
@@ -77,27 +96,35 @@ namespace DeadSeaVKExport
             return rez;
         }
 
-        public long ExportProduct(string title, string desc, string sprice, string imageFileName)
+        public long ExportProduct(string title, string desc, string titleCategory, string sprice, string imageFileName)
         {
+            // удаляем все копии этого товара
+            //foreach (var p in ProductList.Where(x => x.Title == title))                 vk.Markets.Delete(-GroupID, p.ID);
+
             // Получить адрес сервера для загрузки.
             var uploadServer = vk.Photo.GetMarketUploadServer(GroupID, true);
             // Загрузить фотографию.
             var wc = new WebClient();
-            var responseImg = Encoding.ASCII.GetString(wc.UploadFile(uploadServer.UploadUrl, imageDir + imageFileName));
+            Console.WriteLine("uploadServer.UploadUrl=" + uploadServer.UploadUrl);
+            string imageFilePath = imageDir + imageFileName;
+            Console.WriteLine("uploading {0}", imageFilePath);
+            var responseImg = Encoding.ASCII.GetString(wc.UploadFile(uploadServer.UploadUrl, imageFilePath));
             // Сохранить загруженную фотографию
             var photo = vk.Photo.SaveMarketPhoto(GroupID, responseImg);
+            long photoID = photo.FirstOrDefault().Id.Value;
             long ProdID = vk.Markets.Add(new MarketProductParams
             {
                 OwnerId = -GroupID,
                 CategoryId = 702,
-                MainPhotoId = photo.FirstOrDefault().Id.Value,
+                MainPhotoId = photoID,
                 Deleted = false,
                 Name = title,
                 Description = desc,
                 Price = ConverPrice(sprice)
             });
+            AddProductToAlbum(title, ProdID, titleCategory, photoID);
             return ProdID;
-        }
+        }        
 
         VkApi Auth()
         {
@@ -123,3 +150,4 @@ namespace DeadSeaVKExport
 
     }
 }
+

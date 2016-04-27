@@ -30,7 +30,7 @@ namespace DeadSeaCosmeticsImport
         static bool locker = false;
         static DateTime now = DateTime.Now;
         static int counter = 1;
-        static int sleepTime = 500;
+        static int sleepTime = 400;
         static List<Good>  goodsList = new List<Good>();
         static ProductVKExporter vke;
 
@@ -45,6 +45,8 @@ namespace DeadSeaCosmeticsImport
             public string price;
             public string desc;
             public string details;
+            public string descRus;
+            public string detailsRus;
             public string imageFileName;
             public int translated;
 
@@ -79,8 +81,17 @@ namespace DeadSeaCosmeticsImport
                         swRes.WriteLine("<tr><td>{0} <br> {6}</td><td>{1} <br> {7}</td><td>{2}</td><td>{3}</td><td>{4}</td><td><img src=images\\{5}></td></tr>", 
                             g.category, g.title, g.price, g.desc, g.details, g.imageFileName, g.categoryRus, g.titleRus);
 
-                        long prodID = vke.ExportProduct(g.title, g.desc, g.price, g.imageFileName);
-                        vke.AddProductToAlbum(g.title, prodID, g.imageFileName, g.category);
+                        while (locker)
+                        {
+                            Console.Write(".");
+                            System.Threading.Thread.Sleep(sleepTime);
+                        }
+                        locker = true;
+
+                        long prodID = vke.ExportProduct(g.title, g.desc, g.category, g.price, g.imageFileName);
+
+                        locker = false;
+                        //vke.AddProductToAlbum(g.title, prodID, g.imageFileName, g.category);
                         swRes.Flush();
                     }
                 }
@@ -162,7 +173,8 @@ namespace DeadSeaCosmeticsImport
             //    System.Threading.Thread.Sleep(sleepTime);
             //}
             //locker = true;
-            Trace("opening " + siteURL);
+
+            //Trace("opening " + siteURL);
             HttpClient http = new HttpClient();
             var response = await http.GetByteArrayAsync(siteURL);
             //locker = false;
@@ -182,7 +194,7 @@ namespace DeadSeaCosmeticsImport
                 }
                 locker = true;
 
-                Trace("checking cached " + siteURL);
+                //Trace("checking cached " + siteURL);
                 String source = "";
                 //if(titleCurr == "") 
                 source = ReadPageFromCache(siteURL, tag + titleCurr);
@@ -246,7 +258,7 @@ namespace DeadSeaCosmeticsImport
                             First(x => (x.Name == "li" && x.Attributes["class"] != null && x.Attributes["class"].Value.Contains("pager-next")));
                         string pageLink = page.FirstChild.GetAttributeValue("href", null);
                         //Trace("Going next page: " + pageLink);
-                        Trace("Going next page: " + siteURL + "page");
+                        //Trace("Going next page: " + siteURL + "page");
                         //string goodsURL = rootURL + pageLink);
                         if (pageLink != "")
                             Parsing(rootURL + pageLink, 1, category);
@@ -337,10 +349,10 @@ namespace DeadSeaCosmeticsImport
                         {
                             HtmlNode transDiv = resultat.DocumentNode;
                             string translation = transDiv.InnerText;
-                            Trace(translation);
+                            //Trace(translation);
                             Good g = goodsList.First(x => x.title == titleCurr);
-                            g.desc = translation.Split(new string[]{ ";;;" }, StringSplitOptions.None)[0];
-                            g.details = translation.Split(new string[] { ";;;" }, StringSplitOptions.None)[1];
+                            g.descRus = translation.Split(new string[]{ ";;;" }, StringSplitOptions.None)[0];
+                            g.detailsRus = translation.Split(new string[] { ";;;" }, StringSplitOptions.None)[1];
                             //g.translated++;
                             //if (g.translated == 2)
                                 g.Print();
@@ -352,9 +364,9 @@ namespace DeadSeaCosmeticsImport
                         {
                             HtmlNode transDiv = resultat.DocumentNode;
                             string translation = transDiv.InnerText;
-                            Trace(translation);
+                            //Trace(translation);
                             Good g = goodsList.First(x => x.title == titleCurr);
-                            g.desc = getTextFromJson(translation);
+                            g.descRus = getTextFromJson(translation);
                             g.translated++;
                             if (g.translated == TranslationsToPrint)
                                 g.Print();
@@ -366,9 +378,9 @@ namespace DeadSeaCosmeticsImport
                         {
                             HtmlNode transDiv = resultat.DocumentNode;
                             string translation = transDiv.InnerText;
-                            Trace(translation);
+                            //Trace(translation);
                             Good g = goodsList.First(x => x.title == titleCurr);
-                            g.details = getTextFromJson(translation);
+                            g.detailsRus = getTextFromJson(translation);
                             g.translated++;
                             if (g.translated == TranslationsToPrint)
                                 g.Print();
@@ -378,7 +390,7 @@ namespace DeadSeaCosmeticsImport
                         {
                             HtmlNode transDiv = resultat.DocumentNode;
                             string translation = transDiv.InnerText;
-                            Trace(translation);
+                            //Trace(translation);
                             Good g = goodsList.First(x => x.title == titleCurr);
                             g.categoryRus = getTextFromJson(translation);
                             g.translated++;
@@ -390,7 +402,7 @@ namespace DeadSeaCosmeticsImport
                         {
                             HtmlNode transDiv = resultat.DocumentNode;
                             string translation = transDiv.InnerText;
-                            Trace(translation);
+                            //Trace(translation);
                             Good g = goodsList.First(x => x.title == titleCurr);
                             g.titleRus = getTextFromJson(translation);
                             g.translated++;
