@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeadSeaCosmeticsImport", "D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeadSeaVKExport", "DeadSeaVKExport\DeadSeaVKExport.csproj", "{1F634AC9-93CC-45E0-A32C-991372F552C2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeadSeaCatalogueDB", "DeadSeaCatalogueDB\DeadSeaCatalogueDB.csproj", "{F228E539-9344-49C9-878F-6BFBF102CD25}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{1F634AC9-93CC-45E0-A32C-991372F552C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1F634AC9-93CC-45E0-A32C-991372F552C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1F634AC9-93CC-45E0-A32C-991372F552C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F228E539-9344-49C9-878F-6BFBF102CD25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F228E539-9344-49C9-878F-6BFBF102CD25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F228E539-9344-49C9-878F-6BFBF102CD25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F228E539-9344-49C9-878F-6BFBF102CD25}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

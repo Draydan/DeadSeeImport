@@ -14,3 +14,7 @@ E:\Work\DeadSeaCosmeticsImport\DeadSeaCosmeticsImport\bin\Debug\VkNet.pdb
 E:\Work\DeadSeaCosmeticsImport\DeadSeaCosmeticsImport\bin\Debug\VkNet.xml
 E:\Work\DeadSeaCosmeticsImport\DeadSeaCosmeticsImport\bin\Debug\DeadSeaVKExport.exe
 E:\Work\DeadSeaCosmeticsImport\DeadSeaCosmeticsImport\bin\Debug\DeadSeaVKExport.pdb
+E:\Work\DeadSeaCosmeticsImport\DeadSeaCosmeticsImport\bin\Debug\DeadSeaCatalogueDB.exe
+E:\Work\DeadSeaCosmeticsImport\DeadSeaCosmeticsImport\bin\Debug\EntityFramework.dll
+E:\Work\DeadSeaCosmeticsImport\DeadSeaCosmeticsImport\bin\Debug\DeadSeaCatalogueDB.pdb
+E:\Work\DeadSeaCosmeticsImport\DeadSeaCosmeticsImport\bin\Debug\EntityFramework.xml

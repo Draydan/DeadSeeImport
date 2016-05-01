@@ -3,16 +3,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using HtmlAgilityPack;
 using System.Net;
 using System.Net.Http;
 using System.IO;
 using System.Text.RegularExpressions;
+using System.Threading;
+using System.Data.Entity;
+
+using HtmlAgilityPack;
 using VkNet;
 using VkNet.Enums.Filters;
 using VkNet.Model.RequestParams;
-using DeadSeaVKExport;
 
+using DeadSeaVKExport;
+using DeadSeaCatalogueDB;
 
 namespace DeadSeaCosmeticsImport
 {
@@ -26,83 +30,76 @@ namespace DeadSeaCosmeticsImport
         const string imagesDir = resultsDir + "\\images";
         const string resultFile = "_result.rus.html";
         const int TranslationsToPrint = 4;
+        const int sleepingBeauty = 5000;
 
         static bool locker = false;
         static DateTime now = DateTime.Now;
         static int counter = 1;
-        static int sleepTime = 400;
-        static List<Good>  goodsList = new List<Good>();
+        static int sleepTime = 1000;
+        //static List<Product> goodsList = new List<Product>();
+        var goodsList = new produ
         static ProductVKExporter vke;
 
         //static VkApi vk;
 
-        class Good
+        public static void Export(Product g)
         {
-            public string category;
-            public string categoryRus;
-            public string title;
-            public string titleRus;
-            public string price;
-            public string desc;
-            public string details;
-            public string descRus;
-            public string detailsRus;
-            public string imageFileName;
-            public int translated;
 
-            public Good (string c, string t, string p, string d, string det, string im)
+            //string resultFileName = string.Format("{1}\\results{0}.html", counter++, resultsDir);
+            //File.Delete(resultFileName);
+
+            string resultFileName = string.Format("{1}\\{2}", counter++, resultsDir, resultFile);
+            string init = "";
+            if (!File.Exists(resultFileName))
+                init = "<html><body><table border = 1> ";
+
+            using (StreamWriter swRes = new StreamWriter(resultFileName, true)) // DateTime.Now.ToString().Replace(":", "-"), true)))
             {
-                category = c;
-                title = t;
-                price = p;
-                desc = d;
-                details = det;
-                imageFileName = im;
-                    translated = 0;
-            }
-
-            public void Print()
-            {
-
-                //string resultFileName = string.Format("{1}\\results{0}.html", counter++, resultsDir);
-                //File.Delete(resultFileName);
-
-                string resultFileName = string.Format("{1}\\{2}", counter++, resultsDir, resultFile);
-                string init = "";
-                if (!File.Exists(resultFileName))
-                    init = "<html><body><table border = 1> ";
-
-                using (StreamWriter swRes = new StreamWriter(resultFileName, true)) // DateTime.Now.ToString().Replace(":", "-"), true)))
+                swRes.WriteLine(init);
+                //foreach (Good g in goodsList)
+                //                    Product g = this;
                 {
-                        swRes.WriteLine(init);
-                        //foreach (Good g in goodsList)
-                        Good g = this;
+                    swRes.WriteLine("<tr><td>{0} <br> {6}</td><td>{1} <br> {7}</td><td>{2}</td><td>{3}</td><td>{4}</td><td><img src=images\\{5}></td></tr>",
+                        g.category, g.title, g.price, g.desc, g.details, g.imageFileName, g.category.NameRus, g.titleRus);
+
+                    while (locker)
                     {
-                        swRes.WriteLine("<tr><td>{0} <br> {6}</td><td>{1} <br> {7}</td><td>{2}</td><td>{3}</td><td>{4}</td><td><img src=images\\{5}></td></tr>", 
-                            g.category, g.title, g.price, g.desc, g.details, g.imageFileName, g.categoryRus, g.titleRus);
-
-                        while (locker)
-                        {
-                            Console.Write(".");
-                            System.Threading.Thread.Sleep(sleepTime);
-                        }
-                        locker = true;
-
-                        long prodID = vke.ExportProduct(g.title, g.desc, g.category, g.price, g.imageFileName);
-
-                        locker = false;
-                        //vke.AddProductToAlbum(g.title, prodID, g.imageFileName, g.category);
-                        swRes.Flush();
+                        Console.Write(".");
+                        Thread.Sleep(sleepTime);
                     }
+                    locker = true;
+                    long prodID = 0;
+                    int counter = 0;
+                    while (prodID == 0 && counter < 20)
+                        try
+                        {
+                            prodID = vke.ExportProduct(g.title, g.desc, g.category.Name, g.price, g.imageFileName);
+                        }
+                        catch (Exception ex)
+                        {
+                            Trace(ex.Message);
+                            Trace("Неудачная попытка... ждемс {0}", counter++);
+                            Thread.Sleep(sleepTime);
+                            if (counter > 10)
+                            {
+                                ErrorLog("Внимание внимание, что то пошло не так!");
+                                //Console.ReadLine();
+                            }
+                        }
+                    locker = false;
+                    //vke.AddProductToAlbum(g.title, prodID, g.imageFileName, g.category);
+                    swRes.Flush();
                 }
             }
-    }
+        }        
 
         static void Main(string[] args)
         {
             Trace("START");
 
-            goodsList = new List<Good>();
+            //goodsList = new List<Product>();
+            goodsList = new List<Product>();
+
             string resultFileName = string.Format("{1}\\{2}", counter++, resultsDir, resultFile);
             File.Delete(resultFileName);
 
@@ -115,12 +112,19 @@ namespace DeadSeaCosmeticsImport
             Console.ReadLine();
         }
 
-        private static void Trace(string text)
+        private static void ErrorLog(string text, params object[] args)
+        {            
+            ConsoleColor defcol = Console.ForegroundColor;
+            Console.ForegroundColor = ConsoleColor.Red;
+            Trace(text, args);
+            Console.ForegroundColor = defcol;
+        }
+        private static void Trace(string text, params object[] args)
         {
             Console.WriteLine(text);
             using (StreamWriter sw = new StreamWriter("log.txt", true))
             {
-                sw.WriteLine(DateTime.Now + " : " + text);
+                sw.WriteLine(DateTime.Now + " : " + text, args);
             }
         }
 
@@ -159,7 +163,7 @@ namespace DeadSeaCosmeticsImport
                 }
                 catch(Exception ex)
                 {
-                    Trace(string.Format("Writing HTML (URL={3}) (len={2}) try {0} error: {1}", i,  ex.Message, source.Length, siteURL));
+                        Trace(string.Format("Writing HTML (URL={3}) (len={2}) try {0} error: {1}", i,  ex.Message, source.Length, siteURL));
                 }
             }
         }
@@ -187,10 +191,12 @@ namespace DeadSeaCosmeticsImport
             try
             {
                 Trace("sleeping with lock for");
-                while (locker)
+                int sleeping = 0;
+                while (locker && sleeping < sleepingBeauty)
                 {
                     Console.Write(".");
                     System.Threading.Thread.Sleep(sleepTime);
+                    sleeping += sleepTime;
                 }
                 locker = true;
 
@@ -318,7 +324,7 @@ namespace DeadSeaCosmeticsImport
                                 //Trace(detailPart);
                             }
 
-                            Good g = new Good(category, title, price, desc, details, imageFileName);
+                            Product g = new Product(category, title, price, desc, details, imageFileName);
                             goodsList.Add(g);
 
                             //Parsing(string.Format("https://translate.yandex.net/api/v1.5/tr.json/translate?key={0}&text={1}&lang=en-ru",
@@ -350,12 +356,12 @@ namespace DeadSeaCosmeticsImport
                             HtmlNode transDiv = resultat.DocumentNode;
                             string translation = transDiv.InnerText;
                             //Trace(translation);
-                            Good g = goodsList.First(x => x.title == titleCurr);
+                            Product g = goodsList.First(x => x.title == titleCurr);
                             g.descRus = translation.Split(new string[]{ ";;;" }, StringSplitOptions.None)[0];
                             g.detailsRus = translation.Split(new string[] { ";;;" }, StringSplitOptions.None)[1];
                             //g.translated++;
                             //if (g.translated == 2)
-                                g.Print();
+                                Export(g);
                             goodsList.Remove(g);
                             goodsList.Add(g);
                             break;
@@ -365,11 +371,11 @@ namespace DeadSeaCosmeticsImport
                             HtmlNode transDiv = resultat.DocumentNode;
                             string translation = transDiv.InnerText;
                             //Trace(translation);
-                            Good g = goodsList.First(x => x.title == titleCurr);
+                            Product g = goodsList.First(x => x.title == titleCurr);
                             g.descRus = getTextFromJson(translation);
                             g.translated++;
                             if (g.translated == TranslationsToPrint)
-                                g.Print();
+                                Export(g);
                             //goodsList.Remove(g);
                             //goodsList.Add(g);
                             break;
@@ -379,11 +385,11 @@ namespace DeadSeaCosmeticsImport
                             HtmlNode transDiv = resultat.DocumentNode;
                             string translation = transDiv.InnerText;
                             //Trace(translation);
-                            Good g = goodsList.First(x => x.title == titleCurr);
+                            Product g = goodsList.First(x => x.title == titleCurr);
                             g.detailsRus = getTextFromJson(translation);
                             g.translated++;
                             if (g.translated == TranslationsToPrint)
-                                g.Print();
+                                Export(g);
                             break;
                         }
                     case 6:
@@ -391,11 +397,11 @@ namespace DeadSeaCosmeticsImport
                             HtmlNode transDiv = resultat.DocumentNode;
                             string translation = transDiv.InnerText;
                             //Trace(translation);
-                            Good g = goodsList.First(x => x.title == titleCurr);
-                            g.categoryRus = getTextFromJson(translation);
+                            Product g = goodsList.First(x => x.title == titleCurr);
+                            g.category.NameRus = getTextFromJson(translation);
                             g.translated++;
                             if (g.translated == TranslationsToPrint)
-                                g.Print();
+                                Export(g);
                             break;
                         }
                     case 7:
@@ -403,11 +409,11 @@ namespace DeadSeaCosmeticsImport
                             HtmlNode transDiv = resultat.DocumentNode;
                             string translation = transDiv.InnerText;
                             //Trace(translation);
-                            Good g = goodsList.First(x => x.title == titleCurr);
+                            Product g = goodsList.First(x => x.title == titleCurr);
                             g.titleRus = getTextFromJson(translation);
                             g.translated++;
                             if (g.translated == TranslationsToPrint)
-                                g.Print();
+                                Export(g);
                             break;
                         }
                 }

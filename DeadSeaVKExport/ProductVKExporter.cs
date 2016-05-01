@@ -14,11 +14,15 @@ namespace DeadSeaVKExport
     {
         public long ID;
         public string Title;
+        public bool isUpdated;
+        public long? PhotoID;
 
-        public MarketEntity(long id, string _title)
+        public MarketEntity(long id, string _title, long? photoId, bool isupdated = false)
         {
             ID = id;
             Title = _title;
+            PhotoID = photoId;
+            isUpdated = isUpdated;
         }
     }
 
@@ -56,7 +60,8 @@ namespace DeadSeaVKExport
             var albums = vk.Markets.GetAlbums(-GroupID);
             foreach (var a in albums)
             {
-                AlbumList.Add(new MarketEntity(a.Id.Value, a.Title));
+                AlbumList.Add(new MarketEntity(a.Id.Value, a.Title,
+                    (a.Photo != null) ? (a.Photo.Id.Value) : (0)));
                 Console.WriteLine(a.Title);
             }
         }
@@ -66,27 +71,45 @@ namespace DeadSeaVKExport
             ProductList = new List<MarketEntity>();
             var goods = vk.Markets.Get(-GroupID);
             foreach (var a in goods)
-            {
-                ProductList.Add(new MarketEntity(a.Id.Value, a.Title));
+            {                
+                ProductList.Add(new MarketEntity(a.Id.Value, a.Title, 
+                    (a.Photos.Count>0)?(a.Photos[0].Id.Value):(0)));
                 Console.WriteLine(a.Title);
             }
         }
-        public void AddProductToAlbum(string titleProduct, long ProductID, string titleAlbum, long ImageID)
+        public void AddProductToAlbum(string titleProduct, long ProductID, string titleAlbum, string imageFilePath)
         {
-            if (AlbumList.Where(x => x.Title == titleAlbum).Count() >= 2)
+            //if (AlbumList.Where(x => x.Title == titleAlbum).Count() >= 2)
+            
+            // если в этот заход подборку еще не апдейтили, то удаляем все ее копии
+            foreach (var alb in AlbumList.Where(x => x.Title == titleAlbum && !x.isUpdated))
             {
-                foreach (var alb in AlbumList.Where(x => x.Title == titleAlbum))
-                {
-                    vk.Markets.DeleteAlbum(-GroupID, alb.ID);
-                }
-                //long AlbumID = AlbumList.First(x => x.Title == titleAlbum).ID;
-                //vk.Markets.AddToAlbum(-GroupID, ProductID, new[] { AlbumID });
+                Console.WriteLine("удаляем альбом {0} {1}", alb.ID, alb.Title);
+                vk.Markets.DeleteAlbum(-GroupID, alb.ID);
             }
+            AlbumList.RemoveAll(x => x.Title == titleAlbum && !x.isUpdated);
+            //AlbumList = new List<MarketEntity>();
+            //long AlbumID = AlbumList.First(x => x.Title == titleAlbum).ID;
+            //vk.Markets.AddToAlbum(-GroupID, ProductID, new[] { AlbumID });
+
             //else
+            // если подборки еще нету, заводим
+            if (AlbumList.Where(x => x.Title == titleAlbum).Count() == 0)
             {
-                long AlbumID = vk.Markets.AddAlbum(-GroupID, titleAlbum, ImageID);
+                long photoID = UploadImage(imageFilePath);
+                long AlbumID = vk.Markets.AddAlbum(-GroupID, titleAlbum, photoID);
+                Console.WriteLine("добавляем в заведенный альбом {0} {1}", AlbumID, titleAlbum);                
                 vk.Markets.AddToAlbum(-GroupID, ProductID, new[] { AlbumID });
-                AlbumList.Add(new MarketEntity(AlbumID, titleAlbum));
+                MarketEntity alb = new MarketEntity(AlbumID, titleAlbum, photoID);
+                alb.isUpdated = true;
+                AlbumList.Add(alb);
+            }
+            else
+            // если подборка уже есть, заводим в нее товар
+            {
+                long AlbumID = AlbumList.First(x => x.Title == titleAlbum).ID;
+                Console.WriteLine("добавляем в готовый альбом {0} {1}", AlbumID, titleAlbum);
+                vk.Markets.AddToAlbum(-GroupID, ProductID, new[] { AlbumID });
             }
         }
 
@@ -98,33 +121,69 @@ namespace DeadSeaVKExport
 
         public long ExportProduct(string title, string desc, string titleCategory, string sprice, string imageFileName)
         {
-            // удаляем все копии этого товара
-            //foreach (var p in ProductList.Where(x => x.Title == title))                 vk.Markets.Delete(-GroupID, p.ID);
+            string imageFilePath = imageDir + imageFileName;
+            if (desc.Length <= 10)
+                desc = string.Format("This is Sparta! And also {0} for a pidgy pipl price of {1}", title, ConverPrice(sprice));
 
+            int prodCount = ProductList.Where(x => x.Title == title).Count();
+            //если есть 1 копия то редактируем ее
+            //если более 1 то удаляем все копии этого товара
+            if(prodCount > 1)
+                foreach (var p in ProductList.Where(x => x.Title == title))
+                    vk.Markets.Delete(-GroupID, p.ID);
+
+            if (prodCount == 0)
+            {
+                long photoID = UploadImage(imageFilePath);
+                long ProdID = vk.Markets.Add(new MarketProductParams
+                {
+                    OwnerId = -GroupID,
+                    CategoryId = 702,
+                    MainPhotoId = photoID,
+                    Deleted = false,
+                    Name = title,
+                    Description = desc,
+                    Price = ConverPrice(sprice)
+                });
+                AddProductToAlbum(title, ProdID, titleCategory, imageFilePath);
+                ProductList.Add(new MarketEntity(ProdID, title, photoID, true));
+                return ProdID;
+            }
+            else
+            {
+                long ProdID = ProductList.First(x => x.Title == title).ID;
+                long? mainPhotoID = ProductList.First(x => x.Title == title).PhotoID;
+                if (mainPhotoID == 0)
+                    mainPhotoID = UploadImage(imageFilePath);
+                vk.Markets.Edit(new MarketProductParams
+                {
+                    OwnerId = -GroupID,
+                    ItemId = ProdID,
+                    MainPhotoId = (long)mainPhotoID,
+                    CategoryId = 702,
+                    Deleted = false,
+                    Name = title,
+                    Description = desc,
+                    Price = ConverPrice(sprice)
+                });
+                AddProductToAlbum(title, ProdID, titleCategory, imageFilePath);
+                return ProdID;
+            }
+        }
+
+        private long UploadImage(string imageFilePath)
+        {
             // Получить адрес сервера для загрузки.
             var uploadServer = vk.Photo.GetMarketUploadServer(GroupID, true);
             // Загрузить фотографию.
             var wc = new WebClient();
-            Console.WriteLine("uploadServer.UploadUrl=" + uploadServer.UploadUrl);
-            string imageFilePath = imageDir + imageFileName;
+            //Console.WriteLine("uploadServer.UploadUrl=" + uploadServer.UploadUrl);
             Console.WriteLine("uploading {0}", imageFilePath);
             var responseImg = Encoding.ASCII.GetString(wc.UploadFile(uploadServer.UploadUrl, imageFilePath));
             // Сохранить загруженную фотографию
             var photo = vk.Photo.SaveMarketPhoto(GroupID, responseImg);
-            long photoID = photo.FirstOrDefault().Id.Value;
-            long ProdID = vk.Markets.Add(new MarketProductParams
-            {
-                OwnerId = -GroupID,
-                CategoryId = 702,
-                MainPhotoId = photoID,
-                Deleted = false,
-                Name = title,
-                Description = desc,
-                Price = ConverPrice(sprice)
-            });
-            AddProductToAlbum(title, ProdID, titleCategory, photoID);
-            return ProdID;
-        }        
+            return photo.FirstOrDefault().Id.Value;
+        }
 
         VkApi Auth()
         {

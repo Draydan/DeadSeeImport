@@ -63,6 +63,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\DeadSeaCatalogueDB\DeadSeaCatalogueDB.csproj">
+      <Project>{f228e539-9344-49c9-878f-6bfbf102cd25}</Project>
+      <Name>DeadSeaCatalogueDB</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DeadSeaVKExport\DeadSeaVKExport.csproj">
       <Project>{1f634ac9-93cc-45e0-a32c-991372f552c2}</Project>
       <Name>DeadSeaVKExport</Name>
