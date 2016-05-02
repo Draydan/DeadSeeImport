@@ -5,6 +5,5 @@ E:\Work\DeadSeaCosmeticsImport\DeadSeaCatalogueDB\bin\Debug\EntityFramework.dll
 E:\Work\DeadSeaCosmeticsImport\DeadSeaCatalogueDB\bin\Debug\EntityFramework.SqlServer.dll
 E:\Work\DeadSeaCosmeticsImport\DeadSeaCatalogueDB\bin\Debug\EntityFramework.xml
 E:\Work\DeadSeaCosmeticsImport\DeadSeaCatalogueDB\bin\Debug\EntityFramework.SqlServer.xml
-E:\Work\DeadSeaCosmeticsImport\DeadSeaCatalogueDB\obj\Debug\DeadSeaCatalogueDB.csprojResolveAssemblyReference.cache
 E:\Work\DeadSeaCosmeticsImport\DeadSeaCatalogueDB\obj\Debug\DeadSeaCatalogueDB.exe
 E:\Work\DeadSeaCosmeticsImport\DeadSeaCatalogueDB\obj\Debug\DeadSeaCatalogueDB.pdb

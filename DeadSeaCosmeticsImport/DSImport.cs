@@ -16,7 +16,7 @@ using VkNet.Enums.Filters;
 using VkNet.Model.RequestParams;
 
 using DeadSeaVKExport;
-using DeadSeaCatalogueDB;
+using DeadSeaCatalogueDAL;
 
 namespace DeadSeaCosmeticsImport
 {
@@ -37,7 +37,7 @@ namespace DeadSeaCosmeticsImport
         static int counter = 1;
         static int sleepTime = 1000;
         //static List<Product> goodsList = new List<Product>();
-        var goodsList = new produ
+        static ProductContext db = new ProductContext();
         static ProductVKExporter vke;
 
         //static VkApi vk;
@@ -98,7 +98,7 @@ namespace DeadSeaCosmeticsImport
             Trace("START");
 
             //goodsList = new List<Product>();
-            goodsList = new List<Product>();
+            //goodsList = new List<Product>();
 
             string resultFileName = string.Format("{1}\\{2}", counter++, resultsDir, resultFile);
             File.Delete(resultFileName);
@@ -324,9 +324,9 @@ namespace DeadSeaCosmeticsImport
                                 //Trace(detailPart);
                             }
 
-                            Product g = new Product(category, title, price, desc, details, imageFileName);
-                            goodsList.Add(g);
-
+                            Product g = new Product(db, category, title, price, desc, details, imageFileName);
+                            db.Products.Add(g);
+                            db.SaveChanges();
                             //Parsing(string.Format("https://translate.yandex.net/api/v1.5/tr.json/translate?key={0}&text={1}&lang=en-ru",
                             //    "trnsl.1.1.20160420T200115Z.006bede5b131c604.4256886cd58598ea537df059cd532b6b141910cf",
                             //    desc + ";;;" + details), 5, category, title);
@@ -356,14 +356,14 @@ namespace DeadSeaCosmeticsImport
                             HtmlNode transDiv = resultat.DocumentNode;
                             string translation = transDiv.InnerText;
                             //Trace(translation);
-                            Product g = goodsList.First(x => x.title == titleCurr);
+                            Product g = db.Products.First(x => x.title == titleCurr);
                             g.descRus = translation.Split(new string[]{ ";;;" }, StringSplitOptions.None)[0];
                             g.detailsRus = translation.Split(new string[] { ";;;" }, StringSplitOptions.None)[1];
                             //g.translated++;
                             //if (g.translated == 2)
                                 Export(g);
-                            goodsList.Remove(g);
-                            goodsList.Add(g);
+                            //goodsList.Remove(g);
+                            db.Products.Add(g);
                             break;
                         }
                     case 3:
@@ -371,13 +371,13 @@ namespace DeadSeaCosmeticsImport
                             HtmlNode transDiv = resultat.DocumentNode;
                             string translation = transDiv.InnerText;
                             //Trace(translation);
-                            Product g = goodsList.First(x => x.title == titleCurr);
+                            Product g = db.Products.FirstOrDefault(x => x.title == titleCurr);
                             g.descRus = getTextFromJson(translation);
                             g.translated++;
                             if (g.translated == TranslationsToPrint)
                                 Export(g);
                             //goodsList.Remove(g);
-                            //goodsList.Add(g);
+                            //goodsList.Products.Add(g);
                             break;
                         }
                     case 4:
@@ -385,7 +385,7 @@ namespace DeadSeaCosmeticsImport
                             HtmlNode transDiv = resultat.DocumentNode;
                             string translation = transDiv.InnerText;
                             //Trace(translation);
-                            Product g = goodsList.First(x => x.title == titleCurr);
+                            Product g = db.Products.First(x => x.title == titleCurr);
                             g.detailsRus = getTextFromJson(translation);
                             g.translated++;
                             if (g.translated == TranslationsToPrint)
@@ -397,7 +397,7 @@ namespace DeadSeaCosmeticsImport
                             HtmlNode transDiv = resultat.DocumentNode;
                             string translation = transDiv.InnerText;
                             //Trace(translation);
-                            Product g = goodsList.First(x => x.title == titleCurr);
+                            Product g = db.Products.First(x => x.title == titleCurr);
                             g.category.NameRus = getTextFromJson(translation);
                             g.translated++;
                             if (g.translated == TranslationsToPrint)
@@ -409,7 +409,7 @@ namespace DeadSeaCosmeticsImport
                             HtmlNode transDiv = resultat.DocumentNode;
                             string translation = transDiv.InnerText;
                             //Trace(translation);
-                            Product g = goodsList.First(x => x.title == titleCurr);
+                            Product g = db.Products.First(x => x.title == titleCurr);
                             g.titleRus = getTextFromJson(translation);
                             g.translated++;
                             if (g.translated == TranslationsToPrint)

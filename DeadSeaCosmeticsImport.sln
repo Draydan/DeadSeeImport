@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeadSeaCosmeticsImport", "D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeadSeaVKExport", "DeadSeaVKExport\DeadSeaVKExport.csproj", "{1F634AC9-93CC-45E0-A32C-991372F552C2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeadSeaCatalogueDB", "DeadSeaCatalogueDB\DeadSeaCatalogueDB.csproj", "{F228E539-9344-49C9-878F-6BFBF102CD25}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeadSeaCatalogueDAL", "DeadSeaCatalogueDB\DeadSeaCatalogueDAL.csproj", "{F228E539-9344-49C9-878F-6BFBF102CD25}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
