@@ -17,6 +17,7 @@ using VkNet.Model.RequestParams;
 
 using DeadSeaVKExport;
 using DeadSeaCatalogueDAL;
+using Logger;
 
 namespace DeadSeaCosmeticsImport
 {
@@ -60,8 +61,9 @@ namespace DeadSeaCosmeticsImport
                 //                    Product g = this;
                 {
                     swRes.WriteLine("<tr><td>{0} <br> {6}</td><td>{1} <br> {7}</td><td>{2}</td><td>{3}</td><td>{4}</td><td><img src=images\\{5}></td></tr>",
-                        g.category, g.title, g.price, g.desc, g.details, g.imageFileName, g.category.NameRus, g.titleRus);
+                        g.Links[0].category, g.title, g.price, g.desc, g.details, g.imageFileName, g.Links[0].category.NameRus, g.titleRus);
 
+                    /*
                     while (locker)
                     {
                         Console.Write(".");
@@ -73,12 +75,12 @@ namespace DeadSeaCosmeticsImport
                     while (prodID == 0 && counter < 20)
                         try
                         {
-                            prodID = vke.ExportProduct(g.title, g.desc, g.category.Name, g.price, g.imageFileName);
+                            prodID = vke.ExportProduct(g.title, g.desc, g.Links[0].category.Name, g.price, g.imageFileName);
                         }
                         catch (Exception ex)
                         {
-                            Trace(ex.Message);
-                            Trace("Неудачная попытка... ждемс {0}", counter++);
+                            Logger.Logger.Trace(ex.Message);
+                            Logger.Logger.Trace("Неудачная попытка... ждемс {0}", counter++);
                             Thread.Sleep(sleepTime);
                             if (counter > 10)
                             {
@@ -87,7 +89,8 @@ namespace DeadSeaCosmeticsImport
                             }
                         }
                     locker = false;
-                    //vke.AddProductToAlbum(g.title, prodID, g.imageFileName, g.category);
+                    */
+                    //vke.AddProductToAlbum(g.title, prodID, g.imageFileName, g.Links[0].category);
                     swRes.Flush();
                 }
             }
@@ -95,7 +98,7 @@ namespace DeadSeaCosmeticsImport
 
         static void Main(string[] args)
         {
-            Trace("START");
+            Logger.Logger.Trace("START");
 
             //goodsList = new List<Product>();
             //goodsList = new List<Product>();
@@ -110,22 +113,6 @@ namespace DeadSeaCosmeticsImport
 
             Parsing(string.Format("{0}/{1}", rootURL, rootURLdir), 0);
             Console.ReadLine();
-        }
-
-        private static void ErrorLog(string text, params object[] args)
-        {            
-            ConsoleColor defcol = Console.ForegroundColor;
-            Console.ForegroundColor = ConsoleColor.Red;
-            Trace(text, args);
-            Console.ForegroundColor = defcol;
-        }
-        private static void Trace(string text, params object[] args)
-        {
-            Console.WriteLine(text);
-            using (StreamWriter sw = new StreamWriter("log.txt", true))
-            {
-                sw.WriteLine(DateTime.Now + " : " + text, args);
-            }
         }
 
         private static string MakeUpCacheFilePath(string siteURL, string title = "")
@@ -163,14 +150,14 @@ namespace DeadSeaCosmeticsImport
                 }
                 catch(Exception ex)
                 {
-                        Trace(string.Format("Writing HTML (URL={3}) (len={2}) try {0} error: {1}", i,  ex.Message, source.Length, siteURL));
+                        Logger.Logger.Trace(string.Format("Writing HTML (URL={3}) (len={2}) try {0} error: {1}", i,  ex.Message, source.Length, siteURL));
                 }
             }
         }
 
         private static async Task<byte[]> GetFile(string siteURL)
         {
-            //Trace("sleeping with lock for");
+            //Logger.Logger.Trace("sleeping with lock for");
             //while (locker)
             //{
             //    Console.Write(".");
@@ -178,7 +165,7 @@ namespace DeadSeaCosmeticsImport
             //}
             //locker = true;
 
-            //Trace("opening " + siteURL);
+            //Logger.Logger.Trace("opening " + siteURL);
             HttpClient http = new HttpClient();
             var response = await http.GetByteArrayAsync(siteURL);
             //locker = false;
@@ -190,7 +177,7 @@ namespace DeadSeaCosmeticsImport
         {
             try
             {
-                Trace("sleeping with lock for");
+                Logger.Logger.Trace("sleeping with lock for");
                 int sleeping = 0;
                 while (locker && sleeping < sleepingBeauty)
                 {
@@ -200,7 +187,7 @@ namespace DeadSeaCosmeticsImport
                 }
                 locker = true;
 
-                //Trace("checking cached " + siteURL);
+                //Logger.Logger.Trace("checking cached " + siteURL);
                 String source = "";
                 //if(titleCurr == "") 
                 source = ReadPageFromCache(siteURL, tag + titleCurr);
@@ -236,8 +223,8 @@ namespace DeadSeaCosmeticsImport
                                 //var title = item.Descendants("h5").ToList()[0].InnerText;
                                 var link = lis.FirstChild.GetAttributeValue("href", null);
                                 var catTitle = lis.InnerText;
-                                //Trace(link);
-                                Trace(catTitle);
+                                //Logger.Logger.Trace(link);
+                                Logger.Logger.Trace(catTitle);
 
                                 Parsing(rootURL + link, 1, catTitle);
                             }
@@ -253,8 +240,8 @@ namespace DeadSeaCosmeticsImport
                         {
                             var link = good.FirstChild.GetAttributeValue("href", null);
                             //var title = good.InnerText;
-                            //Trace(link);
-                            //Trace(title);
+                            //Logger.Logger.Trace(link);
+                            //Logger.Logger.Trace(title);
                             Parsing(rootURL + link, 2, category);
                         }
                         #endregion
@@ -263,8 +250,8 @@ namespace DeadSeaCosmeticsImport
                         HtmlNode page = resultat.DocumentNode.Descendants().
                             First(x => (x.Name == "li" && x.Attributes["class"] != null && x.Attributes["class"].Value.Contains("pager-next")));
                         string pageLink = page.FirstChild.GetAttributeValue("href", null);
-                        //Trace("Going next page: " + pageLink);
-                        //Trace("Going next page: " + siteURL + "page");
+                        //Logger.Logger.Trace("Going next page: " + pageLink);
+                        //Logger.Logger.Trace("Going next page: " + siteURL + "page");
                         //string goodsURL = rootURL + pageLink);
                         if (pageLink != "")
                             Parsing(rootURL + pageLink, 1, category);
@@ -281,8 +268,8 @@ namespace DeadSeaCosmeticsImport
                                 First(x => (x.Name == "li" && x.Attributes["class"] != null && x.Attributes["class"].Value.Contains("productitem")));
                             string imageLink = image.ChildNodes.First(x => x.Name == "div").FirstChild.GetAttributeValue("href", null);
                             //var title = good.InnerText;
-                            Trace("Image:");
-                            Trace(imageLink);
+                            Logger.Logger.Trace("Image:");
+                            Logger.Logger.Trace(imageLink);
                             string imageFileName = imageLink.Split('/').Last();
                             string imageNewPath = string.Format("{0}\\{1}", PrepareCacheDir(imagesDir), imageFileName);
                             if (!File.Exists(imageNewPath))
@@ -295,33 +282,33 @@ namespace DeadSeaCosmeticsImport
                             HtmlNode titleDiv = resultat.DocumentNode.Descendants().
                                 First(x => (x.Name == "h1" && x.Attributes["itemprop"] != null && x.Attributes["itemprop"].Value == "name"));
                             string title = titleDiv.InnerText;
-                            Trace("Product:");
-                            Trace(title);
+                            Logger.Logger.Trace("Product:");
+                            Logger.Logger.Trace(title);
 
                             // description
                             HtmlNode descDiv = resultat.DocumentNode.Descendants().
                                 First(x => (x.Name == "div" && x.Attributes["class"] != null && x.Attributes["class"].Value == "field-brief"));
                             string desc = descDiv.FirstChild.InnerText;
-                            Trace("Desc:");
-                            //Trace(desc);
+                            Logger.Logger.Trace("Desc:");
+                            //Logger.Logger.Trace(desc);
 
                             // price
                             HtmlNode priceDiv = resultat.DocumentNode.Descendants().
                                 First(x => (x.Name == "span" && x.Attributes["class"] != null && x.Attributes["class"].Value == "theprice"));
                             string price = priceDiv.InnerText;
-                            Trace("Price");
-                            Trace(price);
+                            Logger.Logger.Trace("Price");
+                            Logger.Logger.Trace(price);
 
                             // details
                             HtmlNode detailsDiv = resultat.DocumentNode.Descendants().
                                 First(x => (x.Name == "div" && x.Attributes["class"] != null && x.Attributes["class"].Value == "product-body"));
-                            Trace("Details:");
+                            Logger.Logger.Trace("Details:");
                             string details = "";
                             foreach (var detailPartDiv in detailsDiv.ChildNodes)
                             {
                                 string detailPart = detailPartDiv.InnerText;
                                 details += detailPart;
-                                //Trace(detailPart);
+                                //Logger.Logger.Trace(detailPart);
                             }
 
                             Product g = new Product(db, category, title, price, desc, details, imageFileName);
@@ -355,7 +342,7 @@ namespace DeadSeaCosmeticsImport
                         {
                             HtmlNode transDiv = resultat.DocumentNode;
                             string translation = transDiv.InnerText;
-                            //Trace(translation);
+                            //Logger.Logger.Trace(translation);
                             Product g = db.Products.First(x => x.title == titleCurr);
                             g.descRus = translation.Split(new string[]{ ";;;" }, StringSplitOptions.None)[0];
                             g.detailsRus = translation.Split(new string[] { ";;;" }, StringSplitOptions.None)[1];
@@ -370,7 +357,7 @@ namespace DeadSeaCosmeticsImport
                         {
                             HtmlNode transDiv = resultat.DocumentNode;
                             string translation = transDiv.InnerText;
-                            //Trace(translation);
+                            //Logger.Logger.Trace(translation);
                             Product g = db.Products.FirstOrDefault(x => x.title == titleCurr);
                             g.descRus = getTextFromJson(translation);
                             g.translated++;
@@ -384,7 +371,7 @@ namespace DeadSeaCosmeticsImport
                         {
                             HtmlNode transDiv = resultat.DocumentNode;
                             string translation = transDiv.InnerText;
-                            //Trace(translation);
+                            //Logger.Logger.Trace(translation);
                             Product g = db.Products.First(x => x.title == titleCurr);
                             g.detailsRus = getTextFromJson(translation);
                             g.translated++;
@@ -396,9 +383,9 @@ namespace DeadSeaCosmeticsImport
                         {
                             HtmlNode transDiv = resultat.DocumentNode;
                             string translation = transDiv.InnerText;
-                            //Trace(translation);
+                            //Logger.Logger.Trace(translation);
                             Product g = db.Products.First(x => x.title == titleCurr);
-                            g.category.NameRus = getTextFromJson(translation);
+                            g.Links[0].category.NameRus = getTextFromJson(translation);
                             g.translated++;
                             if (g.translated == TranslationsToPrint)
                                 Export(g);
@@ -408,7 +395,7 @@ namespace DeadSeaCosmeticsImport
                         {
                             HtmlNode transDiv = resultat.DocumentNode;
                             string translation = transDiv.InnerText;
-                            //Trace(translation);
+                            //Logger.Logger.Trace(translation);
                             Product g = db.Products.First(x => x.title == titleCurr);
                             g.titleRus = getTextFromJson(translation);
                             g.translated++;
@@ -417,14 +404,14 @@ namespace DeadSeaCosmeticsImport
                             break;
                         }
                 }
-                Trace("finished with " + siteURL);
-                //foreach(string element in toftitle)                 Trace(element.)
+                Logger.Logger.Trace("finished with " + siteURL);
+                //foreach(string element in toftitle)                 Logger.Logger.Trace(element.)
             }
             catch (Exception ex)
             {
                 ConsoleColor defcol = Console.ForegroundColor;
                 Console.ForegroundColor = ConsoleColor.Red;
-                Trace(ex.ToString());
+                Logger.Logger.Trace(ex.ToString());
                 Console.ForegroundColor = defcol;
                 locker = false;
             }

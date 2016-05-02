@@ -8,3 +8,6 @@ E:\Work\DeadSeaCosmeticsImport\DeadSeaCatalogueDB\bin\Debug\EntityFramework.SqlS
 E:\Work\DeadSeaCosmeticsImport\DeadSeaCatalogueDB\obj\Debug\DeadSeaCatalogueDB.exe
 E:\Work\DeadSeaCosmeticsImport\DeadSeaCatalogueDB\obj\Debug\DeadSeaCatalogueDB.pdb
 E:\Work\DeadSeaCosmeticsImport\DeadSeaCatalogueDB\obj\Debug\DeadSeaCatalogueDAL.csprojResolveAssemblyReference.cache
+E:\Work\DeadSeaCosmeticsImport\DeadSeaCatalogueDB\obj\Debug\DeadSeaCatalogueDB.Migrations.InitialCreate.resources
+E:\Work\DeadSeaCosmeticsImport\DeadSeaCatalogueDB\obj\Debug\DeadSeaCatalogueDAL.csproj.GenerateResource.Cache
+E:\Work\DeadSeaCosmeticsImport\DeadSeaCatalogueDB\obj\Debug\DeadSeaCatalogueDB.Migrations.Added_MultipleLinksFromProductToCategory.resources
