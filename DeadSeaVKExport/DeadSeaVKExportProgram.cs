@@ -45,7 +45,7 @@ namespace DeadSeaVKExport
                             prodID = vke.ExportProduct(g.title, g.desc, g.price, g.imageFileName);
 
                             foreach (LinkProductWithCategory link in g.Links)
-                                vke.AddProductToAlbum(prodID, link.category.Name);
+                                vke.AddProductToAlbum(g.title, prodID, link.category.Name, g.imageFileName);
                         }
                         catch (Exception ex)
                         {

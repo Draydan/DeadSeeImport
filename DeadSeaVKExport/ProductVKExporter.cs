@@ -119,7 +119,7 @@ namespace DeadSeaVKExport
             return rez;
         }
 
-        public long ExportProduct(string title, string desc, string titleCategory, string sprice, string imageFileName)
+        public long ExportProduct(string title, string desc, /*string titleCategory, */ string sprice, string imageFileName)
         {
             string imageFilePath = imageDir + imageFileName;
             if (desc.Length <= 10)
@@ -145,11 +145,11 @@ namespace DeadSeaVKExport
                     Description = desc,
                     Price = ConverPrice(sprice)
                 });
-                AddProductToAlbum(title, ProdID, titleCategory, imageFilePath);
+                //AddProductToAlbum(title, ProdID, titleCategory, imageFilePath);
                 ProductList.Add(new MarketEntity(ProdID, title, photoID, true));
                 return ProdID;
             }
-            else
+            if (prodCount == 1)
             {
                 long ProdID = ProductList.First(x => x.Title == title).ID;
                 long? mainPhotoID = ProductList.First(x => x.Title == title).PhotoID;
@@ -166,9 +166,10 @@ namespace DeadSeaVKExport
                     Description = desc,
                     Price = ConverPrice(sprice)
                 });
-                AddProductToAlbum(title, ProdID, titleCategory, imageFilePath);
+                //AddProductToAlbum(title, ProdID, titleCategory, imageFilePath);
                 return ProdID;
             }
+            return 0;
         }
 
         private long UploadImage(string imageFilePath)
@@ -190,8 +191,9 @@ namespace DeadSeaVKExport
             #region settings
             ulong appID = 5432233;                      // ID приложения
             string email = "yuokol@yandex.ru";         // email или телефон
-            string pass = "laif81";               // пароль для авторизации
-            Settings scope = Settings.All;      // Приложение имеет доступ к маркет 
+            Console.WriteLine("VK password:");            
+            string pass = Console.ReadLine();               // пароль для авторизации
+            Settings scope = Settings.Market;      // Приложение имеет доступ к маркету и всему
 
             #endregion
 

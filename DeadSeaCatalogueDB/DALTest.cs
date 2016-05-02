@@ -15,7 +15,7 @@ namespace DeadSeaCatalogueDAL
             {
                 Console.WriteLine("opened, adding");
                 db.Categories.Add(new Category { Name = "test", NameRus = "тест" });
-                db.Products.Add(new Product(db, "test", "test prod", "", "", "", "")); //{ category = db.Categories.First(x => x.Name == "test"), title = "test prod"});
+                db.Products.Add(new Product(db, "", "test", "test prod", "", "", "", "")); //{ category = db.Categories.First(x => x.Name == "test"), title = "test prod"});
                 Console.WriteLine("Saving");
                 db.SaveChanges();
                 Console.WriteLine("closing, press");

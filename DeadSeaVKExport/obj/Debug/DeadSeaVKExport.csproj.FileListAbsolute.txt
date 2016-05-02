@@ -12,3 +12,11 @@ E:\Work\DeadSeaCosmeticsImport\DeadSeaVKExport\bin\Debug\VkNet.xml
 E:\Work\DeadSeaCosmeticsImport\DeadSeaVKExport\obj\Debug\DeadSeaVKExport.exe
 E:\Work\DeadSeaCosmeticsImport\DeadSeaVKExport\obj\Debug\DeadSeaVKExport.pdb
 E:\Work\DeadSeaCosmeticsImport\DeadSeaVKExport\obj\Debug\DeadSeaVKExport.csprojResolveAssemblyReference.cache
+E:\Work\DeadSeaCosmeticsImport\DeadSeaVKExport\bin\Debug\DeadSeaCatalogueDB.exe
+E:\Work\DeadSeaCosmeticsImport\DeadSeaVKExport\bin\Debug\EntityFramework.dll
+E:\Work\DeadSeaCosmeticsImport\DeadSeaVKExport\bin\Debug\EntityFramework.SqlServer.dll
+E:\Work\DeadSeaCosmeticsImport\DeadSeaVKExport\bin\Debug\Logger.dll
+E:\Work\DeadSeaCosmeticsImport\DeadSeaVKExport\bin\Debug\DeadSeaCatalogueDB.pdb
+E:\Work\DeadSeaCosmeticsImport\DeadSeaVKExport\bin\Debug\Logger.pdb
+E:\Work\DeadSeaCosmeticsImport\DeadSeaVKExport\bin\Debug\EntityFramework.xml
+E:\Work\DeadSeaCosmeticsImport\DeadSeaVKExport\bin\Debug\EntityFramework.SqlServer.xml

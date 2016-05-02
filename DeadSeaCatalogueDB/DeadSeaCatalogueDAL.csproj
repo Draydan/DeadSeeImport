@@ -60,6 +60,10 @@
     <Compile Include="Migrations\201605021608200_Added_MultipleLinksFromProductToCategory.Designer.cs">
       <DependentUpon>201605021608200_Added_MultipleLinksFromProductToCategory.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201605022048295_Added_SKU.cs" />
+    <Compile Include="Migrations\201605022048295_Added_SKU.Designer.cs">
+      <DependentUpon>201605022048295_Added_SKU.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Product.cs" />
     <Compile Include="DALTest.cs" />
@@ -75,6 +79,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201605021608200_Added_MultipleLinksFromProductToCategory.resx">
       <DependentUpon>201605021608200_Added_MultipleLinksFromProductToCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201605022048295_Added_SKU.resx">
+      <DependentUpon>201605022048295_Added_SKU.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

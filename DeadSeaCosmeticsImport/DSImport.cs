@@ -36,7 +36,7 @@ namespace DeadSeaCosmeticsImport
         static bool locker = false;
         static DateTime now = DateTime.Now;
         static int counter = 1;
-        static int sleepTime = 1000;
+        static int sleepTime = 100;
         //static List<Product> goodsList = new List<Product>();
         static ProductContext db = new ProductContext();
         static ProductVKExporter vke;
@@ -150,7 +150,7 @@ namespace DeadSeaCosmeticsImport
                 }
                 catch(Exception ex)
                 {
-                        Logger.Logger.Trace(string.Format("Writing HTML (URL={3}) (len={2}) try {0} error: {1}", i,  ex.Message, source.Length, siteURL));
+                    Logger.Logger.Trace(string.Format("Writing HTML (URL={3}) (len={2}) try {0} error: {1}", i,  ex.Message, source.Length, siteURL));
                 }
             }
         }
@@ -299,6 +299,13 @@ namespace DeadSeaCosmeticsImport
                             Logger.Logger.Trace("Price");
                             Logger.Logger.Trace(price);
 
+                            // artikul SKU
+                            HtmlNode skuDiv = resultat.DocumentNode.Descendants().
+                                First(x => (x.Name == "span" && x.Attributes["class"] != null && x.Attributes["class"].Value == "sku"));
+                            string sku = skuDiv.InnerText.Split(':')[1].Trim();
+                            Logger.Logger.Trace("sku");
+                            Logger.Logger.Trace(sku);
+
                             // details
                             HtmlNode detailsDiv = resultat.DocumentNode.Descendants().
                                 First(x => (x.Name == "div" && x.Attributes["class"] != null && x.Attributes["class"].Value == "product-body"));
@@ -311,8 +318,8 @@ namespace DeadSeaCosmeticsImport
                                 //Logger.Logger.Trace(detailPart);
                             }
 
-                            Product g = new Product(db, category, title, price, desc, details, imageFileName);
-                            db.Products.Add(g);
+                            Product g = new Product(db, sku , category, title, price, desc, details, imageFileName);
+                            //db.Products.Add(g);
                             db.SaveChanges();
                             //Parsing(string.Format("https://translate.yandex.net/api/v1.5/tr.json/translate?key={0}&text={1}&lang=en-ru",
                             //    "trnsl.1.1.20160420T200115Z.006bede5b131c604.4256886cd58598ea537df059cd532b6b141910cf",
@@ -409,10 +416,10 @@ namespace DeadSeaCosmeticsImport
             }
             catch (Exception ex)
             {
-                ConsoleColor defcol = Console.ForegroundColor;
-                Console.ForegroundColor = ConsoleColor.Red;
-                Logger.Logger.Trace(ex.ToString());
-                Console.ForegroundColor = defcol;
+                //ConsoleColor defcol = Console.ForegroundColor;
+                //Console.ForegroundColor = ConsoleColor.Red;
+                Logger.Logger.ErrorLog(ex.ToString());
+                //Console.ForegroundColor = defcol;
                 locker = false;
             }
             finally

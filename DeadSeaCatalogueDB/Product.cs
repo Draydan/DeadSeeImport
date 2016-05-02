@@ -38,6 +38,7 @@ namespace DeadSeaCatalogueDAL
         public virtual List<LinkProductWithCategory> Links { get; set; }
         [Key]
         public long ID {get; set;}
+        public string artikul { get; set; }
         public string title {get; set;}
         public string titleRus {get; set;}
         public string price {get; set;}
@@ -55,13 +56,14 @@ namespace DeadSeaCatalogueDAL
         /// заводим продукт в БД
         /// </summary>
         /// <param name="db"></param>
+        /// <param name="sku"></param>
         /// <param name="cat"></param>
         /// <param name="tit"></param>
         /// <param name="pr"></param>
         /// <param name="dsc"></param>
         /// <param name="det"></param>
         /// <param name="img"></param>
-        public Product(ProductContext db, string cat, string tit, string pr, string dsc, string det, string img)
+        public Product(ProductContext db, string sku, string cat, string tit, string pr, string dsc, string det, string img)
         {
             //category = cate;
             LinkProductWithCategory link = new LinkProductWithCategory();
@@ -71,10 +73,11 @@ namespace DeadSeaCatalogueDAL
                 link.category = new Category { Name = cat };
                 db.Categories.Add(link.category);                
             }
+            Links = new List<LinkProductWithCategory>();
             Links.Add(link);
             db.SaveChanges();
 
-            title = cat;
+            artikul = sku;
             title = tit;
             price = pr;
             desc = dsc;
