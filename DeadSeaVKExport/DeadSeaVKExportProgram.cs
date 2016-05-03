@@ -7,6 +7,7 @@ using System.Data.Entity;
 using VkNet;
 using DeadSeaCatalogueDAL;
 using Logger;
+using System.IO;
 
 namespace DeadSeaVKExport
 {
@@ -42,7 +43,7 @@ namespace DeadSeaVKExport
                     while (prodID == 0 && counter < 20)
                         try
                         {
-                            prodID = vke.ExportProduct(g.title, g.desc, g.price, g.imageFileName);
+                            prodID = vke.ExportProduct(g.title, g.desc.Replace("&", " n "), g.price, g.imageFileName);
 
                             foreach (LinkProductWithCategory link in g.Links)
                                 vke.AddProductToAlbum(g.title, prodID, link.category.Name, g.imageFileName);
@@ -55,9 +56,14 @@ namespace DeadSeaVKExport
                             if (counter > 10)
                             {
                                 Logger.Logger.ErrorLog("Внимание внимание, что то пошло не так!");
+                                Logger.Logger.ErrorLog(ex.ToString());
                                 //Console.ReadLine();
                             }
                         }
+                    if(counter>=20)
+                    {
+                        File.Copy(vke.GetImageFilePath(g.imageFileName), vke.GetTooSmallImageFilePath(g.imageFileName));
+                    }
                     locker = false;
                 }
             }

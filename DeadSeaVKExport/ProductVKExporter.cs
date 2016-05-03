@@ -33,6 +33,7 @@ namespace DeadSeaVKExport
         private VkApi vk;
         private long GroupID;
         private string imageDir = @"e:\Work\DeadSeaCosmeticsImport\DeadSeaCosmeticsImport\bin\Debug\results\images\";
+        private string imageTooSmallDir = @"e:\Work\DeadSeaCosmeticsImport\DeadSeaCosmeticsImport\bin\Debug\results\images\toosmall\";
 
         List<MarketEntity> AlbumList;
         List<MarketEntity> ProductList;
@@ -83,6 +84,10 @@ namespace DeadSeaVKExport
             return imageDir + imageFileName;
         }
 
+        public string GetTooSmallImageFilePath(string imageFileName)
+        {
+            return imageTooSmallDir + imageFileName;
+        }
         public void AddProductToAlbum(string titleProduct, long ProductID, string titleAlbum, string imageFileName)
         {
             string imageFilePath = GetImageFilePath(imageFileName);
