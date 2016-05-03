@@ -193,9 +193,12 @@ namespace DeadSeaVKExport
             string email = "yuokol@yandex.ru";         // email или телефон
             Console.WriteLine("VK password:");            
             string pass = Console.ReadLine();               // пароль для авторизации
-            Settings scope = Settings.Market;      // Приложение имеет доступ к маркету и всему
+            Settings scope = Settings.All;      // Приложение имеет доступ к маркету и всему
 
             #endregion
+
+            for (int li = 0; li <= 100; li++)
+                Console.WriteLine();
 
             var vk = new VkApi();
             vk.Authorize(new ApiAuthParams

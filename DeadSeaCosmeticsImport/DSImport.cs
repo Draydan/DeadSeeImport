@@ -109,7 +109,7 @@ namespace DeadSeaCosmeticsImport
             //vk = Auth();
 
 
-            vke = new ProductVKExporter();
+            //vke = new ProductVKExporter();
 
             Parsing(string.Format("{0}/{1}", rootURL, rootURLdir), 0);
             Console.ReadLine();
@@ -175,6 +175,7 @@ namespace DeadSeaCosmeticsImport
         // получаем и разбираем
         private static async void Parsing(string siteURL, int depth, string category = "", string titleCurr = "", string tag = "")
         {
+            if(siteURL != rootURL || depth == 0)                
             try
             {
                 Logger.Logger.Trace("sleeping with lock for");
@@ -318,8 +319,24 @@ namespace DeadSeaCosmeticsImport
                                 //Logger.Logger.Trace(detailPart);
                             }
 
-                            Product g = new Product(db, sku , category, title, price, desc, details, imageFileName);
-                            //db.Products.Add(g);
+                            if (db.Products.Where(x => x.artikul == sku || x.title == title).Count() > 1)
+                            {
+                                db.Links.RemoveRange(
+                                    db.Links.Where(
+                                        l => db.Products.Where(
+                                            p => p.artikul == sku || p.title == title).
+                                                Contains(l.product)));
+                                db.Products.RemoveRange(db.Products.Where(x => x.artikul == sku || x.title == title));
+                                db.SaveChanges();
+                            }
+                            Product g = db.Products.FirstOrDefault(x => x.artikul == sku || x.title == title);
+                            if (g == null)
+                            {
+                                g = new Product(db, sku, category, title, price, desc, details, imageFileName);
+                                db.Products.Add(g);
+                            }
+                            else
+                                g = new Product(db, sku, category, title, price, desc, details, imageFileName);
                             db.SaveChanges();
                             //Parsing(string.Format("https://translate.yandex.net/api/v1.5/tr.json/translate?key={0}&text={1}&lang=en-ru",
                             //    "trnsl.1.1.20160420T200115Z.006bede5b131c604.4256886cd58598ea537df059cd532b6b141910cf",
@@ -418,7 +435,7 @@ namespace DeadSeaCosmeticsImport
             {
                 //ConsoleColor defcol = Console.ForegroundColor;
                 //Console.ForegroundColor = ConsoleColor.Red;
-                Logger.Logger.ErrorLog(ex.ToString());
+                Logger.Logger.ErrorLog(string.Format("Запрос {0} привел к ошибке {1}", siteURL, ex.ToString()));
                 //Console.ForegroundColor = defcol;
                 locker = false;
             }

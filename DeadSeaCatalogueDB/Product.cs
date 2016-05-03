@@ -75,6 +75,7 @@ namespace DeadSeaCatalogueDAL
             }
             Links = new List<LinkProductWithCategory>();
             Links.Add(link);
+            db.Links.Add(link);
             db.SaveChanges();
 
             artikul = sku;
@@ -96,5 +97,6 @@ namespace DeadSeaCatalogueDAL
 
         public DbSet<Product> Products { get; set; }
         public DbSet<Category> Categories { get; set; }
+        public DbSet<LinkProductWithCategory> Links { get; set; }
     }
 }
