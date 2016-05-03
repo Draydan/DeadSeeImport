@@ -77,8 +77,15 @@ namespace DeadSeaVKExport
                 Console.WriteLine(a.Title);
             }
         }
-        public void AddProductToAlbum(string titleProduct, long ProductID, string titleAlbum, string imageFilePath)
+
+        public string GetImageFilePath(string imageFileName)
         {
+            return imageDir + imageFileName;
+        }
+
+        public void AddProductToAlbum(string titleProduct, long ProductID, string titleAlbum, string imageFileName)
+        {
+            string imageFilePath = GetImageFilePath(imageFileName);
             //if (AlbumList.Where(x => x.Title == titleAlbum).Count() >= 2)
             
             // если в этот заход подборку еще не апдейтили, то удаляем все ее копии
@@ -121,7 +128,7 @@ namespace DeadSeaVKExport
 
         public long ExportProduct(string title, string desc, /*string titleCategory, */ string sprice, string imageFileName)
         {
-            string imageFilePath = imageDir + imageFileName;
+            string imageFilePath = GetImageFilePath(imageFileName);
             if (desc.Length <= 10)
                 desc = string.Format("This is Sparta! And also {0} for a pidgy pipl price of {1}", title, ConverPrice(sprice));
 
@@ -193,6 +200,8 @@ namespace DeadSeaVKExport
             string email = "yuokol@yandex.ru";         // email или телефон
             Console.WriteLine("VK password:");            
             string pass = Console.ReadLine();               // пароль для авторизации
+            //for (int si = 0; si < 6; si++)                 pass += Console.ReadKey();
+            Console.WriteLine("checking...");
             Settings scope = Settings.All;      // Приложение имеет доступ к маркету и всему
 
             #endregion

@@ -18,7 +18,7 @@ namespace DeadSeaVKExport
         static bool locker = false;
         static DateTime now = DateTime.Now;
         static int counter = 1;
-        static int sleepTime = 1000;
+        static int sleepTime = 500;
         //static List<Product> goodsList = new List<Product>();
         static ProductContext db = new ProductContext();
 
