@@ -12,3 +12,4 @@ E:\Work\DeadSeaCosmeticsImport\DeadSeaCatalogueDB\obj\Debug\DeadSeaCatalogueDB.M
 E:\Work\DeadSeaCosmeticsImport\DeadSeaCatalogueDB\obj\Debug\DeadSeaCatalogueDAL.csproj.GenerateResource.Cache
 E:\Work\DeadSeaCosmeticsImport\DeadSeaCatalogueDB\obj\Debug\DeadSeaCatalogueDB.Migrations.Added_MultipleLinksFromProductToCategory.resources
 E:\Work\DeadSeaCosmeticsImport\DeadSeaCatalogueDB\obj\Debug\DeadSeaCatalogueDB.Migrations.Added_SKU.resources
+E:\Work\DeadSeaCosmeticsImport\DeadSeaCatalogueDB\obj\Debug\DeadSeaCatalogueDB.Migrations.AddedTranslation_And_RenamedCatNameToTitle.resources

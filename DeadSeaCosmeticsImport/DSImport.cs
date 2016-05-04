@@ -61,7 +61,7 @@ namespace DeadSeaCosmeticsImport
                 //                    Product g = this;
                 {
                     swRes.WriteLine("<tr><td>{0} <br> {6}</td><td>{1} <br> {7}</td><td>{2}</td><td>{3}</td><td>{4}</td><td><img src=images\\{5}></td></tr>",
-                        g.Links[0].category, g.title, g.price, g.desc, g.details, g.imageFileName, g.Links[0].category.NameRus, g.titleRus);
+                        g.Links[0].category, g.title, g.price, g.desc, g.details, g.imageFileName, g.Links[0].category.titleRus, g.titleRus);
 
                     /*
                     while (locker)
@@ -336,7 +336,7 @@ namespace DeadSeaCosmeticsImport
                                 db.Products.Add(g);
                             }
                             else
-                                g = new Product(db, sku, category, title, price, desc, details, imageFileName);
+                                g.Edit(db, sku, category, title, price, desc, details, imageFileName);
                             db.SaveChanges();
                             //Parsing(string.Format("https://translate.yandex.net/api/v1.5/tr.json/translate?key={0}&text={1}&lang=en-ru",
                             //    "trnsl.1.1.20160420T200115Z.006bede5b131c604.4256886cd58598ea537df059cd532b6b141910cf",
@@ -409,7 +409,7 @@ namespace DeadSeaCosmeticsImport
                             string translation = transDiv.InnerText;
                             //Logger.Logger.Trace(translation);
                             Product g = db.Products.First(x => x.title == titleCurr);
-                            g.Links[0].category.NameRus = getTextFromJson(translation);
+                            g.Links[0].category.titleRus = getTextFromJson(translation);
                             g.translated++;
                             if (g.translated == TranslationsToPrint)
                                 Export(g);

@@ -64,8 +64,12 @@
     <Compile Include="Migrations\201605022048295_Added_SKU.Designer.cs">
       <DependentUpon>201605022048295_Added_SKU.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201605041900058_AddedTranslation_And_RenamedCatNameToTitle.cs" />
+    <Compile Include="Migrations\201605041900058_AddedTranslation_And_RenamedCatNameToTitle.Designer.cs">
+      <DependentUpon>201605041900058_AddedTranslation_And_RenamedCatNameToTitle.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="Product.cs" />
+    <Compile Include="DAL.cs" />
     <Compile Include="DALTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -82,6 +86,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201605022048295_Added_SKU.resx">
       <DependentUpon>201605022048295_Added_SKU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201605041900058_AddedTranslation_And_RenamedCatNameToTitle.resx">
+      <DependentUpon>201605041900058_AddedTranslation_And_RenamedCatNameToTitle.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
