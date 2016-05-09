@@ -5,10 +5,10 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{F228E539-9344-49C9-878F-6BFBF102CD25}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DeadSeaCatalogueDB</RootNamespace>
-    <AssemblyName>DeadSeaCatalogueDB</AssemblyName>
+    <RootNamespace>DeadSeaCatalogueDAL</RootNamespace>
+    <AssemblyName>DeadSeaCatalogueDAL</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -31,6 +31,9 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
@@ -68,6 +71,14 @@
     <Compile Include="Migrations\201605041900058_AddedTranslation_And_RenamedCatNameToTitle.Designer.cs">
       <DependentUpon>201605041900058_AddedTranslation_And_RenamedCatNameToTitle.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201605062006066_Added_titleEng_and_ingridients_to_Translation.cs" />
+    <Compile Include="Migrations\201605062006066_Added_titleEng_and_ingridients_to_Translation.Designer.cs">
+      <DependentUpon>201605062006066_Added_titleEng_and_ingridients_to_Translation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201605081000211_added_ingridients_to_Translation.cs" />
+    <Compile Include="Migrations\201605081000211_added_ingridients_to_Translation.Designer.cs">
+      <DependentUpon>201605081000211_added_ingridients_to_Translation.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="DAL.cs" />
     <Compile Include="DALTest.cs" />
@@ -89,6 +100,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201605041900058_AddedTranslation_And_RenamedCatNameToTitle.resx">
       <DependentUpon>201605041900058_AddedTranslation_And_RenamedCatNameToTitle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201605062006066_Added_titleEng_and_ingridients_to_Translation.resx">
+      <DependentUpon>201605062006066_Added_titleEng_and_ingridients_to_Translation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201605081000211_added_ingridients_to_Translation.resx">
+      <DependentUpon>201605081000211_added_ingridients_to_Translation.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

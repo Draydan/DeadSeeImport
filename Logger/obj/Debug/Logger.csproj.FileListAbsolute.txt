@@ -2,4 +2,3 @@ E:\Work\DeadSeaCosmeticsImport\Logger\bin\Debug\Logger.dll
 E:\Work\DeadSeaCosmeticsImport\Logger\bin\Debug\Logger.pdb
 E:\Work\DeadSeaCosmeticsImport\Logger\obj\Debug\Logger.dll
 E:\Work\DeadSeaCosmeticsImport\Logger\obj\Debug\Logger.pdb
-e:\Work\DeadSeaCosmeticsImport\Logger\obj\Debug\Logger.csprojResolveAssemblyReference.cache

@@ -13,10 +13,26 @@ namespace DeadSeaCatalogueDAL
             Console.WriteLine("trying");
             using (var db = new ProductContext())
             {
-                Console.WriteLine("opened, adding");
-                db.Categories.Add(new Category { title = "test", titleRus = "тест" });
-                db.Products.Add(new Product(db, "", "test", "test prod", "", "", "", "")); //{ category = db.Categories.First(x => x.Name == "test"), title = "test prod"});
-                Console.WriteLine("Saving");
+                //Console.WriteLine("opened, adding");
+                //db.Categories.Add(new Category { title = "test", titleRus = "тест" });
+                //db.Products.Add(new Product(db, "", "test", "test prod", "", "", "", "")); //{ category = db.Categories.First(x => x.Name == "test"), title = "test prod"});
+                //Console.WriteLine("Saving");
+                //db.SaveChanges();
+                
+                
+                Console.WriteLine("products:");
+                foreach (Product g in db.Products)
+                {
+                    Console.WriteLine(g.title);
+                }
+
+                db.Translations.Add(new Translation { title = "test" });
+
+                Console.WriteLine("translations:");
+                foreach (Translation g in db.Translations)
+                {
+                    Console.WriteLine(g.title);
+                }
                 db.SaveChanges();
                 Console.WriteLine("closing, press");
                 Console.ReadLine();

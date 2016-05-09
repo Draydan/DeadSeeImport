@@ -1,14 +1,12 @@
 E:\Work\DeadSeaCosmeticsImport\DeadSeaCosmeticsImport\bin\Debug\DeadSeaCosmeticsImport.exe.config
 E:\Work\DeadSeaCosmeticsImport\DeadSeaCosmeticsImport\bin\Debug\DeadSeaCosmeticsImport.exe
 E:\Work\DeadSeaCosmeticsImport\DeadSeaCosmeticsImport\bin\Debug\DeadSeaCosmeticsImport.pdb
-E:\Work\DeadSeaCosmeticsImport\DeadSeaCosmeticsImport\bin\Debug\DeadSeaCatalogueDB.exe
 E:\Work\DeadSeaCosmeticsImport\DeadSeaCosmeticsImport\bin\Debug\DeadSeaVKExport.exe
 E:\Work\DeadSeaCosmeticsImport\DeadSeaCosmeticsImport\bin\Debug\EntityFramework.dll
 E:\Work\DeadSeaCosmeticsImport\DeadSeaCosmeticsImport\bin\Debug\EntityFramework.SqlServer.dll
 E:\Work\DeadSeaCosmeticsImport\DeadSeaCosmeticsImport\bin\Debug\HtmlAgilityPack.dll
 E:\Work\DeadSeaCosmeticsImport\DeadSeaCosmeticsImport\bin\Debug\Newtonsoft.Json.dll
 E:\Work\DeadSeaCosmeticsImport\DeadSeaCosmeticsImport\bin\Debug\VkNet.dll
-E:\Work\DeadSeaCosmeticsImport\DeadSeaCosmeticsImport\bin\Debug\DeadSeaCatalogueDB.pdb
 E:\Work\DeadSeaCosmeticsImport\DeadSeaCosmeticsImport\bin\Debug\DeadSeaVKExport.pdb
 E:\Work\DeadSeaCosmeticsImport\DeadSeaCosmeticsImport\bin\Debug\EntityFramework.xml
 E:\Work\DeadSeaCosmeticsImport\DeadSeaCosmeticsImport\bin\Debug\EntityFramework.SqlServer.xml
@@ -22,3 +20,5 @@ E:\Work\DeadSeaCosmeticsImport\DeadSeaCosmeticsImport\obj\Debug\DeadSeaCosmetics
 E:\Work\DeadSeaCosmeticsImport\DeadSeaCosmeticsImport\obj\Debug\DeadSeaCosmeticsImport.pdb
 E:\Work\DeadSeaCosmeticsImport\DeadSeaCosmeticsImport\bin\Debug\Logger.dll
 E:\Work\DeadSeaCosmeticsImport\DeadSeaCosmeticsImport\bin\Debug\Logger.pdb
+e:\Work\DeadSeaCosmeticsImport\DeadSeaCosmeticsImport\bin\Debug\DeadSeaCatalogueDAL.pdb
+E:\Work\DeadSeaCosmeticsImport\DeadSeaCosmeticsImport\bin\Debug\DeadSeaCatalogueDAL.dll

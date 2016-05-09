@@ -96,10 +96,12 @@ namespace DeadSeaCatalogueDAL
     public class Translation
     {        
         [Key]
-        public long ID { get; set; }        
+        public long ID { get; set; }
+        public string titleEng { get; set; }
         public string title { get; set; }
         public string desc { get; set; }
         public string details { get; set; }
+        public string ingridients { get; set; }
     }
         public class ProductContext : DbContext
     {
@@ -109,5 +111,7 @@ namespace DeadSeaCatalogueDAL
         public DbSet<Product> Products { get; set; }
         public DbSet<Category> Categories { get; set; }
         public DbSet<LinkProductWithCategory> Links { get; set; }
+
+        public System.Data.Entity.DbSet<DeadSeaCatalogueDAL.Translation> Translations { get; set; }
     }
 }

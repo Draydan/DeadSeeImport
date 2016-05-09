@@ -11,6 +11,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeadSeaCatalogueDAL", "Dead
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logger", "Logger\Logger.csproj", "{EBCC61FB-6C66-45C7-B2DC-192201193364}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeadSeaWebAppScaffolding2", "DeadSeaWebAppScaffolding2\DeadSeaWebAppScaffolding2.csproj", "{D6544344-A1A5-4C05-B35A-C5A0EC0D0800}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeadSeaWebAppScaffolding3", "DeadSeaWebAppScaffolding3\DeadSeaWebAppScaffolding3.csproj", "{B8DDD59B-D4AB-4334-8C71-999D36C6F991}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeadSeaGoogleDoc", "DeadSeaGoogleDoc\DeadSeaGoogleDoc.csproj", "{47B3E5C3-E9EB-4853-B251-1B5C3B95C7AE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +39,18 @@ Global
 		{EBCC61FB-6C66-45C7-B2DC-192201193364}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EBCC61FB-6C66-45C7-B2DC-192201193364}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EBCC61FB-6C66-45C7-B2DC-192201193364}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6544344-A1A5-4C05-B35A-C5A0EC0D0800}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6544344-A1A5-4C05-B35A-C5A0EC0D0800}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6544344-A1A5-4C05-B35A-C5A0EC0D0800}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6544344-A1A5-4C05-B35A-C5A0EC0D0800}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8DDD59B-D4AB-4334-8C71-999D36C6F991}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8DDD59B-D4AB-4334-8C71-999D36C6F991}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8DDD59B-D4AB-4334-8C71-999D36C6F991}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8DDD59B-D4AB-4334-8C71-999D36C6F991}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47B3E5C3-E9EB-4853-B251-1B5C3B95C7AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47B3E5C3-E9EB-4853-B251-1B5C3B95C7AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47B3E5C3-E9EB-4853-B251-1B5C3B95C7AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47B3E5C3-E9EB-4853-B251-1B5C3B95C7AE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
