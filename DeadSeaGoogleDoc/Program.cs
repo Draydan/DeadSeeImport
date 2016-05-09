@@ -1,5 +1,6 @@
 ﻿using Google.Apis.Auth.OAuth2;
 using Google.GData.Client;
+using Google.GData.Extensions;
 using Google.GData.Spreadsheets;
 using System;
 using System.Collections.Generic;
@@ -7,6 +8,8 @@ using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
+using DeadSeaCatalogueDAL;
+
 
 namespace DeadSeaGoogleDoc
 {
@@ -14,13 +17,60 @@ namespace DeadSeaGoogleDoc
     {
         static void Main(string[] args)
         {
+            //SpreadSheetRead();
+            SpreadSheetWork();
+            Console.WriteLine("enter");
+            Console.ReadLine();
         }
 
+        public static void SpreadSheetRead()
+        {
+            //Authenticate:
+
+            SpreadsheetsService myService = new SpreadsheetsService(null);
+            myService.setUserCredentials("yokolnov.logstream", "klamsi81");
+            //Get a list of spreadsheets:
+
+            SpreadsheetQuery query = new SpreadsheetQuery();
+            query.Uri = new Uri(@"https://docs.google.com/spreadsheets/d/19qX8B8skvYMRcmgMQhsek2ZHi1fdiyf1LC7wVm7D4L4/edit#gid=0");
+            SpreadsheetFeed feed = myService.Query(query);
+
+            Console.WriteLine("Your spreadsheets: ");
+            foreach (SpreadsheetEntry entry in feed.Entries)
+            {
+                Console.WriteLine(entry.Title.Text);
+
+                //Given a SpreadsheetEntry you've already retrieved, you can get a list of all worksheets in this spreadsheet as follows:
+
+                AtomLink link = entry.Links.FindService(GDataSpreadsheetsNameTable.WorksheetRel, null);
+
+                WorksheetQuery wsquery = new WorksheetQuery(link.HRef.ToString());
+                WorksheetFeed wsfeed = myService.Query(wsquery);
+
+                foreach (WorksheetEntry worksheet in wsfeed.Entries)
+                {
+                    Console.WriteLine(worksheet.Title.Text);
+
+                    //And get a cell based feed:
+                    AtomLink cellFeedLink = worksheet.Links.FindService(GDataSpreadsheetsNameTable.CellRel, null);
+
+                    CellQuery cquery = new CellQuery(cellFeedLink.HRef.ToString());
+                    CellFeed cfeed = myService.Query(cquery);
+
+                    Console.WriteLine("Cells in this worksheet:");
+                    foreach (CellEntry curCell in feed.Entries)
+                    {
+                        Console.WriteLine("Row {0}, column {1}: {2}", curCell.Cell.Row,
+                            curCell.Cell.Column, curCell.Cell.Value);
+                    }
+                }
+            }
+        }
         public static void SpreadSheetWork()
         {
-            var certificate = new X509Certificate2(@"c:\Diamto Test Everything Project.p12", "notasecret", X509KeyStorageFlags.Exportable);
+            var certificate = new X509Certificate2(@"GoogleDocAccessProject-b63329148447.p12", "notasecret", X509KeyStorageFlags.Exportable);
 
-            const string user = "XXX@developer.gserviceaccount.com";
+            const string user = "yokolnov-goo-doc-1@appspot.gserviceaccount.com";
 
             var serviceAccountCredentialInitializer = new ServiceAccountCredential.Initializer(user)
             {
@@ -35,7 +85,7 @@ namespace DeadSeaGoogleDoc
             var requestFactory = new GDataRequestFactory(null);
             requestFactory.CustomHeaders.Add("Authorization: Bearer " + credential.Token.AccessToken);
 
-            var service = new SpreadsheetsService(null) { RequestFactory = requestFactory };
+            var service = new SpreadsheetsService("GoogleDocAccessApp") { RequestFactory = requestFactory };
 
             // Instantiate a SpreadsheetQuery object to retrieve spreadsheets.
             SpreadsheetQuery query = new SpreadsheetQuery();
@@ -65,23 +115,58 @@ namespace DeadSeaGoogleDoc
                     string title = entry.Title.Text;
                     var rowCount = entry.Rows;
                     var colCount = entry.Cols;
+                    if (title.Contains("перевод выбранного"))
+                    {
+                        // Print the fetched information to the screen for this worksheet.
+                        Console.WriteLine(title + "- rows:" + rowCount + " cols: " + colCount);
 
-                    // Print the fetched information to the screen for this worksheet.
-                    Console.WriteLine(title + "- rows:" + rowCount + " cols: " + colCount);
+                        //And get a cell based feed:
+                        AtomLink cellFeedLink = entry.Links.FindService(GDataSpreadsheetsNameTable.CellRel, null);
 
-                    // Create a local representation of the new worksheet.
-                    WorksheetEntry worksheet = new WorksheetEntry();
-                    worksheet.Title.Text = "New Worksheet";
-                    worksheet.Cols = 10;
-                    worksheet.Rows = 20;
+                        CellQuery cquery = new CellQuery(cellFeedLink.HRef.ToString());
+                        CellFeed cfeed = service.Query(cquery);
 
-                    // Send the local representation of the worksheet to the API for
-                    // creation.  The URL to use here is the worksheet feed URL of our
-                    // spreadsheet.
-                    WorksheetFeed NewwsFeed = sheet.Worksheets;
-                    service.Insert(NewwsFeed, worksheet);
+                        Console.WriteLine("Cells in this worksheet:");
+                        string[,] cells = new string[rowCount, colCount];
+                        foreach (CellEntry curCell in cfeed.Entries)
+                        //for (int ri = 0; ri < rowCount; ri++)
+                        //    for (int ci = 0; ci < colCount; ci++)
+                            {
+                                //CellEntry curCell = cfeed.Entries.FirstOrDefault(x => x.);
+                                Console.WriteLine("Row {0}, column {1}: {2}", curCell.Cell.Row, curCell.Cell.Column, curCell.Cell.Value);
+                                cells[curCell.Cell.Row, curCell.Cell.Column] = curCell.Cell.Value;
+                            }
+
+                        using (var db = new ProductContext())
+                        {
+                            for (int ri = 0; ri < rowCount; ri++)
+                                //for (int ci = 0; ci < colCount; ci++)
+                                if(cells[ri, 2] != "")
+                                {
+                                    db.Translations.Add(new Translation
+                                    {
+                                        titleEng = cells[ri, 1],
+                                        title = cells[ri, 2],
+                                        desc = cells[ri, 3]
+                                    }                                    );
+                                }
+                        }
+                        // Create a local representation of the new worksheet.
+                        /*
+                        WorksheetEntry worksheet = new WorksheetEntry();
+                        worksheet.Title.Text = "New Worksheet";
+                        worksheet.Cols = 10;
+                        worksheet.Rows = 20;
+
+                        // Send the local representation of the worksheet to the API for
+                        // creation.  The URL to use here is the worksheet feed URL of our
+                        // spreadsheet.
+                        WorksheetFeed NewwsFeed = sheet.Worksheets;
+                        service.Insert(NewwsFeed, worksheet);
+                        */
+                    }
                 }
-            }
+            }            
         }
     }
 }

@@ -20,3 +20,7 @@ E:\Work\DeadSeaCosmeticsImport\DeadSeaGoogleDoc\bin\Debug\Newtonsoft.Json.xml
 E:\Work\DeadSeaCosmeticsImport\DeadSeaGoogleDoc\obj\Debug\DeadSeaGoogleDoc.csprojResolveAssemblyReference.cache
 E:\Work\DeadSeaCosmeticsImport\DeadSeaGoogleDoc\obj\Debug\DeadSeaGoogleDoc.exe
 E:\Work\DeadSeaCosmeticsImport\DeadSeaGoogleDoc\obj\Debug\DeadSeaGoogleDoc.pdb
+E:\Work\DeadSeaCosmeticsImport\DeadSeaGoogleDoc\bin\Debug\GoogleDocAccessProject-b63329148447.p12
+E:\Work\DeadSeaCosmeticsImport\DeadSeaGoogleDoc\bin\Debug\DeadSeaCatalogueDAL.dll
+E:\Work\DeadSeaCosmeticsImport\DeadSeaGoogleDoc\bin\Debug\DeadSeaCatalogueDAL.pdb
+E:\Work\DeadSeaCosmeticsImport\DeadSeaGoogleDoc\bin\Debug\EntityFramework.xml
