@@ -24,3 +24,6 @@ E:\Work\DeadSeaCosmeticsImport\DeadSeaGoogleDoc\bin\Debug\GoogleDocAccessProject
 E:\Work\DeadSeaCosmeticsImport\DeadSeaGoogleDoc\bin\Debug\DeadSeaCatalogueDAL.dll
 E:\Work\DeadSeaCosmeticsImport\DeadSeaGoogleDoc\bin\Debug\DeadSeaCatalogueDAL.pdb
 E:\Work\DeadSeaCosmeticsImport\DeadSeaGoogleDoc\bin\Debug\EntityFramework.xml
+E:\Work\DeadSeaCosmeticsImport\DeadSeaGoogleDoc\bin\Debug\EntityFramework.dll
+E:\Work\DeadSeaCosmeticsImport\DeadSeaGoogleDoc\bin\Debug\EntityFramework.SqlServer.dll
+E:\Work\DeadSeaCosmeticsImport\DeadSeaGoogleDoc\bin\Debug\EntityFramework.SqlServer.xml

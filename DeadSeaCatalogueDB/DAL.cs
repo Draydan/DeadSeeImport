@@ -112,6 +112,6 @@ namespace DeadSeaCatalogueDAL
         public DbSet<Category> Categories { get; set; }
         public DbSet<LinkProductWithCategory> Links { get; set; }
 
-        public System.Data.Entity.DbSet<DeadSeaCatalogueDAL.Translation> Translations { get; set; }
+        public DbSet<Translation> Translations { get; set; }
     }
 }

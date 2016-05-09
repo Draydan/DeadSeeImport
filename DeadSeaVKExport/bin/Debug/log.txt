@@ -13615,3 +13615,11 @@
    в DeadSeaVKExport.DeadSeaVKExportProgram.Main(String[] args) в e:\Work\DeadSeaCosmeticsImport\DeadSeaVKExport\DeadSeaVKExportProgram.cs:строка 46
 03.05.2016 22:58:28 : Too many requests per second
 03.05.2016 22:58:28 : Неудачная попытка... ждемс 0
+09.05.2016 23:41:39 : Too many requests per second
+09.05.2016 23:41:39 : Неудачная попытка... ждемс 0
+09.05.2016 23:41:45 : Too many requests per second
+09.05.2016 23:41:45 : Неудачная попытка... ждемс 0
+09.05.2016 23:41:45 : Too many requests per second
+09.05.2016 23:41:45 : Неудачная попытка... ждемс 0
+09.05.2016 23:41:48 : Too many requests per second
+09.05.2016 23:41:48 : Неудачная попытка... ждемс 0

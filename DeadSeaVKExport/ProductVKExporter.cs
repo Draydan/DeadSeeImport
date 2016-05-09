@@ -30,6 +30,8 @@ namespace DeadSeaVKExport
     {
         private const float kursBaksa = 65;
 
+        public const string mainAlbumTitle = "Переведенные";
+
         private VkApi vk;
         private long GroupID;
         private string imageDir = @"e:\Work\DeadSeaCosmeticsImport\DeadSeaCosmeticsImport\bin\Debug\results\images\";
@@ -109,7 +111,8 @@ namespace DeadSeaVKExport
             if (AlbumList.Where(x => x.Title == titleAlbum).Count() == 0)
             {
                 long photoID = UploadImage(imageFilePath);
-                long AlbumID = vk.Markets.AddAlbum(-GroupID, titleAlbum, photoID);
+                bool isMainAlbum = (titleAlbum == mainAlbumTitle);
+                long AlbumID = vk.Markets.AddAlbum(-GroupID, titleAlbum, photoID, isMainAlbum);
                 Console.WriteLine("добавляем в заведенный альбом {0} {1}", AlbumID, titleAlbum);                
                 vk.Markets.AddToAlbum(-GroupID, ProductID, new[] { AlbumID });
                 MarketEntity alb = new MarketEntity(AlbumID, titleAlbum, photoID);

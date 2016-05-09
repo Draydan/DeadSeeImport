@@ -133,24 +133,32 @@ namespace DeadSeaGoogleDoc
                         //    for (int ci = 0; ci < colCount; ci++)
                             {
                                 //CellEntry curCell = cfeed.Entries.FirstOrDefault(x => x.);
-                                Console.WriteLine("Row {0}, column {1}: {2}", curCell.Cell.Row, curCell.Cell.Column, curCell.Cell.Value);
-                                cells[curCell.Cell.Row, curCell.Cell.Column] = curCell.Cell.Value;
+                                //Console.WriteLine("Row {0}, column {1}: {2}", curCell.Cell.Row, curCell.Cell.Column, curCell.Cell.Value);
+                                cells[curCell.Cell.Row - 1 , curCell.Cell.Column - 1] = curCell.Cell.Value;
                             }
 
                         using (var db = new ProductContext())
                         {
                             for (int ri = 0; ri < rowCount; ri++)
                                 //for (int ci = 0; ci < colCount; ci++)
-                                if(cells[ri, 2] != "")
+                                if( ! string.IsNullOrEmpty(cells[ri, 0])
+                                    && !string.IsNullOrEmpty(cells[ri, 1])
+                                    && !string.IsNullOrEmpty(cells[ri, 2])
+                                    && !string.IsNullOrEmpty(cells[ri, 3]))
                                 {
+                                    string titleEng = cells[ri, 1];
+                                    if (! db.Translations.Any(t => t.titleEng == titleEng))
                                     db.Translations.Add(new Translation
                                     {
                                         titleEng = cells[ri, 1],
                                         title = cells[ri, 2],
                                         desc = cells[ri, 3]
-                                    }                                    );
+                                    });
+                            Console.WriteLine("added {0}" , cells[ri, 1]);
                                 }
+                            db.SaveChanges();
                         }
+                        
                         // Create a local representation of the new worksheet.
                         /*
                         WorksheetEntry worksheet = new WorksheetEntry();
