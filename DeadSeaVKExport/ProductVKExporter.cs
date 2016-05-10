@@ -136,6 +136,7 @@ namespace DeadSeaVKExport
 
         public long ExportProduct(string title, string desc, /*string titleCategory, */ string sprice, string imageFileName)
         {
+            Console.WriteLine("обрабатываем {0}", title);
             string imageFilePath = GetImageFilePath(imageFileName);
             if (desc.Length <= 10)
                 desc = string.Format("This is Sparta! And also {0} for a pidgy pipl price of {1}", title, ConverPrice(sprice));
@@ -143,12 +144,15 @@ namespace DeadSeaVKExport
             int prodCount = ProductList.Where(x => x.Title == title).Count();
             //если есть 1 копия то редактируем ее
             //если более 1 то удаляем все копии этого товара
-            if(prodCount > 1)
+            if (prodCount > 1)
+            {
+                Console.WriteLine("удаляем все {0} копий");
                 foreach (var p in ProductList.Where(x => x.Title == title))
                     vk.Markets.Delete(-GroupID, p.ID);
-
+            }
             if (prodCount == 0)
             {
+                Console.WriteLine("добавляем");
                 long photoID = UploadImage(imageFilePath);
                 long ProdID = vk.Markets.Add(new MarketProductParams
                 {
@@ -166,6 +170,7 @@ namespace DeadSeaVKExport
             }
             if (prodCount == 1)
             {
+                Console.WriteLine("редактируем: {0} // {1}", title, desc);
                 long ProdID = ProductList.First(x => x.Title == title).ID;
                 long? mainPhotoID = ProductList.First(x => x.Title == title).PhotoID;
                 if (mainPhotoID == 0)

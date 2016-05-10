@@ -147,7 +147,8 @@ namespace DeadSeaGoogleDoc
                                     && !string.IsNullOrEmpty(cells[ri, 3]))
                                 {
                                     string titleEng = cells[ri, 1];
-                                    if (! db.Translations.Any(t => t.titleEng == titleEng))
+                                    if (db.Translations.Any(t => t.titleEng == titleEng))
+                                        db.Translations.RemoveRange(db.Translations.Where(t => t.titleEng == titleEng));
                                     db.Translations.Add(new Translation
                                     {
                                         titleEng = cells[ri, 1],
