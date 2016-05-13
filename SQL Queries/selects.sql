@@ -1,6 +1,6 @@
 use [DeadSeaCatalogueDAL.ProductContext]
 
-select title, titleRus, descrus, detailsRus from Products p
+select title, titleRus, descrus, detailsRus, [desc], details from Products p
 order by title
 
 select title, c.Name 

@@ -26,14 +26,34 @@ namespace DeadSeaVKExport
 
         static void Main(string[] args)
         {
+            string[] modes = new string[] {"Полный импорт", "Импорт переводов"};
+            int chosenMode = -1;
+            while (chosenMode >= modes.Length || chosenMode < 0)
+            {
+                Console.WriteLine("Выберите режим импорта из списка:");
+                for (int mi = 0; mi < modes.Length; mi++)
+                    Console.WriteLine("{0}:{1}", mi, modes[mi]);
+                string schosenMode = Console.ReadLine();
+                if (!int.TryParse(schosenMode, out chosenMode))
+                    chosenMode = -1;
+            }
+
             ProductVKExporter vke = new ProductVKExporter();
 
             using (var db = new ProductContext())
-            {                
+            {
                 foreach (Product p in db.Products)
                 {
-                    if(db.Translations.Any(t => t.titleEng == p.title))
-                        ExportProductToVK(p, vke, db);
+                    switch (chosenMode)                        
+                    {
+                        case 0:
+                            ExportProductToVK(p, vke, db);
+                            break;
+                        case 1:
+                            if (db.Translations.Any(t => t.titleEng == p.title))
+                                ExportProductToVK(p, vke, db);
+                            break;
+                }
                 }
             }
             Console.WriteLine("Press smth");

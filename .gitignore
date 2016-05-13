@@ -4,3 +4,7 @@
 *.tif
 *.png
 *.exe
+*.suo
+*.exe
+*.pdb
+*.cache
