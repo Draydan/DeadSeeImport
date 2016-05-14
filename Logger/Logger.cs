@@ -9,6 +9,14 @@ namespace Logger
 {
     public static class Logger
     {
+        public static void SuccessLog(string text, params object[] args)
+        {
+            ConsoleColor defcol = Console.ForegroundColor;
+            if (defcol == ConsoleColor.Green) defcol = ConsoleColor.Gray;
+            Console.ForegroundColor = ConsoleColor.Green;
+            Trace(text, args);
+            Console.ForegroundColor = defcol;
+        }
         public static void ErrorLog(string text, params object[] args)
         {
             ConsoleColor defcol = Console.ForegroundColor;
@@ -20,7 +28,7 @@ namespace Logger
 
         public static void Trace(string text, params object[] args)
         {
-            Console.WriteLine(text);
+            Console.WriteLine(text, args);
             try
             {
                 using (StreamWriter sw = new StreamWriter("log.txt", true))

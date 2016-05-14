@@ -8,6 +8,8 @@ using VkNet;
 using VkNet.Enums.Filters;
 using VkNet.Model.RequestParams;
 
+using Logger;
+
 namespace DeadSeaVKExport
 {
     public class MarketEntity
@@ -28,7 +30,7 @@ namespace DeadSeaVKExport
 
     public class ProductVKExporter
     {
-        private const float kursBaksa = 65;
+        private const float kursBaksa = 65;        
 
         public const string mainAlbumTitle = "Переведенные";
 
@@ -98,7 +100,7 @@ namespace DeadSeaVKExport
             // если в этот заход подборку еще не апдейтили, то удаляем все ее копии
             foreach (var alb in AlbumList.Where(x => x.Title == titleAlbum && !x.isUpdated))
             {
-                Console.WriteLine("удаляем альбом {0} {1}", alb.ID, alb.Title);
+                Logger.Logger.SuccessLog("удаляем альбом {0} {1}", alb.ID, alb.Title);
                 vk.Markets.DeleteAlbum(-GroupID, alb.ID);
             }
             AlbumList.RemoveAll(x => x.Title == titleAlbum && !x.isUpdated);
@@ -113,7 +115,8 @@ namespace DeadSeaVKExport
                 long photoID = UploadImage(imageFilePath);
                 bool isMainAlbum = (titleAlbum == mainAlbumTitle);
                 long AlbumID = vk.Markets.AddAlbum(-GroupID, titleAlbum, photoID, isMainAlbum);
-                Console.WriteLine("добавляем в заведенный альбом {0} {1}", AlbumID, titleAlbum);                
+                Logger.Logger.SuccessLog("Добавлен альбом {0}", titleAlbum);
+                Logger.Logger.SuccessLog("добавляем в заведенный альбом {0} {1}", AlbumID, titleAlbum);                
                 vk.Markets.AddToAlbum(-GroupID, ProductID, new[] { AlbumID });
                 MarketEntity alb = new MarketEntity(AlbumID, titleAlbum, photoID);
                 alb.isUpdated = true;
@@ -123,8 +126,8 @@ namespace DeadSeaVKExport
             // если подборка уже есть, заводим в нее товар
             {
                 long AlbumID = AlbumList.First(x => x.Title == titleAlbum).ID;
-                Console.WriteLine("добавляем в готовый альбом {0} {1}", AlbumID, titleAlbum);
                 vk.Markets.AddToAlbum(-GroupID, ProductID, new[] { AlbumID });
+                Console.WriteLine("добавляем в готовый альбом {0} {1}", AlbumID, titleAlbum);
             }
         }
 
@@ -166,6 +169,7 @@ namespace DeadSeaVKExport
                 });
                 //AddProductToAlbum(title, ProdID, titleCategory, imageFilePath);
                 ProductList.Add(new MarketEntity(ProdID, title, photoID, true));
+                Logger.Logger.SuccessLog("Добавлен товар {0}", title);
                 return ProdID;
             }
             if (prodCount == 1)
@@ -187,8 +191,10 @@ namespace DeadSeaVKExport
                     Price = ConverPrice(sprice)
                 });
                 //AddProductToAlbum(title, ProdID, titleCategory, imageFilePath);
+                Logger.Logger.SuccessLog("Изменен товар {0}", title);
                 return ProdID;
             }
+            Logger.Logger.ErrorLog("Возвращен 0 для товара {0}", title);
             return 0;
         }
 

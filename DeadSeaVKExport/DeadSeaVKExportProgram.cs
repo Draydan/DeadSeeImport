@@ -39,7 +39,7 @@ namespace DeadSeaVKExport
             }
 
             ProductVKExporter vke = new ProductVKExporter();
-
+            int exportedCount = 0;
             using (var db = new ProductContext())
             {
                 foreach (Product p in db.Products)
@@ -47,21 +47,27 @@ namespace DeadSeaVKExport
                     switch (chosenMode)                        
                     {
                         case 0:
-                            ExportProductToVK(p, vke, db);
+                            if (ExportProductToVK(p, vke, db))
+                                exportedCount++;
                             break;
                         case 1:
                             if (db.Translations.Any(t => t.titleEng == p.title))
-                                ExportProductToVK(p, vke, db);
+                                if (ExportProductToVK(p, vke, db))
+                                    exportedCount++;
                             break;
                 }
                 }
             }
+            Logger.Logger.SuccessLog("Экспортировано {0} товаров", exportedCount);
+            
             Console.WriteLine("Press smth");
             Console.ReadLine();
         }
 
-        public static void ExportProductToVK(Product g, ProductVKExporter vke, ProductContext db)
+        public static bool ExportProductToVK(Product g, ProductVKExporter vke, ProductContext db)
         {
+            bool result = false;
+            const int maxTries = 20;
             while (locker)
             {
                 Console.Write(".");
@@ -70,7 +76,7 @@ namespace DeadSeaVKExport
             locker = true;
             long prodID = 0;
             int counter = 0;
-            while (prodID == 0 && counter < 20)
+            while (prodID == 0 && counter < maxTries)
                 try
                 {
                     Translation translation = db.Translations.FirstOrDefault(t => t.titleEng == g.title);
@@ -84,7 +90,8 @@ namespace DeadSeaVKExport
 
                     foreach (LinkProductWithCategory link in g.Links)
                         vke.AddProductToAlbum(g.title, prodID, link.category.title, g.imageFileName);
-                    
+
+                    result = true;
                 }
                 catch (Exception ex)
                 {
@@ -98,11 +105,12 @@ namespace DeadSeaVKExport
                         //Console.ReadLine();
                     }
                 }
-            if (counter >= 20)
+            if (counter >= maxTries)
             {
                 File.Copy(vke.GetImageFilePath(g.imageFileName), vke.GetTooSmallImageFilePath(g.imageFileName));
             }
             locker = false;
+            return result;
         }
 
     }
