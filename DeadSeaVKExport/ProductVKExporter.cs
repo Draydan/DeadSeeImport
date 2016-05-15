@@ -7,8 +7,11 @@ using System.Threading.Tasks;
 using VkNet;
 using VkNet.Enums.Filters;
 using VkNet.Model.RequestParams;
+using VkNet.Model;
 
 using Logger;
+using System.Collections.ObjectModel;
+using System.Threading;
 
 namespace DeadSeaVKExport
 {
@@ -59,6 +62,23 @@ namespace DeadSeaVKExport
             throw new NotImplementedException();
         }
 
+        List<Market> GetAllGoods()
+        {
+            const int goodsCountStep = 200;
+            //ReadOnlyCollection<VkNet.Model.Market> allGoods = new ReadOnlyCollection<VkNet.Model.Market>();
+            List<Market> allGoods = new List<Market>();
+            var goods = vk.Markets.Get(-GroupID, null, goodsCountStep);
+            allGoods.AddRange(goods);
+            int offset = goodsCountStep;
+            for(int gi=goodsCountStep; goods.Count == goodsCountStep; gi += goodsCountStep)
+            {
+                Thread.Sleep(400);
+                goods = vk.Markets.Get(-GroupID, null, goodsCountStep, gi);
+                allGoods.AddRange(goods);
+            }
+            return allGoods;
+        }
+
         void LoadAlbumIDs()
         {
             AlbumList = new List<MarketEntity>();
@@ -74,12 +94,13 @@ namespace DeadSeaVKExport
         void LoadProductsIDs()
         {
             ProductList = new List<MarketEntity>();
-            var goods = vk.Markets.Get(-GroupID);
+            var goods = GetAllGoods();
             foreach (var a in goods)
             {                
                 ProductList.Add(new MarketEntity(a.Id.Value, a.Title, 
                     (a.Photos.Count>0)?(a.Photos[0].Id.Value):(0)));
-                Console.WriteLine(a.Title);
+                Console.WriteLine("{0} : {1}", a.Title, 
+                    ProductList.Where(x => x.Title == a.Title).Count());
             }
         }
 
@@ -98,12 +119,16 @@ namespace DeadSeaVKExport
             //if (AlbumList.Where(x => x.Title == titleAlbum).Count() >= 2)
             
             // если в этот заход подборку еще не апдейтили, то удаляем все ее копии
+
+            /* // отменяем апокалипсис
             foreach (var alb in AlbumList.Where(x => x.Title == titleAlbum && !x.isUpdated))
             {
                 Logger.Logger.SuccessLog("удаляем альбом {0} {1}", alb.ID, alb.Title);
                 vk.Markets.DeleteAlbum(-GroupID, alb.ID);
             }
             AlbumList.RemoveAll(x => x.Title == titleAlbum && !x.isUpdated);
+            */
+
             //AlbumList = new List<MarketEntity>();
             //long AlbumID = AlbumList.First(x => x.Title == titleAlbum).ID;
             //vk.Markets.AddToAlbum(-GroupID, ProductID, new[] { AlbumID });
@@ -139,7 +164,7 @@ namespace DeadSeaVKExport
 
         public long ExportProduct(string title, string desc, /*string titleCategory, */ string sprice, string imageFileName)
         {
-            Console.WriteLine("обрабатываем {0}", title);
+            Console.WriteLine("обрабатываем товар {0}", title);
             string imageFilePath = GetImageFilePath(imageFileName);
             if (desc.Length <= 10)
                 desc = string.Format("This is Sparta! And also {0} for a pidgy pipl price of {1}", title, ConverPrice(sprice));
@@ -149,9 +174,10 @@ namespace DeadSeaVKExport
             //если более 1 то удаляем все копии этого товара
             if (prodCount > 1)
             {
-                Console.WriteLine("удаляем все {0} копий");
+                Console.WriteLine("удаляем все {0} копий", prodCount);
                 foreach (var p in ProductList.Where(x => x.Title == title))
                     vk.Markets.Delete(-GroupID, p.ID);
+                ProductList.RemoveAll(x => x.Title == title);
             }
             if (prodCount == 0)
             {

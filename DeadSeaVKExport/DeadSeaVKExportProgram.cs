@@ -107,7 +107,7 @@ namespace DeadSeaVKExport
                 }
             if (counter >= maxTries)
             {
-                File.Copy(vke.GetImageFilePath(g.imageFileName), vke.GetTooSmallImageFilePath(g.imageFileName));
+                File.Copy(vke.GetImageFilePath(g.imageFileName), vke.GetTooSmallImageFilePath(g.imageFileName), true);
             }
             locker = false;
             return result;
