@@ -20,3 +20,7 @@ inner join Translations t on t.titleEng = p.title
 --inner join LinkProductWithCategories l on l.product_ID = p.ID
 --inner join Categories c on c.ID = l.category_ID
 order by t.title
+
+use [DeadSeaCatalogueDAL.ProductContext]
+select * from Products
+where title like '%Olive Oil%'

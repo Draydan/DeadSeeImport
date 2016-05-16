@@ -39,24 +39,29 @@ namespace DeadSeaVKExport
             }
 
             ProductVKExporter vke = new ProductVKExporter();
+
+
+            using (var db = new ProductContext())
+            {
+                Logger.Logger.ErrorLog("Продукты вошедшие в ВК, но не вошедшие в БД: {0}",
+                    vke.ProductList.Select(p => p.Title).
+                    Where(title => !db.Products.Any(pl => pl.title == title)).Count());
+                foreach (var diff in vke.ProductList.Select(p => p.Title).
+                    Where(title => !db.Products.Any(pl => pl.title == title)))
+                    Logger.Logger.ErrorLog("{0}", diff);
+            }                    
+
             int exportedCount = 0;
             using (var db = new ProductContext())
             {
-                foreach (Product p in db.Products)
-                {
-                    switch (chosenMode)                        
-                    {
-                        case 0:
+                foreach (Product p in db.Products)                
+                    if (chosenMode==0)
                             if (ExportProductToVK(p, vke, db))
                                 exportedCount++;
-                            break;
-                        case 1:
-                            if (db.Translations.Any(t => t.titleEng == p.title))
+                foreach (Product p in db.Products)
+                    if (db.Translations.Any(t => t.titleEng == p.title))
                                 if (ExportProductToVK(p, vke, db))
                                     exportedCount++;
-                            break;
-                }
-                }
             }
             Logger.Logger.SuccessLog("Экспортировано {0} товаров", exportedCount);
             

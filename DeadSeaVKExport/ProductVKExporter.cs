@@ -42,8 +42,8 @@ namespace DeadSeaVKExport
         private string imageDir = @"e:\Work\DeadSeaCosmeticsImport\DeadSeaCosmeticsImport\bin\Debug\results\images\";
         private string imageTooSmallDir = @"e:\Work\DeadSeaCosmeticsImport\DeadSeaCosmeticsImport\bin\Debug\results\images\toosmall\";
 
-        List<MarketEntity> AlbumList;
-        List<MarketEntity> ProductList;
+        public List<MarketEntity> AlbumList;
+        public List<MarketEntity> ProductList;
 
         public ProductVKExporter()
         {
@@ -178,6 +178,7 @@ namespace DeadSeaVKExport
                 foreach (var p in ProductList.Where(x => x.Title == title))
                     vk.Markets.Delete(-GroupID, p.ID);
                 ProductList.RemoveAll(x => x.Title == title);
+                prodCount = 0;
             }
             if (prodCount == 0)
             {
