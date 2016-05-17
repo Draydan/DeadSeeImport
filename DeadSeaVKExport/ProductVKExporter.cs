@@ -33,7 +33,8 @@ namespace DeadSeaVKExport
 
     public class ProductVKExporter
     {
-        private const float kursBaksa = 65;        
+        private const float kursBaksa = 65;
+        private const int sleepTimeMS = 400;
 
         public const string mainAlbumTitle = "Переведенные";
 
@@ -161,7 +162,11 @@ namespace DeadSeaVKExport
             decimal rez = (decimal)Math.Round(float.Parse(sprice.Replace("$", "").Replace(".", ",")) * kursBaksa, 0);
             return rez;
         }
-
+        public void DeleteProduct(long pId)
+        {
+            vk.Markets.Delete(-GroupID, pId);
+            Thread.Sleep(sleepTimeMS);
+        }
         public long ExportProduct(string title, string desc, /*string titleCategory, */ string sprice, string imageFileName)
         {
             Console.WriteLine("обрабатываем товар {0}", title);

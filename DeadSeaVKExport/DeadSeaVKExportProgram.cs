@@ -48,7 +48,11 @@ namespace DeadSeaVKExport
                     Where(title => !db.Products.Any(pl => pl.title == title)).Count());
                 foreach (var diff in vke.ProductList.Select(p => p.Title).
                     Where(title => !db.Products.Any(pl => pl.title == title)))
+                {
                     Logger.Logger.ErrorLog("{0}", diff);
+                    foreach (var prod in vke.ProductList.Where(x => x.Title == diff))
+                        vke.DeleteProduct(prod.ID);
+                }
             }                    
 
             int exportedCount = 0;
