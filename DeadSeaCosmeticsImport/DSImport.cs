@@ -176,7 +176,7 @@ namespace DeadSeaCosmeticsImport
         private static async void Parsing(string siteURL, int depth, string category = "", string titleCurr = "", string tag = "")
         {
             if(siteURL != rootURL || depth == 0)                
-            try
+            //try
             {
                 Logger.Logger.Trace("sleeping with lock for");
                 int sleeping = 0;
@@ -212,7 +212,10 @@ namespace DeadSeaCosmeticsImport
                     case 0:
                         #region root parse
                         List<HtmlNode> categories = resultat.DocumentNode.Descendants().
-                            Where(x => (x.Name == "li" && x.Attributes["class"] != null && x.Attributes["class"].Value.Contains("spee parent"))).ToList();
+                            Where(x => (x.Name == "li" && x.Attributes["class"] != null && 
+                            x.Attributes["class"].Value.Contains("spee"))
+                            //|| x.Attributes["class"].Value.Contains("spee parent"))
+                            ).ToList();
 
                         foreach (var lis in categories)
                         {
@@ -224,38 +227,53 @@ namespace DeadSeaCosmeticsImport
                                 //var title = item.Descendants("h5").ToList()[0].InnerText;
                                 var link = lis.FirstChild.GetAttributeValue("href", null);
                                 var catTitle = lis.InnerText;
-                                //Logger.Logger.Trace(link);
-                                Logger.Logger.Trace(catTitle);
+                                if (link.Contains("/dead-sea-cosmetics/"))
+                                {
+                                    //Logger.Logger.Trace(link);
+                                    Logger.Logger.Trace(catTitle);
 
-                                Parsing(rootURL + link, 1, catTitle);
+                                    Parsing(rootURL + link, 1, catTitle);
+                                }
                             }
                         }
                         #endregion
                         break;
                     case 1:
                         #region goods
-                        List<HtmlNode> goods = resultat.DocumentNode.Descendants().
-                            Where(x => (x.Name == "div" && x.Attributes["class"] != null && x.Attributes["class"].Value.Contains("field-content"))).ToList();
 
-                        foreach (var good in goods)
+                        List<HtmlNode> goodsfid = resultat.DocumentNode.Descendants().
+                            Where(x => (x.Name == "div" && x.Attributes["class"] != null && x.Attributes["class"].Value.
+                            Contains("views-field-field-image-cache-fid"))).ToList();
+                        //Contains("field-content"))).ToList();
+
+                        foreach (var goodfid in goodsfid)
                         {
-                            var link = good.FirstChild.GetAttributeValue("href", null);
-                            //var title = good.InnerText;
-                            //Logger.Logger.Trace(link);
-                            //Logger.Logger.Trace(title);
-                            Parsing(rootURL + link, 2, category);
+                            List<HtmlNode> goods = goodfid.Descendants().
+                                Where(x => (x.Name == "div" && x.Attributes["class"] != null && x.Attributes["class"].Value.
+                                Contains("field-content"))).ToList();
+                            foreach (var good in goods)
+                            {
+                                var link = good.FirstChild.GetAttributeValue("href", null);
+                                //var title = good.InnerText;
+                                //Logger.Logger.Trace(link);
+                                //Logger.Logger.Trace(title);
+                                Parsing(rootURL + link, 2, category);
+                            }
                         }
                         #endregion
 
                         #region next page
                         HtmlNode page = resultat.DocumentNode.Descendants().
-                            First(x => (x.Name == "li" && x.Attributes["class"] != null && x.Attributes["class"].Value.Contains("pager-next")));
-                        string pageLink = page.FirstChild.GetAttributeValue("href", null);
-                        //Logger.Logger.Trace("Going next page: " + pageLink);
-                        //Logger.Logger.Trace("Going next page: " + siteURL + "page");
-                        //string goodsURL = rootURL + pageLink);
-                        if (pageLink != "")
-                            Parsing(rootURL + pageLink, 1, category);
+                            FirstOrDefault(x => (x.Name == "li" && x.Attributes["class"] != null && x.Attributes["class"].Value.Contains("pager-next")));
+                        if (page != null)
+                        {
+                            string pageLink = page.FirstChild.GetAttributeValue("href", null);
+                            //Logger.Logger.Trace("Going next page: " + pageLink);
+                            //Logger.Logger.Trace("Going next page: " + siteURL + "page");
+                            //string goodsURL = rootURL + pageLink);
+                            if (pageLink != "")
+                                Parsing(rootURL + pageLink, 1, category);
+                        }
                         #endregion
                         break;
                     case 2:
@@ -338,24 +356,16 @@ namespace DeadSeaCosmeticsImport
                             else
                                 g.Edit(db, sku, category, title, price, desc, details, imageFileName);
                             db.SaveChanges();
-                            //Parsing(string.Format("https://translate.yandex.net/api/v1.5/tr.json/translate?key={0}&text={1}&lang=en-ru",
+                            //Parsing(YandexTranslateURL(
                             //    "trnsl.1.1.20160420T200115Z.006bede5b131c604.4256886cd58598ea537df059cd532b6b141910cf",
                             //    desc + ";;;" + details), 5, category, title);
-                            Parsing(string.Format("https://translate.yandex.net/api/v1.5/tr.json/translate?key={0}&text={1}&lang=en-ru",
-    "trnsl.1.1.20160420T200115Z.006bede5b131c604.4256886cd58598ea537df059cd532b6b141910cf",
-    category), 6, category, title, "category-");
+                            Parsing(YandexTranslateURL(category), 6, category, title, "category-");
 
-                            Parsing(string.Format("https://translate.yandex.net/api/v1.5/tr.json/translate?key={0}&text={1}&lang=en-ru",
-    "trnsl.1.1.20160420T200115Z.006bede5b131c604.4256886cd58598ea537df059cd532b6b141910cf",
-    title), 7, category, title, "title-");
+                            Parsing(YandexTranslateURL(title), 7, category, title, "title-");
 
-                            Parsing(string.Format("https://translate.yandex.net/api/v1.5/tr.json/translate?key={0}&text={1}&lang=en-ru",
-    "trnsl.1.1.20160420T200115Z.006bede5b131c604.4256886cd58598ea537df059cd532b6b141910cf",
-    desc), 3, category, title, "desc-");
+                            Parsing(YandexTranslateURL(desc), 3, category, title, "desc-");
 
-                            Parsing(string.Format("https://translate.yandex.net/api/v1.5/tr.json/translate?key={0}&text={1}&lang=en-ru",
-    "trnsl.1.1.20160420T200115Z.006bede5b131c604.4256886cd58598ea537df059cd532b6b141910cf",
-    details), 4, category, title, "details-");
+                            Parsing(YandexTranslateURL(details), 4, category, title, "details-");
                             //swRes.WriteLine("{0};{1};{2};{3};{4};{5}", category, title, price, desc, details, imageFileName);
                             //swRes.WriteLine("<tr><td>{0}</td><td>{1}</td><td>{2}</td><td>{3}</td><td>{4}</td><td><img src=images\\{5}></td></tr>", category, title, price, desc, details, imageFileName);
                             //swRes.Flush();
@@ -430,7 +440,10 @@ namespace DeadSeaCosmeticsImport
                 }
                 Logger.Logger.Trace("finished with " + siteURL);
                 //foreach(string element in toftitle)                 Logger.Logger.Trace(element.)
+
+
             }
+/*
             catch (Exception ex)
             {
                 //ConsoleColor defcol = Console.ForegroundColor;
@@ -442,7 +455,14 @@ namespace DeadSeaCosmeticsImport
             finally
             {
             }
+*/
+        }
 
+        private static string YandexTranslateURL(string text)
+        {
+            return string.Format("https://translate.yandex.net/api/v1.5/tr.json/translate?key={0}&text={1}&lang=en-ru",
+    "trnsl.1.1.20160420T200115Z.006bede5b131c604.4256886cd58598ea537df059cd532b6b141910cf",
+    text.Replace("&", " and ").Replace("#", "N"));
         }
 
         public static string getTextFromJson(string json)

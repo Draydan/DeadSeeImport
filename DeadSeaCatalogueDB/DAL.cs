@@ -14,7 +14,7 @@ namespace DeadSeaCatalogueDAL
         public long ID {get; set;}
         public string title {get; set;}
         public string titleRus {get; set;}
-        public virtual List<Product> Links {get; set;}
+        public virtual List<LinkProductWithCategory> Links {get; set;}
     }
 
     public class LinkProductWithCategory
@@ -78,8 +78,11 @@ namespace DeadSeaCatalogueDAL
             if (link.category == null)
             {
                 link.category = new Category { title = cat };
+                link.category.Links.Add(link);
                 db.Categories.Add(link.category);
             }
+            if (link.product == null)
+                link.product = this;
             Links.Add(link);
             db.Links.Add(link);
             db.SaveChanges();

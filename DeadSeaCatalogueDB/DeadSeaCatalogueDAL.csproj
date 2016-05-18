@@ -79,6 +79,10 @@
     <Compile Include="Migrations\201605081000211_added_ingridients_to_Translation.Designer.cs">
       <DependentUpon>201605081000211_added_ingridients_to_Translation.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201605182105302_FixLinkListInCategories.cs" />
+    <Compile Include="Migrations\201605182105302_FixLinkListInCategories.Designer.cs">
+      <DependentUpon>201605182105302_FixLinkListInCategories.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="DAL.cs" />
     <Compile Include="DALTest.cs" />
@@ -106,6 +110,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201605081000211_added_ingridients_to_Translation.resx">
       <DependentUpon>201605081000211_added_ingridients_to_Translation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201605182105302_FixLinkListInCategories.resx">
+      <DependentUpon>201605182105302_FixLinkListInCategories.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
