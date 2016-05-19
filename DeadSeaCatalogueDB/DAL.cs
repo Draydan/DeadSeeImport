@@ -15,6 +15,13 @@ namespace DeadSeaCatalogueDAL
         public string title {get; set;}
         public string titleRus {get; set;}
         public virtual List<LinkProductWithCategory> Links {get; set;}
+        public Category()
+        { }
+        public Category(string title_)
+        {
+            title = title_;
+            Links = new List<LinkProductWithCategory>();
+        }
     }
 
     public class LinkProductWithCategory
@@ -77,7 +84,7 @@ namespace DeadSeaCatalogueDAL
             link.category = db.Categories.FirstOrDefault(x => x.title == cat);
             if (link.category == null)
             {
-                link.category = new Category { title = cat };
+                link.category = new Category(cat);// { title = cat };
                 link.category.Links.Add(link);
                 db.Categories.Add(link.category);
             }
@@ -85,7 +92,7 @@ namespace DeadSeaCatalogueDAL
                 link.product = this;
             Links.Add(link);
             db.Links.Add(link);
-            db.SaveChanges();
+            //db.SaveChanges();
 
             artikul = sku;
             title = tit;
