@@ -355,7 +355,19 @@ namespace DeadSeaCosmeticsImport
                             }
                             else
                                 g.Edit(db, sku, category, title, price, desc, details, imageFileName);
-                            db.SaveChanges();
+                            int tries = 0;
+                            int maxtries = 10;
+                            while (tries < maxtries)
+                            {
+                                try
+                                {
+                                    db.SaveChanges();
+                                    break;
+                                } catch (Exception ex)
+                                {
+                                    if (tries++ >= maxtries) throw ex;
+                                }
+                            }
                             //Parsing(YandexTranslateURL(
                             //    "trnsl.1.1.20160420T200115Z.006bede5b131c604.4256886cd58598ea537df059cd532b6b141910cf",
                             //    desc + ";;;" + details), 5, category, title);

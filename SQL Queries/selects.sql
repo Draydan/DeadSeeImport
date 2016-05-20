@@ -3,11 +3,11 @@ use [DeadSeaCatalogueDAL.ProductContext]
 select title, titleRus, descrus, detailsRus, [desc], details from Products p
 order by title
 
-select title, c.Name 
+select p.title, c.title
 from Products p
 inner join LinkProductWithCategories l on l.product_ID = p.ID
 inner join Categories c on c.ID = l.category_ID
-order by title
+order by c.title
 
 select * from Categories
 order by title
