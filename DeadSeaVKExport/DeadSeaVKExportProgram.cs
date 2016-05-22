@@ -53,7 +53,19 @@ namespace DeadSeaVKExport
                     foreach (var prod in vke.ProductList.Where(x => x.Title == diff))
                         vke.DeleteProduct(prod.ID);
                 }
-            }                    
+            }
+
+            foreach(var album in vke.AlbumList)
+            {
+                var goodsInAlbum = vke.GetAllGoods(album.ID);
+                if (goodsInAlbum.Count == 0)
+                {
+
+                    Logger.Logger.ErrorLog("Удаляем пустую подборку: {0}",
+                        album.Title);
+                    vke.RemoveAlbum(album.ID);
+                }
+            }
 
             int exportedCount = 0;
             using (var db = new ProductContext())

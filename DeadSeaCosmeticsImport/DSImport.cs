@@ -360,87 +360,46 @@ namespace DeadSeaCosmeticsImport
                                     #endregion
                                 }
                                 break;
-                            case 5:
+                        }
+
+                        if (depth >= 3 && depth <= 7)
+                        {
+                            HtmlNode transDiv = resultat.DocumentNode;
+                            string translation = transDiv.InnerText;
+                            //Logger.Logger.Trace(translation);
+                            using (ProductContext db = new ProductContext())
+                            {
+                                Product g = GetProductByName(db, titleCurr);
+                                switch (depth)
                                 {
-                                    HtmlNode transDiv = resultat.DocumentNode;
-                                    string translation = transDiv.InnerText;
-                                    //Logger.Logger.Trace(translation);
-                                    using (ProductContext db = new ProductContext())
-                                    {
-                                        Product g = GetProductByName(db, titleCurr);
+                                    case 5:
                                         g.descRus = translation.Split(new string[] { ";;;" }, StringSplitOptions.None)[0];
                                         g.detailsRus = translation.Split(new string[] { ";;;" }, StringSplitOptions.None)[1];
-                                        //g.translated++;
-                                        //if (g.translated == 2)
-                                        Export(db, g);
-                                    }
-                                    //goodsList.Remove(g);
-                                    //db.Products.Add(g);
-                                    break;
-                                }
-                            case 3:
-                                {
-                                    HtmlNode transDiv = resultat.DocumentNode;
-                                    string translation = transDiv.InnerText;
-                                    //Logger.Logger.Trace(translation);
-                                    using (ProductContext db = new ProductContext())
-                                    {
-                                        Product g = GetProductByName(db, titleCurr);
+                                        g.translated++;
+                                        break;
+                                    case 3:
                                         g.descRus = getTextFromJson(translation);
-                                        g.translated++;
-                                        if (g.translated == TranslationsToPrint)
-                                            Export(db, g);
-                                    }
-                                    //goodsList.Remove(g);
-                                    //goodsList.Products.Add(g);
-                                    break;
-                                }
-                            case 4:
-                                {
-                                    HtmlNode transDiv = resultat.DocumentNode;
-                                    string translation = transDiv.InnerText;
-                                    //Logger.Logger.Trace(translation);
-                                    using (ProductContext db = new ProductContext())
-                                    {
-                                        Product g = GetProductByName(db, titleCurr);
+                                        break;
+                                    case 4:
                                         g.detailsRus = getTextFromJson(translation);
-                                        g.translated++;
-                                        if (g.translated == TranslationsToPrint)
-                                            Export(db, g);
-                                    }
-                                    break;
-                                }
-                            case 6:
-                                {
-                                    HtmlNode transDiv = resultat.DocumentNode;
-                                    string translation = transDiv.InnerText;
-                                    //Logger.Logger.Trace(translation);
-                                    using (ProductContext db = new ProductContext())
-                                    {
-                                        Product g = GetProductByName(db, titleCurr);
-                                        g.Links[0].category.titleRus = getTextFromJson(translation);
-                                        g.translated++;
-                                        if (g.translated == TranslationsToPrint)
-                                            Export(db, g);
-                                    }
-                                    break;
-                                }
-                            case 7:
-                                {
-                                    HtmlNode transDiv = resultat.DocumentNode;
-                                    string translation = transDiv.InnerText;
-                                    //Logger.Logger.Trace(translation);
-                                    using (ProductContext db = new ProductContext())
-                                    {
-                                        Product g = GetProductByName(db, titleCurr);
+                                        break;
+                                    case 6:
+                                        db.Categories.FirstOrDefault(c => c.title == category).titleRus = getTextFromJson(translation);
+                                        break;
+                                    case 7:
                                         g.titleRus = getTextFromJson(translation);
-                                        g.translated++;
-                                        if (g.translated == TranslationsToPrint)
-                                            Export(db, g);
-                                    }
-                                    break;
+                                        break;
                                 }
+
+                                g.translated++;
+                                if (g.translated == TranslationsToPrint)
+                                    Export(db, g);
+                                db.SaveChanges();
+                            }
                         }
+                        //goodsList.Remove(g);
+                        //goodsList.Products.Add(g);
+
                         Logger.Logger.Trace("finished with " + siteURL);
                         //foreach(string element in toftitle)                 Logger.Logger.Trace(element.)
 

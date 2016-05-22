@@ -6,6 +6,10 @@ delete from LinkProductWithCategories where id in
 where li2.id < li.id
 and li.category_ID = li2.category_ID and li.product_ID = li2.product_ID))
 
+delete from Categories 
+where title = 'Super Savers'
+and id not in (select li.category_ID from LinkProductWithCategories li)
+
 delete from LinkProductWithCategories
 
 --truncate table categories
@@ -13,3 +17,4 @@ delete from Categories
 
 --truncate table products
 delete from Products
+

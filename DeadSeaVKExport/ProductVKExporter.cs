@@ -63,22 +63,36 @@ namespace DeadSeaVKExport
             throw new NotImplementedException();
         }
 
-        List<Market> GetAllGoods()
+        public List<Market> GetAllGoods(long? albumId = null)
         {
             const int goodsCountStep = 200;
             //ReadOnlyCollection<VkNet.Model.Market> allGoods = new ReadOnlyCollection<VkNet.Model.Market>();
             List<Market> allGoods = new List<Market>();
-            var goods = vk.Markets.Get(-GroupID, null, goodsCountStep);
-            allGoods.AddRange(goods);
+            //var goods = vk.Markets.Get(-GroupID, null, goodsCountStep);
+            //allGoods.AddRange(goods);
+            
             int offset = goodsCountStep;
-            for(int gi=goodsCountStep; goods.Count == goodsCountStep; gi += goodsCountStep)
+            //for(int gi=goodsCountStep; goods.Count == goodsCountStep; gi += goodsCountStep)
+            bool countCheck = true;
+            for (int gi = 0; countCheck; gi += goodsCountStep)
             {
                 Thread.Sleep(400);
-                goods = vk.Markets.Get(-GroupID, null, goodsCountStep, gi);
+                var goods = vk.Markets.Get(-GroupID, albumId, goodsCountStep, gi);
                 allGoods.AddRange(goods);
+                countCheck = (goods.Count == goodsCountStep);
             }
             return allGoods;
         }
+
+        public void RemoveAlbum(long albumId)
+        {
+            vk.Markets.DeleteAlbum(-GroupID, albumId);
+        }
+
+        //public int GetAlbum(long albumId)
+        //{
+        //    return vk.Markets.GetAlbumById(-GroupID, new List<long>(  albumId));            
+        //}
 
         void LoadAlbumIDs()
         {
@@ -140,6 +154,9 @@ namespace DeadSeaVKExport
             {
                 long photoID = UploadImage(imageFilePath);
                 bool isMainAlbum = (titleAlbum == mainAlbumTitle);
+                if(isMainAlbum)
+                {
+                }
                 long AlbumID = vk.Markets.AddAlbum(-GroupID, titleAlbum, photoID, isMainAlbum);
                 Logger.Logger.SuccessLog("Добавлен альбом {0}", titleAlbum);
                 Logger.Logger.SuccessLog("добавляем в заведенный альбом {0} {1}", AlbumID, titleAlbum);                
@@ -153,7 +170,7 @@ namespace DeadSeaVKExport
             {
                 long AlbumID = AlbumList.First(x => x.Title == titleAlbum).ID;
                 vk.Markets.AddToAlbum(-GroupID, ProductID, new[] { AlbumID });
-                Console.WriteLine("добавляем в готовый альбом {0} {1}", AlbumID, titleAlbum);
+                Logger.Logger.SuccessLog("добавляем в готовый альбом {0} {1}", AlbumID, titleAlbum);
             }
         }
 
@@ -173,6 +190,7 @@ namespace DeadSeaVKExport
             string imageFilePath = GetImageFilePath(imageFileName);
             if (desc.Length <= 10)
                 desc = string.Format("This is Sparta! And also {0} for a pidgy pipl price of {1}", title, ConverPrice(sprice));
+            string titleFixed = title.Replace("&", " and ").Replace("  ", " ");
 
             int prodCount = ProductList.Where(x => x.Title == title).Count();
             //если есть 1 копия то редактируем ее
@@ -195,7 +213,7 @@ namespace DeadSeaVKExport
                     CategoryId = 702,
                     MainPhotoId = photoID,
                     Deleted = false,
-                    Name = title,
+                    Name = titleFixed,
                     Description = desc,
                     Price = ConverPrice(sprice)
                 });
