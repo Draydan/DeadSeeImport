@@ -33,7 +33,7 @@ namespace DeadSeaVKExport
 
     public class ProductVKExporter
     {
-        private const float kursBaksa = 65;
+        private const float kursBaksa = 60;
         private const int sleepTimeMS = 400;
 
         public const string mainAlbumTitle = "Переведенные";
