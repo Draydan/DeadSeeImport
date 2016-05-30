@@ -1,0 +1,6 @@
+sku;post_title;post_content;post_excerpt;category;tags;post_status;visibility;manage_stock;stock_status;backorders;stock;regular_price;sale_price;weight;length;width;height;tax_status;tax_class;featured;featured_image;product_gallery;shipping_class;comment_status;ping_status;menu_order
+sku1;product 1;product 1;product 1;cat1->subcat1->subsubcat3;tag1;publish;visible;yes;instock;yes;1;10;10;1;1;1;1;none;;yes;https://allaerd.org/examples/allaerd.png;https://allaerd.org/examples/grouped.jpg|https://allaerd.org/examples/attributes.jpg;class1;open;open;1
+sku2;product 2;product 2;product 2;cat2->subcat2;tag2;publish;search;yes;instock;no;2;5;10;1;1;1;1;taxable;custom_tax_class;yes;grouped.jpg;allaerd.png|https://allaerd.org/examples/variations.jpg;class2;closed;closed;2
+sku3;product 3;product 3;product 3;cat3|cat4;tag3;publish;hidden;yes;outofstock;notify;0;10;5;1;1;1;1;taxable;reduced-rate;no;allaerd.png;variations.jpg|allaerd.png;shipping class;open;open;3
+sku4;product 4;product 4;product 4;cat4;tag4|tag5;publish;visible;no;;;;5;10;1;1;1;1;taxable;zero-rate;yes;allaerd.png;;class3;closed;closed;4
+sku5;product 5;product 5;product 5;cat5|cat6->subcat3;tag6| tag7;publish;catelog;no;;;;10;5;1;1;1;1;none;;no;allaerd.png;;class4;open;open;5

@@ -26,7 +26,7 @@ namespace DeadSeaVKExport
 
         static void Main(string[] args)
         {
-            string[] modes = new string[] {"Полный импорт", "Импорт переводов"};
+            string[] modes = new string[] {"Полный импорт", "Импорт переводов", "Забрать переводы с ВК"};
             int chosenMode = -1;
             while (chosenMode >= modes.Length || chosenMode < 0)
             {
@@ -40,7 +40,10 @@ namespace DeadSeaVKExport
 
             ProductVKExporter vke = new ProductVKExporter();
 
-
+            if (new[] { 0, 1 }.Contains(chosenMode))
+            {
+            /*
+            // Удаляем продукты вошедшие в ВК, но не вошедшие в БД
             using (var db = new ProductContext())
             {
                 Logger.Logger.ErrorLog("Продукты вошедшие в ВК, но не вошедшие в БД: {0}",
@@ -53,34 +56,55 @@ namespace DeadSeaVKExport
                     foreach (var prod in vke.ProductList.Where(x => x.Title == diff))
                         vke.DeleteProduct(prod.ID);
                 }
-            }
-
-            foreach(var album in vke.AlbumList)
-            {
-                var goodsInAlbum = vke.GetAllGoods(album.ID);
-                if (goodsInAlbum.Count == 0)
+            }*/
+                foreach (var album in vke.AlbumList)
                 {
-
-                    Logger.Logger.ErrorLog("Удаляем пустую подборку: {0}",
-                        album.Title);
-                    vke.RemoveAlbum(album.ID);
+                    var goodsInAlbum = vke.GetAllGoods(album.ID);
+                    if (goodsInAlbum.Count == 0)
+                    {
+                        Logger.Logger.ErrorLog("Удаляем пустую подборку: {0}",
+                            album.Title);
+                        vke.RemoveAlbum(album.ID);
+                    }
                 }
-            }
 
-            int exportedCount = 0;
-            using (var db = new ProductContext())
-            {
-                foreach (Product p in db.Products)                
-                    if (chosenMode==0)
+                int exportedCount = 0;
+                using (var db = new ProductContext())
+                {
+                    foreach (Product p in db.Products)
+                        if (chosenMode == 0)
                             if (ExportProductToVK(p, vke, db))
                                 exportedCount++;
-                foreach (Product p in db.Products)
-                    if (db.Translations.Any(t => t.titleEng == p.title))
-                                if (ExportProductToVK(p, vke, db))
-                                    exportedCount++;
+                    foreach (Product p in db.Products)
+                        if (db.Translations.Any(t => t.titleEng == p.title))
+                            if (ExportProductToVK(p, vke, db))
+                                exportedCount++;
+                }
+                Logger.Logger.SuccessLog("Экспортировано {0} товаров", exportedCount);
             }
-            Logger.Logger.SuccessLog("Экспортировано {0} товаров", exportedCount);
-            
+            else if(chosenMode == 2)
+            {
+                // забор переводов с ВК
+                using (var db = new ProductContext())
+                {
+                    Logger.Logger.ErrorLog("Продукты вошедшие в ВК, но не вошедшие в БД: {0}",
+                        vke.ProductList.Select(p => p.Title).
+                        Where(title => !db.Products.Any(pl => pl.title == title)).Count());
+                    foreach (var diff in vke.ProductList.Select(p => p.Title).
+                        Where(title => !db.Products.Any(pl => pl.title == title)))
+                    {
+                        Logger.Logger.ErrorLog("{0}", diff);
+                        foreach (var prod in vke.ProductList.Where(x => x.Title == diff))
+                        {
+                            Translation t = new Translation();
+                            t.title = prod.Title;
+                            t.desc = prod.Description;
+                            db.Translations.Add(t);
+                            db.SaveChanges();
+                        }
+                    }
+                }
+            }
             Console.WriteLine("Press smth");
             Console.ReadLine();
         }
