@@ -116,10 +116,11 @@ namespace DeadSeaVKExport
             foreach (var a in goods)
             {                
                 ProductList.Add(new MarketEntity(a.Id.Value, a.Title, a.Description,
-                    (a.Photos.Count>0)?(a.Photos[0].Id.Value):(0))                    
-                    );
-                Console.WriteLine("{0} : {1}", a.Title, 
-                    ProductList.Where(x => x.Title == a.Title).Count());
+                    (a.Photos.Count>0)?(a.Photos[0].Id.Value):(0)));
+                    //(a.ThumbPhoto == null)?(0):(a.ThumbPhoto.)
+                Console.WriteLine("{0} : {1} (photo: {2}", a.Title, 
+                    ProductList.Where(x => x.Title == a.Title).Count(),
+                    (a.Photos.Count > 0) ? (a.Photos[0].PhotoSrc.AbsoluteUri) : (""));
             }
         }
 
@@ -187,6 +188,10 @@ namespace DeadSeaVKExport
         {
             vk.Markets.Delete(-GroupID, pId);
             Thread.Sleep(sleepTimeMS);
+        }
+        public void CompareVKPhotoWithFile(long PhotoID, string FilePath)
+        {
+            //vk.Markets.get
         }
         public long ExportProduct(string title, string desc, /*string titleCategory, */ string sprice, string imageFileName)
         {

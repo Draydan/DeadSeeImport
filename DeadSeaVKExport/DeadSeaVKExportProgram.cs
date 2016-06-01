@@ -95,13 +95,19 @@ namespace DeadSeaVKExport
                     {
                         Logger.Logger.ErrorLog("{0}", diff);
                         foreach (var prod in vke.ProductList.Where(x => x.Title == diff))
-                        {
-                            Translation t = new Translation();
-                            t.title = prod.Title;
-                            t.desc = prod.Description;
-                            db.Translations.Add(t);
-                            db.SaveChanges();
-                        }
+                            if (!db.Translations.Any(t => prod.Title.Contains(t.title)))
+                            {
+
+                                Translation t = new Translation();
+                                t.title = prod.Title;
+                                t.desc = prod.Description;
+
+                                
+                                //prod.PhotoID;
+
+                                db.Translations.Add(t);
+                                db.SaveChanges();
+                            }
                     }
                 }
             }
