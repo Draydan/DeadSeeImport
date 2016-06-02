@@ -115,6 +115,7 @@ namespace DeadSeaGoogleDoc
                     string title = entry.Title.Text;
                     var rowCount = entry.Rows;
                     var colCount = entry.Cols;
+                    #region "перевод выбранного"
                     if (title.Contains("перевод выбранного"))
                     {
                         // Print the fetched information to the screen for this worksheet.
@@ -174,8 +175,56 @@ namespace DeadSeaGoogleDoc
                         service.Insert(NewwsFeed, worksheet);
                         */
                     }
-                }
-            }            
+                    #endregion
+
+                    if (title.Contains("Категории"))
+                    {
+                        // Print the fetched information to the screen for this worksheet.
+                        Console.WriteLine(title + "- rows:" + rowCount + " cols: " + colCount);
+
+                        //And get a cell based feed:
+                        AtomLink cellFeedLink = entry.Links.FindService(GDataSpreadsheetsNameTable.CellRel, null);
+
+                        CellQuery cquery = new CellQuery(cellFeedLink.HRef.ToString());
+                        CellFeed cfeed = service.Query(cquery);
+
+                        Console.WriteLine("Cells in this worksheet:");
+                        string[,] cells = new string[rowCount, colCount];
+                        foreach (CellEntry curCell in cfeed.Entries)
+                        //for (int ri = 0; ri < rowCount; ri++)
+                        //    for (int ci = 0; ci < colCount; ci++)
+                        {
+                            //CellEntry curCell = cfeed.Entries.FirstOrDefault(x => x.);
+                            Console.WriteLine("Row {0}, column {1}: {2}", curCell.Cell.Row, curCell.Cell.Column, curCell.Cell.Value);
+                            cells[curCell.Cell.Row - 1, curCell.Cell.Column - 1] = curCell.Cell.Value;
+                        }
+
+                        using (var db = new ProductContext())
+                        {
+                            for (int ri = 0; ri < rowCount; ri++)
+                                //for (int ci = 0; ci < colCount; ci++)
+                                if (!string.IsNullOrEmpty(cells[ri, 0])
+                                    && !string.IsNullOrEmpty(cells[ri, 1])
+                                    && !string.IsNullOrEmpty(cells[ri, 2])
+                                    )
+                                {
+                                    string titleEng = cells[ri, 0];
+                                    if (db.Translations.Any(t => t.titleEng == titleEng))
+                                        db.Translations.RemoveRange(db.Translations.Where(t => t.titleEng == titleEng));
+                                    db.Translations.Add(new Translation
+                                    {
+                                        titleEng = cells[ri, 0],
+                                        title = cells[ri, 1]
+                                    });
+                                    Console.WriteLine("added {0}", cells[ri, 1]);
+                                }
+                            db.SaveChanges();
+                        }
+                    }
+
+
+                    }
+                }            
         }
     }
 }
