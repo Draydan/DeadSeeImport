@@ -8,5 +8,5 @@ select t.title, t.[desc], p.artikul,
 --'http://izrael-cosmetics.ru.xsph.ru/wp-content/uploads/2016/05/' + p.imageFileName as imageFileName
 p.imageFileName as imageFileName
 from Products p
-inner join Translations t on t.titleEng = p.title
+right outer join Translations t on t.titleEng = p.title
 order by t.title

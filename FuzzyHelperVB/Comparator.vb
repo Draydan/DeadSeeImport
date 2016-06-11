@@ -26,23 +26,6 @@
                 Next
             Next
             res1 = res1 * 100 / Len(etalon)
-            ''tracetranslit etalon & " in " & subject & " = " & Str(res1)
-
-            ''lastFoundPos = 0
-            ' ищем буквы субъекта
-            ''For i = 1 To Len(subject)
-            ''   For j = lastFoundPos+1 To Len(etalon)
-            ''      If LCase(Mid(etalon,j,1)) = LCase(Mid(subject, i, 1)) Then
-            '++ math.inc(res1)
-            ''         res2 = res2+1
-            ''         lastFoundPos = j
-            ''tracetranslit Mid(etalon,j,1) & "(" & j & ")" & "=" & Mid(subject, i, 1) & "(" & i & ")" & "( res = " & res2 & ")"
-            ''         Exit For
-            ''      End If
-            ''   Next
-            ''Next
-            ''res2 = res2*100/Len(subject)
-            ''tracetranslit subject & " in " & etalon & " = " & Str(res2)
 
             ' возвращаем среднее от результата двух сравнений
             'FuzzyStringCompare = (res1+res2)/2
@@ -56,7 +39,9 @@
             subjectCoef = 0
             lenCoef = 0
             firstLetterCoef = 0
-            FuzzyStringCompare = (firstLet * firstLetterCoef + res1 * etalonCoef + 100 * (1 - Abs(Len(etalon) - Len(subject)) / Len(etalon)) * lenCoef) / (etalonCoef + subjectCoef + lenCoef + firstLetterCoef)
+            FuzzyStringCompare =
+                (firstLet * firstLetterCoef + res1 * etalonCoef + 100 * (1 - Math.Abs(Len(etalon) -
+                Len(subject)) / Len(etalon)) * lenCoef) / (etalonCoef + subjectCoef + lenCoef + firstLetterCoef)
             'FuzzyStringCompare = res1*res2/100
         End If
     End Function
@@ -113,29 +98,6 @@
             res1 = AmountOfLettersOfWordInOtherWord(etalon, subject)
             res2 = AmountOfLettersOfWordInOtherWord(subject, etalon)
 
-            '      lastFoundPos = 0
-            '      ' ищем буквы субъекта
-            '      For i = 1 To Len(subject)
-            '         For j = lastFoundPos+1 To Len(etalon)
-            '            If LCase(Mid(etalon,j,1)) = LCase(Mid(subject, i, 1)) Then
-            '               '++ math.inc(res1)
-            '               res2 = res2+1
-            '               lastFoundPos = j
-            '               If InStr(i+1, subject, Mid(subject,i,1)) >0 Then
-            '                  lastFoundPos = i
-            '               End If
-            '               If (etalon = "Аораханскаяобласть" Or subject = "Аораханскаяобласть") And (etalon = "Астраханскаяобласть" Or subject = "Астраханскаяобласть") Then
-            '                  'Trace Mid(etalon,j,1) & "(" & j & ")" & "=" & Mid(subject, i, 1) & "(" & i & ")" & "( res = " & res2 & ")"
-            '               End If
-            '               Exit For
-            '            End If
-            '         Next
-            '      Next
-            '      res2 = res2*100/Len(subject)
-
-
-            'Debug.Print etalon & " in " & subject & " = " & Str(res1)
-            'Debug.Print subject & " in " & etalon & " = " & Str(res2)
 
             ' возвращаем среднее от результата двух сравнений
             'FuzzyStringCompare = (res1+res2)/2
@@ -149,15 +111,15 @@
             subjectCoef = 1
             lenCoef = 0
             firstLetterCoef = 0
-            FuzzyStringCompare_2side = (firstLet * firstLetterCoef + res1 * etalonCoef + res2 * subjectCoef + 100 * (1 - Abs(Len(etalon) - Len(subject)) / Len(etalon)) * lenCoef) / (etalonCoef + subjectCoef + lenCoef + firstLetterCoef)
+            FuzzyStringCompare_2side = (firstLet * firstLetterCoef + res1 * etalonCoef + res2 * subjectCoef + 100 * (1 - Math.Abs(Len(etalon) - Len(subject)) / Len(etalon)) * lenCoef) / (etalonCoef + subjectCoef + lenCoef + firstLetterCoef)
 
-            'If etalon = "Аораханскаяобласть" Or subject = "Аораханскаяобласть" Then
-            '   If False Then
-            '       Trace etalon & " in " & subject & " = " & Str(res1)
-            'Trace subject & " in " & etalon & " = " & Str(res2)
-            'Trace "result=" & FuzzyStringCompare_2side
-            'End If
-            'FuzzyStringCompare = res1*res2/100
         End If
     End Function
+
+    Public Function FuzzyPhraseCompare_2side(etalon As String, obj As String) As String
+        Dim etalWords, objWords As String()
+        etalWords = Split(etalon, " ")
+        objWords = Split(obj, " ")
+    End Function
+
 End Class

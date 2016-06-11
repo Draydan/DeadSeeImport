@@ -1,0 +1,9 @@
+E:\Work\DeadSeaCosmeticsImport\FuzzyHelper\obj\Debug\FuzzyHelper.vbprojResolveAssemblyReference.cache
+E:\Work\DeadSeaCosmeticsImport\FuzzyHelper\obj\Debug\FuzzyHelper.Resources.resources
+E:\Work\DeadSeaCosmeticsImport\FuzzyHelper\obj\Debug\FuzzyHelper.vbproj.GenerateResource.Cache
+E:\Work\DeadSeaCosmeticsImport\FuzzyHelper\obj\Debug\FuzzyHelper.xml
+E:\Work\DeadSeaCosmeticsImport\FuzzyHelper\bin\Debug\FuzzyHelper.dll
+E:\Work\DeadSeaCosmeticsImport\FuzzyHelper\bin\Debug\FuzzyHelper.pdb
+E:\Work\DeadSeaCosmeticsImport\FuzzyHelper\bin\Debug\FuzzyHelper.xml
+E:\Work\DeadSeaCosmeticsImport\FuzzyHelper\obj\Debug\FuzzyHelper.dll
+E:\Work\DeadSeaCosmeticsImport\FuzzyHelper\obj\Debug\FuzzyHelper.pdb

@@ -18,22 +18,57 @@ namespace DeadSeaCatalogueDAL
                 //db.Products.Add(new Product(db, "", "test", "test prod", "", "", "", "")); //{ category = db.Categories.First(x => x.Name == "test"), title = "test prod"});
                 //Console.WriteLine("Saving");
                 //db.SaveChanges();
-                
-                
-                Console.WriteLine("products:");
-                foreach (Product g in db.Products)
+
+                /*               
+                               Console.WriteLine("products:");
+                               foreach (Product g in db.Products)
+                               {
+                                   Console.WriteLine(g.title);
+                               }
+
+                               //db.Translations.Add(new Translation { title = "test" });
+
+                               Console.WriteLine("translations:");
+                               foreach (Translation g in db.Translations)
+                               {
+                                   Console.WriteLine(g.title);
+                               }
+                               db.SaveChanges();
+
+                               */
+
+
+                Console.WriteLine("Unlinked translations:");
+                FuzzyHelper.Comparator comp = new FuzzyHelper.Comparator();
+
+                foreach (Translation g in db.Translations.Where(t => t.titleEng == null))
                 {
-                    Console.WriteLine(g.title);
+                    Console.WriteLine("Ручной перевод: {0}", g.title);
+                    string bestCompare = "";
+                    int maxCompare = 0; //= db.Products.Max(mp => comp.FuzzyStringCompare_2side(mp.titleRus, g.title));
+
+                    //bestCompare = db.Products.Select(p => p.titleRus).FirstOrDefault(tr => comp.FuzzyStringCompare_2side(tr, g.title) == maxCompare);
+
+                    comp.FindBestComparison(g.title, db.Products.Select(p => p.titleRus).ToList(), out bestCompare, out maxCompare);
+                    /*
+                    foreach(string prodTitle in db.Products.Select(p => p.titleRus))
+                    {
+                        string fixTitle = prodTitle.Replace("Dead Sea Cosmetics", "Косметика Мертвого Моря").
+                            Replace("Dead Sea", "Мертвого Моря");
+                        int compare = comp.FuzzyStringCompare_2side(fixTitle, g.title);
+                        if (maxCompare < compare)
+                        {
+                            maxCompare = compare;
+                            bestCompare = prodTitle;
+                            Console.WriteLine("Up: {0} = ({1} =??= {2})", maxCompare, prodTitle, g.title);
+                        }
+                    }
+                    */
+                    Console.WriteLine("Авто перевод: {0}", bestCompare);
+
                 }
 
-                db.Translations.Add(new Translation { title = "test" });
 
-                Console.WriteLine("translations:");
-                foreach (Translation g in db.Translations)
-                {
-                    Console.WriteLine(g.title);
-                }
-                db.SaveChanges();
                 Console.WriteLine("closing, press");
                 Console.ReadLine();
             }

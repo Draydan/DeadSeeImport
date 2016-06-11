@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{F228E539-9344-49C9-878F-6BFBF102CD25}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>DeadSeaCatalogueDAL</RootNamespace>
     <AssemblyName>DeadSeaCatalogueDAL</AssemblyName>
@@ -114,6 +114,12 @@
     <EmbeddedResource Include="Migrations\201605182105302_FixLinkListInCategories.resx">
       <DependentUpon>201605182105302_FixLinkListInCategories.cs</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FuzzyHelper\FuzzyHelper.csproj">
+      <Project>{4c403be5-9241-42db-b86b-8ee7065539d5}</Project>
+      <Name>FuzzyHelper</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
