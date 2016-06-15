@@ -194,7 +194,7 @@ namespace FuzzyHelper
                 {
                     maxCompare = compare;
                     bestCompare = prodTitle;
-                    Console.WriteLine("Up: {0} = ({1} =??= {2})", maxCompare, prodTitle, g.title);
+                    Console.WriteLine("Up: {0} = ({1} =??= {2})", maxCompare, prodTitle, tested);
                 }
             }
         }

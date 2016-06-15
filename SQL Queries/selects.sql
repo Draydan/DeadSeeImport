@@ -3,8 +3,9 @@ use [DeadSeaCatalogueDAL.ProductContext]
 select title, titleRus, descrus, detailsRus, [desc], details from Products p
 order by title
 
-select * from Categories
-order by title
+select * from [DeadSeaCatalogueDAL.ProductContext].dbo.Categories c
+left outer join [DeadSeaCatalogueDAL.ProductContext].dbo.Translations t on t.titleEng = c.title
+order by c.title
 
 select p.title, c.title, c.id
 from Products p
@@ -24,3 +25,4 @@ order by t.title
 use [DeadSeaCatalogueDAL.ProductContext]
 select * from Products
 where title like '%Olive Oil%'
+

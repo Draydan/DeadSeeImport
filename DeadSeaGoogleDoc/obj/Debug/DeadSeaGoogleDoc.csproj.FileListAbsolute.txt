@@ -21,9 +21,11 @@ E:\Work\DeadSeaCosmeticsImport\DeadSeaGoogleDoc\obj\Debug\DeadSeaGoogleDoc.cspro
 E:\Work\DeadSeaCosmeticsImport\DeadSeaGoogleDoc\obj\Debug\DeadSeaGoogleDoc.exe
 E:\Work\DeadSeaCosmeticsImport\DeadSeaGoogleDoc\obj\Debug\DeadSeaGoogleDoc.pdb
 E:\Work\DeadSeaCosmeticsImport\DeadSeaGoogleDoc\bin\Debug\GoogleDocAccessProject-b63329148447.p12
-E:\Work\DeadSeaCosmeticsImport\DeadSeaGoogleDoc\bin\Debug\DeadSeaCatalogueDAL.dll
 E:\Work\DeadSeaCosmeticsImport\DeadSeaGoogleDoc\bin\Debug\DeadSeaCatalogueDAL.pdb
 E:\Work\DeadSeaCosmeticsImport\DeadSeaGoogleDoc\bin\Debug\EntityFramework.xml
 E:\Work\DeadSeaCosmeticsImport\DeadSeaGoogleDoc\bin\Debug\EntityFramework.dll
 E:\Work\DeadSeaCosmeticsImport\DeadSeaGoogleDoc\bin\Debug\EntityFramework.SqlServer.dll
 E:\Work\DeadSeaCosmeticsImport\DeadSeaGoogleDoc\bin\Debug\EntityFramework.SqlServer.xml
+E:\Work\DeadSeaCosmeticsImport\DeadSeaGoogleDoc\bin\Debug\DeadSeaCatalogueDAL.exe
+E:\Work\DeadSeaCosmeticsImport\DeadSeaGoogleDoc\bin\Debug\FuzzyHelper.dll
+E:\Work\DeadSeaCosmeticsImport\DeadSeaGoogleDoc\bin\Debug\FuzzyHelper.pdb

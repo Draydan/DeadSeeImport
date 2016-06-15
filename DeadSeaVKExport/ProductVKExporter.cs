@@ -35,7 +35,7 @@ namespace DeadSeaVKExport
 
     public class ProductVKExporter
     {
-        private const float kursBaksa = 60;
+        private const float kursBaksa = 55;
         private const int sleepTimeMS = 400;
 
         public const string mainAlbumTitle = "Переведенные";
@@ -118,9 +118,7 @@ namespace DeadSeaVKExport
                 ProductList.Add(new MarketEntity(a.Id.Value, a.Title, a.Description,
                     (a.Photos.Count>0)?(a.Photos[0].Id.Value):(0)));
                     //(a.ThumbPhoto == null)?(0):(a.ThumbPhoto.)
-                Console.WriteLine("{0} : {1} (photo: {2}", a.Title, 
-                    ProductList.Where(x => x.Title == a.Title).Count(),
-                    (a.Photos.Count > 0) ? (a.Photos[0].PhotoSrc.AbsoluteUri) : (""));
+                //Console.WriteLine("{0} : {1} (photo: {2})", a.Title,                     ProductList.Where(x => x.Title == a.Title).Count(),                    (a.Photos.Count > 0) ? (a.Photos[0].PhotoSrc.AbsoluteUri) : (""));
             }
         }
 
@@ -136,6 +134,7 @@ namespace DeadSeaVKExport
         public void AddProductToAlbum(string titleProduct, long ProductID, string titleAlbum, string imageFileName)
         {
             string imageFilePath = GetImageFilePath(imageFileName);
+            
             //if (AlbumList.Where(x => x.Title == titleAlbum).Count() >= 2)
             
             // если в этот заход подборку еще не апдейтили, то удаляем все ее копии
@@ -193,7 +192,7 @@ namespace DeadSeaVKExport
         {
             //vk.Markets.get
         }
-        public long ExportProduct(string title, string desc, /*string titleCategory, */ string sprice, string imageFileName)
+        public long ExportProduct(string title, string desc, /*string titleCategory, */ string sprice, string imageFileName, string artikul)
         {
             Console.WriteLine("обрабатываем товар {0}", title);
             string imageFilePath = GetImageFilePath(imageFileName);
@@ -223,7 +222,7 @@ namespace DeadSeaVKExport
                     MainPhotoId = photoID,
                     Deleted = false,
                     Name = titleFixed,
-                    Description = desc,
+                    Description = string.Format("{0} (артикул {1})", desc, artikul),
                     Price = ConverPrice(sprice)
                 });
                 //AddProductToAlbum(title, ProdID, titleCategory, imageFilePath);
@@ -246,7 +245,7 @@ namespace DeadSeaVKExport
                     CategoryId = 702,
                     Deleted = false,
                     Name = title,
-                    Description = desc,
+                    Description = string.Format("{0} (артикул {1})", desc, artikul),
                     Price = ConverPrice(sprice)
                 });
                 //AddProductToAlbum(title, ProdID, titleCategory, imageFilePath);

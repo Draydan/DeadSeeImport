@@ -177,6 +177,7 @@ namespace DeadSeaGoogleDoc
                     }
                     #endregion
 
+                    #region категории
                     if (title.Contains("Категории"))
                     {
                         // Print the fetched information to the screen for this worksheet.
@@ -221,9 +222,8 @@ namespace DeadSeaGoogleDoc
                             db.SaveChanges();
                         }
                     }
-
-
-                    }
+                    #endregion 
+                }
                 }            
         }
     }

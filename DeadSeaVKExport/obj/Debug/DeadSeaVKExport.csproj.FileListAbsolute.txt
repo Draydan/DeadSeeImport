@@ -19,4 +19,6 @@ E:\Work\DeadSeaCosmeticsImport\DeadSeaVKExport\bin\Debug\Logger.pdb
 E:\Work\DeadSeaCosmeticsImport\DeadSeaVKExport\bin\Debug\EntityFramework.xml
 E:\Work\DeadSeaCosmeticsImport\DeadSeaVKExport\bin\Debug\EntityFramework.SqlServer.xml
 e:\Work\DeadSeaCosmeticsImport\DeadSeaVKExport\bin\Debug\DeadSeaCatalogueDAL.pdb
-E:\Work\DeadSeaCosmeticsImport\DeadSeaVKExport\bin\Debug\DeadSeaCatalogueDAL.dll
+E:\Work\DeadSeaCosmeticsImport\DeadSeaVKExport\bin\Debug\DeadSeaCatalogueDAL.exe
+E:\Work\DeadSeaCosmeticsImport\DeadSeaVKExport\bin\Debug\FuzzyHelper.dll
+E:\Work\DeadSeaCosmeticsImport\DeadSeaVKExport\bin\Debug\FuzzyHelper.pdb
