@@ -83,6 +83,10 @@
     <Compile Include="Migrations\201605182105302_FixLinkListInCategories.Designer.cs">
       <DependentUpon>201605182105302_FixLinkListInCategories.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201608142006252_AddIsOurCategoryField.cs" />
+    <Compile Include="Migrations\201608142006252_AddIsOurCategoryField.Designer.cs">
+      <DependentUpon>201608142006252_AddIsOurCategoryField.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="DAL.cs" />
     <Compile Include="DALTest.cs" />
@@ -113,6 +117,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201605182105302_FixLinkListInCategories.resx">
       <DependentUpon>201605182105302_FixLinkListInCategories.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201608142006252_AddIsOurCategoryField.resx">
+      <DependentUpon>201608142006252_AddIsOurCategoryField.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

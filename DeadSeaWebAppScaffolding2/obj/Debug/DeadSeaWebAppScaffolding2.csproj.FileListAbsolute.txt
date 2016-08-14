@@ -81,4 +81,6 @@ E:\Work\DeadSeaCosmeticsImport\DeadSeaWebAppScaffolding2\obj\Debug\DeadSeaWebApp
 E:\Work\DeadSeaCosmeticsImport\DeadSeaWebAppScaffolding2\obj\Debug\DeadSeaWebAppScaffolding2.dll
 E:\Work\DeadSeaCosmeticsImport\DeadSeaWebAppScaffolding2\obj\Debug\DeadSeaWebAppScaffolding2.pdb
 E:\Work\DeadSeaCosmeticsImport\DeadSeaWebAppScaffolding2\bin\DeadSeaCatalogueDAL.pdb
-E:\Work\DeadSeaCosmeticsImport\DeadSeaWebAppScaffolding2\bin\DeadSeaCatalogueDAL.dll
+E:\Work\DeadSeaCosmeticsImport\DeadSeaWebAppScaffolding2\bin\DeadSeaCatalogueDAL.exe
+E:\Work\DeadSeaCosmeticsImport\DeadSeaWebAppScaffolding2\bin\FuzzyHelper.dll
+E:\Work\DeadSeaCosmeticsImport\DeadSeaWebAppScaffolding2\bin\FuzzyHelper.pdb

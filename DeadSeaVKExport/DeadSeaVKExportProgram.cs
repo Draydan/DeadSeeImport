@@ -99,11 +99,19 @@ namespace DeadSeaVKExport
                     {
                         Logger.Logger.ErrorLog("{0}", diff);
                         foreach (var prod in vke.ProductList.Where(x => x.Title == diff))
-                            if (!db.Translations.Any(t => prod.Title.Contains(t.title)))
-                            {
+                            if (!db.Translations.Any(t => prod.Title.Contains(t.title))
+                                && !db.Products.Any(t => prod.Title.Contains(t.title)))
+                                {
                                 Translation t = new Translation();
                                 t.title = prod.Title;
                                 t.desc = prod.Description;
+                                Logger.Logger.SuccessLog("Добавляем перевод {0}", prod.Title);
+                                var prodTied = db.Products.FirstOrDefault(p => prod.Description.Contains(p.artikul));
+                                if (prodTied != null)
+                                {
+                                    t.titleEng = prodTied.title;
+                                    Logger.Logger.SuccessLog("Найден SKU для товара {0}", prodTied.title);
+                                }
                                 
                                 //prod.PhotoID;
 

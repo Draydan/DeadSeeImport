@@ -35,7 +35,9 @@ namespace DeadSeaVKExport
 
     public class ProductVKExporter
     {
-        private const float kursBaksa = 55;
+        private const float kursCurrent = 67;
+        private const float saleCoef = 0.85f;
+        private float kursBaksa = kursCurrent * saleCoef;
         private const int sleepTimeMS = 400;
 
         public const string mainAlbumTitle = "Переведенные";
@@ -277,6 +279,7 @@ namespace DeadSeaVKExport
             string email = "yuokol@yandex.ru";         // email или телефон
             Console.WriteLine("VK password:");            
             string pass = Console.ReadLine();               // пароль для авторизации
+            
             //for (int si = 0; si < 6; si++)                 pass += Console.ReadKey();
             Console.WriteLine("checking...");
             Settings scope = Settings.All;      // Приложение имеет доступ к маркету и всему

@@ -215,7 +215,8 @@ namespace DeadSeaGoogleDoc
                                     db.Translations.Add(new Translation
                                     {
                                         titleEng = cells[ri, 0],
-                                        title = cells[ri, 1]
+                                        title = cells[ri, 1],
+                                        isOurCategory = (cells[ri, 2] == "Наша категория")
                                     });
                                     Console.WriteLine("added {0}", cells[ri, 1]);
                                 }

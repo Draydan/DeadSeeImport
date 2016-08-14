@@ -1,7 +1,8 @@
 use [DeadSeaCatalogueDAL.ProductContext]
 
-select --p.title, t.titleEng, 
-t.title, dbo.replacenewline(t.[desc], '<br>'), p.artikul, 
+select distinct --p.title, t.titleEng, 
+t.title, tc.title,  dbo.replacenewline(t.[desc], '<br>') [desc], 
+'no' as manage_stock , 'instock' as stock_status, p.artikul, 
 65 * CONVERT(float,replace(p.price, '$','')) as price, 
 --'http://www.israel-catalog.com/sites/default/files/products/images/' + p.imageFileName as imageFileName
 --'http://izrael-cosmetics.ru/product_gallery/' + p.imageFileName as imageFileName
@@ -10,6 +11,9 @@ t.title, dbo.replacenewline(t.[desc], '<br>'), p.artikul,
 p.imageFileName as imageFileName
 from Products p
 inner join Translations t on t.titleEng = p.title
+inner join LinkProductWithCategories lpc on lpc.product_ID = p.id  
+inner join Categories ca on ca.ID = lpc.category_ID
+inner join Translations tc on tc.titleEng = ca.title
 order by t.title
 
 select * from
@@ -19,5 +23,9 @@ and not exists
 (select * from Translations t2 where t.title = t2.title and t2.titleEng is not null)
 order by t.title
 
+select t.title, t.[desc], p.title, p.[desc],p.details from Products p
+left outer join Translations t on t.titleEng = p.title
 
-select dbo.replacenewline('sdf', 'a')
+select distinct t.title
+from Translations t
+order by title

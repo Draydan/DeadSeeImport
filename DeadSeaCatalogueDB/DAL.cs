@@ -15,6 +15,8 @@ namespace DeadSeaCatalogueDAL
         public string title {get; set;}
         public string titleRus {get; set;}
         public virtual List<LinkProductWithCategory> Links {get; set;}
+        public bool isOurCategory { get; set; }
+
         public Category()
         { }
         public Category(string title_)
@@ -112,6 +114,18 @@ namespace DeadSeaCatalogueDAL
         public string desc { get; set; }
         public string details { get; set; }
         public string ingridients { get; set; }
+        public bool isOurCategory { get; set; }
+
+        public static bool HasRussianLetters(string t)
+        {
+            for (int i = 0; i < t.Length; i++)
+            {
+                string s = t.Substring(i, 1);
+                if ("абвгдеёжзийклмнопрсутфхцчшщъыьэюя".Contains(s.ToLower()))
+                    return true;
+            }
+            return false;
+        }
     }
         public class ProductContext : DbContext
     {

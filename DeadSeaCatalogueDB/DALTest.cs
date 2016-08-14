@@ -37,7 +37,7 @@ namespace DeadSeaCatalogueDAL
 
                                */
 
-
+                // ищем несцепленные переводы, схожие с автопереводами товаров, чтобы сцепить
                 Console.WriteLine("Unlinked translations:");
                 FuzzyHelper.Comparator comp = new FuzzyHelper.Comparator();
 
@@ -67,6 +67,17 @@ namespace DeadSeaCatalogueDAL
                     Console.WriteLine("Авто перевод: {0}", bestCompare);
 
                 }
+
+                // ищем и удаляем переводы, кот. на самом деле англ.названия товаров
+                foreach(Translation t in db.Translations)
+                {
+                    if (!Translation.HasRussianLetters(t.title))
+                    {
+                        Console.WriteLine("removing {0}", t.title);
+                        db.Translations.Remove(t);
+                    }
+                }
+                db.SaveChanges();
 
 
                 Console.WriteLine("closing, press");
