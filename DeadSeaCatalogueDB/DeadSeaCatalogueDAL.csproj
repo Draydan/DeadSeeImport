@@ -87,6 +87,10 @@
     <Compile Include="Migrations\201608142006252_AddIsOurCategoryField.Designer.cs">
       <DependentUpon>201608142006252_AddIsOurCategoryField.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201608171829180_AddKeyWordsToTranslations.cs" />
+    <Compile Include="Migrations\201608171829180_AddKeyWordsToTranslations.Designer.cs">
+      <DependentUpon>201608171829180_AddKeyWordsToTranslations.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="DAL.cs" />
     <Compile Include="DALTest.cs" />
@@ -120,6 +124,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201608142006252_AddIsOurCategoryField.resx">
       <DependentUpon>201608142006252_AddIsOurCategoryField.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201608171829180_AddKeyWordsToTranslations.resx">
+      <DependentUpon>201608171829180_AddKeyWordsToTranslations.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

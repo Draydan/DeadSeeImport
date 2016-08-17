@@ -115,6 +115,7 @@ namespace DeadSeaCatalogueDAL
         public string details { get; set; }
         public string ingridients { get; set; }
         public bool isOurCategory { get; set; }
+        public string keyWords { get; set; }
 
         public static bool HasRussianLetters(string t)
         {

@@ -12,8 +12,8 @@ p.imageFileName as imageFileName
 from Products p
 inner join Translations t on t.titleEng = p.title
 inner join LinkProductWithCategories lpc on lpc.product_ID = p.id  
-inner join Categories ca on ca.ID = lpc.category_ID
-inner join Translations tc on tc.titleEng = ca.title
+inner join Categories ca on ca.ID = lpc.category_ID 
+inner join Translations tc on tc.titleEng = ca.title and ca.isOurCategory = 1 or tc.isOurCategory = 1
 order by t.title
 
 select * from
@@ -29,3 +29,14 @@ left outer join Translations t on t.titleEng = p.title
 select distinct t.title
 from Translations t
 order by title
+
+
+select count(*), tc.title
+from LinkProductWithCategories lpc 
+inner join Categories ca on ca.ID = lpc.category_ID 
+inner join Translations tc on tc.titleEng = ca.title and ca.isOurCategory = 1 and tc.isOurCategory = 1
+group by tc.title
+
+select * from Categories ca
+inner join LinkProductWithCategories li on li.category_ID = ca.ID
+where ca.titleRus = 'лечебная косметика'
