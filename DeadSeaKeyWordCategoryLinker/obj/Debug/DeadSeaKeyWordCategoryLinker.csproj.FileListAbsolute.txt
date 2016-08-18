@@ -1,0 +1,16 @@
+E:\Work\DeadSeaCosmeticsImport\DeadSeaKeyWordCategoryLinker\bin\Debug\DeadSeaKeyWordCategoryLinker.exe.config
+E:\Work\DeadSeaCosmeticsImport\DeadSeaKeyWordCategoryLinker\bin\Debug\DeadSeaKeyWordCategoryLinker.exe
+E:\Work\DeadSeaCosmeticsImport\DeadSeaKeyWordCategoryLinker\bin\Debug\DeadSeaKeyWordCategoryLinker.pdb
+E:\Work\DeadSeaCosmeticsImport\DeadSeaKeyWordCategoryLinker\bin\Debug\DeadSeaCatalogueDAL.exe
+E:\Work\DeadSeaCosmeticsImport\DeadSeaKeyWordCategoryLinker\bin\Debug\EntityFramework.dll
+E:\Work\DeadSeaCosmeticsImport\DeadSeaKeyWordCategoryLinker\bin\Debug\EntityFramework.SqlServer.dll
+E:\Work\DeadSeaCosmeticsImport\DeadSeaKeyWordCategoryLinker\bin\Debug\FuzzyHelper.dll
+E:\Work\DeadSeaCosmeticsImport\DeadSeaKeyWordCategoryLinker\bin\Debug\DeadSeaCatalogueDAL.pdb
+E:\Work\DeadSeaCosmeticsImport\DeadSeaKeyWordCategoryLinker\bin\Debug\EntityFramework.xml
+E:\Work\DeadSeaCosmeticsImport\DeadSeaKeyWordCategoryLinker\bin\Debug\EntityFramework.SqlServer.xml
+E:\Work\DeadSeaCosmeticsImport\DeadSeaKeyWordCategoryLinker\bin\Debug\FuzzyHelper.pdb
+E:\Work\DeadSeaCosmeticsImport\DeadSeaKeyWordCategoryLinker\obj\Debug\DeadSeaKeyWordCategoryLinker.csprojResolveAssemblyReference.cache
+E:\Work\DeadSeaCosmeticsImport\DeadSeaKeyWordCategoryLinker\obj\Debug\DeadSeaKeyWordCategoryLinker.exe
+E:\Work\DeadSeaCosmeticsImport\DeadSeaKeyWordCategoryLinker\obj\Debug\DeadSeaKeyWordCategoryLinker.pdb
+E:\Work\DeadSeaCosmeticsImport\DeadSeaKeyWordCategoryLinker\bin\Debug\Logger.dll
+E:\Work\DeadSeaCosmeticsImport\DeadSeaKeyWordCategoryLinker\bin\Debug\Logger.pdb

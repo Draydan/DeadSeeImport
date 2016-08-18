@@ -13,7 +13,7 @@ from Products p
 inner join Translations t on t.titleEng = p.title
 inner join LinkProductWithCategories lpc on lpc.product_ID = p.id  
 inner join Categories ca on ca.ID = lpc.category_ID 
-inner join Translations tc on tc.titleEng = ca.title and ca.isOurCategory = 1 or tc.isOurCategory = 1
+inner join Translations tc on tc.titleEng = ca.title and tc.isOurCategory = 1
 order by t.title
 
 select * from
