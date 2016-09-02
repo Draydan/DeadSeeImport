@@ -91,6 +91,10 @@
     <Compile Include="Migrations\201608171829180_AddKeyWordsToTranslations.Designer.cs">
       <DependentUpon>201608171829180_AddKeyWordsToTranslations.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201609021840569_AntiKeyWords.cs" />
+    <Compile Include="Migrations\201609021840569_AntiKeyWords.Designer.cs">
+      <DependentUpon>201609021840569_AntiKeyWords.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="DAL.cs" />
     <Compile Include="DALTest.cs" />
@@ -127,6 +131,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201608171829180_AddKeyWordsToTranslations.resx">
       <DependentUpon>201608171829180_AddKeyWordsToTranslations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201609021840569_AntiKeyWords.resx">
+      <DependentUpon>201609021840569_AntiKeyWords.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

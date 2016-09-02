@@ -18,3 +18,7 @@ delete from Categories
 --truncate table products
 delete from Products
 
+-- delete where & and And in Translated
+delete from translations
+where replace(title, 'and', '&') in (select p.title from products p)
+or replace(title, ' and ', ' & ') in (select p.title from products p)

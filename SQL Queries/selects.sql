@@ -26,3 +26,7 @@ use [DeadSeaCatalogueDAL.ProductContext]
 select * from Products
 where title like '%Olive Oil%'
 
+
+
+select * from [DeadSeaCatalogueDAL.ProductContext].dbo.translations
+--'«ащитный крем д€ лица и средство от облысени€'

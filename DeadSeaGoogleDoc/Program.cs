@@ -217,7 +217,8 @@ namespace DeadSeaGoogleDoc
                                         titleEng = cells[ri, 0],
                                         title = cells[ri, 1],
                                         isOurCategory = (cells[ri, 2] == "Наша категория"),
-                                        keyWords = cells[ri, 3]
+                                        keyWords = cells[ri, 3],
+                                        antiKeyWords = cells[ri, 4]
                                     });
                                     Console.WriteLine("added {0}", cells[ri, 1]);
                                 }

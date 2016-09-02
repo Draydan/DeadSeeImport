@@ -16,6 +16,23 @@ inner join Categories ca on ca.ID = lpc.category_ID
 inner join Translations tc on tc.titleEng = ca.title and tc.isOurCategory = 1
 order by t.title
 
+
+select distinct --p.title, t.titleEng, 
+t.title, ca.titleRus, dbo.replacenewline(t.[desc], '<br>') [desc], 
+'no' as manage_stock , 'instock' as stock_status, p.artikul, 
+65 * CONVERT(float,replace(p.price, '$','')) as price, 
+--'http://www.israel-catalog.com/sites/default/files/products/images/' + p.imageFileName as imageFileName
+--'http://izrael-cosmetics.ru/product_gallery/' + p.imageFileName as imageFileName
+--'/product_gallery/' + p.imageFileName as imageFileName
+--'http://izrael-cosmetics.ru.xsph.ru/wp-content/uploads/2016/05/' + p.imageFileName as imageFileName
+p.imageFileName as imageFileName
+from Products p
+inner join Translations t on t.titleEng = p.title and t.title <> p.title
+inner join LinkProductWithCategories lpc on lpc.product_ID = p.id  
+inner join Categories ca on ca.ID = lpc.category_ID 
+inner join Translations tc on tc.title = ca.titleRus and tc.isOurCategory = 1
+order by t.title
+
 select * from
 [DeadSeaCatalogueDAL.ProductContext].dbo.Translations t
 where titleEng = '' or isnull(titleEng, '')=''
