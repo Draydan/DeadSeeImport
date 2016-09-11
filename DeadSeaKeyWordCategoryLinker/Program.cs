@@ -47,43 +47,73 @@ namespace DeadSeaKeyWordCategoryLinker
                     {
                         Category cat = db.Categories.First(ca => ca.titleRus == tran.title);
                         
-                        List<string> keyWords = tran.keyWords.Split(',').ToList();
+                        List<string> keyWords = tran.keyWords.Split(new char[]{ ','}, StringSplitOptions.RemoveEmptyEntries).ToList();
                         List<string> antiKeyWords = new List<string>();
                         if(tran.antiKeyWords != null)
-                            antiKeyWords = tran.antiKeyWords.Split(',').ToList();
+                            antiKeyWords = tran.antiKeyWords.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries).ToList();
                         // для каждого ключевого слова
                         //foreach (string kw in keyWords)
                         //{
 
-
                         // если не содержит кс то пропускаем это кс
                         if ((!antiKeyWords.Any(kw => prod.details.Contains(kw))
-                            && !antiKeyWords.Any(kw => prod.desc.Contains(kw)))
+                            && !antiKeyWords.Any(kw => prod.desc.Contains(kw))
+                            && !antiKeyWords.Any(kw => prod.title.Contains(kw)))
                         && (keyWords.Any(akw => prod.details.Contains(akw))
-                             || keyWords.Any(kw => prod.desc.Contains(kw))))
+                             || keyWords.Any(kw => prod.desc.Contains(kw))
+                             || keyWords.Any(kw => prod.title.Contains(kw))))
                         {
-
                             LinkProductWithCategory link = new LinkProductWithCategory();
                             link.category = cat;
                             link.product = prod;
                             db.Links.Add(link);
-                            Logger.Logger.Trace("Product {0} added to {1}", prod.title, cat.titleRus);
+                            if (prod.artikul == "15778")
+                            {
+                                /*
+                                Logger.Logger.Trace("keywords");
+                                foreach (string kw in keyWords)
+                                {
+                                    if (prod.title.Contains(kw))
+                                        Logger.Logger.Trace("Product {0} contains {1}", prod.title, kw);
+                                    if (prod.details.Contains(kw))
+                                        Logger.Logger.Trace("details {0} contains {1}", prod.details, kw);
+                                    if (prod.desc.Contains(kw))
+                                        Logger.Logger.Trace("desc {0} contains {1}", prod.desc, kw);
+                                }
+                                Logger.Logger.Trace("anti keywords");
+                                foreach (string kw in antiKeyWords)
+                                {
+                                    if (prod.title.Contains(kw))
+                                        Logger.Logger.Trace("Product {0} contains {1}", prod.title, kw);
+                                    if (prod.details.Contains(kw))
+                                        Logger.Logger.Trace("details {0} contains {1}", prod.details, kw);
+                                    if (prod.desc.Contains(kw))
+                                        Logger.Logger.Trace("desc {0} contains {1}", prod.desc, kw);
+                                }
+                                Logger.Logger.Trace("Desc {0}", prod.desc);
+                                Logger.Logger.Trace("Details {0}", prod.details);
+                                Logger.Logger.Trace("keyWords {0}", keyWords);
+                                Logger.Logger.Trace("antiKeyWords {0}", antiKeyWords);
+                                */
+                                Logger.Logger.Trace("Product {0} added to {1}", prod.title, cat.titleRus);
+                            }
                             //break;
                         }
                         else
                         {
                             if (prod.Links.Any(l => l.category.titleRus == cat.titleRus))
                             {
+                                Logger.Logger.Trace("Product {0} will be removed from {1}", prod.title, cat.titleRus);
                                 //Category catLinked = prod.Links.First(l => l.category.titleRus == cat.titleRus).category;
                                 db.Links.RemoveRange(db.Links.Where(li => li.category.titleRus == cat.titleRus && li.product.title == prod.title));
                             }
                         }
                         
                     }
-                    //Console.WriteLine("press");
-                    //Console.ReadLine();
                 }
                     db.SaveChanges();
+                    Console.WriteLine("press");
+                    Console.ReadLine();
             }
         }
     }

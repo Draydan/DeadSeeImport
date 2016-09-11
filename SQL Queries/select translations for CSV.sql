@@ -1,24 +1,25 @@
 use [DeadSeaCatalogueDAL.ProductContext]
 
-select distinct --p.title, t.titleEng, 
-t.title, tc.title,  dbo.replacenewline(t.[desc], '<br>') [desc], 
-'no' as manage_stock , 'instock' as stock_status, p.artikul, 
-65 * CONVERT(float,replace(p.price, '$','')) as price, 
---'http://www.israel-catalog.com/sites/default/files/products/images/' + p.imageFileName as imageFileName
---'http://izrael-cosmetics.ru/product_gallery/' + p.imageFileName as imageFileName
---'/product_gallery/' + p.imageFileName as imageFileName
---'http://izrael-cosmetics.ru.xsph.ru/wp-content/uploads/2016/05/' + p.imageFileName as imageFileName
-p.imageFileName as imageFileName
-from Products p
-inner join Translations t on t.titleEng = p.title
-inner join LinkProductWithCategories lpc on lpc.product_ID = p.id  
-inner join Categories ca on ca.ID = lpc.category_ID 
-inner join Translations tc on tc.titleEng = ca.title and tc.isOurCategory = 1
-order by t.title
+--select distinct --p.title, t.titleEng, 
+--t.title, tc.title,  dbo.replacenewline(t.[desc], '<br>') [desc], 
+--'no' as manage_stock , 'instock' as stock_status, p.artikul, 
+--65 * CONVERT(float,replace(p.price, '$','')) as price, 
+----'http://www.israel-catalog.com/sites/default/files/products/images/' + p.imageFileName as imageFileName
+----'http://izrael-cosmetics.ru/product_gallery/' + p.imageFileName as imageFileName
+----'/product_gallery/' + p.imageFileName as imageFileName
+----'http://izrael-cosmetics.ru.xsph.ru/wp-content/uploads/2016/05/' + p.imageFileName as imageFileName
+--p.imageFileName as imageFileName
+--from Products p
+--inner join Translations t on t.titleEng = p.title
+--inner join LinkProductWithCategories lpc on lpc.product_ID = p.id  
+--inner join Categories ca on ca.ID = lpc.category_ID 
+--inner join Translations tc on tc.titleEng = ca.title and tc.isOurCategory = 1
+--order by t.title
 
 
 select distinct --p.title, t.titleEng, 
 t.title, ca.titleRus, dbo.replacenewline(t.[desc], '<br>') [desc], 
+'publish' as post_status,
 'no' as manage_stock , 'instock' as stock_status, p.artikul, 
 65 * CONVERT(float,replace(p.price, '$','')) as price, 
 --'http://www.israel-catalog.com/sites/default/files/products/images/' + p.imageFileName as imageFileName
@@ -56,4 +57,49 @@ group by tc.title
 
 select * from Categories ca
 inner join LinkProductWithCategories li on li.category_ID = ca.ID
-where ca.titleRus = 'лечебная косметика'
+inner join Products p on p.id = li.product_ID
+inner join Translations t on t.title = ca.titleRus
+where ca.titleRus = 'для жирной кожи'
+
+select distinct tc.titleEng, count(*)
+from Products p
+inner join Translations t on t.titleEng = p.title and t.title <> p.title
+inner join LinkProductWithCategories lpc on lpc.product_ID = p.id  
+inner join Categories ca on ca.ID = lpc.category_ID 
+inner join Translations tc on tc.title = ca.titleRus and tc.isOurCategory = 1
+group by tc.titleEng
+order by tc.titleEng
+
+
+select tc.titleEng, count(*)
+from Products p
+inner join Translations t on t.titleEng = p.title and t.title <> p.title
+inner join LinkProductWithCategories lpc on lpc.product_ID = p.id  
+inner join Categories ca on ca.ID = lpc.category_ID 
+inner join Translations tc on tc.title = ca.titleRus and tc.isOurCategory = 1
+group by tc.titleEng
+order by tc.titleEng
+
+select tc.title, count(*)
+from Products p
+inner join Translations t on t.titleEng = p.title
+inner join LinkProductWithCategories lpc on lpc.product_ID = p.id  
+inner join Categories ca on ca.ID = lpc.category_ID 
+inner join Translations tc on tc.titleEng = ca.title and tc.isOurCategory = 1
+group by tc.title
+order by tc.title
+
+
+select t.title, tc.title,  ca.title, tc.keyWords, tc.antiKeyWords, p.[desc], p.details
+from Products p
+inner join Translations t on t.titleEng = p.title
+inner join LinkProductWithCategories lpc on lpc.product_ID = p.id  
+inner join Categories ca on ca.ID = lpc.category_ID 
+inner join Translations tc on tc.titleEng = ca.title and tc.isOurCategory = 1
+--inner join Translations tc on tc.title = ca.titleRus-- and tc.isOurCategory = 1
+order by t.title
+
+select * from products
+where
+[desc] like '%moisturizing cream%'
+or details like '%moisturizing cream%'
