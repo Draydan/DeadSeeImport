@@ -84,3 +84,17 @@ E:\Work\DeadSeaCosmeticsImport\DeadSeaWebAppScaffolding2\bin\DeadSeaCatalogueDAL
 E:\Work\DeadSeaCosmeticsImport\DeadSeaWebAppScaffolding2\bin\DeadSeaCatalogueDAL.exe
 E:\Work\DeadSeaCosmeticsImport\DeadSeaWebAppScaffolding2\bin\FuzzyHelper.dll
 E:\Work\DeadSeaCosmeticsImport\DeadSeaWebAppScaffolding2\bin\FuzzyHelper.pdb
+E:\Work\DeadSeaCosmeticsImport\DeadSeaWebAppScaffolding2\bin\roslyn\csc.exe.config
+E:\Work\DeadSeaCosmeticsImport\DeadSeaWebAppScaffolding2\bin\roslyn\csc.rsp
+E:\Work\DeadSeaCosmeticsImport\DeadSeaWebAppScaffolding2\bin\roslyn\csi.exe
+E:\Work\DeadSeaCosmeticsImport\DeadSeaWebAppScaffolding2\bin\roslyn\csi.rsp
+E:\Work\DeadSeaCosmeticsImport\DeadSeaWebAppScaffolding2\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\Work\DeadSeaCosmeticsImport\DeadSeaWebAppScaffolding2\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\Work\DeadSeaCosmeticsImport\DeadSeaWebAppScaffolding2\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\Work\DeadSeaCosmeticsImport\DeadSeaWebAppScaffolding2\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\Work\DeadSeaCosmeticsImport\DeadSeaWebAppScaffolding2\bin\roslyn\System.AppContext.dll
+E:\Work\DeadSeaCosmeticsImport\DeadSeaWebAppScaffolding2\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\Work\DeadSeaCosmeticsImport\DeadSeaWebAppScaffolding2\bin\roslyn\System.IO.FileSystem.dll
+E:\Work\DeadSeaCosmeticsImport\DeadSeaWebAppScaffolding2\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\Work\DeadSeaCosmeticsImport\DeadSeaWebAppScaffolding2\bin\roslyn\vbc.exe.config
+E:\Work\DeadSeaCosmeticsImport\DeadSeaWebAppScaffolding2\bin\roslyn\vbc.rsp

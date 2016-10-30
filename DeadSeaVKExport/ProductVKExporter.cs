@@ -117,7 +117,7 @@ namespace DeadSeaVKExport
             var goods = GetAllGoods();
             foreach (var a in goods)
             {                
-                ProductList.Add(new MarketEntity(a.Id.Value, a.Title, a.Description,
+                ProductList.Add(new MarketEntity(a.Id, a.Title, a.Description,
                     (a.Photos.Count>0)?(a.Photos[0].Id.Value):(0)));
                     //(a.ThumbPhoto == null)?(0):(a.ThumbPhoto.)
                 //Console.WriteLine("{0} : {1} (photo: {2})", a.Title,                     ProductList.Where(x => x.Title == a.Title).Count(),                    (a.Photos.Count > 0) ? (a.Photos[0].PhotoSrc.AbsoluteUri) : (""));

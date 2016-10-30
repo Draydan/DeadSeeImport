@@ -21,7 +21,7 @@ select distinct --p.title, t.titleEng,
 t.title, ca.titleRus, dbo.replacenewline(t.[desc], '<br>') [desc], 
 'publish' as post_status,
 'no' as manage_stock , 'instock' as stock_status, p.artikul, 
-65 * CONVERT(float,replace(p.price, '$','')) as price, 
+65 * CONVERT(float,replace(p.price, '$','')) * (0.2 * (3800-65 * CONVERT(float,replace(p.price, '$','')))/ 3300 +0.7) as price, 
 --'http://www.israel-catalog.com/sites/default/files/products/images/' + p.imageFileName as imageFileName
 --'http://izrael-cosmetics.ru/product_gallery/' + p.imageFileName as imageFileName
 --'/product_gallery/' + p.imageFileName as imageFileName
