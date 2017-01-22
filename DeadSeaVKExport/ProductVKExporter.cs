@@ -31,6 +31,10 @@ namespace DeadSeaVKExport
             isUpdated = isupdated;
             Description = desc;
         }
+
+        public MarketEntity()
+        {
+        }
     }
 
     public class ProductVKExporter
@@ -67,6 +71,11 @@ namespace DeadSeaVKExport
             throw new NotImplementedException();
         }
 
+        /// <summary>
+        /// получаем все товары из ВК в несколько заходов
+        /// </summary>
+        /// <param name="albumId"></param>
+        /// <returns></returns>
         public List<Market> GetAllGoods(long? albumId = null)
         {
             const int goodsCountStep = 200;
@@ -98,6 +107,9 @@ namespace DeadSeaVKExport
         //    return vk.Markets.GetAlbumById(-GroupID, new List<long>(  albumId));            
         //}
 
+        /// <summary>
+        /// загружаем список ИД групп\альбомов товаров
+        /// </summary>
         void LoadAlbumIDs()
         {
             AlbumList = new List<MarketEntity>();
@@ -111,6 +123,9 @@ namespace DeadSeaVKExport
             }
         }
 
+        /// <summary>
+        /// загружаем список ИД товаров
+        /// </summary>
         void LoadProductsIDs()
         {
             ProductList = new List<MarketEntity>();
@@ -194,6 +209,7 @@ namespace DeadSeaVKExport
         {
             //vk.Markets.get
         }
+
         public long ExportProduct(string title, string desc, /*string titleCategory, */ string sprice, string imageFileName, string artikul)
         {
             Console.WriteLine("обрабатываем товар {0}", title);

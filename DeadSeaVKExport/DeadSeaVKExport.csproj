@@ -77,6 +77,10 @@
       <Project>{f228e539-9344-49c9-878f-6bfbf102cd25}</Project>
       <Name>DeadSeaCatalogueDAL</Name>
     </ProjectReference>
+    <ProjectReference Include="..\FuzzyHelper\FuzzyHelper.csproj">
+      <Project>{4c403be5-9241-42db-b86b-8ee7065539d5}</Project>
+      <Name>FuzzyHelper</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Logger\Logger.csproj">
       <Project>{ebcc61fb-6c66-45c7-b2dc-192201193364}</Project>
       <Name>Logger</Name>

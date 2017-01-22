@@ -8,6 +8,7 @@ using VkNet;
 using DeadSeaCatalogueDAL;
 using Logger;
 using System.IO;
+using FuzzyHelper;
 
 namespace DeadSeaVKExport
 {
@@ -26,7 +27,7 @@ namespace DeadSeaVKExport
 
         static void Main(string[] args)
         {
-            string[] modes = new string[] {"Полный импорт", "Импорт переводов", "Забрать переводы с ВК"};
+            string[] modes = new string[] {"Полный импорт", "Импорт переводов", "Забрать переводы с ВК", "Удалить непереведенные дубли переводов в ВК"};
             int chosenMode = -1;
             while (chosenMode >= modes.Length || chosenMode < 0)
             {
@@ -42,21 +43,21 @@ namespace DeadSeaVKExport
 
             if (new[] { 0, 1 }.Contains(chosenMode))
             {
-            /*
-            // Удаляем продукты вошедшие в ВК, но не вошедшие в БД
-            using (var db = new ProductContext())
-            {
-                Logger.Logger.ErrorLog("Продукты вошедшие в ВК, но не вошедшие в БД: {0}",
-                    vke.ProductList.Select(p => p.Title).
-                    Where(title => !db.Products.Any(pl => pl.title == title)).Count());
-                foreach (var diff in vke.ProductList.Select(p => p.Title).
-                    Where(title => !db.Products.Any(pl => pl.title == title)))
+                /*
+                // Удаляем продукты вошедшие в ВК, но не вошедшие в БД
+                using (var db = new ProductContext())
                 {
-                    Logger.Logger.ErrorLog("{0}", diff);
-                    foreach (var prod in vke.ProductList.Where(x => x.Title == diff))
-                        vke.DeleteProduct(prod.ID);
-                }
-            }*/
+                    Logger.Logger.ErrorLog("Продукты вошедшие в ВК, но не вошедшие в БД: {0}",
+                        vke.ProductList.Select(p => p.Title).
+                        Where(title => !db.Products.Any(pl => pl.title == title)).Count());
+                    foreach (var diff in vke.ProductList.Select(p => p.Title).
+                        Where(title => !db.Products.Any(pl => pl.title == title)))
+                    {
+                        Logger.Logger.ErrorLog("{0}", diff);
+                        foreach (var prod in vke.ProductList.Where(x => x.Title == diff))
+                            vke.DeleteProduct(prod.ID);
+                    }
+                }*/
                 foreach (var album in vke.AlbumList)
                 {
                     var goodsInAlbum = vke.GetAllGoods(album.ID);
@@ -83,7 +84,7 @@ namespace DeadSeaVKExport
                 }
                 Logger.Logger.SuccessLog("Экспортировано {0} товаров", exportedCount);
             }
-            else if(chosenMode == 2)
+            else if (chosenMode == 2)
             {
                 // забор переводов с ВК
                 using (var db = new ProductContext())
@@ -101,7 +102,7 @@ namespace DeadSeaVKExport
                         foreach (var prod in vke.ProductList.Where(x => x.Title == diff))
                             if (!db.Translations.Any(t => prod.Title.Contains(t.title))
                                 && !db.Products.Any(t => prod.Title.Contains(t.title)))
-                                {
+                            {
                                 Translation t = new Translation();
                                 t.title = prod.Title;
                                 t.desc = prod.Description;
@@ -112,7 +113,7 @@ namespace DeadSeaVKExport
                                     t.titleEng = prodTied.title;
                                     Logger.Logger.SuccessLog("Найден SKU для товара {0}", prodTied.title);
                                 }
-                                
+
                                 //prod.PhotoID;
 
                                 db.Translations.Add(t);
@@ -121,10 +122,76 @@ namespace DeadSeaVKExport
                     }
                 }
             }
+            else if (chosenMode == 3)
+            {
+                DeleteUntranslatedProductsHavingTranslation(vke);
+            }
             Console.WriteLine("Press smth");
             Console.ReadLine();
         }
 
+
+        /// <summary>
+        /// Удалить непереведенные дубли переводов в ВК
+        /// </summary>
+        public static void DeleteUntranslatedProductsHavingTranslation(ProductVKExporter vke)
+        {
+            Comparator cb = new Comparator();
+            // из БД получаем список всех артикулов, названий на англ, названий на рус
+            foreach (Product prodDB in db.Products)
+            {
+                // в вкшном массиве ищем товары, включающие этот артикул, находим рус товар и англ товар по переводу этого товара в БД        
+                List<MarketEntity> goodsOfSameSKU = vke.ProductList.Where(p => p.Description.Contains(
+                    string.Format("(артикул {0})",prodDB.artikul))).ToList();
+                MarketEntity rusProd = new MarketEntity();
+                MarketEntity engProd = new MarketEntity();
+                bool rusFound = false, engFound = false;
+
+                if (goodsOfSameSKU.Count > 1)
+                {
+                    foreach (MarketEntity sameSKUgood in goodsOfSameSKU)
+                    {
+                        Console.WriteLine("Artikul {0}, Title {1} ", prodDB.artikul, sameSKUgood.Title);
+                        // ищем в бд переводы этого товара
+                        List<Translation> transOfThisProd = db.GetTranslationsOfProduct(prodDB.title);
+                        // среди переводов этого товара находим с таким же названием как товар в ВК
+                        foreach (Translation tranOfThisProd in transOfThisProd)
+                            //(t => t.title == sameSKUgood.Title);
+                            if (tranOfThisProd.title == sameSKUgood.Title)
+                            //if(transOfThisProd != null)
+                            {
+                                rusProd = sameSKUgood;
+                                rusFound = true;
+                    Logger.Logger.Trace("Artikul {0}, Title Rus {1}", prodDB.artikul, rusProd.Title);
+                            }
+                            else Logger.Logger.ErrorLog("{0} =/= {1}", tranOfThisProd.title, sameSKUgood.Title);
+                        if(prodDB.title.Replace("&", "and") == sameSKUgood.Title.Replace("&", "and"))
+                        {
+                            engProd = sameSKUgood;
+                            engFound = true;
+                    Logger.Logger.Trace("Artikul {0}, Title Eng {1}", prodDB.artikul, engProd.Title);
+                        }
+                        else Logger.Logger.ErrorLog("{0} =/= {1}", prodDB.title, sameSKUgood.Title);
+                        //if(transOfThisProd.Any(t => t.title == ))
+                    }
+                }
+                if (rusFound && engFound)
+                {
+                    // если нашелся рус товар и англ товар, то удаляем англ товар
+                    Logger.Logger.SuccessLog("Remove from VK {0}", engProd.Title);
+                    vke.DeleteProduct(engProd.ID);
+                }
+            }
+        }
+
+
+        /// <summary>
+        /// экспортировать товар из БД в ВК
+        /// </summary>
+        /// <param name="g"></param>
+        /// <param name="vke"></param>
+        /// <param name="db"></param>
+        /// <returns></returns>
         public static bool ExportProductToVK(Product g, ProductVKExporter vke, ProductContext db)
         {
             bool result = false;

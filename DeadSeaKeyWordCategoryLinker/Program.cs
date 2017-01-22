@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using DeadSeaCatalogueDAL;
 using Logger;
 
+// утилита для вытаскивания связей переводов товаров с категориями из гуглодока
 namespace DeadSeaKeyWordCategoryLinker
 {
     class Program

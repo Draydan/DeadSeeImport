@@ -128,8 +128,11 @@ namespace DeadSeaCatalogueDAL
             }
             return false;
         }
+
     }
-        public class ProductContext : DbContext
+
+    public class ProductContext : DbContext
+
     {
         public ProductContext():base()
         { }                    
@@ -139,5 +142,14 @@ namespace DeadSeaCatalogueDAL
         public DbSet<LinkProductWithCategory> Links { get; set; }
 
         public DbSet<Translation> Translations { get; set; }
+
+        public List<Translation> GetTranslationsOfProduct(string productTitle)
+        {
+            return Translations.Where(t => t.titleEng == productTitle).ToList();
+        }
+        public Product GetProductByTitle(string productTitle)
+        {
+            return Products.FirstOrDefault(p => p.title == productTitle);
+        }
     }
 }

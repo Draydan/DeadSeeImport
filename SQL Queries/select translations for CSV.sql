@@ -18,21 +18,23 @@ use [DeadSeaCatalogueDAL.ProductContext]
 
 
 select distinct --p.title, t.titleEng, 
-t.title, ca.titleRus, dbo.replacenewline(t.[desc], '<br>') [desc], 
+isnull(t.title, p.title), ca.titleRus, isnull(dbo.replacenewline(t.[desc], '<br>'), p.[desc]) [desc], 
 'publish' as post_status,
 'no' as manage_stock , 'instock' as stock_status, p.artikul, 
-65 * CONVERT(float,replace(p.price, '$','')) * (0.2 * (3800-65 * CONVERT(float,replace(p.price, '$','')))/ 3300 +0.7) as price, 
+-- расчет цены идет между скидкой xx для 450р товара и скидкой 30% для 3300р
+round(65 * CONVERT(float,replace(p.price, '$','')) * (0.2 * (3800-65 * CONVERT(float,replace(p.price, '$','')))/ 3300 +0.7), -1) as price, 
+--65 * CONVERT(float,replace(p.price, '$','')),
 --'http://www.israel-catalog.com/sites/default/files/products/images/' + p.imageFileName as imageFileName
 --'http://izrael-cosmetics.ru/product_gallery/' + p.imageFileName as imageFileName
 --'/product_gallery/' + p.imageFileName as imageFileName
 --'http://izrael-cosmetics.ru.xsph.ru/wp-content/uploads/2016/05/' + p.imageFileName as imageFileName
 p.imageFileName as imageFileName
 from Products p
-inner join Translations t on t.titleEng = p.title and t.title <> p.title
+left outer join Translations t on t.titleEng = p.title and t.title <> p.title
 inner join LinkProductWithCategories lpc on lpc.product_ID = p.id  
 inner join Categories ca on ca.ID = lpc.category_ID 
 inner join Translations tc on tc.title = ca.titleRus and tc.isOurCategory = 1
-order by t.title
+--order by t.title
 
 select * from
 [DeadSeaCatalogueDAL.ProductContext].dbo.Translations t
@@ -41,13 +43,17 @@ and not exists
 (select * from Translations t2 where t.title = t2.title and t2.titleEng is not null)
 order by t.title
 
-select t.title, t.[desc], p.title, p.[desc],p.details from Products p
-left outer join Translations t on t.titleEng = p.title
+select t.title, t.[desc], p.title, p.[desc],p.details from [DeadSeaCatalogueDAL.ProductContext].dbo.Products p
+left outer join [DeadSeaCatalogueDAL.ProductContext].dbo.Translations t on t.titleEng = p.title
+
+select count(t.id), p.title from [DeadSeaCatalogueDAL.ProductContext].dbo.Products p
+left outer join [DeadSeaCatalogueDAL.ProductContext].dbo.Translations t on t.titleEng = p.title
+group by p.title
+order by count(t.id)
 
 select distinct t.title
 from Translations t
 order by title
-
 
 select count(*), tc.title
 from LinkProductWithCategories lpc 
@@ -99,7 +105,8 @@ inner join Translations tc on tc.titleEng = ca.title and tc.isOurCategory = 1
 --inner join Translations tc on tc.title = ca.titleRus-- and tc.isOurCategory = 1
 order by t.title
 
-select * from products
+select * from [DeadSeaCatalogueDAL.ProductContext].dbo.products
 where
-[desc] like '%moisturizing cream%'
-or details like '%moisturizing cream%'
+--[desc] like '%moisturizing cream%'
+--or details like '%moisturizing cream%' or
+ artikul = 15867
