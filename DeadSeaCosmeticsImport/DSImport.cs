@@ -123,6 +123,15 @@ namespace DeadSeaCosmeticsImport
             string filePath = string.Format("{0}\\{1}", PrepareCacheDir(), url);
             return filePath;
         }
+
+        private static string MakeUpScrapFilePath(string siteURL, string title = "")
+        {
+            string url = siteURL.Split(new string[] { "/" }, StringSplitOptions.None).Last() + ".html";
+            
+            string filePath = string.Format("{0}\\{1}", PrepareCacheDir(), url);
+            return filePath;
+        }
+
         private static string PrepareCacheDir(string dirname = "")
         {
             string dirName = (dirname=="")?("page_cache"):(dirname);
@@ -132,11 +141,13 @@ namespace DeadSeaCosmeticsImport
 
         private static string ReadPageFromCache(string siteURL, string title = "")
         {
-            string filePath = MakeUpCacheFilePath(siteURL, title);
-            if (!File.Exists(filePath))
-                return "";
-            else
-                return File.ReadAllText(filePath);
+            string filePathCache = MakeUpCacheFilePath(siteURL, title);
+            string filePathScrap = MakeUpScrapFilePath(siteURL, title);
+            if (File.Exists(filePathScrap))
+                return File.ReadAllText(filePathScrap);
+            if (File.Exists(filePathCache))
+                return File.ReadAllText(filePathCache);
+            return "";                
         }
 
         private static void WritePageToCache(string siteURL, string source, string title = "")
@@ -166,7 +177,18 @@ namespace DeadSeaCosmeticsImport
             //locker = true;
 
             //Logger.Logger.Trace("opening " + siteURL);
-            HttpClient http = new HttpClient();
+            Uri uri = new Uri(siteURL);
+
+            HttpClientHandler handler = new HttpClientHandler
+            {
+                Credentials = new
+                        System.Net.NetworkCredential("lolaokey", "cheburashka2017")
+            };
+            handler.CookieContainer = new CookieContainer();
+            handler.CookieContainer.Add(uri, new Cookie("PAPVisitorId", "05c6d7dc79e7eae167a5bpHa8ZwCgfaL")); // Adding a Cookie
+
+            HttpClient http = new HttpClient(handler);
+            
             var response = await http.GetByteArrayAsync(siteURL);
             //locker = false;
             return response;
@@ -198,12 +220,20 @@ namespace DeadSeaCosmeticsImport
                         source = ReadPageFromCache(siteURL, tag + titleCurr);
                         if (source == "")
                         {
-                            var response = await GetFile(siteURL);
-                            //var response = http.GetByteArrayAsync(siteURL);
-                            source = Encoding.GetEncoding("utf-8").GetString(response, 0, response.Length - 1);
-                            source = WebUtility.HtmlDecode(source);
-                            //if (titleCurr == "") 
-                            WritePageToCache(siteURL, source, tag + titleCurr);
+                           // try
+                            {
+                                var response = await GetFile(siteURL);
+                                //var response = http.GetByteArrayAsync(siteURL);
+                                source = Encoding.GetEncoding("utf-8").GetString(response, 0, response.Length - 1);
+                                source = WebUtility.HtmlDecode(source);
+                                //if (titleCurr == "") 
+                                WritePageToCache(siteURL, source, tag + titleCurr);
+                            } 
+                            //catch (Exception ex)
+                            {
+                               // Logger.Logger.ErrorLog(ex.Message);
+                               // break;
+                            }
                         }
                         HtmlDocument resultat = new HtmlDocument();
                         resultat.LoadHtml(source);
@@ -289,17 +319,29 @@ namespace DeadSeaCosmeticsImport
                                     // image
                                     HtmlNode image = resultat.DocumentNode.Descendants().
                                         First(x => (x.Name == "li" && x.Attributes["class"] != null && x.Attributes["class"].Value.Contains("productitem")));
-                                    string imageLink = image.ChildNodes.First(x => x.Name == "div").FirstChild.GetAttributeValue("href", null);
+                                    string imageLink = image.ChildNodes.First(x => x.Name == "div").FirstChild.GetAttributeValue("href", null)
+                                        ?? image.ChildNodes.First(x => x.Name == "div").FirstChild.GetAttributeValue("src", null);
                                     //var title = good.InnerText;
-                                    Logger.Logger.Trace("Image:");
-                                    Logger.Logger.Trace(imageLink);
-                                    string imageFileName = imageLink.Split('/').Last();
-                                    string imageNewPath = string.Format("{0}\\{1}", PrepareCacheDir(imagesDir), imageFileName);
-                                    if (!File.Exists(imageNewPath))
-                                    {
-                                        var response = await GetFile(rootURL + imageLink);
-                                        File.WriteAllBytes(imageNewPath, response);
-                                    }
+                                    //if (imageLink != null)
+                                    //{
+                                        Logger.Logger.Trace("Image:");
+                                        Logger.Logger.Trace(imageLink);
+                                        string imageFileName = imageLink.Split('/').Last();
+                                        string imageNewPath = string.Format("{0}\\{1}", PrepareCacheDir(imagesDir), imageFileName);
+                                        if (!File.Exists(imageNewPath) && imageLink.Contains("http"))
+                                        {
+
+                                        //try
+                                        {
+                                            var response = await GetFile(rootURL + imageLink);
+                                            File.WriteAllBytes(imageNewPath, response);
+                                        }
+                                        //catch (Exception ex)
+                                        {
+                                           // Logger.Logger.ErrorLog(ex.Message);
+                                        }
+                                        }
+                                    //}
 
                                     // title
                                     HtmlNode titleDiv = resultat.DocumentNode.Descendants().
@@ -414,8 +456,9 @@ namespace DeadSeaCosmeticsImport
                         
                         locker = false;
                         if (rootTries >= maxRootTries )
-                            throw new Exception("Ошибка", ex);
-                    }
+                            //throw new Exception("Ошибка", ex);
+                            Logger.Logger.ErrorLog("Ошибка " + ex.Message);
+            }
                     finally
                     {
                     }
@@ -449,6 +492,7 @@ namespace DeadSeaCosmeticsImport
                 }
                 else
                     g.Edit(db, sku, category, title, price, desc, details, imageFileName);
+                g.priceIsFromSiteNotExtrapolated = true;
                 int tries = 0;
                 int maxtries = 10;
                 while (tries < maxtries)

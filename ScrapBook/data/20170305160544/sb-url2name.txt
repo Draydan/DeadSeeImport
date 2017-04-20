@@ -1,0 +1,1325 @@
+https://www.israel-catalog.com/dead-sea-cosmetics	index
+https://www.israel-catalog.com/	default_003
+https://www.israel-catalog.com/logout	logout_001
+https://www.israel-catalog.com/about-israel	about-israel_001
+https://www.israel-catalog.com/about-israel/books	books
+https://www.israel-catalog.com/about-israel/donation-options	donation-options
+https://www.israel-catalog.com/about-israel/flags-lapel-pins	flags-lapel-pins_001
+https://www.israel-catalog.com/about-israel/history	history
+https://www.israel-catalog.com/about-israel/jerusalem	jerusalem
+https://www.israel-catalog.com/about-israel/maps-israel	maps-israel
+https://www.israel-catalog.com/about-israel/plant-tree-israel	plant-tree-israel
+https://www.israel-catalog.com/about-israel/souvenirs-from-israel	souvenirs-from-israel
+https://www.israel-catalog.com/about-israel/souvenirs-from-israel/israel-keychains	israel-keychains
+https://www.israel-catalog.com/about-israel/support-soldiers	support-soldiers_001
+https://www.israel-catalog.com/apparel	apparel
+https://www.israel-catalog.com/apparel/jewish-aprons	jewish-aprons
+https://www.israel-catalog.com/apparel/caps-hats	caps-hats_001
+https://www.israel-catalog.com/apparel/sandals	sandals
+https://www.israel-catalog.com/apparel/sandals/kids	kids
+https://www.israel-catalog.com/apparel/sandals/mens	mens_001
+https://www.israel-catalog.com/apparel/sandals/source-sandals	source-sandals_001
+https://www.israel-catalog.com/apparel/sandals/jesus-sandals-handmade-leather-biblical-sandals	jesus-sandals-handmade-leather-biblical-sandals
+https://www.israel-catalog.com/apparel/jackets-ponchos	jackets-ponchos_001
+https://www.israel-catalog.com/apparel/t-shirts	t-shirts
+https://www.israel-catalog.com/apparel/t-shirts/hebrew	hebrew
+https://www.israel-catalog.com/apparel/t-shirts/israel-army	israel-army
+https://www.israel-catalog.com/apparel/t-shirts/israel-theme	israel-theme_001
+https://www.israel-catalog.com/apparel/t-shirts/krav-maga	krav-maga
+https://www.israel-catalog.com/apparel/t-shirts/mossad	mossad
+https://www.israel-catalog.com/apparel/t-shirts/music-movies	music-movies_001
+https://www.israel-catalog.com/apparel/t-shirts/personalized	personalized
+https://www.israel-catalog.com/apparel/t-shirts/places-israel	places-israel
+https://www.israel-catalog.com/apparel/t-shirts/sports	sports_001
+https://www.israel-catalog.com/apparel/scarves	scarves
+https://www.israel-catalog.com/apparel/tops	tops
+https://www.israel-catalog.com/apparel/vests	vests
+https://www.israel-catalog.com/art-collectables	art-collectables
+https://www.israel-catalog.com/art-collectables/childrens-prints	childrens-prints
+https://www.israel-catalog.com/art-collectables/micro-calligraphy	micro-calligraphy
+https://www.israel-catalog.com/art-collectables/paintings	paintings
+https://www.israel-catalog.com/art-collectables/posters	posters_001
+https://www.israel-catalog.com/art-collectables/posters/educational	educational_001
+https://www.israel-catalog.com/art-collectables/posters/hatikvah	hatikvah
+https://www.israel-catalog.com/art-collectables/posters/historic-posters	historic-posters
+https://www.israel-catalog.com/art-collectables/posters/israel-theme-posters	israel-theme-posters_001
+https://www.israel-catalog.com/art-collectables/posters/official	official
+https://www.israel-catalog.com/art-collectables/sculptures	sculptures_001
+https://www.israel-catalog.com/books-magazines/bibles-prayer-books	bibles-prayer-books
+https://www.israel-catalog.com/books-magazines/biblical-commentaries	biblical-commentaries
+https://www.israel-catalog.com/books-magazines/biography	biography_001
+https://www.israel-catalog.com/books-magazines/children	children
+https://www.israel-catalog.com/books-magazines/christian-themes	christian-themes
+https://www.israel-catalog.com/books-magazines/cooking-food	cooking-food_001
+https://www.israel-catalog.com/books-magazines/gift-albums	gift-albums
+https://www.israel-catalog.com/holiday/passover/haggadah	haggadah
+https://www.israel-catalog.com/books-magazines/health	health_001
+https://www.israel-catalog.com/books-magazines/history-current-events	history-current-events
+https://www.israel-catalog.com/books-magazines/holocaust	holocaust
+https://www.israel-catalog.com/books-magazines/israeli-novels-english	israeli-novels-english_001
+https://www.israel-catalog.com/books-magazines/judaism-jewish-philosophy	judaism-jewish-philosophy_001
+https://www.israel-catalog.com/books-magazines/life-family-lifecycles	life-family-lifecycles
+https://www.israel-catalog.com/books-magazines/magazines	magazines_001
+https://www.israel-catalog.com/learn-hebrew/easy-reader-magazines/beginners-bereshit-18-issues	beginners-bereshit-18-issues
+https://www.israel-catalog.com/learn-hebrew/easy-reader-magazines/intermediate-yanshuf-18-issues	intermediate-yanshuf-18-issues_001
+https://www.israel-catalog.com/books-magazines/magazines/eretz-magazines	eretz-magazines
+https://www.israel-catalog.com/dead-sea-cosmetics/dead-sea-cosmetics-brands	dead-sea-cosmetics-brands
+https://www.israel-catalog.com/dead-sea-cosmetics/ahava	ahava_001
+https://www.israel-catalog.com/dead-sea-cosmetics/clineral	clineral_001
+https://www.israel-catalog.com/dead-sea-cosmetics/health-and-beauty	health-and-beauty
+https://www.israel-catalog.com/dead-sea-cosmetics/natural-sea-beauty	natural-sea-beauty
+https://www.israel-catalog.com/dead-sea-cosmetics/sea-of-spa	sea-of-spa
+https://www.israel-catalog.com/dead-sea-cosmetics/chic-cosmetics	chic-cosmetics
+https://www.israel-catalog.com/dead-sea-cosmetics/dead-sea-cosmetics-brands/hlavin-cosmetics	hlavin-cosmetics_001
+https://www.israel-catalog.com/dead-sea-cosmetics/dead-sea-cosmetics-brands/spa-cosmetics	spa-cosmetics
+https://www.israel-catalog.com/dead-sea-cosmetics/acne-care-products	acne-care-products
+https://www.israel-catalog.com/dead-sea-cosmetics/anti-aging	anti-aging_001
+https://www.israel-catalog.com/dead-sea-cosmetics/dead-sea-mud	dead-sea-mud_001
+https://www.israel-catalog.com/dead-sea-cosmetics/dead-sea-mud-mask	dead-sea-mud-mask
+https://www.israel-catalog.com/dead-sea-cosmetics/dead-sea-bath-salts	dead-sea-bath-salts
+https://www.israel-catalog.com/dead-sea-cosmetics/dead-sea-scrub	dead-sea-scrub_001
+https://www.israel-catalog.com/dead-sea-cosmetics/natural-deodorant	natural-deodorant
+https://www.israel-catalog.com/dead-sea-cosmetics/eye-care	eye-care
+https://www.israel-catalog.com/dead-sea-cosmetics/facial-care	facial-care_001
+https://www.israel-catalog.com/dead-sea-cosmetics/foot-care	foot-care
+https://www.israel-catalog.com/dead-sea-cosmetics/dead-sea-cosmetics-gift-set	dead-sea-cosmetics-gift-set
+https://www.israel-catalog.com/dead-sea-cosmetics/hair-care	hair-care_001
+https://www.israel-catalog.com/dead-sea-cosmetics/hand-care	hand-care
+https://www.israel-catalog.com/dead-sea-cosmetics/moroccan-argan-oil-hair-treatment	moroccan-argan-oil-hair-treatment
+https://www.israel-catalog.com/dead-sea-cosmetics/perfumes	perfumes
+https://www.israel-catalog.com/dead-sea-cosmetics/dead-sea-psoriasis-treatment-creams	dead-sea-psoriasis-treatment-creams
+https://www.israel-catalog.com/dead-sea-cosmetics/dead-sea-seborrhea-treatment	dead-sea-seborrhea-treatment
+https://www.israel-catalog.com/dead-sea-cosmetics/dead-sea-skin-care-for-men	dead-sea-skin-care-for-men
+https://www.israel-catalog.com/dead-sea-cosmetics/spa-body-care	spa-body-care_001
+https://www.israel-catalog.com/dead-sea-cosmetics/sun-care	sun-care
+https://www.israel-catalog.com/dead-sea-cosmetics/super-savers	super-savers
+https://www.israel-catalog.com/dead-sea-cosmetics/organic-cosmetics	organic-cosmetics
+https://www.israel-catalog.com/dead-sea-cosmetics/olive-oil-skin-products	olive-oil-skin-products
+https://www.israel-catalog.com/dead-sea-cosmetics/retinol-products	retinol-products_001
+https://www.israel-catalog.com/giftbaskets-wine/cakes-israel	cakes-israel_001
+https://www.israel-catalog.com/giftbaskets-wine/condolence-basket	condolence-basket
+https://www.israel-catalog.com/giftbaskets-wine/winter-holiday-gift-baskets	winter-holiday-gift-baskets
+https://www.israel-catalog.com/giftbaskets-wine/flowers-israel	flowers-israel_001
+https://www.israel-catalog.com/giftbaskets-wine/gift-baskets	gift-baskets
+https://www.israel-catalog.com/giftbaskets-wine/gift-baskets/max-brenner-chocolates	max-brenner-chocolates
+https://www.israel-catalog.com/giftbaskets-wine/gift-baskets/taste-of-israel-gift-box	taste-of-israel-gift-box
+https://www.israel-catalog.com/giftbaskets-wine/gift-baskets/wine-gift-baskets	wine-gift-baskets_001
+https://www.israel-catalog.com/giftbaskets-wine/holiday-specials	holiday-specials_001
+https://www.israel-catalog.com/giftbaskets-wine/holiday-specials/purim-mishloach-manot	purim-mishloach-manot
+https://www.israel-catalog.com/giftbaskets-wine/holiday-specials/tu-bshvat	tu-bshvat
+https://www.israel-catalog.com/giftbaskets-wine/holiday-specials/kosher-passover	kosher-passover_001
+https://www.israel-catalog.com/giftbaskets-wine/holiday-specials/chanukah-treats	chanukah-treats
+https://www.israel-catalog.com/giftbaskets-wine/wines	wines
+https://www.israel-catalog.com/giftbaskets-wine/wines/barkan-winery	barkan-winery
+https://www.israel-catalog.com/giftbaskets-wine/wines/carmel-winery	carmel-winery_001
+https://www.israel-catalog.com/giftbaskets-wine/wines/Castel-Winery	castel-winery
+https://www.israel-catalog.com/giftbaskets-wine/wines/chateau-golan-winery	chateau-golan-winery
+https://www.israel-catalog.com/giftbaskets-wine/wines/dalton-winery	dalton-winery_001
+https://www.israel-catalog.com/giftbaskets-wine/wines/galil-mountain-winery	galil-mountain-winery
+https://www.israel-catalog.com/giftbaskets-wine/wines/golan-winery	golan-winery
+https://www.israel-catalog.com/giftbaskets-wine/wines/pelter-distillery	pelter-distillery_001
+https://www.israel-catalog.com/giftbaskets-wine/wines/ramot-naftaly-winery	ramot-naftaly-winery
+https://www.israel-catalog.com/giftbaskets-wine/wines/recanati-winery	recanati-winery
+https://www.israel-catalog.com/giftbaskets-wine/wines/red	red_003
+https://www.israel-catalog.com/giftbaskets-wine/wines/seahorse-winery	seahorse-winery
+https://www.israel-catalog.com/giftbaskets-wine/wines/shvo-winery	shvo-winery_001
+https://www.israel-catalog.com/giftbaskets-wine/wines/trio-winery	trio-winery
+https://www.israel-catalog.com/giftbaskets-wine/wines/tura-winery	tura-winery
+https://www.israel-catalog.com/giftbaskets-wine/wines/tzora-winery	tzora-winery
+https://www.israel-catalog.com/giftbaskets-wine/wines/white	white
+https://www.israel-catalog.com/giftbaskets-wine/wines/yatir-winery	yatir-winery
+https://www.israel-catalog.com/giftbaskets-wine/nuts-dried-fruit	nuts-dried-fruit_001
+https://www.israel-catalog.com/holidays	holidays
+https://www.israel-catalog.com/holidays/tu-bishvat	tu-bishvat_001
+https://www.israel-catalog.com/holidays/purim	purim
+https://www.israel-catalog.com/holidays/purim/groggers	groggers_001
+https://www.israel-catalog.com/taxonomy/term/1029	1029
+https://www.israel-catalog.com/holidays/hanukkah-chanukah	hanukkah-chanukah
+https://www.israel-catalog.com/holidays/hanukkah-chanukah/hanukkah-charity-baskets	hanukkah-charity-baskets
+https://www.israel-catalog.com/holidays/hanukkah-chanukah/hanukkah-for-kids	hanukkah-for-kids
+https://www.israel-catalog.com/holidays/rosh-hashanah	rosh-hashanah_001
+https://www.israel-catalog.com/holidays/bar-mitzvah-bat-mitzvah	bar-mitzvah-bat-mitzvah
+https://www.israel-catalog.com/holidays/fathers-day	fathers-day
+https://www.israel-catalog.com/holidays/israel-independence-day	israel-independence-day
+https://www.israel-catalog.com/holidays/jewish-wedding-gifts	jewish-wedding-gifts_001
+https://www.israel-catalog.com/holidays/mothers-day	mothers-day
+https://www.israel-catalog.com/holidays/shavuot	shavuot_003
+https://www.israel-catalog.com/houseware	houseware
+https://www.israel-catalog.com/houseware/candle-holders	candle-holders_001
+https://www.israel-catalog.com/houseware/charms-wall-hangings	charms-wall-hangings
+https://www.israel-catalog.com/houseware/door-nameplate	door-nameplate
+https://www.israel-catalog.com/houseware/fridge-magnets	fridge-magnets_001
+https://www.israel-catalog.com/houseware/home-accessories	home-accessories_001
+https://www.israel-catalog.com/houseware/home-accessories-designers	home-accessories-designers
+https://www.israel-catalog.com/houseware/home-accessories-designers/artori-design	artori-design_001
+https://www.israel-catalog.com/houseware/jewish-calendars	jewish-calendars
+https://www.israel-catalog.com/houseware/kitchen-gadgets	kitchen-gadgets
+https://www.israel-catalog.com/houseware/office-accessories	office-accessories
+https://www.israel-catalog.com/houseware/picture-frames	picture-frames_001
+https://www.israel-catalog.com/houseware/table-accessories	table-accessories
+https://www.israel-catalog.com/houseware/towels-linen	towels-linen
+https://www.israel-catalog.com/houseware/wall-clocks	wall-clocks
+https://www.israel-catalog.com/jewelry	jewelry_001
+https://www.israel-catalog.com/jewelry/bracelets	bracelets
+https://www.israel-catalog.com/jewelry/cufflinks	cufflinks_001
+https://www.israel-catalog.com/jewelry/evil-eye	evil-eye_001
+https://www.israel-catalog.com/jewelry/headband	headband
+https://www.israel-catalog.com/jewelry/israeli-fashion-jewelry	israeli-fashion-jewelry_001
+https://www.israel-catalog.com/jewelry/designers/anava	anava_001
+https://www.israel-catalog.com/jewelry/designers/asiya-kabbalah-jewelry-design	asiya-kabbalah-jewelry-design
+https://www.israel-catalog.com/jewelry/designers/ben_jewelry	ben_jewelry_001
+https://www.israel-catalog.com/jewelry/designers/city-david-jewelry	city-david-jewelry
+https://www.israel-catalog.com/jewelry/designers/edita	edita
+https://www.israel-catalog.com/jewelry/designers/goodvibers	goodvibers_001
+https://www.israel-catalog.com/jewelry/designers/meir-avni-jewelry	meir-avni-jewelry
+https://www.israel-catalog.com/jewelry/designers/michal-kirat-jewelry	michal-kirat-jewelry
+https://www.israel-catalog.com/jewelry/designers/mizze	mizze
+https://www.israel-catalog.com/jewelry/designers/noa-jewelry	noa-jewelry_001
+https://www.israel-catalog.com/jewelry/designers/rafael-jewelry	rafael-jewelry
+https://www.israel-catalog.com/jewelry/designers/shablool-jewelry	shablool-jewelry
+https://www.israel-catalog.com/jewelry/designers/wesi	wesi_001
+https://www.israel-catalog.com/jewelry/rings/hebrew-name-ring	hebrew-name-ring_001
+https://www.israel-catalog.com/jewelry/rings/wedding-bands	wedding-bands
+https://www.israel-catalog.com/jewelry/kabbalah	kabbalah
+https://www.israel-catalog.com/jewelry/keychain-charms	keychain-charms_001
+https://www.israel-catalog.com/jewelry/necklaces	necklaces
+https://www.israel-catalog.com/jewelry/personalized-jewelry 	personalized-jewelry@20_001
+https://www.israel-catalog.com/jewelry/pins	pins_001
+https://www.israel-catalog.com/jewelry/jewish-jewelry	jewish-jewelry
+https://www.israel-catalog.com/jewelry/jewish-jewelry/ani-ledodi-vedodi-li	ani-ledodi-vedodi-li_001
+https://www.israel-catalog.com/jewelry/jewish-jewelry/jerusalem	jerusalem_001
+https://www.israel-catalog.com/jewelry/jewish-jewelry/chai	chai
+https://www.israel-catalog.com/jewelry/jewish-jewelry/menorah	menorah_001
+https://www.israel-catalog.com/jewelry/jewish-jewelry/prayers-blessings-verses-jewelry	prayers-blessings-verses-jewelry_001
+https://www.israel-catalog.com/jewelry/jewish-jewelry/psalms-necklace	psalms-necklace
+https://www.israel-catalog.com/jewelry/jewish-jewelry/shema-israel	shema-israel_001
+https://www.israel-catalog.com/jewelry/jewish-jewelry/lion-judah-jewelry	lion-judah-jewelry
+https://www.israel-catalog.com/jewelry/jewish-jewelry/western-wall-jewelry	western-wall-jewelry
+https://www.israel-catalog.com/jewelry/roman-glass-jewelry	roman-glass-jewelry
+https://www.israel-catalog.com/jewelry/land-of-israel-necklace	land-of-israel-necklace
+https://www.israel-catalog.com/judaica	judaica_001
+https://www.israel-catalog.com/judaica/judaica-artists	judaica-artists
+https://www.israel-catalog.com/judaica/judaica-artists/ayala-adler-judaica	ayala-adler-judaica
+https://www.israel-catalog.com/judaica/judaica-artists/bier-judaica	bier-judaica_001
+https://www.israel-catalog.com/judaica/judaica-artists/galilee-silk	galilee-silk
+https://www.israel-catalog.com/judaica/judaica-artists/hadad-brothers	hadad-brothers
+https://www.israel-catalog.com/judaica/judaica-artists/joy-art-gallery	joy-art-gallery_001
+https://www.israel-catalog.com/judaica/judaica-artists/lev-shneiderman-judaica	lev-shneiderman-judaica
+https://www.israel-catalog.com/judaica/judaica-artists/lily-art-judaica	lily-art-judaica
+https://www.israel-catalog.com/judaica/judaica-artists/mishkan-hatchelet	mishkan-hatchelet
+https://www.israel-catalog.com/judaica/judaica-artists/paldinox	paldinox
+https://www.israel-catalog.com/judaica/judaica-artists/rikmat-elimelech	rikmat-elimelech
+https://www.israel-catalog.com/judaica/judaica-artists/shraga-landesman	shraga-landesman_001
+https://www.israel-catalog.com/judaica/judaica-artists/wasershtrum	wasershtrum_001
+https://www.israel-catalog.com/judaica/judaica-artists/weaving-creation	weaving-creation_001
+https://www.israel-catalog.com/judaica/judaica-artists/yair-emanuel	yair-emanuel
+https://www.israel-catalog.com/judaica/arbat-haminim	arbat-haminim
+https://www.israel-catalog.com/judaica/benchers-birconim	benchers-birconim
+https://www.israel-catalog.com/judaica/candlesticks	candlesticks
+https://www.israel-catalog.com/judaica/challah-board	challah-board_001
+https://www.israel-catalog.com/judaica/challah-covers	challah-covers
+https://www.israel-catalog.com/judaica/dreidels-sivivonim	dreidels-sivivonim
+https://www.israel-catalog.com/holidays/passover/elijah-cups	elijah-cups_001
+https://www.israel-catalog.com/judaica/havdala	havdala
+https://www.israel-catalog.com/judaica/honey-dishes	honey-dishes
+https://www.israel-catalog.com/judaica/ketubot	ketubot_001
+https://www.israel-catalog.com/judaica/kiddush-cups-goblets	kiddush-cups-goblets
+https://www.israel-catalog.com/judaica/kiddush-fountain	kiddush-fountain_001
+https://www.israel-catalog.com/judaica/passover-accessories	passover-accessories_001
+https://www.israel-catalog.com/holiday/passover/matzah-trays	matzah-trays
+https://www.israel-catalog.com/judaica/mayim-achronim	mayim-achronim
+https://www.israel-catalog.com/judaica/mezuzah	mezuzah_001
+https://www.israel-catalog.com/judaica/menorahs-chanukiot	menorahs-chanukiot
+https://www.israel-catalog.com/holidays/passover/seder-plates	seder-plates
+https://www.israel-catalog.com/judaica/shofarot	shofarot
+https://www.israel-catalog.com/judaica/shofarot/rams-horn	rams-horn
+https://www.israel-catalog.com/judaica/shofarot/yeminite-kudu	yeminite-kudu_001
+https://www.israel-catalog.com/judaica/tallit-prayer-shawls	tallit-prayer-shawls_001
+https://www.israel-catalog.com/judaica/tallit-bag	tallit-bag
+https://www.israel-catalog.com/jewelry/talis-clip	talis-clip_001
+https://www.israel-catalog.com/judaica/tefillin	tefillin
+https://www.israel-catalog.com/judaica/torah-pointers	torah-pointers
+https://www.israel-catalog.com/judaica/washing-cups-towels	washing-cups-towels
+https://www.israel-catalog.com/judaica/7-branch-menorah	7-branch-menorah
+https://www.israel-catalog.com/learn-hebrew	learn-hebrew
+https://www.israel-catalog.com/learn-hebrew/childrens-aids	childrens-aids_001
+https://www.israel-catalog.com/learn-hebrew/do-it-yourself-courses	do-it-yourself-courses
+https://www.israel-catalog.com/learn-hebrew/easy-reader-books	easy-reader-books
+https://www.israel-catalog.com/learn-hebrew/easy-reader-magazines	easy-reader-magazines_001
+https://www.israel-catalog.com/learn-hebrew/electronics	electronics
+https://www.israel-catalog.com/learn-hebrew/electronics/babylon	babylon_001
+https://www.israel-catalog.com/learn-hebrew/electronics/wizcom	wizcom
+https://www.israel-catalog.com/learn-hebrew/guides-workbooks	guides-workbooks
+https://www.israel-catalog.com/learn-hebrew/posters	posters_003
+https://www.israel-catalog.com/software-electronics/software/learn-hebrew-software	learn-hebrew-software
+https://www.israel-catalog.com/movies-tv	movies-tv
+https://www.israel-catalog.com/movies-tv/movies	movies_001
+https://www.israel-catalog.com/movies-tv/movies/animated	animated
+https://www.israel-catalog.com/movies-tv/movies/christian	christian_001
+https://www.israel-catalog.com/movies-tv/movies/classics	classics
+https://www.israel-catalog.com/movies-tv/movies/comedy	comedy
+https://www.israel-catalog.com/movies-tv/movies/drama	drama
+https://www.israel-catalog.com/movies-tv/movies/horror	horror
+https://www.israel-catalog.com/movies-tv/movies/kids-family	kids-family
+https://www.israel-catalog.com/movies-tv/movies/military-war	military-war
+https://www.israel-catalog.com/movies-tv/movies/romance	romance_001
+https://www.israel-catalog.com/movies-tv/movies/thriller	thriller
+https://www.israel-catalog.com/movies-tv/tv-series	tv-series
+https://www.israel-catalog.com/movies-tv/dvd-player-mulitsystem	dvd-player-mulitsystem_001
+https://www.israel-catalog.com/movies-tv/documentaries	documentaries
+https://www.israel-catalog.com/movies-tv/folk-dance-instructional	folk-dance-instructional
+https://www.israel-catalog.com/movies-tv/karaoke	karaoke
+https://www.israel-catalog.com/movies-tv/music-concerts-performances	music-concerts-performances_001
+https://www.israel-catalog.com/movies-tv/public-screening	public-screening
+https://www.israel-catalog.com/military-outdoor-gear	military-outdoor-gear
+https://www.israel-catalog.com/military-outdoor-gear/bullet-proof-vest	bullet-proof-vest_003
+https://www.israel-catalog.com/military-outdoor-gear/external-body-armor	external-body-armor
+https://www.israel-catalog.com/military-outdoor-gear/concealable-body-armor/bullet-proof-vest-kids	bullet-proof-vest-kids_001
+https://www.israel-catalog.com/military-outdoor-gear/concealable-body-armor/concealed-vests	concealed-vests_001
+https://www.israel-catalog.com/military-outdoor-gear/concealable-body-armor/stab-proof-vest	stab-proof-vest
+https://www.israel-catalog.com/military-outdoor-gear/hydration-backpacks	hydration-backpacks
+https://www.israel-catalog.com/military-outdoor-gear/ballistic-armor-plates	ballistic-armor-plates_001
+https://www.israel-catalog.com/military-outdoor-gear/israeli-army-helmets	israeli-army-helmets
+https://www.israel-catalog.com/military-outdoor-gear/tactical-vests	tactical-vests_001
+https://www.israel-catalog.com/software-electronics	software-electronics
+https://www.israel-catalog.com/software-electronics/dvd-players	dvd-players
+https://www.israel-catalog.com/software-electronics/dictionaries-translators	dictionaries-translators
+https://www.israel-catalog.com/software-electronics/gps-navigation	gps-navigation_001
+https://www.israel-catalog.com/software-electronics/gps-navigation/gps-maps	gps-maps
+https://www.israel-catalog.com/software-electronics/gps-navigation/gps-systems	gps-systems
+https://www.israel-catalog.com/software-electronics/software	software_001
+https://www.israel-catalog.com/toys-games/computer-games	computer-games
+https://www.israel-catalog.com/toys-games/games	games
+https://www.israel-catalog.com/toys-games/toys	toys_001
+https://www.israel-catalog.com/toys-games/puzzles	puzzles
+https://www.israel-catalog.com/dead-sea-cosmetics/bath-products/shampoos	shampoos
+https://www.israel-catalog.com/dead-sea-cosmetics/bath-products/dead-sea-mud-soap	dead-sea-mud-soap_001
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:360 tid:1152	apachesolr_search_003
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[20 TO 50] tid:360	default_005
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[101 TO 200] tid:360	default_008
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:667 tid:360	apachesolr_search_007
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:54 tid:360	apachesolr_search_010
+https://www.israel-catalog.com/dead-sea-cosmetics/natural-sea-beauty-power-body-moisturizer-normal-dry-skin	natural-sea-beauty-power-body-moisturizer-normal-dry-skin_001
+https://www.israel-catalog.com/dead-sea-cosmetics/natural-sea-beauty-pure-dead-sea-bath-salts	natural-sea-beauty-pure-dead-sea-bath-salts_002
+https://www.israel-catalog.com/dead-sea-cosmetics/natural-sea-beauty-mineral-active-night-care	natural-sea-beauty-mineral-active-night-care
+https://www.israel-catalog.com/dead-sea-cosmetics/natural-sea-beauty-purifying-dead-sea-mud-shampoo	natural-sea-beauty-purifying-dead-sea-mud-shampoo
+https://www.israel-catalog.com/dead-sea-cosmetics/natural-sea-beauty-dead-sea-protective-hand-cream	natural-sea-beauty-dead-sea-protective-hand-cream_001
+https://www.israel-catalog.com/dead-sea-cosmetics/natural-sea-beauty-mud-cleansing-gel	natural-sea-beauty-mud-cleansing-gel_002
+https://www.israel-catalog.com/dead-sea-cosmetics/natural-sea-beauty-foot-repair-cream	natural-sea-beauty-foot-repair-cream
+https://www.israel-catalog.com/dead-sea-cosmetics/natural-sea-beauty-mineral-shower-gel	natural-sea-beauty-mineral-shower-gel
+https://www.israel-catalog.com/dead-sea-cosmetics/natural-sea-beauty-mineral-source-refreshing-toner	natural-sea-beauty-mineral-source-refreshing-toner_001
+https://www.israel-catalog.com/dead-sea-cosmetics/natural-sea-beauty-purifying-mud-body-scrub	natural-sea-beauty-purifying-mud-body-scrub_002
+https://www.israel-catalog.com/dead-sea-cosmetics/natural-sea-beauty/natural-sea-beauty-mineral-repair-cream-cracked-rough-skin	natural-sea-beauty-mineral-repair-cream-cracked-rough-skin_002
+https://www.israel-catalog.com/dead-sea-cosmetics/natural-sea-beauty/dead-sea-recovery-cream-natural-sea-beauty	dead-sea-recovery-cream-natural-sea-beauty
+https://www.israel-catalog.com/dead-sea-cosmetics/ahava-leave-dermud-intensive-foot-cream	ahava-leave-dermud-intensive-foot-cream
+https://www.israel-catalog.com/dead-sea-cosmetics/natural-sea-beauty/natural-sea-beauty-body-mineral-soap	natural-sea-beauty-body-mineral-soap_001
+https://www.israel-catalog.com/dead-sea-cosmetics/natural-sea-beauty/dead-sea-whitening-serum-natural-sea-beauty	dead-sea-whitening-serum-natural-sea-beauty_001
+https://www.israel-catalog.com/dead-sea-cosmetics/ahava/mineral-hand-cream	mineral-hand-cream
+https://www.israel-catalog.com/dead-sea-cosmetics/ahava/ahava-hand-cream-super-saver-3-pack	ahava-hand-cream-super-saver-3-pack
+https://www.israel-catalog.com/dead-sea-cosmetics/set-3-natural-sea-beauty-power-body-moisturizer-normal-dry-skin	set-3-natural-sea-beauty-power-body-moisturizer-normal-dry-skin_001
+https://www.israel-catalog.com/dead-sea-cosmetics/ahava/ahava-foot-cream-set-of-3-super-saver-deal-	ahava-foot-cream-set-of-3-super-saver-deal-_001
+https://www.israel-catalog.com/dead-sea-cosmetics/natural-sea-beauty-set-3-purifying-mud-mask-dry-delicate-skin	natural-sea-beauty-set-3-purifying-mud-mask-dry-delicate-skin_002
+https://www.israel-catalog.com/dead-sea-cosmetics/natural-sea-beauty-set-3-purifying-mud-facial-scrub	natural-sea-beauty-set-3-purifying-mud-facial-scrub
+https://www.israel-catalog.com/search/apachesolr_search/?filters=tid:54	default_009
+https://www.israel-catalog.com/search/apachesolr_search/?filters=tid:52	default_011
+https://www.israel-catalog.com/jewelry/jewish-jewelry/star-of-david	star-of-david_001
+https://www.israel-catalog.com/jewelry/necklaces/hebrew-name-necklace	hebrew-name-necklace_001
+https://www.israel-catalog.com/jewelry/bracelets/hamsa-bracelet	hamsa-bracelet_001
+https://www.israel-catalog.com/suppliers-manufacturers	suppliers-manufacturers_003
+https://www.israel-catalog.com/about	about_001
+https://www.israel-catalog.com/privacy-policy	privacy-policy_001
+https://www.israel-catalog.com/node/8443	8443
+https://www.israel-catalog.com/i-buy-israeli-goods	i-buy-israeli-goods_001
+https://www.israel-catalog.com/israel-catalog-campaign-archive	israel-catalog-campaign-archive_001
+https://www.israel-catalog.com/bring-a-friend	bring-a-friend_002
+https://www.israel-catalog.com/content/testimonials	testimonials_003
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[0 TO 20]	default_013
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[51 TO 100]	default_016
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[201 TO 9999]	default_018
+https://www.israel-catalog.com/search/apachesolr_search/?filters=tid:72	default_021
+https://www.israel-catalog.com/giftbaskets-wine/holiday-specials/kosher-passover/create-your-own-passovrer-gift-basket	create-your-own-passovrer-gift-basket_002
+https://www.israel-catalog.com/jewelry/sterling-silver-star-david-hebrew-name	sterling-silver-star-david-hebrew-name_001
+https://www.israel-catalog.com/dead-sea-cosmetics/sea-of-spa/FREE-dead-sea-avocado-hand-cream-set-2	free-dead-sea-avocado-hand-cream-set-2_001
+https://www.israel-catalog.com/apparel/slim-crossover-adjustable-biblical-leather-sandals-hermon	slim-crossover-adjustable-biblical-leather-sandals-hermon_002
+https://www.israel-catalog.com/about-israel/souvenirs-from-israel/i-stand-israel-button	i-stand-israel-button_001
+https://www.israel-catalog.com/dead-sea-cosmetics/sea-of-spa/dead-sea-soaps-dead-sea-black-mud	dead-sea-soaps-dead-sea-black-mud_001
+https://www.israel-catalog.com/dead-sea-cosmetics/dead-sea-mineral-collagen-firming-face-cream-spf-20	dead-sea-mineral-collagen-firming-face-cream-spf-20_002
+https://www.israel-catalog.com/apparel/adjustable-single-strap-leather-biblical-sandals-solomon	adjustable-single-strap-leather-biblical-sandals-solomon_002
+https://www.israel-catalog.com/login	login
+https://www.israel-catalog.com/giftbaskets-wine/gift-baskets/charity-baskets	charity-baskets_001
+https://www.israel-catalog.com/giftbaskets-wine/gift-baskets/lone-soldiers-gifts	lone-soldiers-gifts
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[0 TO 20] tid:353	default_023
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[51 TO 100] tid:353	default_024
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[101 TO 200] tid:353	default_026
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:667 tid:353	apachesolr_search_012
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:975 tid:353	apachesolr_search_014
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:54 tid:353	apachesolr_search_016
+https://www.israel-catalog.com/about-israel/israel-picture-books-skyline-negev-earth-facing-sky	israel-picture-books-skyline-negev-earth-facing-sky_002
+https://www.israel-catalog.com/about-israel/map-superdeal-israel-map-set	map-superdeal-israel-map-set
+https://www.israel-catalog.com/about-israel/map-tel-aviv-yafo	map-tel-aviv-yafo
+https://www.israel-catalog.com/about-israel/old-city-jerusalem	old-city-jerusalem
+https://www.israel-catalog.com/about-israel/flags-lapel-pins/israel-desk-flag	israel-desk-flag_001
+https://www.israel-catalog.com/about-israel/physical-map-israel-and-autonomous-areas	physical-map-israel-and-autonomous-areas
+https://www.israel-catalog.com/about-israel/flags-lapel-pins/3-israel-flag-lapel-pin	3-israel-flag-lapel-pin
+https://www.israel-catalog.com/about-israel/flags-lapel-pins/israel-flag-medium	israel-flag-medium
+https://www.israel-catalog.com/about-israel/flags-lapel-pins/israel-flag-big	israel-flag-big_001
+https://www.israel-catalog.com/about-israel/souvenirs-from-israel/official-israel-64th-anniversary-lapel-pin	official-israel-64th-anniversary-lapel-pin_001
+https://www.israel-catalog.com/jewish-jewelry/silk-red-string-beaded-chain-bracelet-hamsa-charm	silk-red-string-beaded-chain-bracelet-hamsa-charm_002
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[20 TO 50] tid:267	default_028
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[101 TO 200] tid:267	default_029
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[201 TO 9999] tid:267	default_030
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:667 tid:267	apachesolr_search_019
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:91 tid:267	apachesolr_search_023
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[0 TO 20] tid:421	default_032
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[20 TO 50] tid:421	default_036
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[201 TO 9999] tid:421	default_040
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:91 tid:421	apachesolr_search_024
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:54 tid:421	apachesolr_search_026
+https://www.israel-catalog.com/about-israel/plant-tree-memory-shimon-peres	plant-tree-memory-shimon-peres_002
+https://www.israel-catalog.com/about-israel/plant-trees-life-carmel-help-reforest-israel	plant-trees-life-carmel-help-reforest-israel_002
+https://www.israel-catalog.com/about-israel/plant-5-trees-life	plant-5-trees-life_001
+https://www.israel-catalog.com/about-israel/plant-tree-israel/plant-7-trees-life-where-missiles-fell	plant-7-trees-life-where-missiles-fell
+https://www.israel-catalog.com/about-israel/plant-10-trees-life	plant-10-trees-life
+https://www.israel-catalog.com/about-israel/plant-18-chai-trees-life	plant-18-chai-trees-life
+https://www.israel-catalog.com/about-israel/plant-tree-israel/plant-50-trees-life-where-missiles-fell	plant-50-trees-life-where-missiles-fell_001
+https://www.israel-catalog.com/about-israel/plant-tree-israel/plant-100-trees-life-where-missiles-fell	plant-100-trees-life-where-missiles-fell_001
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[0 TO 20] tid:1337	default_042
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[51 TO 100] tid:1337	default_044
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[201 TO 9999] tid:1337	default_045
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:667 tid:1337	apachesolr_search_030
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:54 tid:1337	apachesolr_search_031
+https://www.israel-catalog.com/about-israel/souvenirs-from-israel/israel-keychains/lady-Camel-Israel-Keychains	lady-camel-israel-keychains_002
+https://www.israel-catalog.com/about-israel/souvenirs-from-israel/israel-keychains/shalom-sheep-israel-keychains	shalom-sheep-israel-keychains
+https://www.israel-catalog.com/about-israel/souvenirs-from-israel/israel-keychains/jerusalem-camel-israel-keychains	jerusalem-camel-israel-keychains
+https://www.israel-catalog.com/about-israel/souvenirs-from-israel/souvenirs-from-israel-i-love-israel-carabiner-key-chain	souvenirs-from-israel-i-love-israel-carabiner-key-chain
+https://www.israel-catalog.com/about-israel/souvenirs-from-israel/souvenirs-from-israel-israel-is-real-carabiner-key-chain	souvenirs-from-israel-israel-is-real-carabiner-key-chain_001
+https://www.israel-catalog.com/about-israel/souvenirs-from-israel/israel-keychains/dead-sea-israel-keychains	dead-sea-israel-keychains_001
+https://www.israel-catalog.com/about-israel/souvenirs-from-israel/israel-keychains/blue-white-star-of-david-israel-keychains	blue-white-star-of-david-israel-keychains
+https://www.israel-catalog.com/about-israel/souvenirs-from-israel/israel-keychains/turquoise-hamsa-israel-keychains	turquoise-hamsa-israel-keychains
+https://www.israel-catalog.com/about-israel/souvenirs-from-israel/israel-keychains/israel-map-israel-keychains	israel-map-israel-keychains_001
+https://www.israel-catalog.com/about-israel/souvenirs-from-israel/israel-flag-key-chain	israel-flag-key-chain
+https://www.israel-catalog.com/about-israel/souvenirs-from-israel/israel-keychains/israel-collection-israel-keychains	israel-collection-israel-keychains_002
+https://www.israel-catalog.com/about-israel/souvenirs-from-israel/israel-keychains/colorful-hamsa-israel-keychains	colorful-hamsa-israel-keychains_002
+https://www.israel-catalog.com/about-israel/souvenirs-from-israel/israel-keychains/jerusalem-skyline-israel-keychains	jerusalem-skyline-israel-keychains_002
+https://www.israel-catalog.com/about-israel/souvenirs-from-israel/israel-keychains/lucky-charms-israel-keychains	lucky-charms-israel-keychains_001
+https://www.israel-catalog.com/about-israel/souvenirs-from-israel/israel-keychains/hamsa-flower-israel-keychains	hamsa-flower-israel-keychains
+https://www.israel-catalog.com/about-israel/souvenirs-from-israel/israel-keychains/holy-land-charms-israel-keychains	holy-land-charms-israel-keychains
+https://www.israel-catalog.com/about-israel/souvenirs-from-israel/israel-keychains/i-love-israel-hamsa-israel-keychains	i-love-israel-hamsa-israel-keychains_002
+https://www.israel-catalog.com/holidays/travel-accessories	travel-accessories_001
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[0 TO 20] tid:473	default_046
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[20 TO 50] tid:473	default_047
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[51 TO 100] tid:473	default_048
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[101 TO 200] tid:473	default_049
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[201 TO 9999] tid:473	default_051
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:975 tid:473	apachesolr_search_033
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:54 tid:473	apachesolr_search_034
+https://www.israel-catalog.com/apparel/israel-cap-camouflage-idf-hat	israel-cap-camouflage-idf-hat_001
+https://www.israel-catalog.com/apparel/israeli-air-force-logo-baseball-cap	israeli-air-force-logo-baseball-cap_002
+https://www.israel-catalog.com/apparel/free-maccabiah-sportswear-visor	free-maccabiah-sportswear-visor
+https://www.israel-catalog.com/apparel/israel-cap-israeli-army-retro-hat	israel-cap-israeli-army-retro-hat
+https://www.israel-catalog.com/apparel/free-maccabiah-sportswear-sports-cap-sky	free-maccabiah-sportswear-sports-cap-sky
+https://www.israel-catalog.com/apparel/free-israel-flag-cap	free-israel-flag-cap_002
+https://www.israel-catalog.com/apparel/israel-cap-golani-hat	israel-cap-golani-hat
+https://www.israel-catalog.com/apparel/israel-cap-israeli-navy-hat	israel-cap-israeli-navy-hat
+https://www.israel-catalog.com/apparel/free-maccabiah-18-official-baseball-cap	free-maccabiah-18-official-baseball-cap
+https://www.israel-catalog.com/apparel/israel-cap-idf-paratroopers-hat	israel-cap-idf-paratroopers-hat_002
+https://www.israel-catalog.com/apparel/israel-cap-krav-maga	israel-cap-krav-maga_001
+https://www.israel-catalog.com/apparel/israel-cap-israel-symbol-hat	israel-cap-israel-symbol-hat
+https://www.israel-catalog.com/apparel/israel-cap-israeli-army-symbol-hat	israel-cap-israeli-army-symbol-hat
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:1034 tid:295	apachesolr_search_037
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:1034 tid:700	apachesolr_search_038
+https://www.israel-catalog.com/search/apachesolr_search/classic?filters=tid:1034	classic_002
+https://www.israel-catalog.com/search/apachesolr_search/capra?filters=tid:1034	capra
+https://www.israel-catalog.com/search/apachesolr_search/djibouti?filters=tid:1034	djibouti_003
+https://www.israel-catalog.com/search/apachesolr_search/puerto?filters=tid:1034	puerto_003
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[0 TO 20] tid:1034	default_052
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[20 TO 50] tid:1034	default_054
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[101 TO 200] tid:1034	default_057
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:667 tid:1034	apachesolr_search_041
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:91 tid:1034	apachesolr_search_044
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[0 TO 20] tid:359	default_058
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[20 TO 50] tid:359	default_059
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[51 TO 100] tid:359	default_063
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:667 tid:359	apachesolr_search_047
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:91 tid:359	apachesolr_search_048
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:54 tid:359	apachesolr_search_049
+https://www.israel-catalog.com/apparel/t-shirts/israel-theme/israel-67th-anniversary-israel-t-shirt	israel-67th-anniversary-israel-t-shirt
+https://www.israel-catalog.com/apparel/israel-t-shirt-i-support-israel-men	israel-t-shirt-i-support-israel-men
+https://www.israel-catalog.com/apparel/israel-t-shirt-israeli-air-force-men	israel-t-shirt-israeli-air-force-men
+https://www.israel-catalog.com/apparel/israel-t-shirt-zahal-idf-star-logo-men	israel-t-shirt-zahal-idf-star-logo-men_002
+https://www.israel-catalog.com/apparel/t-shirts/jerusalem-forever-israel-t-shirt	jerusalem-forever-israel-t-shirt_002
+https://www.israel-catalog.com/apparel/t-shirts/jewish/chosen-1-israeli-t-shirt	chosen-1-israeli-t-shirt_002
+https://www.israel-catalog.com/apparel/old-school-patriot-israeli-flag	old-school-patriot-israeli-flag
+https://www.israel-catalog.com/apparel/israel-t-shirt-shalom-peace-and-salam-men	israel-t-shirt-shalom-peace-and-salam-men
+https://www.israel-catalog.com/apparel/israel-t-shirt-born-be-jewish-men	israel-t-shirt-born-be-jewish-men
+https://www.israel-catalog.com/apparel/israel-t-shirt-i-dont-roll-shabbas-men	israel-t-shirt-i-dont-roll-shabbas-men_001
+https://www.israel-catalog.com/apparel/israel-t-shirt-idf-tank-men	israel-t-shirt-idf-tank-men
+https://www.israel-catalog.com/apparel/kosher-sign-men	kosher-sign-men
+https://www.israel-catalog.com/apparel/t-shirts/say-yiddiss-israel-t-shirt	say-yiddiss-israel-t-shirt
+https://www.israel-catalog.com/apparel/israel-t-shirt-california-men	israel-t-shirt-california-men_001
+https://www.israel-catalog.com/apparel/t-shirts/mossad/mossad-t-shirt	mossad-t-shirt
+https://www.israel-catalog.com/apparel/israel-t-shirt-krav-maga-martial-arts-men	israel-t-shirt-krav-maga-martial-arts-men
+https://www.israel-catalog.com/apparel/il48-mens-israel-t-shirt	il48-mens-israel-t-shirt_001
+https://www.israel-catalog.com/apparel/israel-t-shirt-shalom-israel-shmulik-star-women	israel-t-shirt-shalom-israel-shmulik-star-women_001
+https://www.israel-catalog.com/apparel/israel-t-shirt-100-kosher-men	israel-t-shirt-100-kosher-men
+https://www.israel-catalog.com/apparel/t-shirts?page=1	t-shirts_001
+https://www.israel-catalog.com/apparel/t-shirts?page=2	t-shirts_003
+https://www.israel-catalog.com/apparel/t-shirts?page=3	t-shirts_004
+https://www.israel-catalog.com/apparel/t-shirts?page=4	t-shirts_005
+https://www.israel-catalog.com/apparel/t-shirts?page=5	t-shirts_006
+https://www.israel-catalog.com/apparel/t-shirts?page=6	t-shirts_007
+https://www.israel-catalog.com/apparel/israel-t-shirt-golani-unit-logo-men	israel-t-shirt-golani-unit-logo-men
+https://www.israel-catalog.com/apparel/israeli-army-t-shirt-zahal-idf-logo-men	israeli-army-t-shirt-zahal-idf-logo-men_001
+https://www.israel-catalog.com/apparel/israel-t-shirt-israel-navy-men	israel-t-shirt-israel-navy-men_002
+https://www.israel-catalog.com/apparel/mossad-t-shirt-mossad-hebrew-men	mossad-t-shirt-mossad-hebrew-men
+https://www.israel-catalog.com/apparel/israel-navy-commandos-shayetet-13-mens-t-shirt	israel-navy-commandos-shayetet-13-mens-t-shirt
+https://www.israel-catalog.com/apparel/israel-t-shirt-zahal-idf-small-logo-men	israel-t-shirt-zahal-idf-small-logo-men
+https://www.israel-catalog.com/apparel/israel-t-shirt-guns-n-moses-men	israel-t-shirt-guns-n-moses-men_001
+https://www.israel-catalog.com/apparel/t-shirts/t-shirt-israel-police	t-shirt-israel-police
+https://www.israel-catalog.com/apparel/israel-t-shirt-hebrew-university-jerusalem-men	israel-t-shirt-hebrew-university-jerusalem-men
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[0 TO 20] tid:307	default_064
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[20 TO 50] tid:307	default_068
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[201 TO 9999] tid:307	default_069
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:667 tid:307	apachesolr_search_052
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:91 tid:307	apachesolr_search_055
+https://www.israel-catalog.com/apparel/israel-t-shirt-krav-maga-small-logo-men	israel-t-shirt-krav-maga-small-logo-men
+https://www.israel-catalog.com/apparel/israel-t-shirt-krav-maga-instructor-men	israel-t-shirt-krav-maga-instructor-men
+https://www.israel-catalog.com/apparel/israel-t-shirt-krav-maga-jump-kick-men	israel-t-shirt-krav-maga-jump-kick-men_002
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[0 TO 20] tid:305	default_070
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[20 TO 50] tid:305	default_071
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[51 TO 100] tid:305	default_073
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[201 TO 9999] tid:305	default_074
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:667 tid:305	apachesolr_search_056
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:975 tid:305	apachesolr_search_058
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:54 tid:305	apachesolr_search_059
+https://www.israel-catalog.com/music-cds/pop-rock/shlomi-shabbat-just-you-know	shlomi-shabbat-just-you-know
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[0 TO 20] tid:471	default_075
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[20 TO 50] tid:471	default_076
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[51 TO 100] tid:471	default_078
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[201 TO 9999] tid:471	default_082
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:91 tid:471	apachesolr_search_060
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:54 tid:471	apachesolr_search_061
+https://www.israel-catalog.com/apparel/free-galilee-silk-scarf	free-galilee-silk-scarf_001
+https://www.israel-catalog.com/apparel/galilee-silk-silk-scarf-59-x-118	galilee-silk-silk-scarf-59-x-118
+https://www.israel-catalog.com/apparel/galilee-silk-silk-scarf-59-x-17	galilee-silk-silk-scarf-59-x-17
+https://www.israel-catalog.com/apparel/galilee-silk-silk-scarf-35-x-35	galilee-silk-silk-scarf-35-x-35_002
+https://www.israel-catalog.com/apparel/galilee-silk-silk-jerusalem-scarf-59-x-17	galilee-silk-silk-jerusalem-scarf-59-x-17_001
+https://www.israel-catalog.com/apparel/galilee-silk-silk-scarf-hand-painted-70-x-35	galilee-silk-silk-scarf-hand-painted-70-x-35
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[0 TO 20] tid:469	default_083
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[20 TO 50] tid:469	default_085
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[101 TO 200] tid:469	default_086
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[201 TO 9999] tid:469	default_089
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:975 tid:469	apachesolr_search_065
+https://www.israel-catalog.com/apparel/galilee-silk-sleeveless-open-silk-vest	galilee-silk-sleeveless-open-silk-vest
+https://www.israel-catalog.com/apparel/galilee-silk-geometric-t-shirt-and-silk-vest	galilee-silk-geometric-t-shirt-and-silk-vest
+https://www.israel-catalog.com/apparel/galilee-silk-jerusalem-t-shirt-and-silk-vest	galilee-silk-jerusalem-t-shirt-and-silk-vest
+https://www.israel-catalog.com/apparel/galilee-silk-two-irises-t-shirt-and-silk-vest	galilee-silk-two-irises-t-shirt-and-silk-vest
+https://www.israel-catalog.com/apparel/galilee-silk-flower-t-shirt-and-silk-vest	galilee-silk-flower-t-shirt-and-silk-vest_002
+https://www.israel-catalog.com/apparel/galilee-silk-silk-fashion-vest	galilee-silk-silk-fashion-vest_002
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[20 TO 50] tid:1297	default_090
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[51 TO 100] tid:1297	default_091
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[101 TO 200] tid:1297	default_092
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[201 TO 9999] tid:1297	default_095
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:975 tid:1297	apachesolr_search_069
+https://www.israel-catalog.com/art-collectables/bedtime-shema	bedtime-shema_001
+https://www.israel-catalog.com/art-collectables/gesher-tzar-mod	gesher-tzar-mod
+https://www.israel-catalog.com/art-collectables/modeh-ani-i-give-thanks	modeh-ani-i-give-thanks
+https://www.israel-catalog.com/art-collectables/jerusalem-star-david	jerusalem-star-david
+https://www.israel-catalog.com/art-collectables/blessing-israel-genesis-12-2-3-calligraphy-print	blessing-israel-genesis-12-2-3-calligraphy-print_001
+https://www.israel-catalog.com/art-collectables/tree-life-calligraphy-print	tree-life-calligraphy-print_002
+https://www.israel-catalog.com/art-collectables/shirion-armor-corps	shirion-armor-corps
+https://www.israel-catalog.com/art-collectables/grace-after-meals-birkat-hamazon-calligraphy-print	grace-after-meals-birkat-hamazon-calligraphy-print
+https://www.israel-catalog.com/art-collectables/noahs-ark-calligraphy-print	noahs-ark-calligraphy-print_001
+https://www.israel-catalog.com/art-collectables/blessing-home-birkat-habayit	blessing-home-birkat-habayit
+https://www.israel-catalog.com/art-collectables/parting-red-sea-calligraphy-print-ellen-miller-braun	parting-red-sea-calligraphy-print-ellen-miller-braun
+https://www.israel-catalog.com/art-collectables/seventy-names-jerusalem	seventy-names-jerusalem
+https://www.israel-catalog.com/art-collectables/tomb-patriarchs	tomb-patriarchs_002
+https://www.israel-catalog.com/art-collectables/tefillin-phylactery-calligraphy-print	tefillin-phylactery-calligraphy-print_002
+https://www.israel-catalog.com/art-collectables/lion-judea-calligraphy-print	lion-judea-calligraphy-print
+https://www.israel-catalog.com/art-collectables/book-exodus-parting-red-sea	book-exodus-parting-red-sea
+https://www.israel-catalog.com/art-collectables/paintings/woman-valor	woman-valor_001
+https://www.israel-catalog.com/art-collectables/woman-valor-calligraphy-print	woman-valor-calligraphy-print_001
+https://www.israel-catalog.com/art-collectables/micro-calligraphy?page=1	micro-calligraphy_001
+https://www.israel-catalog.com/art-collectables/isaiah-seven-consolation-micah-41-7-77-9	isaiah-seven-consolation-micah-41-7-77-9_001
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[0 TO 20] tid:493	default_096
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[20 TO 50] tid:493	default_100
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[201 TO 9999] tid:493	default_104
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:91 tid:493	apachesolr_search_071
+https://www.israel-catalog.com/art-collectables/hatikvah-dove-poster	hatikvah-dove-poster
+https://www.israel-catalog.com/art-collectables/hatikvah-kotel-poster-8-languages	hatikvah-kotel-poster-8-languages
+https://www.israel-catalog.com/art-collectables/hatikvah-soldiers-poster	hatikvah-soldiers-poster_002
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[20 TO 50] tid:492	default_106
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[101 TO 200] tid:492	default_110
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:975 tid:492	apachesolr_search_074
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:54 tid:492	apachesolr_search_078
+https://www.israel-catalog.com/art-collectables/hamssa-poster	hamssa-poster
+https://www.israel-catalog.com/art-collectables/israeli-flag-61-yom-haatzmaut-poster	israeli-flag-61-yom-haatzmaut-poster
+https://www.israel-catalog.com/art-collectables/home-brave-poster	home-brave-poster
+https://www.israel-catalog.com/art-collectables/am-yisrael-chai-poster	am-yisrael-chai-poster_002
+https://www.israel-catalog.com/art-collectables/falafel-poster	falafel-poster
+https://www.israel-catalog.com/art-collectables/tree-menorah-poster	tree-menorah-poster
+https://www.israel-catalog.com/art-collectables/new-york-loves-israel-poster	new-york-loves-israel-poster
+https://www.israel-catalog.com/art-collectables/jerusalem-montage-poster	jerusalem-montage-poster_001
+https://www.israel-catalog.com/art-collectables/marching-flags-poster	marching-flags-poster_001
+https://www.israel-catalog.com/art-collectables/holy-land-free-poster	holy-land-free-poster
+https://www.israel-catalog.com/art-collectables/prayer-state-israel-poster	prayer-state-israel-poster
+https://www.israel-catalog.com/art-collectables/israeli-air-force-poster	israeli-air-force-poster
+https://www.israel-catalog.com/art-collectables/altnoiland-herzel-poster	altnoiland-herzel-poster_002
+https://www.israel-catalog.com/art-collectables/we-love-jer-usa-lem-poster	we-love-jer-usa-lem-poster_002
+https://www.israel-catalog.com/art-collectables/words-living-god-poster	words-living-god-poster
+https://www.israel-catalog.com/art-collectables/posters/israel-theme-posters?page=1	israel-theme-posters_002
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[0 TO 20] tid:104	default_111
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[20 TO 50] tid:104	default_112
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[51 TO 100] tid:104	default_113
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[101 TO 200] tid:104	default_117
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:975 tid:104	apachesolr_search_079
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:91 tid:104	apachesolr_search_082
+https://www.israel-catalog.com/books-magazines/bibles-prayer-books/my-little-machzor-childs-first-high-holiday-prayer-book	my-little-machzor-childs-first-high-holiday-prayer-book_001
+https://www.israel-catalog.com/books-magazines/bibles-prayer-books/yom-kippur-childrens-machzor-hebrew-only	yom-kippur-childrens-machzor-hebrew-only_003
+https://www.israel-catalog.com/books-magazines/esther-ruth-jonah	esther-ruth-jonah_001
+https://www.israel-catalog.com/books-magazines/whos-who-tanakh	whos-who-tanakh
+https://www.israel-catalog.com/books-magazines/bibles-prayer-books/voice-bible-complete-hebrew-bible-book-recording	voice-bible-complete-hebrew-bible-book-recording_002
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[0 TO 20] tid:98	default_121
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[101 TO 200] tid:98	default_125
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:975 tid:98	apachesolr_search_086
+https://www.israel-catalog.com/books-magazines/voiced-called-yossi-katz	voiced-called-yossi-katz
+https://www.israel-catalog.com/books-magazines/begin-portrait	begin-portrait
+https://www.israel-catalog.com/dead-sea-cosmetics/dead-sea-bath-salts/bio-spa-bath-salt-bottle-various-scents	bio-spa-bath-salt-bottle-various-scents
+https://www.israel-catalog.com/books-magazines/letters-jonathan-netanyahu	letters-jonathan-netanyahu_002
+https://www.israel-catalog.com/books-magazines/history-current-events/confidential-life-of-secret-agent-arnon-milchan	confidential-life-of-secret-agent-arnon-milchan
+https://www.israel-catalog.com/books-magazines/warrior	warrior
+https://www.israel-catalog.com/books-magazines/stories-jewish-heroism-book-dvd	stories-jewish-heroism-book-dvd
+https://www.israel-catalog.com/books-magazines/aaronsohn-saga	aaronsohn-saga_002
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[20 TO 50] tid:97	default_129
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[201 TO 9999] tid:97	default_130
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:667 tid:97	apachesolr_search_090
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:54 tid:97	apachesolr_search_094
+https://www.israel-catalog.com/books-magazines/gift-albums/souvenirs-jerusalem	souvenirs-jerusalem_001
+https://www.israel-catalog.com/books-magazines/turbulent-times-prophetic-dreams-book-childrens-illustrations-2000	turbulent-times-prophetic-dreams-book-childrens-illustrations-2000
+https://www.israel-catalog.com/about-israel/israel-above	israel-above_002
+https://www.israel-catalog.com/books-magazines/unrevealed-beauty	unrevealed-beauty_002
+https://www.israel-catalog.com/books-magazines/agam-beyond-visible-sayako-aragaki	agam-beyond-visible-sayako-aragaki_002
+https://www.israel-catalog.com/books-magazines/our-country-photo-essay-book-alex-livac-2000	our-country-photo-essay-book-alex-livac-2000
+https://www.israel-catalog.com/books-magazines/lighting-way-freedom-photo-essay-chanukah-menorot	lighting-way-freedom-photo-essay-chanukah-menorot
+https://www.israel-catalog.com/books-magazines/gift-albums/israel-places-and-history-photo-essay-book-annie-sacerdoti	israel-places-and-history-photo-essay-book-annie-sacerdoti
+https://www.israel-catalog.com/books-magazines/gift-albums/jerusalem-heavens-photo-album	jerusalem-heavens-photo-album_002
+https://www.israel-catalog.com/books-magazines/industry-economy-israel	industry-economy-israel
+https://www.israel-catalog.com/books-magazines/israel-then-now-book	israel-then-now-book
+https://www.israel-catalog.com/books-magazines/transformations-ethiopia-israel	transformations-ethiopia-israel_001
+https://www.israel-catalog.com/books-magazines/israel-picture-books-skyline-archeology	israel-picture-books-skyline-archeology_002
+https://www.israel-catalog.com/books-magazines/israel-picture-books-skyline-jerusalem	israel-picture-books-skyline-jerusalem_001
+https://www.israel-catalog.com/books-magazines/gift-albums?page=1	gift-albums_001
+https://www.israel-catalog.com/books-magazines/israel-picture-books-skyline-deserts-edge	israel-picture-books-skyline-deserts-edge_002
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[20 TO 50] tid:87	default_134
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[201 TO 9999] tid:87	default_135
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:667 tid:87	apachesolr_search_098
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:54 tid:87	apachesolr_search_099
+https://www.israel-catalog.com/books-magazines/painless-guide-healthy-back	painless-guide-healthy-back
+https://www.israel-catalog.com/books-magazines/jerusalem-diet	jerusalem-diet
+https://www.israel-catalog.com/books-magazines/when-less-more	when-less-more
+https://www.israel-catalog.com/books-magazines/psychiatric-and-behavioral-disorders-israel-epidemiology-mental-health-action	psychiatric-and-behavioral-disorders-israel-epidemiology-mental-health-action_002
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[0 TO 20] tid:92	default_139
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[101 TO 200] tid:92	default_143
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:975 tid:92	apachesolr_search_101
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:91 tid:92	apachesolr_search_105
+https://www.israel-catalog.com/books-magazines/american-colony	american-colony
+https://www.israel-catalog.com/books-magazines/pirkei-avos-twist-humor	pirkei-avos-twist-humor
+https://www.israel-catalog.com/books-magazines/can-i-play-chess-shabbas	can-i-play-chess-shabbas
+https://www.israel-catalog.com/books-magazines/shalom-bayis-twist-humor	shalom-bayis-twist-humor_002
+https://www.israel-catalog.com/books-magazines/one-mans-judaism	one-mans-judaism
+https://www.israel-catalog.com/books-magazines/hasidic-masters-guide-management	hasidic-masters-guide-management
+https://www.israel-catalog.com/books-magazines/torah-247-timely-guide-modern-spirit	torah-247-timely-guide-modern-spirit
+https://www.israel-catalog.com/books-magazines/middos-manners-morals-twist-humor	middos-manners-morals-twist-humor_001
+https://www.israel-catalog.com/books-magazines/dna-tradition	dna-tradition
+https://www.israel-catalog.com/books-magazines/service-my-people	service-my-people
+https://www.israel-catalog.com/books-magazines/pharisees	pharisees
+https://www.israel-catalog.com/books-magazines/wheres-my-miracle-presale-may-2010	wheres-my-miracle-presale-may-2010
+https://www.israel-catalog.com/books-magazines/brother-can-you-raise-million-money-flows-love-grows-jerusalem	brother-can-you-raise-million-money-flows-love-grows-jerusalem_002
+https://www.israel-catalog.com/books-magazines/judaism-rule-thumb	judaism-rule-thumb_001
+https://www.israel-catalog.com/books-magazines/maimonides-exceptional-mind	maimonides-exceptional-mind_001
+https://www.israel-catalog.com/books-magazines/maimonides-and-biblical-prophets	maimonides-and-biblical-prophets_001
+https://www.israel-catalog.com/books-magazines/maimonides-reason-above-all	maimonides-reason-above-all
+https://www.israel-catalog.com/books-magazines/judaism-jewish-philosophy?page=1	judaism-jewish-philosophy_002
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[0 TO 20] tid:702	default_147
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[101 TO 200] tid:702	default_148
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[201 TO 9999] tid:702	default_149
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:667 tid:702	apachesolr_search_109
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:54 tid:702	apachesolr_search_113
+https://www.israel-catalog.com/books-magazines/yanshuf-hebrew-intermediate-advanced-magazine-1-year-subscription	yanshuf-hebrew-intermediate-advanced-magazine-1-year-subscription_002
+https://www.israel-catalog.com/books-magazines/bereshit-hebrew-beginners-magazine-free-hebrew-private-lesson	bereshit-hebrew-beginners-magazine-free-hebrew-private-lesson_001
+https://www.israel-catalog.com/books-magazines/bereshit-hebrew-beginners-magazine-audio-cd-free-hebrew-private-lesson	bereshit-hebrew-beginners-magazine-audio-cd-free-hebrew-private-lesson_002
+https://www.israel-catalog.com/books-magazines/bereshit-hebrew-beginners-magazine-year-subscription-audio-cd	bereshit-hebrew-beginners-magazine-year-subscription-audio-cd_002
+https://www.israel-catalog.com/books-magazines/yanshuf-intermediate-hebrew-magazine-1-year-subscription-audio-cd	yanshuf-intermediate-hebrew-magazine-1-year-subscription-audio-cd_001
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[0 TO 20] tid:122	default_150
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[20 TO 50] tid:122	default_151
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[51 TO 100] tid:122	default_154
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[201 TO 9999] tid:122	default_155
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:667 tid:122	apachesolr_search_116
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:91 tid:122	apachesolr_search_117
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:54 tid:122	apachesolr_search_118
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[0 TO 20] tid:1250	default_159
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[101 TO 200] tid:1250	default_161
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:667 tid:1250	apachesolr_search_119
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:975 tid:1250	apachesolr_search_120
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:91 tid:1250	apachesolr_search_121
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:54 tid:1250	apachesolr_search_123
+https://www.israel-catalog.com/dead-sea-cosmetics/clineral/clineral-diabetic-foot-cream-dead-sea-minerals	clineral-diabetic-foot-cream-dead-sea-minerals
+https://www.israel-catalog.com/dead-sea-cosmetics/clineral/clineral-diabetic-foot-gel-scrub-dead-sea-minerals	clineral-diabetic-foot-gel-scrub-dead-sea-minerals
+https://www.israel-catalog.com/dead-sea-cosmetics/clineral/clineral-psoriasis-joint-skin-cream-dead-sea-minerals	clineral-psoriasis-joint-skin-cream-dead-sea-minerals
+https://www.israel-catalog.com/dead-sea-cosmetics/clineral/clineral-psoriasis-scalp-mask-dead-sea-minerals	clineral-psoriasis-scalp-mask-dead-sea-minerals_002
+https://www.israel-catalog.com/dead-sea-cosmetics/clineral/clineral-psoriasis-scalp-shampoo-dead-sea-minerals	clineral-psoriasis-scalp-shampoo-dead-sea-minerals
+https://www.israel-catalog.com/dead-sea-cosmetics/clineral/clineral-facial-balm-cream-dead-sea-minerals	clineral-facial-balm-cream-dead-sea-minerals
+https://www.israel-catalog.com/dead-sea-cosmetics/dead-sea-seborrhea-treatment/clineral-atopic-shower-bath-oil-dead-sea-minerals	clineral-atopic-shower-bath-oil-dead-sea-minerals_002
+https://www.israel-catalog.com/dead-sea-cosmetics/dead-sea-seborrhea-treatment/clineral-atopic-body-cream-dead-sea-minerals	clineral-atopic-body-cream-dead-sea-minerals
+https://www.israel-catalog.com/dead-sea-cosmetics/sea-of-spa/alternative-plus	alternative-plus
+https://www.israel-catalog.com/dead-sea-cosmetics/sea-of-spa/bio-marine	bio-marine
+https://www.israel-catalog.com/dead-sea-cosmetics/sea-of-spa/bio-spa	bio-spa_002
+https://www.israel-catalog.com/search/apachesolr_search/sea of spa?filters=tid:129	sea@20of@20spa
+https://www.israel-catalog.com/search/apachesolr_search/sea of spa?filters=tid:1012	sea@20of@20spa_001
+https://www.israel-catalog.com/search/apachesolr_search/sea of spa?filters=tid:139	sea@20of@20spa_005
+https://www.israel-catalog.com/search/apachesolr_search/sea of spa?filters=tid:131	sea@20of@20spa_009
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[0 TO 20] tid:1075	default_165
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[101 TO 200] tid:1075	default_166
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[201 TO 9999] tid:1075	default_167
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:667 tid:1075	apachesolr_search_124
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:975 tid:1075	apachesolr_search_128
+https://www.israel-catalog.com/dead-sea-cosmetics/dead-sea-cosmetics/super-savers	super-savers_001
+https://www.israel-catalog.com/dead-sea-cosmetics/sea-of-spa/bio-spa-lip-gloss	bio-spa-lip-gloss
+https://www.israel-catalog.com/dead-sea-cosmetics/sea-of-spa/bio-spa-dead-sea-various-scents-dead-sea-bath-salt	bio-spa-dead-sea-various-scents-dead-sea-bath-salt
+https://www.israel-catalog.com/dead-sea-cosmetics/bath-products/soaps/anti-cellulite-soap-dead-sea-minerals-seaweed	anti-cellulite-soap-dead-sea-minerals-seaweed
+https://www.israel-catalog.com/dead-sea-cosmetics/sea-of-spa/bio-spa-dead-sea-mud-carrot-sea-buckthorn	bio-spa-dead-sea-mud-carrot-sea-buckthorn
+https://www.israel-catalog.com/dead-sea-cosmetics/sea-of-spa/dead-sea-soaps-glucerin	dead-sea-soaps-glucerin_002
+https://www.israel-catalog.com/dead-sea-cosmetics/sea-of-spa/natural-aloe-vera-gel	natural-aloe-vera-gel_002
+https://www.israel-catalog.com/dead-sea-cosmetics/sea-of-spa/dead-sea-soaps-dead-sea-seaweed-anti-cellulite	dead-sea-soaps-dead-sea-seaweed-anti-cellulite_001
+https://www.israel-catalog.com/dead-sea-cosmetics/sea-of-spa/sea-spa-dead-sea-cosmetics-aloe-vera-gel	sea-spa-dead-sea-cosmetics-aloe-vera-gel_002
+https://www.israel-catalog.com/dead-sea-cosmetics/sea-of-spa/dead-sea-soaps-acne	dead-sea-soaps-acne
+https://www.israel-catalog.com/dead-sea-cosmetics/sea-of-spa/dead-sea-multi-intensive-foot-cream	dead-sea-multi-intensive-foot-cream
+https://www.israel-catalog.com/dead-sea-cosmetics/sea-of-spa/Avocado-face-body-cream	avocado-face-body-cream_001
+https://www.israel-catalog.com/dead-sea-cosmetics/sea-of-spa/dead-sea-soaps-supher-minerals	dead-sea-soaps-supher-minerals
+https://www.israel-catalog.com/dead-sea-cosmetics/sea-of-spa/volcanic-foot-peeling-cream	volcanic-foot-peeling-cream
+https://www.israel-catalog.com/dead-sea-cosmetics/sea-of-spa/dead-sea-soaps-dead-sea-salt	dead-sea-soaps-dead-sea-salt
+https://www.israel-catalog.com/dead-sea-cosmetics/sea-of-spa/sea-spa-dead-sea-cosmetics-bio-mud-powerful-hand-elbows-cream	sea-spa-dead-sea-cosmetics-bio-mud-powerful-hand-elbows-cream
+https://www.israel-catalog.com/dead-sea-cosmetics/sea-of-spa/sea-spa-dead-sea-cosmetics-glycerin-soap	sea-spa-dead-sea-cosmetics-glycerin-soap_002
+https://www.israel-catalog.com/dead-sea-cosmetics/sea-of-spa?page=2	sea-of-spa_002
+https://www.israel-catalog.com/dead-sea-cosmetics/sea-of-spa?page=3	sea-of-spa_004
+https://www.israel-catalog.com/dead-sea-cosmetics/sea-of-spa?page=4	sea-of-spa_005
+https://www.israel-catalog.com/dead-sea-cosmetics/sea-of-spa?page=5	sea-of-spa_006
+https://www.israel-catalog.com/dead-sea-cosmetics/sea-of-spa?page=6	sea-of-spa_008
+https://www.israel-catalog.com/dead-sea-cosmetics/sea-of-spa?page=7	sea-of-spa_009
+https://www.israel-catalog.com/dead-sea-cosmetics/sea-of-spa/dead-sea-acne-blemish-cream	dead-sea-acne-blemish-cream_001
+https://www.israel-catalog.com/dead-sea-cosmetics/sea-of-spa/dead-sea-body-cream-enriched-with-olive-oil	dead-sea-body-cream-enriched-with-olive-oil
+https://www.israel-catalog.com/dead-sea-cosmetics/sea-of-spa/dead-sea-exfoliating-body-peeling-salts	dead-sea-exfoliating-body-peeling-salts
+https://www.israel-catalog.com/dead-sea-cosmetics/sea-of-spa/dead-sea-peeling-facial-mask	dead-sea-peeling-facial-mask
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[0 TO 20] tid:1456	default_168
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[20 TO 50] tid:1456	default_172
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[201 TO 9999] tid:1456	default_176
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:91 tid:1456	apachesolr_search_129
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:54 tid:1456	apachesolr_search_133
+https://www.israel-catalog.com/dead-sea-cosmetics/dead-sea-cosmetics-brands/lavilin/lavilin-womens-sensitive-skin-stick-deodorant	lavilin-womens-sensitive-skin-stick-deodorant_002
+https://www.israel-catalog.com/dead-sea-cosmetics/dead-sea-cosmetics-brands/lavilin/lavilin-mens-sensitive-skin-stick-deodorant	lavilin-mens-sensitive-skin-stick-deodorant
+https://www.israel-catalog.com/dead-sea-cosmetics/dead-sea-cosmetics-brands/lavilin/lavilin-72h-sensitive-skin-stick-deodorant	lavilin-72h-sensitive-skin-stick-deodorant
+https://www.israel-catalog.com/dead-sea-cosmetics/dead-sea-cosmetics-brands/lavilin/lavilin-sports-sensitive-skin-stick-deodorant	lavilin-sports-sensitive-skin-stick-deodorant_001
+https://www.israel-catalog.com/dead-sea-cosmetics/dead-sea-cosmetics-brands/lavilin/lavilin-72h-sensitive-skin-roll-on-deodorant	lavilin-72h-sensitive-skin-roll-on-deodorant
+https://www.israel-catalog.com/dead-sea-cosmetics/dead-sea-cosmetics-brands/lavilin/lavilin-teens-sensitive-skin-roll-on-deodorant	lavilin-teens-sensitive-skin-roll-on-deodorant
+https://www.israel-catalog.com/dead-sea-cosmetics/dead-sea-cosmetics-brands/lavilin/lavilin-mens-sensitive-skin-roll-on-deodorant	lavilin-mens-sensitive-skin-roll-on-deodorant
+https://www.israel-catalog.com/dead-sea-cosmetics/dead-sea-cosmetics-brands/lavilin/lavilin-sports-sensitive-skin-roll-on-deodorant	lavilin-sports-sensitive-skin-roll-on-deodorant_002
+https://www.israel-catalog.com/dead-sea-cosmetics/dead-sea-cosmetics-brands/lavilin/lavilin-shoe-odor-deodorant	lavilin-shoe-odor-deodorant
+https://www.israel-catalog.com/dead-sea-cosmetics/dead-sea-cosmetics-brands/lavilin/lavilin-cosmetics-foot-deodorant-cream	lavilin-cosmetics-foot-deodorant-cream
+https://www.israel-catalog.com/dead-sea-cosmetics/dead-sea-cosmetics-brands/lavilin/lavilin-foot-softening-cream	lavilin-foot-softening-cream_001
+https://www.israel-catalog.com/dead-sea-cosmetics/dead-sea-cosmetics-brands/lavilin/lavilin-foot-repair-emulsion	lavilin-foot-repair-emulsion_001
+https://www.israel-catalog.com/dead-sea-cosmetics/dead-sea-cosmetics-brands/lavilin/lavilin-intimate-soothing-wash	lavilin-intimate-soothing-wash_002
+https://www.israel-catalog.com/dead-sea-cosmetics/dead-sea-cosmetics-brands/lavilin/lavilin-deodorizing-body-wash	lavilin-deodorizing-body-wash_002
+https://www.israel-catalog.com/dead-sea-cosmetics/dead-sea-cosmetics-brands/lavilin/lavilin-jojoba-body-serum	lavilin-jojoba-body-serum
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[0 TO 20] tid:1012	default_177
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[20 TO 50] tid:1012	default_178
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[51 TO 100] tid:1012	default_180
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[201 TO 9999] tid:1012	default_184
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:91 tid:1012	apachesolr_search_136
+https://www.israel-catalog.com/dead-sea-cosmetics/chic-cosmetics/canaan-dead-sea-minerals-herbs/canaan-mineral-mud-soap	canaan-mineral-mud-soap_002
+https://www.israel-catalog.com/dead-sea-cosmetics/acne-care-products/dead-sea-acne-soap-200g	dead-sea-acne-soap-200g_002
+https://www.israel-catalog.com/dead-sea-cosmetics/pure-dead-sea-black-mud	pure-dead-sea-black-mud_002
+https://www.israel-catalog.com/dead-sea-cosmetics/health-and-beauty/health-beauty-dead-sea-cosmetics-passion-body-massage-lotion	health-beauty-dead-sea-cosmetics-passion-body-massage-lotion_002
+https://www.israel-catalog.com/dead-sea-cosmetics/hair-care/dead-sea-black-mud-hair-conditioner-sea-of-spa	dead-sea-black-mud-hair-conditioner-sea-of-spa
+https://www.israel-catalog.com/dead-sea-cosmetics/health-and-beauty/health-beauty-dead-sea-cosmetics-fresh-body-massage-lotion	health-beauty-dead-sea-cosmetics-fresh-body-massage-lotion
+https://www.israel-catalog.com/dead-sea-cosmetics/health-and-beauty/health-beauty-dead-sea-cosmetics-fantasy-body-massage-lotion	health-beauty-dead-sea-cosmetics-fantasy-body-massage-lotion_001
+https://www.israel-catalog.com/dead-sea-cosmetics/hair-care/dead-sea-black-mud-shampoo-sea-of-spa	dead-sea-black-mud-shampoo-sea-of-spa
+https://www.israel-catalog.com/dead-sea-cosmetics/health-and-beauty/intensive-black-mud-body-cream-dead-sea-products	intensive-black-mud-body-cream-dead-sea-products
+https://www.israel-catalog.com/dead-sea-cosmetics/dead-sea-mud/bio-spa-dead-sea-mud-minerals-carrot-buckthorn	bio-spa-dead-sea-mud-minerals-carrot-buckthorn
+https://www.israel-catalog.com/dead-sea-cosmetics/chic-cosmetics/canaan-mud-mask	canaan-mud-mask
+https://www.israel-catalog.com/Natural-Dead-Sea-Mud-double-package-spa-treatment	natural-dead-sea-mud-double-package-spa-treatment
+https://www.israel-catalog.com/dead-sea-cosmetics/health-and-beauty/health-beauty-dead-sea-cosmetics-psoriasis-skin-relief-cream	health-beauty-dead-sea-cosmetics-psoriasis-skin-relief-cream_001
+https://www.israel-catalog.com/dead-sea-cosmetics/health-and-beauty/health-beauty-dead-sea-cosmetics-moisturizing-relieving-face-mask	health-beauty-dead-sea-cosmetics-moisturizing-relieving-face-mask_002
+https://www.israel-catalog.com/dead-sea-cosmetics/dead-sea-mud?page=1	dead-sea-mud_002
+https://www.israel-catalog.com/dead-sea-cosmetics/dead-sea-minerals-purifying-mud-mask-sensitive-acne-prone-skin	dead-sea-minerals-purifying-mud-mask-sensitive-acne-prone-skin
+https://www.israel-catalog.com/Dead-Sea-Mud-3-Individual-Spa-Treatments	dead-sea-mud-3-individual-spa-treatments_002
+https://www.israel-catalog.com/dead-sea-cosmetics/sea-of-spa/tub-of-natural-dead-sea-mud	tub-of-natural-dead-sea-mud
+https://www.israel-catalog.com/dead-sea-cosmetics/sea-of-spa/rich-facial-dead-sea-mud-mask	rich-facial-dead-sea-mud-mask
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[0 TO 20] tid:1191	default_185
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[20 TO 50] tid:1191	default_188
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[101 TO 200] tid:1191	default_191
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:667 tid:1191	apachesolr_search_137
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:975 tid:1191	apachesolr_search_139
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:54 tid:1191	apachesolr_search_143
+https://www.israel-catalog.com/dead-sea-cosmetics/chic-cosmetics/canaan-dead-sea-minerals-herbs/canaan-peeling-body-salts	canaan-peeling-body-salts_002
+https://www.israel-catalog.com/dead-sea-cosmetics/health-and-beauty/soapless-facial-peeling-dead-sea-mud	soapless-facial-peeling-dead-sea-mud_002
+https://www.israel-catalog.com/dead-sea-cosmetics/sea-of-spa/dead-sea-oil-scrub	dead-sea-oil-scrub_002
+https://www.israel-catalog.com/dead-sea-cosmetics/sea-of-spa/pumpkin-peeling-mask	pumpkin-peeling-mask
+https://www.israel-catalog.com/dead-sea-cosmetics/sea-of-spa/bio-marine/bio-marine-delicate-peeling-dead-sea-mask	bio-marine-delicate-peeling-dead-sea-mask
+https://www.israel-catalog.com/dead-sea-cosmetics/health-and-beauty/romatic-body-peeling	romatic-body-peeling_001
+https://www.israel-catalog.com/dead-sea-cosmetics/sea-of-spa/dead-sea-delicate-peeling-mask	dead-sea-delicate-peeling-mask
+https://www.israel-catalog.com/dead-sea-cosmetics/chic-cosmetics/canaan-organics/canaan-organic-gentle-facial-peeling-cream	canaan-organic-gentle-facial-peeling-cream
+https://www.israel-catalog.com/dead-sea-cosmetics/dead-sea-mineral-peeling-mask-apricot-micro-grains	dead-sea-mineral-peeling-mask-apricot-micro-grains
+https://www.israel-catalog.com/dead-sea-cosmetics/sea-of-spa/exfoliating-dead-sea-shower-gel-with-loufah-seeds-various-scents	exfoliating-dead-sea-shower-gel-with-loufah-seeds-various-scents
+https://www.israel-catalog.com/dead-sea-cosmetics/health-and-beauty/dead-sea-facial-peeling-gel	dead-sea-facial-peeling-gel
+https://www.israel-catalog.com/dead-sea-cosmetics/natural-sea-beauty/natural-sea-beauty-body-salt-oil-scrub	natural-sea-beauty-body-salt-oil-scrub_002
+https://www.israel-catalog.com/dead-sea-cosmetics/dead-sea-scrub?page=1	dead-sea-scrub_002
+https://www.israel-catalog.com/dead-sea-cosmetics/natural-sea-beauty-purifying-mud-facial-scrub-dead-sea-cosmetics	natural-sea-beauty-purifying-mud-facial-scrub-dead-sea-cosmetics
+https://www.israel-catalog.com/dead-sea-cosmetics/ahava-dead-sea-salt-softening-butter-salt-scrub	ahava-dead-sea-salt-softening-butter-salt-scrub
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[0 TO 20] tid:139	default_193
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[51 TO 100] tid:139	default_194
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[101 TO 200] tid:139	default_198
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:975 tid:139	apachesolr_search_147
+https://www.israel-catalog.com/dead-sea-cosmetics/free-hb-dead-sea-makeup-remover-towelettes	free-hb-dead-sea-makeup-remover-towelettes_002
+https://www.israel-catalog.com/dead-sea-cosmetics/sea-of-spa/bio-spa-lip-balm	bio-spa-lip-balm_001
+https://www.israel-catalog.com/dead-sea-cosmetics/chic-cosmetics/canaan-toning-water-dead-sea-products	canaan-toning-water-dead-sea-products
+https://www.israel-catalog.com/dead-sea-cosmetics/health-and-beauty/dead-sea-soapless-face-cleanser-obliphicha-oil	dead-sea-soapless-face-cleanser-obliphicha-oil
+https://www.israel-catalog.com/dead-sea-cosmetics/chic-cosmetics/canaan-cleansing-milk	canaan-cleansing-milk
+https://www.israel-catalog.com/dead-sea-cosmetics/dead-sea-minerals-nourishing-and-firming-night-cream	dead-sea-minerals-nourishing-and-firming-night-cream
+https://www.israel-catalog.com/dead-sea-cosmetics/natural-sea-beauty/facial-cleansing-milk-sead-sea-cosmetics	facial-cleansing-milk-sead-sea-cosmetics
+https://www.israel-catalog.com/dead-sea-cosmetics/health-and-beauty/dead-sea-soapless-peeling	dead-sea-soapless-peeling_003
+https://www.israel-catalog.com/dead-sea-cosmetics/health-and-beauty/intensive-collagen-night-cream	intensive-collagen-night-cream
+https://www.israel-catalog.com/dead-sea-cosmetics/facial-care/bio-spa-dead-sea-mud-cleansing-gel-sea-of-spa	bio-spa-dead-sea-mud-cleansing-gel-sea-of-spa
+https://www.israel-catalog.com/dead-sea-cosmetics/anti-aging/anti-aging-day-cream-enriched-dead-sea-minerals-pumpkin-oil-spf-15	anti-aging-day-cream-enriched-dead-sea-minerals-pumpkin-oil-spf-15
+https://www.israel-catalog.com/dead-sea-cosmetics/facial-care?page=1	facial-care_002
+https://www.israel-catalog.com/dead-sea-cosmetics/facial-care?page=2	facial-care_004
+https://www.israel-catalog.com/dead-sea-cosmetics/facial-care?page=4	facial-care_006
+https://www.israel-catalog.com/dead-sea-cosmetics/facial-care?page=5	facial-care_007
+https://www.israel-catalog.com/dead-sea-cosmetics/facial-care?page=6	facial-care_008
+https://www.israel-catalog.com/dead-sea-cosmetics/natural-sea-beauty-mineral-source-deep-cleansing-milk	natural-sea-beauty-mineral-source-deep-cleansing-milk_001
+https://www.israel-catalog.com/dead-sea-cosmetics/natural-sea-beauty-mineral-intense	natural-sea-beauty-mineral-intense
+https://www.israel-catalog.com/dead-sea-cosmetics/natural-sea-beauty-set-3-mineral-anti-wrinkle-eye-cream	natural-sea-beauty-set-3-mineral-anti-wrinkle-eye-cream_002
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[0 TO 20] tid:131	default_200
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[51 TO 100] tid:131	default_201
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[101 TO 200] tid:131	default_204
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:667 tid:131	apachesolr_search_151
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:54 tid:131	apachesolr_search_152
+https://www.israel-catalog.com/dead-sea-cosmetics/chic-cosmetics/mogador/mogador-conditioner	mogador-conditioner
+https://www.israel-catalog.com/dead-sea-cosmetics/chic-cosmetics/mogador/mogador-restorative-shampoo-argan-oil	mogador-restorative-shampoo-argan-oil
+https://www.israel-catalog.com/dead-sea-cosmetics/health-and-beauty/pomegranate-extract-hair-mask-dead-sea-minerals	pomegranate-extract-hair-mask-dead-sea-minerals
+https://www.israel-catalog.com/dead-sea-cosmetics/chic-cosmetics/canaan-organics/canaan-restorative-organic-shampoo	canaan-restorative-organic-shampoo_003
+https://www.israel-catalog.com/dead-sea-cosmetics/sea-of-spa/nourishing-mask-normal-hair	nourishing-mask-normal-hair
+https://www.israel-catalog.com/dead-sea-cosmetics/sea-of-spa/hair-conditioner-olive-oil-jojoba-honey	hair-conditioner-olive-oil-jojoba-honey
+https://www.israel-catalog.com/dead-sea-cosmetics/hair-care/conditioner-dry-damaged-colored-hair-enriched-argan-oil-shea-butter	conditioner-dry-damaged-colored-hair-enriched-argan-oil-shea-butter
+https://www.israel-catalog.com/dead-sea-cosmetics/hair-care/shampoo-oily-thin-hair-enriched-dead-sea-mud-aloe-vera	shampoo-oily-thin-hair-enriched-dead-sea-mud-aloe-vera
+https://www.israel-catalog.com/dead-sea-cosmetics/chic-cosmetics/mogador-nourishing-hair-cream	mogador-nourishing-hair-cream_001
+https://www.israel-catalog.com/dead-sea-cosmetics/hair-care/bio-spa-shampoo-stronger-hair-enriched-carrot-sea-buckthorn	bio-spa-shampoo-stronger-hair-enriched-carrot-sea-buckthorn_002
+https://www.israel-catalog.com/dead-sea-cosmetics/sea-of-spa/shampoo-normal-dry-hair	shampoo-normal-dry-hair_001
+https://www.israel-catalog.com/dead-sea-cosmetics/sea-of-spa/mask-damaged-colored-hair	mask-damaged-colored-hair
+https://www.israel-catalog.com/dead-sea-cosmetics/hair-care/leave-on-hair-moisturizing-cream-enriched-argan-oil-shea-butter	leave-on-hair-moisturizing-cream-enriched-argan-oil-shea-butter
+https://www.israel-catalog.com/dead-sea-cosmetics/hair-care/bio-spa-professional-shampoo-damage-dry-colored-hair-enriched-argan-wheat-sprout	bio-spa-professional-shampoo-damage-dry-colored-hair-enriched-argan-wheat-sprout_001
+https://www.israel-catalog.com/dead-sea-cosmetics/moroccan-argan-oil-hair-mask-dry-or-damaged-hair-dead-sea-minerals	moroccan-argan-oil-hair-mask-dry-or-damaged-hair-dead-sea-minerals_001
+https://www.israel-catalog.com/dead-sea-cosmetics/olive-oil-honey-nourishing-hair-mask-dead-sea-minerals	olive-oil-honey-nourishing-hair-mask-dead-sea-minerals
+https://www.israel-catalog.com/dead-sea-cosmetics/chic-cosmetics/mogador/mogador-non-rinse-styling-cream-argan-oil	mogador-non-rinse-styling-cream-argan-oil
+https://www.israel-catalog.com/dead-sea-cosmetics/hair-care?page=1	hair-care_003
+https://www.israel-catalog.com/dead-sea-cosmetics/hair-care?page=2	hair-care_004
+https://www.israel-catalog.com/dead-sea-cosmetics/dead-sea-minerals-sea-buckthorn-obliphica-nourishing-hair-mask-dry-or-colored-hai	dead-sea-minerals-sea-buckthorn-obliphica-nourishing-hair-mask-dry-or-colored-hai
+https://www.israel-catalog.com/dead-sea-cosmetics/sea-buckthorn-obliphica-nourishing-shampoo-dry-or-colored-hair-dead-sea-minerals	sea-buckthorn-obliphica-nourishing-shampoo-dry-or-colored-hair-dead-sea-minerals_001
+https://www.israel-catalog.com/dead-sea-cosmetics/olive-oil-honey-nourishing-shampoo-dead-sea-minerals	olive-oil-honey-nourishing-shampoo-dead-sea-minerals
+https://www.israel-catalog.com/dead-sea-cosmetics/sea-buckthorn-obliphica-aloe-vera-nourishing-conditioner-dead-sea-minerals	sea-buckthorn-obliphica-aloe-vera-nourishing-conditioner-dead-sea-minerals
+https://www.israel-catalog.com/dead-sea-cosmetics/sea-of-spa/dead-sea-hair-conditioning-mud-mask	dead-sea-hair-conditioning-mud-mask_001
+https://www.israel-catalog.com/dead-sea-cosmetics/dead-sea-psoriasis-treatment-creams/dead-sea-skin-relief-psoriasis-shampoo	dead-sea-skin-relief-psoriasis-shampoo
+https://www.israel-catalog.com/dead-sea-cosmetics/moroccan-argan-oil-hair-treatment/moroccan-argan-oil-hair-shampoo	moroccan-argan-oil-hair-shampoo_001
+https://www.israel-catalog.com/dead-sea-cosmetics/moroccan-argan-oil-hair-treatment/pure-moroccan-argan-oil-hair-treatment-250-ml	pure-moroccan-argan-oil-hair-treatment-250-ml_002
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[0 TO 20] tid:1196	default_206
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[51 TO 100] tid:1196	default_210
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:667 tid:1196	apachesolr_search_156
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:54 tid:1196	apachesolr_search_160
+https://www.israel-catalog.com/dead-sea-cosmetics/dead-sea-psoriasis-treatment-creams/psoriasis-soap-with-dead-sea-minerals	psoriasis-soap-with-dead-sea-minerals_001
+https://www.israel-catalog.com/dead-sea-cosmetics/dead-sea-psoriasis-treatment-creams/dead-sea-skin-relief-psoriasis-soap	dead-sea-skin-relief-psoriasis-soap
+https://www.israel-catalog.com/dead-sea-cosmetics/dead-sea-bath-salts/dead-sea-salts-enriched-minerals	dead-sea-salts-enriched-minerals
+https://www.israel-catalog.com/dead-sea-cosmetics/dead-sea-psoriasis-treatment-creams/dead-sea-skin-relief-psoriasis-body-milk-soap	dead-sea-skin-relief-psoriasis-body-milk-soap_001
+https://www.israel-catalog.com/dead-sea-cosmetics/dead-sea-psoriasis-treatment-creams/dead-sea-skin-relief-psoriasis-cream	dead-sea-skin-relief-psoriasis-cream_001
+https://www.israel-catalog.com/dead-sea-cosmetics/dead-sea-psoriasis-treatment-creams/dead-sea-psomedic-psoriasis-multi-active-oil	dead-sea-psomedic-psoriasis-multi-active-oil_001
+https://www.israel-catalog.com/dead-sea-cosmetics/dead-sea-psoriasis-treatment-creams/dead-sea-psomedic-psoriasis-multi-active-cream	dead-sea-psomedic-psoriasis-multi-active-cream_002
+https://www.israel-catalog.com/dead-sea-cosmetics/dead-sea-psoriasis-treatment-creams/dead-sea-psometic-psoriasis-treatment-kit	dead-sea-psometic-psoriasis-treatment-kit
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[0 TO 20] tid:129	default_211
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[20 TO 50] tid:129	default_213
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[101 TO 200] tid:129	default_214
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[201 TO 9999] tid:129	default_218
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:91 tid:129	apachesolr_search_161
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:54 tid:129	apachesolr_search_162
+https://www.israel-catalog.com/dead-sea-cosmetics/health-and-beauty/health-beauty-dead-sea-cosmetics-protective-intimate-wash	health-beauty-dead-sea-cosmetics-protective-intimate-wash_002
+https://www.israel-catalog.com/dead-sea-cosmetics/sea-of-spa/sea-spa-dead-sea-cosmetics-salt-soap	sea-spa-dead-sea-cosmetics-salt-soap_002
+https://www.israel-catalog.com/dead-sea-cosmetics/health-and-beauty/health-beauty-dead-sea-cosmetics-orchid-hand-nail-cream	health-beauty-dead-sea-cosmetics-orchid-hand-nail-cream_002
+https://www.israel-catalog.com/dead-sea-cosmetics/sea-of-spa/dead-sea-deodorant-roll-on-women	dead-sea-deodorant-roll-on-women
+https://www.israel-catalog.com/dead-sea-cosmetics/health-and-beauty/aloe-vera-gel-dead-sea-cosmetics	aloe-vera-gel-dead-sea-cosmetics_001
+https://www.israel-catalog.com/dead-sea-cosmetics/health-and-beauty/extra-rich-avocado-cream-dead-sea-cosmetics	extra-rich-avocado-cream-dead-sea-cosmetics_001
+https://www.israel-catalog.com/dead-sea-cosmetics/sea-of-spa/sea-spa-dead-sea-cosmetics-pomegranate-fig-milk-body-cream	sea-spa-dead-sea-cosmetics-pomegranate-fig-milk-body-cream_001
+https://www.israel-catalog.com/dead-sea-cosmetics/sea-of-spa/sea-spa-dead-sea-cosmetics-avocado-sea-buckthorn-body-cream	sea-spa-dead-sea-cosmetics-avocado-sea-buckthorn-body-cream_001
+https://www.israel-catalog.com/dead-sea-cosmetics/sea-of-spa/bio-spa-aloe-vera-cream	bio-spa-aloe-vera-cream_002
+https://www.israel-catalog.com/dead-sea-cosmetics/spa-body-care?page=1	spa-body-care_003
+https://www.israel-catalog.com/dead-sea-cosmetics/spa-body-care?page=2	spa-body-care_005
+https://www.israel-catalog.com/dead-sea-cosmetics/spa-body-care?page=3	spa-body-care_006
+https://www.israel-catalog.com/dead-sea-cosmetics/spa-body-care?page=4	spa-body-care_007
+https://www.israel-catalog.com/dead-sea-cosmetics/spa-body-care?page=5	spa-body-care_009
+https://www.israel-catalog.com/dead-sea-cosmetics/dead-sea-mineral-bath-salts-500-gr	dead-sea-mineral-bath-salts-500-gr_001
+https://www.israel-catalog.com/dead-sea-cosmetics/dead-sea-mineral-bath-salts-700-gr	dead-sea-mineral-bath-salts-700-gr_001
+https://www.israel-catalog.com/dead-sea-cosmetics/extra-strength-multi-purpose-olive-oil-and-honey-dead-sea-minerals-moisturizer	extra-strength-multi-purpose-olive-oil-and-honey-dead-sea-minerals-moisturizer_001
+https://www.israel-catalog.com/dead-sea-cosmetics/sea-buckthorn-obliphica-anti-aging-body-moisturizer-vitamin-e-dead-sea-minerals	sea-buckthorn-obliphica-anti-aging-body-moisturizer-vitamin-e-dead-sea-minerals
+https://www.israel-catalog.com/dead-sea-cosmetics/dead-sea-minerals-aromatic-moisturizing-body-butter-360-ml	dead-sea-minerals-aromatic-moisturizing-body-butter-360-ml
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[0 TO 20] tid:149	default_219
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[20 TO 50] tid:149	default_220
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[51 TO 100] tid:149	default_224
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:667 tid:149	apachesolr_search_166
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:54 tid:149	apachesolr_search_170
+https://www.israel-catalog.com/dead-sea-cosmetics/ahava/ahava-value-set-hand-cream-body-lotion	ahava-value-set-hand-cream-body-lotion_001
+https://www.israel-catalog.com/dead-sea-cosmetics/ahava/ahava-value-set-mineral-hand-cream-foot-cream	ahava-value-set-mineral-hand-cream-foot-cream_001
+https://www.israel-catalog.com/dead-sea-cosmetics/3-price-2-multi-vitamin-foot-cream-3-x-180-ml-dead-sea-minerals	3-price-2-multi-vitamin-foot-cream-3-x-180-ml-dead-sea-minerals_001
+https://www.israel-catalog.com/dead-sea-cosmetics/ahava/set-3-body-lotion	set-3-body-lotion
+https://www.israel-catalog.com/dead-sea-cosmetics/ahava/ahava-value-set-dermud-hand-cream-foot-cream	ahava-value-set-dermud-hand-cream-foot-cream
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[0 TO 20] tid:376	default_226
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[51 TO 100] tid:376	default_230
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:667 tid:376	apachesolr_search_172
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:91 tid:376	apachesolr_search_176
+https://www.israel-catalog.com/giftbaskets-wine/mozart-mousse-cake-israel	mozart-mousse-cake-israel_001
+https://www.israel-catalog.com/giftbaskets-wine/chocolate-kiss-cake-israel	chocolate-kiss-cake-israel
+https://www.israel-catalog.com/giftbaskets-wine/himalaya-israel	himalaya-israel
+https://www.israel-catalog.com/giftbaskets-wine/irish-cream-israel	irish-cream-israel
+https://www.israel-catalog.com/giftbaskets-wine/cheese-and-crumbles-israel	cheese-and-crumbles-israel_003
+https://www.israel-catalog.com/giftbaskets-wine/bolero-israel	bolero-israel
+https://www.israel-catalog.com/giftbaskets-wine/chocolate-concorde-israel	chocolate-concorde-israel
+https://www.israel-catalog.com/giftbaskets-wine/gift-baskets/chocolates	chocolates_001
+https://www.israel-catalog.com/giftbaskets-wine/gift-baskets/new-baby	new-baby
+https://www.israel-catalog.com/giftbaskets-wine/gift-baskets/organic-gift-baskets	organic-gift-baskets
+https://www.israel-catalog.com/giftbaskets-wine/gift-baskets/tufinit	tufinit
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:63 tid:375	apachesolr_search_177
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:375 tid:64	apachesolr_search_178
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:375 tid:65	apachesolr_search_179
+https://www.israel-catalog.com/search/apachesolr_search/?filters=tid:1028	default_234
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[51 TO 100] tid:375	default_236
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[201 TO 9999] tid:375	default_237
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:667 tid:375	apachesolr_search_183
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:54 tid:375	apachesolr_search_187
+https://www.israel-catalog.com/giftbaskets-wine/gift-baskets/max-brenner-chocolates/chocolate-desire-max-brenner-9-purlins	chocolate-desire-max-brenner-9-purlins_001
+https://www.israel-catalog.com/giftbaskets-wine/dry-fruit-festival-divided-tray-gift-package	dry-fruit-festival-divided-tray-gift-package
+https://www.israel-catalog.com/giftbaskets-wine/holiday-specials/tu-bshvat/milk-honey-dried-fruit-basket-israel	milk-honey-dried-fruit-basket-israel
+https://www.israel-catalog.com/giftbaskets-wine/gift-baskets/taste-israel-gift-box-halva-sprea-date-spread-honey	taste-israel-gift-box-halva-sprea-date-spread-honey
+https://www.israel-catalog.com/giftbaskets-wine/gift-baskets/taste-israel-gift-box-date-syrups-date-spread-spearmint-tea	taste-israel-gift-box-date-syrups-date-spread-spearmint-tea
+https://www.israel-catalog.com/giftbaskets-wine/gift-baskets/wine-gift-baskets/wine-charoset-gift-set	wine-charoset-gift-set_001
+https://www.israel-catalog.com/giftbaskets-wine/nuts-dried-fruit/assorted-dried-fruits-nuts-platter	assorted-dried-fruits-nuts-platter
+https://www.israel-catalog.com/giftbaskets-wine/gift-baskets/taste-israel-gift-box-honey-spearmint-tea	taste-israel-gift-box-honey-spearmint-tea_001
+https://www.israel-catalog.com/giftbaskets-wine/nuts-dried-fruit/colorful-array-dried-fruits-nuts	colorful-array-dried-fruits-nuts_001
+https://www.israel-catalog.com/giftbaskets-wine/gift-baskets/taste-israel-gift-box-honey-silan-date-syrup-sage-tea	taste-israel-gift-box-honey-silan-date-syrup-sage-tea
+https://www.israel-catalog.com/giftbaskets-wine/nuts-dried-fruit/rectangular-dries-fruits-nuts-assortment	rectangular-dries-fruits-nuts-assortment
+https://www.israel-catalog.com/wine-giftbaskets/gift-baskets/six-section-candy-platter	six-section-candy-platter
+https://www.israel-catalog.com/giftbaskets-wine/nuts-dried-fruit/rectangular-assorted-nut-platter	rectangular-assorted-nut-platter_001
+https://www.israel-catalog.com/giftbaskets-wine/max-brenner-1-box-chocolates-israel	max-brenner-1-box-chocolates-israel
+https://www.israel-catalog.com/giftbaskets-wine/gift-baskets/max-brenner-chocolates/chocolate-desire-max-brenner-18-purlins	chocolate-desire-max-brenner-18-purlins
+https://www.israel-catalog.com/giftbaskets-wine/octagon-dried-fruit-platter	octagon-dried-fruit-platter_001
+https://www.israel-catalog.com/giftbaskets-wine/nuts-dried-fruit/spices-jar-gift-box	spices-jar-gift-box
+https://www.israel-catalog.com/giftbaskets-wine/gift-baskets?page=1	gift-baskets_002
+https://www.israel-catalog.com/giftbaskets-wine/gift-baskets?page=2	gift-baskets_003
+https://www.israel-catalog.com/giftbaskets-wine/gift-baskets?page=3	gift-baskets_004
+https://www.israel-catalog.com/giftbaskets-wine/classic-fruit-platter-israel	classic-fruit-platter-israel
+https://www.israel-catalog.com/giftbaskets-wine/exotic-flavors-fruit-platter-israel	exotic-flavors-fruit-platter-israel
+https://www.israel-catalog.com/giftbaskets-wine/fruit-fondue-platter-israel	fruit-fondue-platter-israel
+https://www.israel-catalog.com/giftbaskets-wine/maestro-fruit-platter-israel	maestro-fruit-platter-israel
+https://www.israel-catalog.com/giftbaskets-wine/best-wishes-fruit-platter-israel	best-wishes-fruit-platter-israel
+https://www.israel-catalog.com/wine-giftbaskets/holiday-specials/purim-mishloach-manot/purim-elegance	purim-elegance_001
+https://www.israel-catalog.com/wine-giftbaskets/holiday-specials/purim-mishloach-manot/purim-special	purim-special
+https://www.israel-catalog.com/wine-giftbaskets/gift-baskets/treasure-trove-medium	treasure-trove-medium
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[0 TO 20] tid:535	default_241
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[101 TO 200] tid:535	default_243
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:667 tid:535	apachesolr_search_191
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:54 tid:535	apachesolr_search_194
+https://www.israel-catalog.com/holidays/purim/mishloach-manot/purim-clown-cone	purim-clown-cone_001
+https://www.israel-catalog.com/giftbaskets-wine/free-elite-chocolate-first-hanukah-candle-gift-package	free-elite-chocolate-first-hanukah-candle-gift-package
+https://www.israel-catalog.com/giftbaskets-wine/large-dreidel-gift-package-elite-megadim-chocolates-badatz-kosher	large-dreidel-gift-package-elite-megadim-chocolates-badatz-kosher
+https://www.israel-catalog.com/giftbaskets-wine/sweet-packs-chanuka-treats-and-elite-chocolates	sweet-packs-chanuka-treats-and-elite-chocolates
+https://www.israel-catalog.com/giftbaskets-wine/gift-baskets/rosh-hashanah-baskets-family-basket-worldwide	rosh-hashanah-baskets-family-basket-worldwide
+https://www.israel-catalog.com/giftbaskets-wine/plush-bunny-chanukah-gift-package-elite-chocolates	plush-bunny-chanukah-gift-package-elite-chocolates
+https://www.israel-catalog.com/giftbaskets-wine/holiday-specials/aristocats-tray-mishloach-manot-treats-purim	aristocats-tray-mishloach-manot-treats-purim_001
+https://www.israel-catalog.com/giftbaskets-wine/holiday-specials?page=1	holiday-specials_003
+https://www.israel-catalog.com/giftbaskets-wine/holiday-specials?page=2	holiday-specials_005
+https://www.israel-catalog.com/giftbaskets-wine/holiday-specials?page=3	holiday-specials_006
+https://www.israel-catalog.com/giftbaskets-wine/holiday-specials?page=4	holiday-specials_007
+https://www.israel-catalog.com/wine-giftbaskets/gift-baskets/tea-dreams-basket-usa	tea-dreams-basket-usa_001
+https://www.israel-catalog.com/giftbaskets-wine/max-brenner-4-rosh-hashana-gift-basket-chocolates	max-brenner-4-rosh-hashana-gift-basket-chocolates_001
+https://www.israel-catalog.com/giftbaskets-wine/max-brenner-5-gift-basket-chocolates	max-brenner-5-gift-basket-chocolates_001
+https://www.israel-catalog.com/giftbaskets-wine/max-brenner-9-rosh-hashana-gift-basket-wine-chocolates	max-brenner-9-rosh-hashana-gift-basket-wine-chocolates
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[0 TO 20] tid:337	default_244
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[20 TO 50] tid:337	default_246
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[101 TO 200] tid:337	default_250
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:975 tid:337	apachesolr_search_198
+https://www.israel-catalog.com/giftbaskets-wine/gift-baskets/wine-gift-baskets/wine-olive-oil-chocolate-gift-pack	wine-olive-oil-chocolate-gift-pack_001
+https://www.israel-catalog.com/giftbaskets-wine/gift-baskets/taste-israel-gift-box-honey-carob-spread-date-syrup-olive-oil-pomegranate-wine	taste-israel-gift-box-honey-carob-spread-date-syrup-olive-oil-pomegranate-wine
+https://www.israel-catalog.com/giftbaskets-wine/gift-baskets/wine-gift-baskets/wine-chocolate-wooden-cylinder-gift-box	wine-chocolate-wooden-cylinder-gift-box
+https://www.israel-catalog.com/giftbaskets-wine/gift-baskets/taste-israel-gift-box-matzah-spread-syrup	taste-israel-gift-box-matzah-spread-syrup
+https://www.israel-catalog.com/giftbaskets-wine/gift-baskets/taste-israel-gift-box-pomegranate-wine-honey-land-box	taste-israel-gift-box-pomegranate-wine-honey-land-box
+https://www.israel-catalog.com/giftbaskets-wine/holiday-specials/chanukah-treats?page=1	chanukah-treats_001
+https://www.israel-catalog.com/giftbaskets-wine/holiday-specials/chanukah-treats?page=2	chanukah-treats_003
+https://www.israel-catalog.com/giftbaskets-wine/max-brenner-kosher-gift-box-chocolates-3-israel	max-brenner-kosher-gift-box-chocolates-3-israel_001
+https://www.israel-catalog.com/giftbaskets-wine/max-brenner-kosher-gift-box-chocolates-4-israel	max-brenner-kosher-gift-box-chocolates-4-israel
+https://www.israel-catalog.com/giftbaskets-wine/max-brenner-max-suitcase-chocoholics-kosher-passover	max-brenner-max-suitcase-chocoholics-kosher-passover
+https://www.israel-catalog.com/giftbaskets-wine/winter-holiday-gift-baskets/assorted-dried-fruits-wine-gift-basket	assorted-dried-fruits-wine-gift-basket_001
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[0 TO 20] tid:1395	default_251
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[20 TO 50] tid:1395	default_255
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[201 TO 9999] tid:1395	default_256
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:667 tid:1395	apachesolr_search_201
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:91 tid:1395	apachesolr_search_205
+https://www.israel-catalog.com/giftbaskets-wine/wines/israeli-wine-carmel-vineyards-cabernet-sauvignon-merom-2010	israeli-wine-carmel-vineyards-cabernet-sauvignon-merom-2010
+https://www.israel-catalog.com/giftbaskets-wine/wines/carmel-winery/israeli-wine-carmel-vineyards-carignan-old-vines-ein-tut-2010	israeli-wine-carmel-vineyards-carignan-old-vines-ein-tut-2010
+https://www.israel-catalog.com/giftbaskets-wine/wines/carmel-winery/israeli-wine-carmel-vineyards-petite-sirah-old-vines-adulam-2010	israeli-wine-carmel-vineyards-petite-sirah-old-vines-adulam-2010_002
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[20 TO 50] tid:1226	default_258
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[101 TO 200] tid:1226	default_259
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[201 TO 9999] tid:1226	default_260
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:667 tid:1226	apachesolr_search_209
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:54 tid:1226	apachesolr_search_213
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[51 TO 100] tid:1410	default_261
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[101 TO 200] tid:1410	default_263
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:667 tid:1410	apachesolr_search_214
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:975 tid:1410	apachesolr_search_217
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:54 tid:1410	apachesolr_search_221
+https://www.israel-catalog.com/giftbaskets-wine/wines/pelter-distillery/pelter-distillery-hand-made-apple-brandy	pelter-distillery-hand-made-apple-brandy
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[0 TO 20] tid:397	default_264
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[20 TO 50] tid:397	default_266
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[101 TO 200] tid:397	default_270
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:975 tid:397	apachesolr_search_222
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:91 tid:397	apachesolr_search_224
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:54 tid:397	apachesolr_search_228
+https://www.israel-catalog.com/giftbaskets-wine/wines/israeli-wine-golan-winery-gamla-sangiovese-2009	israeli-wine-golan-winery-gamla-sangiovese-2009
+https://www.israel-catalog.com/giftbaskets-wine/wines/recanati-winery-recanati-merlot	recanati-winery-recanati-merlot
+https://www.israel-catalog.com/giftbaskets-wine/wines/golan-winery/israeli-wine-golan-winery-gamla-pinot-noir-2010	israeli-wine-golan-winery-gamla-pinot-noir-2010_001
+https://www.israel-catalog.com/giftbaskets-wine/wines/israeli-wine-golan-winery-gamla-merlot-2009	israeli-wine-golan-winery-gamla-merlot-2009_001
+https://www.israel-catalog.com/giftbaskets-wine/wines/galil-mountain-winery/israeli-wine-galil-mountain-winery-alon	israeli-wine-galil-mountain-winery-alon_001
+https://www.israel-catalog.com/wine-giftbaskets/wines/red/organic-israeli-wine-bashan-winery-nave-2007-set-2	organic-israeli-wine-bashan-winery-nave-2007-set-2
+https://www.israel-catalog.com/giftbaskets-wine/wines/israeli-winery-trio-spirit-galilee-rose	israeli-winery-trio-spirit-galilee-rose
+https://www.israel-catalog.com/giftbaskets-wine/wines/ramot-naftaly-winery-shiraz-2010-israeli-wines	ramot-naftaly-winery-shiraz-2010-israeli-wines
+https://www.israel-catalog.com/giftbaskets-wine/wines/israeli-winery-trio-spirit-galilee-white	israeli-winery-trio-spirit-galilee-white
+https://www.israel-catalog.com/giftbaskets-wine/wines/ramot-naftaly-winery-cabernet-sauvignon-2008-israeli-wines	ramot-naftaly-winery-cabernet-sauvignon-2008-israeli-wines
+https://www.israel-catalog.com/giftbaskets-wine/wines/israeli-wine-golan-winery-gamla-cabernet-2009	israeli-wine-golan-winery-gamla-cabernet-2009
+https://www.israel-catalog.com/giftbaskets-wine/wines/ramot-naftaly-winery-duet-2010-israel-wines	ramot-naftaly-winery-duet-2010-israel-wines
+https://www.israel-catalog.com/giftbaskets-wine/wines/israeli-wine-golan-winery-gamla-syrah-2009	israeli-wine-golan-winery-gamla-syrah-2009_001
+https://www.israel-catalog.com/giftbaskets-wine/wines/israeli-wine-golan-winery-gamla-nabbiolo-2009	israeli-wine-golan-winery-gamla-nabbiolo-2009_001
+https://www.israel-catalog.com/giftbaskets-wine/wines/pelter-distillery/trio-pelter-winery-israeli-wine	trio-pelter-winery-israeli-wine_001
+https://www.israel-catalog.com/giftbaskets-wine/wines/red?page=1	red_004
+https://www.israel-catalog.com/giftbaskets-wine/wines/red?page=2	red_005
+https://www.israel-catalog.com/wine-giftbaskets/wines/red/boutique-israeli-wines-tzora-vineyards-single-vineyard-shoresh-2007-set-2	boutique-israeli-wines-tzora-vineyards-single-vineyard-shoresh-2007-set-2
+https://www.israel-catalog.com/wine-giftbaskets/wines/red/boutique-israeli-wines-castel-winery-grand-vin-2007-set-2	boutique-israeli-wines-castel-winery-grand-vin-2007-set-2
+https://www.israel-catalog.com/giftbaskets-wine/wines/israeli-wine-tzora-winery-judea-hills	israeli-wine-tzora-winery-judea-hills_001
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[20 TO 50] tid:1474	default_274
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[201 TO 9999] tid:1474	default_278
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:91 tid:1474	apachesolr_search_232
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[0 TO 20] tid:396	default_280
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[51 TO 100] tid:396	default_283
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[201 TO 9999] tid:396	default_287
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:91 tid:396	apachesolr_search_234
+https://www.israel-catalog.com/giftbaskets-wine/wines/israeli-wine-golan-winery-gamla-riesling-2011	israeli-wine-golan-winery-gamla-riesling-2011_001
+https://www.israel-catalog.com/giftbaskets-wine/wines/israeli-wine-golan-winery-gamla-chardonnay-2011	israeli-wine-golan-winery-gamla-chardonnay-2011_001
+https://www.israel-catalog.com/giftbaskets-wine/wines/golan-winery/israeli-wine-golan-winery-yarden-chardonnay	israeli-wine-golan-winery-yarden-chardonnay
+https://www.israel-catalog.com/giftbaskets-wine/wines/recanati-winery-recanati-chardonnay	recanati-winery-recanati-chardonnay
+https://www.israel-catalog.com/giftbaskets-wine/wines/Castel-Winery/blanc-du-castel-castel-winery-israeli-wine	blanc-du-castel-castel-winery-israeli-wine
+https://www.israel-catalog.com/giftbaskets-wine/wines/israeli-wine-tzora-winery-neve-ilan-blanc	israeli-wine-tzora-winery-neve-ilan-blanc
+https://www.israel-catalog.com/giftbaskets-wine/israeli-wines-castel-winery-c-chardonnay-blanc-du-castel-2008-set-2	israeli-wines-castel-winery-c-chardonnay-blanc-du-castel-2008-set-2_001
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[0 TO 20] tid:532	default_288
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[20 TO 50] tid:532	default_290
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[101 TO 200] tid:532	default_294
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:975 tid:532	apachesolr_search_238
+https://www.israel-catalog.com/giftbaskets-wine/nuts-dried-fruit/assorted-nuts-platter	assorted-nuts-platter
+https://www.israel-catalog.com/giftbaskets-wine/nuts-dried-fruit/large-six-section-dried-fruits-nuts-tray	large-six-section-dried-fruits-nuts-tray
+https://www.israel-catalog.com/wine-giftbaskets/gift-baskets/condolences-basket-dried-fruit-nut-crate-kosher-gift-basket-usa-canada	condolences-basket-dried-fruit-nut-crate-kosher-gift-basket-usa-canada
+https://www.israel-catalog.com/wine-giftbaskets/gift-baskets/condolences-basket-dried-fruit-mix-crate-kosher-gift-basket-usa-canada	condolences-basket-dried-fruit-mix-crate-kosher-gift-basket-usa-canada
+https://www.israel-catalog.com/giftbaskets-wine/nuts-dried-fruit/holiday-classic-kinneret-dried-fruit-platter	holiday-classic-kinneret-dried-fruit-platter_001
+https://www.israel-catalog.com/giftbaskets-wine/winter-holiday-gift-baskets/large-assorted-dried-fruit-platter-wine	large-assorted-dried-fruit-platter-wine
+https://www.israel-catalog.com/giftbaskets-wine/fresh-fruits/platters-israel	platters-israel
+https://www.israel-catalog.com/giftbaskets-wine/fresh-fruits/israeli-citrus-fruits	israeli-citrus-fruits_001
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[0 TO 20] tid:1183	default_295
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[20 TO 50] tid:1183	default_297
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[101 TO 200] tid:1183	default_301
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:975 tid:1183	apachesolr_search_240
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:91 tid:1183	apachesolr_search_242
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:54 tid:1183	apachesolr_search_243
+https://www.israel-catalog.com/giftbaskets-wine/fresh-fruits/platters-israel/romantic-charm-fruit-tray	romantic-charm-fruit-tray
+https://www.israel-catalog.com/holidays/tu-bishvat?page=1	tu-bishvat_002
+https://www.israel-catalog.com/holidays/tu-bishvat?page=2	tu-bishvat_003
+https://www.israel-catalog.com/giftbaskets-wine/israeli-citrus-fruits-gift-basket-red-grapefruit	israeli-citrus-fruits-gift-basket-red-grapefruit
+https://www.israel-catalog.com/giftbaskets-wine/israeli-citrus-fruits-gift-basket-oranges	israeli-citrus-fruits-gift-basket-oranges_001
+https://www.israel-catalog.com/giftbaskets-wine/israeli-citrus-fruits-gift-basket-white-grapefruit	israeli-citrus-fruits-gift-basket-white-grapefruit
+https://www.israel-catalog.com/giftbaskets-wine/israeli-citrus-fruits-gift-basket-three-color	israeli-citrus-fruits-gift-basket-three-color_001
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[0 TO 20] tid:509	default_302
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[20 TO 50] tid:509	default_306
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[201 TO 9999] tid:509	default_310
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:91 tid:509	apachesolr_search_247
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[0 TO 20] tid:1282	default_312
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[20 TO 50] tid:1282	default_313
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[51 TO 100] tid:1282	default_315
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[101 TO 200] tid:1282	default_319
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:975 tid:1282	apachesolr_search_250
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:54 tid:1282	apachesolr_search_251
+https://www.israel-catalog.com/about-israel/soldier-front-hanukah-pack	soldier-front-hanukah-pack
+https://www.israel-catalog.com/wine-giftbaskets/holiday-specials/purim-mishloach-manot/needy-classic-purim-box	needy-classic-purim-box
+https://www.israel-catalog.com/wine-giftbaskets/gift-baskets/charity-baskets/children-hospital-candy-tray	children-hospital-candy-tray
+https://www.israel-catalog.com/wine-giftbaskets/holiday-specials/purim-mishloach-manot/needy-set-2-classic-purim-box	needy-set-2-classic-purim-box_003
+https://www.israel-catalog.com/wine-giftbaskets/gift-baskets/charity-baskets/set-2-children-hospital-candy-tray	set-2-children-hospital-candy-tray_002
+https://www.israel-catalog.com/wine-giftbaskets/holiday-specials/purim-mishloach-manot/needy-set-3-classic-purim-box	needy-set-3-classic-purim-box_003
+https://www.israel-catalog.com/music-cds/collections	collections_001
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[0 TO 20] tid:1135	default_320
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[20 TO 50] tid:1135	default_321
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[51 TO 100] tid:1135	default_323
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[201 TO 9999] tid:1135	default_324
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:667 tid:1135	apachesolr_search_252
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:975 tid:1135	apachesolr_search_253
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:91 tid:1135	apachesolr_search_254
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:54 tid:1135	apachesolr_search_258
+https://www.israel-catalog.com/jewelry/talis-clip/hexagonal-two-tablets-tallit-clips-blue-stones	hexagonal-two-tablets-tallit-clips-blue-stones_001
+https://www.israel-catalog.com/jewelry/talis-clip/blue-enamel-two-tablets-tallit-clips-jerusalem	blue-enamel-two-tablets-tallit-clips-jerusalem
+https://www.israel-catalog.com/jewelry/talis-clip/silver-plated-tallit-blessing-tallit-clips	silver-plated-tallit-blessing-tallit-clips_002
+https://www.israel-catalog.com/jewelry/talis-clip/silver-plated-luchot-habrit-two-tablets-tallit-clips-stones	silver-plated-luchot-habrit-two-tablets-tallit-clips-stones_001
+https://www.israel-catalog.com/jewelry/talis-clip/silver-plated-star-david-tallit-clips-blue-stone	silver-plated-star-david-tallit-clips-blue-stone_001
+https://www.israel-catalog.com/jewelry/talis-clip/embellished-two-tablets-silver-plated-tallit-clips	embellished-two-tablets-silver-plated-tallit-clips
+https://www.israel-catalog.com/jewelry/talis-clip/jerusalem-western-wall-tallit-clips	jerusalem-western-wall-tallit-clips_001
+https://www.israel-catalog.com/jewelry/talis-clip/silver-plated-hoshen-tallit-clips-gem-names	silver-plated-hoshen-tallit-clips-gem-names_002
+https://www.israel-catalog.com/music-cds/collections/israels-greatest-instrumental-collection	israels-greatest-instrumental-collection_001
+https://www.israel-catalog.com/music-cds/pop-rock/ethnix-collection	ethnix-collection_002
+https://www.israel-catalog.com/judaica/tallit-bag/very-dark-blue-velvet-tallit-bag-greek-pillars-gate	very-dark-blue-velvet-tallit-bag-greek-pillars-gate
+https://www.israel-catalog.com/judaica/tallit-bag/very-dark-blue-velvet-tallit-bag-draperies-gate	very-dark-blue-velvet-tallit-bag-draperies-gate_002
+https://www.israel-catalog.com/holidays/bar-mitzvah-bat-mitzvah?page=2	bar-mitzvah-bat-mitzvah_002
+https://www.israel-catalog.com/holidays/bar-mitzvah-bat-mitzvah?page=3	bar-mitzvah-bat-mitzvah_004
+https://www.israel-catalog.com/holidays/bar-mitzvah-bat-mitzvah?page=4	bar-mitzvah-bat-mitzvah_006
+https://www.israel-catalog.com/holidays/bar-mitzvah-bat-mitzvah?page=5	bar-mitzvah-bat-mitzvah_007
+https://www.israel-catalog.com/holidays/bar-mitzvah-bat-mitzvah?page=6	bar-mitzvah-bat-mitzvah_008
+https://www.israel-catalog.com/holidays/bar-mitzvah-bat-mitzvah?page=7	bar-mitzvah-bat-mitzvah_009
+https://www.israel-catalog.com/holidays/bar-mitzvah-bat-mitzvah?page=8	bar-mitzvah-bat-mitzvah_010
+https://www.israel-catalog.com/holidays/bar-mitzvah-bat-mitzvah?page=10	bar-mitzvah-bat-mitzvah_011
+https://www.israel-catalog.com/learn-hebrew/dictionaries/targumatik-pro	targumatik-pro
+https://www.israel-catalog.com/judaica/bar-mitzvah-set	bar-mitzvah-set_002
+https://www.israel-catalog.com/judaica/kosher-tefillin-special	kosher-tefillin-special_001
+https://www.israel-catalog.com/judaica/kosher-mehadrin-tefillin-special	kosher-mehadrin-tefillin-special_001
+https://www.israel-catalog.com/judaica/kosher-tefillin	kosher-tefillin
+https://www.israel-catalog.com/jewelry/sterling-silver-hebrew-name-talit-clips	sterling-silver-hebrew-name-talit-clips
+https://www.israel-catalog.com/judaica/large-gemsbok-horn-shofar	large-gemsbok-horn-shofar
+https://www.israel-catalog.com/learn-hebrew/babylon-electronic-dictionary-englishhebrew-hand-held-translator	babylon-electronic-dictionary-englishhebrew-hand-held-translator_002
+https://www.israel-catalog.com/software-electronics/software/barbat-mitzvah/complete-bar-mitzvah-guide-software-5-books-torah	complete-bar-mitzvah-guide-software-5-books-torah
+https://www.israel-catalog.com/judaica/small-rams-horn-shofar-natural-finish	small-rams-horn-shofar-natural-finish
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[0 TO 20] tid:1083	default_326
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[51 TO 100] tid:1083	default_327
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[101 TO 200] tid:1083	default_329
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:667 tid:1083	apachesolr_search_259
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:975 tid:1083	apachesolr_search_260
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:91 tid:1083	apachesolr_search_261
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:54 tid:1083	apachesolr_search_263
+https://www.israel-catalog.com/judaica/mezuzah/small-handmade-mezuzah-scroll-5-6-cm	small-handmade-mezuzah-scroll-5-6-cm
+https://www.israel-catalog.com/judaica/mezuzah/mezuzah-scroll-white-plastic-case-10-cm	mezuzah-scroll-white-plastic-case-10-cm
+https://www.israel-catalog.com/judaica/mezuzah/basic-mezuzah-scroll-7-cm-handmade-treditional	basic-mezuzah-scroll-7-cm-handmade-treditional
+https://www.israel-catalog.com/judaica/mezuzah/medium-handmade-sefardic-kosher-big-mezuzah-scroll-12-cm	medium-handmade-sefardic-kosher-big-mezuzah-scroll-12-cm
+https://www.israel-catalog.com/judaica/mezuzah/big-handmade-scroll-sefardic-mezuzah-15-cm	big-handmade-scroll-sefardic-mezuzah-15-cm
+https://www.israel-catalog.com/judaica/free-yair-emanuel-embroided-havdala-spice-bag-pomegranates	free-yair-emanuel-embroided-havdala-spice-bag-pomegranates_001
+https://www.israel-catalog.com/judaica/free-yair-emanuel-embroided-havdala-spice-bag-spice-blessing	free-yair-emanuel-embroided-havdala-spice-bag-spice-blessing_001
+https://www.israel-catalog.com/judaica/free-yair-emanuel-embroided-havdala-spice-bag-fragrance-israel	free-yair-emanuel-embroided-havdala-spice-bag-fragrance-israel
+https://www.israel-catalog.com/judaica/mezuzah/geen-stripe-painted-mezuzah-case-metal-shin	geen-stripe-painted-mezuzah-case-metal-shin
+https://www.israel-catalog.com/judaica/mezuzah/aluminum-semi-round-blue-colored-mezuzah-case-black-shin	aluminum-semi-round-blue-colored-mezuzah-case-black-shin
+https://www.israel-catalog.com/judaica/mezuzah/gray-aluminum-mezuzah-case-metal-shadai	gray-aluminum-mezuzah-case-metal-shadai
+https://www.israel-catalog.com/judaica/mezuzah/aluminum-semi-round-gold-colored-mezuzah-case-black-shin	aluminum-semi-round-gold-colored-mezuzah-case-black-shin_002
+https://www.israel-catalog.com/judaica/mezuzah/gold-colored-aluminum-simple-mezuzah-case-shin	gold-colored-aluminum-simple-mezuzah-case-shin
+https://www.israel-catalog.com/judaica/mezuzah/aluminum-silver-colored-mezuzah-case-metal-shin-chain-decorations	aluminum-silver-colored-mezuzah-case-metal-shin-chain-decorations
+https://www.israel-catalog.com/judaica/mezuzah/matte-aluminum-silver-choshen-mezuzah-case-metal-shin	matte-aluminum-silver-choshen-mezuzah-case-metal-shin
+https://www.israel-catalog.com/judaica/mezuzah/aluminum-car-mezuzah-case-star-david-triangle-pattern	aluminum-car-mezuzah-case-star-david-triangle-pattern
+https://www.israel-catalog.com/judaica/mezuzah/aluminum-gold-colored-mezuzah-case-metal-shin	aluminum-gold-colored-mezuzah-case-metal-shin_001
+https://www.israel-catalog.com/judaica/mezuzah/auminum-silver-colored-mezuzah-case-metal-shin	auminum-silver-colored-mezuzah-case-metal-shin
+https://www.israel-catalog.com/holidays/jewish-wedding-gifts?page=1	jewish-wedding-gifts_003
+https://www.israel-catalog.com/holidays/jewish-wedding-gifts?page=2	jewish-wedding-gifts_005
+https://www.israel-catalog.com/holidays/jewish-wedding-gifts?page=3	jewish-wedding-gifts_006
+https://www.israel-catalog.com/holidays/jewish-wedding-gifts?page=4	jewish-wedding-gifts_007
+https://www.israel-catalog.com/holidays/jewish-wedding-gifts?page=5	jewish-wedding-gifts_008
+https://www.israel-catalog.com/holidays/jewish-wedding-gifts?page=6	jewish-wedding-gifts_009
+https://www.israel-catalog.com/holidays/jewish-wedding-gifts?page=7	jewish-wedding-gifts_010
+https://www.israel-catalog.com/holidays/jewish-wedding-gifts?page=8	jewish-wedding-gifts_011
+https://www.israel-catalog.com/holidays/jewish-wedding-gifts?page=45	jewish-wedding-gifts_012
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[0 TO 20] tid:1107	default_330
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[20 TO 50] tid:1107	default_331
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[51 TO 100] tid:1107	default_332
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[101 TO 200] tid:1107	default_336
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:975 tid:1107	apachesolr_search_264
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:91 tid:1107	apachesolr_search_268
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[20 TO 50] tid:433	default_338
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[101 TO 200] tid:433	default_342
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:975 tid:433	apachesolr_search_270
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:54 tid:433	apachesolr_search_274
+https://www.israel-catalog.com/judaica/judaica-artists/yair-emanuel/yair-emanuel-jerusalem-glass-tealight-candlesticks	yair-emanuel-jerusalem-glass-tealight-candlesticks_002
+https://www.israel-catalog.com/judaica/judaica-artists/yair-emanuel/yair-emanuel-anodized-aluminum-tea-candles-turquoise	yair-emanuel-anodized-aluminum-tea-candles-turquoise
+https://www.israel-catalog.com/judaica/judaica-artists/yair-emanuel/yair-emanuel-old-city-jerusalem-glass-tlight-candlesticks	yair-emanuel-old-city-jerusalem-glass-tlight-candlesticks
+https://www.israel-catalog.com/judaica/judaica-artists/yair-emanuel/yair-emanuel-anodized-aluminum-tea-candles-pink	yair-emanuel-anodized-aluminum-tea-candles-pink
+https://www.israel-catalog.com/judaica/judaica-artists/yair-emanuel/yair-emanuel-birds-branches-glass-tealight-candlesticks	yair-emanuel-birds-branches-glass-tealight-candlesticks_001
+https://www.israel-catalog.com/judaica/candlesticks/small-silver-colored-simplistic-shabbat-candlesticks	small-silver-colored-simplistic-shabbat-candlesticks_002
+https://www.israel-catalog.com/judaica/judaica-artists/yair-emanuel/yair-emanuel-menorah-painted-glass-tealight-candlesticks	yair-emanuel-menorah-painted-glass-tealight-candlesticks_002
+https://www.israel-catalog.com/judaica/judaica-artists/yair-emanuel/yair-emanuel-jerusalem-panorama-glass-tealight-candlesticks	yair-emanuel-jerusalem-panorama-glass-tealight-candlesticks_001
+https://www.israel-catalog.com/judaica/candlesticks/small-gold-bow-tie-shabbat-candlesticks	small-gold-bow-tie-shabbat-candlesticks
+https://www.israel-catalog.com/judaica/judaica-artists/yair-emanuel/yair-emanuel-anodized-aluminum-tea-candles-purple	yair-emanuel-anodized-aluminum-tea-candles-purple_001
+https://www.israel-catalog.com/judaica/judaica-artists/yair-emanuel/yair-emanuel-pomegranates-glass-tealight-candlesticks	yair-emanuel-pomegranates-glass-tealight-candlesticks_002
+https://www.israel-catalog.com/judaica/judaica-artists/yair-emanuel/yair-emanuel-aluminum-memorial-candle-holder-blue	yair-emanuel-aluminum-memorial-candle-holder-blue
+https://www.israel-catalog.com/judaica/judaica-artists/yair-emanuel/yair-emanuel-aluminum-memorial-candle-holder-silver	yair-emanuel-aluminum-memorial-candle-holder-silver
+https://www.israel-catalog.com/judaica/judaica-artists/yair-emanuel/yair-emanuel-aluminum-memorial-candle-holder-green	yair-emanuel-aluminum-memorial-candle-holder-green_001
+https://www.israel-catalog.com/houseware/candle-holders?page=1	candle-holders_003
+https://www.israel-catalog.com/houseware/candle-holders?page=2	candle-holders_004
+https://www.israel-catalog.com/houseware/candle-holders?page=3	candle-holders_005
+https://www.israel-catalog.com/houseware/candle-holders?page=4	candle-holders_007
+https://www.israel-catalog.com/houseware/candle-holders?page=5	candle-holders_008
+https://www.israel-catalog.com/houseware/candle-holders?page=6	candle-holders_009
+https://www.israel-catalog.com/houseware/candle-holders?page=7	candle-holders_011
+https://www.israel-catalog.com/judaica/judaica-artists/yair-emanuel/yair-emanuel-aluminum-green-shabbat-candlestick-square	yair-emanuel-aluminum-green-shabbat-candlestick-square_002
+https://www.israel-catalog.com/judaica/judaica-artists/yair-emanuel/yair-emanuel-aluminum-red-shabbat-candlestick-square	yair-emanuel-aluminum-red-shabbat-candlestick-square_002
+https://www.israel-catalog.com/judaica/judaica-artists/yair-emanuel/yair-emanuel-aluminum-purple-green-shabbat-candlestick-square	yair-emanuel-aluminum-purple-green-shabbat-candlestick-square_002
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[0 TO 20] tid:1280	default_345
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[20 TO 50] tid:1280	default_347
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[101 TO 200] tid:1280	default_351
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:975 tid:1280	apachesolr_search_277
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:54 tid:1280	apachesolr_search_281
+https://www.israel-catalog.com/houseware/home-accessories-designers/artori-design/falling-bookend-home-accessories	falling-bookend-home-accessories_001
+https://www.israel-catalog.com/houseware/home-accessories-designers/artori-design/extreme-bike-rider-metal-sculpture	extreme-bike-rider-metal-sculpture
+https://www.israel-catalog.com/houseware/home-accessories-designers/artori-design/artori-pyramid-matza-holder	artori-pyramid-matza-holder
+https://www.israel-catalog.com/houseware/home-accessories-designers/artori-design/saxophonist-coin-holder	saxophonist-coin-holder
+https://www.israel-catalog.com/houseware/home-accessories-designers/artori-design/alcatraz-wall-clock	alcatraz-wall-clock
+https://www.israel-catalog.com/houseware/home-accessories-designers/artori-design/lovebirds-metal-sculpture	lovebirds-metal-sculpture
+https://www.israel-catalog.com/houseware/home-accessories-designers/artori-design/analogous-digital-wall-clock	analogous-digital-wall-clock_002
+https://www.israel-catalog.com/houseware/home-accessories-designers/artori-design/jaffa-gate-wall-clock	jaffa-gate-wall-clock
+https://www.israel-catalog.com/houseware/home-accessories-designers/artori-design/center-jerusalem-map-wall-clock	center-jerusalem-map-wall-clock
+https://www.israel-catalog.com/houseware/home-accessories-designers/artori-design/primavera-bottle-vase	primavera-bottle-vase
+https://www.israel-catalog.com/houseware/home-accessories-designers/artori-design/in-treatment-tissue-box-cover-home-accessories	in-treatment-tissue-box-cover-home-accessories_001
+https://www.israel-catalog.com/houseware/home-accessories-designers/artori-design/clocks-within-clock-wall-clocks	clocks-within-clock-wall-clocks
+https://www.israel-catalog.com/houseware/home-accessories-designers/artori-design/bookend-action-books	bookend-action-books
+https://www.israel-catalog.com/houseware/home-accessories-designers/artori-design/bookend-love-romance-books	bookend-love-romance-books_001
+https://www.israel-catalog.com/houseware/home-accessories-designers/artori-design/bite-wall-clocks	bite-wall-clocks
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[0 TO 20] tid:126	default_352
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[20 TO 50] tid:126	default_354
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[101 TO 200] tid:126	default_355
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[201 TO 9999] tid:126	default_358
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:975 tid:126	apachesolr_search_285
+https://www.israel-catalog.com/houseware/free-views-israel-desk-calendar-jewish-year-5771-sept-2010-sept-2011	free-views-israel-desk-calendar-jewish-year-5771-sept-2010-sept-2011_001
+https://www.israel-catalog.com/houseware/free-flowers-israel-desk-calendar-jewish-year-5771	free-flowers-israel-desk-calendar-jewish-year-5771
+https://www.israel-catalog.com/houseware/small-wall-calendar-jewish-year-5771-views-israel-sept-2010-sept-2011	small-wall-calendar-jewish-year-5771-views-israel-sept-2010-sept-2011
+https://www.israel-catalog.com/houseware/small-wall-calendar-jewish-year-5771-flowers-israel-sept-2010-sept-2011	small-wall-calendar-jewish-year-5771-flowers-israel-sept-2010-sept-2011_002
+https://www.israel-catalog.com/houseware/jewish-year-5771-wall-calendar-italian-jewish-treasure-sept-2010-sept-2011	jewish-year-5771-wall-calendar-italian-jewish-treasure-sept-2010-sept-2011
+https://www.israel-catalog.com/houseware/jewish-year-5771-wall-calendars-views-israel-sept-2010-sept-2011	jewish-year-5771-wall-calendars-views-israel-sept-2010-sept-2011
+https://www.israel-catalog.com/houseware/jewish-year-5771-wall-calendar-flowers-israel-sept-2010-sept-2011	jewish-year-5771-wall-calendar-flowers-israel-sept-2010-sept-2011
+https://www.israel-catalog.com/houseware/jewish-year-5771-small-wall-calendar-israel-artists-sept-2010-sept-2011	jewish-year-5771-small-wall-calendar-israel-artists-sept-2010-sept-2011_001
+https://www.israel-catalog.com/houseware/jewish-year-5771-wall-calendar-chamsa-vintage-sept-2010-sept-2011	jewish-year-5771-wall-calendar-chamsa-vintage-sept-2010-sept-2011_001
+https://www.israel-catalog.com/holidays/passover	passover
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[0 TO 20] tid:520	default_360
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[51 TO 100] tid:520	default_363
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[201 TO 9999] tid:520	default_365
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:975 tid:520	apachesolr_search_289
+https://www.israel-catalog.com/houseware/free-yair-emanuel-painted-wood-bottle-cork-pair-2-pomegranate	free-yair-emanuel-painted-wood-bottle-cork-pair-2-pomegranate_002
+https://www.israel-catalog.com/houseware/free-yair-emanuel-painted-wood-bottle-cork-pair-2-oriental	free-yair-emanuel-painted-wood-bottle-cork-pair-2-oriental
+https://www.israel-catalog.com/houseware/home-accessories-designers/artori-design/razor-bottle-opener-kitchen-gadgets	razor-bottle-opener-kitchen-gadgets
+https://www.israel-catalog.com/houseware/home-accessories-designers/artori-design/salt-pepper-cone-set -kitchen-gadgets	salt-pepper-cone-set@20-kitchen-gadgets
+https://www.israel-catalog.com/houseware/home-accessories-designers/artori-design/matador-napkin-holder-kitchen-gadgets	matador-napkin-holder-kitchen-gadgets
+https://www.israel-catalog.com/houseware/home-accessories-designers/artori-design/squirrel-nut-cracker-kitchen-gadgets	squirrel-nut-cracker-kitchen-gadgets
+https://www.israel-catalog.com/houseware/home-accessories-designers/artori-design/dripping-napkin-holder-kitchen-gadgets	dripping-napkin-holder-kitchen-gadgets_002
+https://www.israel-catalog.com/houseware/yair-emanuel-painted-wood-salt-pepper-shaker-set	yair-emanuel-painted-wood-salt-pepper-shaker-set_001
+https://www.israel-catalog.com/houseware/yair-emanuel-hand-painted-wood-napkin-ring-set-6	yair-emanuel-hand-painted-wood-napkin-ring-set-6_002
+https://www.israel-catalog.com/houseware/yair-emanuel-painted-wood-napkin-holder	yair-emanuel-painted-wood-napkin-holder_002
+https://www.israel-catalog.com/houseware/home-accessories-designers/artori-design/artori-cat-vs-dog-paper-towel-holder	artori-cat-vs-dog-paper-towel-holder_001
+https://www.israel-catalog.com/houseware/hadad-sterling-silver-salt-pepper-server-toscana-floral-design	hadad-sterling-silver-salt-pepper-server-toscana-floral-design_002
+https://www.israel-catalog.com/houseware/hadad-sterling-silver-salt-pepper-server-embossed-rope-lattice	hadad-sterling-silver-salt-pepper-server-embossed-rope-lattice
+https://www.israel-catalog.com/judaica/hadad-sterling-silver-napkin-rings-set-6-filigree-border	hadad-sterling-silver-napkin-rings-set-6-filigree-border
+https://www.israel-catalog.com/houseware/table-accessories?page=1	table-accessories_002
+https://www.israel-catalog.com/judaica/hadad-sterling-silver-napkin-rings-set-6-cameo-lattice-pattern	hadad-sterling-silver-napkin-rings-set-6-cameo-lattice-pattern_001
+https://www.israel-catalog.com/judaica/hadad-sterling-silver-wine-decanter-handle-flower-lattice-design	hadad-sterling-silver-wine-decanter-handle-flower-lattice-design_002
+https://www.israel-catalog.com/judaica/hadad-sterling-silver-wine-decanter-handle-grape-bunch-design	hadad-sterling-silver-wine-decanter-handle-grape-bunch-design_001
+https://www.israel-catalog.com/judaica/hadad-sterling-silver-wine-decantor-handle-simply-elegant-design	hadad-sterling-silver-wine-decantor-handle-simply-elegant-design
+https://www.israel-catalog.com/judaica/hadad-sterling-silver-wine-decantor-simply-elegant-design	hadad-sterling-silver-wine-decantor-simply-elegant-design
+https://www.israel-catalog.com/judaica/hadad-sterling-silver-wine-decanter-toscana-floral-panels	hadad-sterling-silver-wine-decanter-toscana-floral-panels_002
+https://www.israel-catalog.com/jewelry/bracelets/evil-eye-bracelet	evil-eye-bracelet
+https://www.israel-catalog.com/jewelry/bracelets/israeli-fashion-bracelets	israeli-fashion-bracelets
+https://www.israel-catalog.com/jewelry/bracelets/star-of-david-bracelet	star-of-david-bracelet_001
+https://www.israel-catalog.com/jewelry/earrings/hoop	hoop_001
+https://www.israel-catalog.com/jewelry/earrings/stud	stud
+https://www.israel-catalog.com/jewelry/necklaces/chains	chains
+https://www.israel-catalog.com/jewelry/necklaces/choker	choker_001
+https://www.israel-catalog.com/jewelry/personalized-jewelry/name-necklace	name-necklace
+https://www.israel-catalog.com/jewelry/necklaces/pendant	pendant
+https://www.israel-catalog.com/jewelry/designers/adena-plastelina	adena-plastelina_001
+https://www.israel-catalog.com/jewelry/designers/smadar-edri-jewelry	smadar-edri-jewelry_001
+https://www.israel-catalog.com/jewelry/kabbalah/72-names-of-god	72-names-of-god
+https://www.israel-catalog.com/jewelry/kabbalah/alef-lamed-dalet	alef-lamed-dalet_001
+https://www.israel-catalog.com/jewelry/kabbalah/ben-porat-yosef	ben-porat-yosef
+https://www.israel-catalog.com/jewelry/kabbalah/merkaba	merkaba
+https://www.israel-catalog.com/jewelry/kabbalah/red-string	red-string
+https://www.israel-catalog.com/jewelry/kabbalah/samech-alef-lamed-seter-ata-li	samech-alef-lamed-seter-ata-li_001
+https://www.israel-catalog.com/search/apachesolr_search/?filters=tid:649	default_368
+https://www.israel-catalog.com/search/apachesolr_search/?filters=tid:650	default_370
+https://www.israel-catalog.com/search/apachesolr_search/pearls?filters=tid:363	pearls_003
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[20 TO 50] tid:363	default_372
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[51 TO 100] tid:363	default_373
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[101 TO 200] tid:363	default_375
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[201 TO 9999] tid:363	default_378
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:975 tid:363	apachesolr_search_292
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:54 tid:363	apachesolr_search_295
+https://www.israel-catalog.com/jewelry/14k-gold-hebrew-name-necklace-block-letters	14k-gold-hebrew-name-necklace-block-letters_002
+https://www.israel-catalog.com/jewelry/14k-gold-hebrew-name-necklace-corner-heart-cursive-letters	14k-gold-hebrew-name-necklace-corner-heart-cursive-letters
+https://www.israel-catalog.com/jewelry/sterling-silver-hebrew-english-name-ring-baily	sterling-silver-hebrew-english-name-ring-baily
+https://www.israel-catalog.com/jewelry/14k-gold-silver-hebrew-english-name-ring-ring-within-ring-design	14k-gold-silver-hebrew-english-name-ring-ring-within-ring-design
+https://www.israel-catalog.com/jewelry/14k-gold-english-name-necklace-cursive-letter-style	14k-gold-english-name-necklace-cursive-letter-style
+https://www.israel-catalog.com/jewelry/sterling-silver-hebrew-english-name-ring-classical-design	sterling-silver-hebrew-english-name-ring-classical-design_001
+https://www.israel-catalog.com/jewelry/14k-gold-hebrew-name-necklace-double-width-cursive-letters	14k-gold-hebrew-name-necklace-double-width-cursive-letters_001
+https://www.israel-catalog.com/jewelry/sterling-silver-hebrew-english-name-ring-western-wall-design	sterling-silver-hebrew-english-name-ring-western-wall-design
+https://www.israel-catalog.com/jewelry/14k-gold-english-name-necklace-double-width-block-print-style	14k-gold-english-name-necklace-double-width-block-print-style
+https://www.israel-catalog.com/jewelry/14k-gold-hebrew-name-necklace-cursive-letters	14k-gold-hebrew-name-necklace-cursive-letters
+https://www.israel-catalog.com/jewelry/jewish-jewelry/star-of-david/star-of-david-necklace-for-all-ages-silver-opal	star-of-david-necklace-for-all-ages-silver-opal
+https://www.israel-catalog.com/jewelry/jewish-jewelry/star-of-david/silver-star-of-david-heart-combination	silver-star-of-david-heart-combination
+https://www.israel-catalog.com/jewelry/jewish-jewelry/star-of-david/peace-dove-star-of-david-necklace-silver-opal	peace-dove-star-of-david-necklace-silver-opal_002
+https://www.israel-catalog.com/jewelry/jewish-jewelry/star-of-david/rainbow-colors-star-of-david-necklace-silver-opal	rainbow-colors-star-of-david-necklace-silver-opal_001
+https://www.israel-catalog.com/jewelry/jewish-jewelry/star-of-david/show-your-yove-with-star-of-david-necklace-silver-opal	show-your-yove-with-star-of-david-necklace-silver-opal_002
+https://www.israel-catalog.com/jewelry/necklaces/custom-name/beautiful-sterling-silver-hebrew-english-name-necklace	beautiful-sterling-silver-hebrew-english-name-necklace_001
+https://www.israel-catalog.com/jewelry/jewish-jewelry/star-of-david/striking-silver-and-crystal-star-of-david-pendant	striking-silver-and-crystal-star-of-david-pendant_002
+https://www.israel-catalog.com/jewelry/jewish-jewelry/hamsa	hamsa_001
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[0 TO 20] tid:1125	default_382
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[101 TO 200] tid:1125	default_385
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[201 TO 9999] tid:1125	default_388
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:975 tid:1125	apachesolr_search_298
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:54 tid:1125	apachesolr_search_301
+https://www.israel-catalog.com/jewelry/edita-turquoise-hamsa-israel-necklace	edita-turquoise-hamsa-israel-necklace_001
+https://www.israel-catalog.com/jewelry/edita-golden-hamsa-coral-handcrafted-israeli-neckla	edita-golden-hamsa-coral-handcrafted-israeli-neckla
+https://www.israel-catalog.com/jewelry/jewish-jewelry/kabbalah/woven-leather-string-bracelet-hamsa-protective-eye-pendants	woven-leather-string-bracelet-hamsa-protective-eye-pendants
+https://www.israel-catalog.com/jewelry/jewish-jewelry/kabbalah/braided-leather-string-bracelet-hamsa-magen-david-pendants	braided-leather-string-bracelet-hamsa-magen-david-pendants
+https://www.israel-catalog.com/jewelry/bracelets/evil-eye-bracelet/silver-red-string-evil-eye-bracelet	silver-red-string-evil-eye-bracelet
+https://www.israel-catalog.com/jewelry/bracelets/Braided-Leather-Red-String-Bracelet-with-Kabbalah-pendant	braided-leather-red-string-bracelet-with-kabbalah-pendant
+https://www.israel-catalog.com/silk-red-string-kabbalah-bracelet-hamsa-pendant	silk-red-string-kabbalah-bracelet-hamsa-pendant
+https://www.israel-catalog.com/jewish-jewelry/leather-rope-bracelet-gold-protectvie-eye-kabbalah-pendant	leather-rope-bracelet-gold-protectvie-eye-kabbalah-pendant_001
+https://www.israel-catalog.com/jewelry/red-string-kabbalah-bracelet-w-medallion-against-evil-eye	red-string-kabbalah-bracelet-w-medallion-against-evil-eye_002
+https://www.israel-catalog.com/jewelry/bracelets/hamsa-bracelet/beaded-hamsa-bracelet-against-evil-eye	beaded-hamsa-bracelet-against-evil-eye
+https://www.israel-catalog.com/jewelry/bracelets/kabbalah-pendant-charms-silk-red-string-bracelet	kabbalah-pendant-charms-silk-red-string-bracelet_002
+https://www.israel-catalog.com/jewelry/bracelets/pearl-yin-yang-hamsa-bracelet	pearl-yin-yang-hamsa-bracelet
+https://www.israel-catalog.com/jewelry/kabbalah/alef-lamed-dalet/ald-pendant	ald-pendant
+https://www.israel-catalog.com/jewish-jewelry/adjustable-woven-cotton-red-string-bracelet-integrated-hamsa	adjustable-woven-cotton-red-string-bracelet-integrated-hamsa_001
+https://www.israel-catalog.com/jewish-jewlery/adjustable-woven-red-string-bracelet-hamsa-star-of-david-accent	adjustable-woven-red-string-bracelet-hamsa-star-of-david-accent_001
+https://www.israel-catalog.com/jewelry/evil-eye?page=1	evil-eye_002
+https://www.israel-catalog.com/jewelry/evil-eye?page=2	evil-eye_003
+https://www.israel-catalog.com/jewelry/evil-eye?page=3	evil-eye_005
+https://www.israel-catalog.com/jewelry/kabbalah-amulet-protection-evil-eye	kabbalah-amulet-protection-evil-eye_001
+https://www.israel-catalog.com/jewelry/sterling-silver-kabbalah-ana-bekoach-hamsa-ring	sterling-silver-kabbalah-ana-bekoach-hamsa-ring_002
+https://www.israel-catalog.com/jewelry/kabbalah-amulet-newborns	kabbalah-amulet-newborns_002
+https://www.israel-catalog.com/jewelry/kabbalah-amulet-pregnancy	kabbalah-amulet-pregnancy_001
+https://www.israel-catalog.com/jewelry/kabbalah-amulet-prosperity	kabbalah-amulet-prosperity
+https://www.israel-catalog.com/jewelry/kabbalah-amulet-recovery	kabbalah-amulet-recovery
+https://www.israel-catalog.com/jewelry/kabbalah-amulet-safety	kabbalah-amulet-safety
+https://www.israel-catalog.com/jewelry/kabbalah-amulet-soldiers	kabbalah-amulet-soldiers_001
+https://www.israel-catalog.com/jewelry/kabbalah-amulet-spiritual-cleansing	kabbalah-amulet-spiritual-cleansing_002
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[0 TO 20] tid:1110	default_390
+https://www.israel-catalog.com/search/apachesolr_search/?filters=fs_uc_sell_price:[51 TO 100] tid:1110	default_394
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:667 tid:1110	apachesolr_search_305
+https://www.israel-catalog.com/search/apachesolr_search?filters=tid:54 tid:1110	apachesolr_search_309
+https://www.israel-catalog.com/jewelry/designers/anava/gold-plated-crystals-square-earrings-israeli-jewelry	gold-plated-crystals-square-earrings-israeli-jewelry_002
+https://www.israel-catalog.com/jewelry/designers/anava/silver-gold-medallion-star-of-david-necklace	silver-gold-medallion-star-of-david-necklace
+https://www.israel-catalog.com/jewelry/designers/anava/rectangle-silver-plated-blue-crystals-earrings-israeli-jewelry	rectangle-silver-plated-blue-crystals-earrings-israeli-jewelry
+https://www.israel-catalog.com/jewelry/designers/anava/rectangle-gold-plated-crystals-earrings-israeli-jewelry	rectangle-gold-plated-crystals-earrings-israeli-jewelry_001
+https://www.israel-catalog.com/jewelry/designers/anava/square-silver-earrings-turquoise-stones-israeli-jewelry	square-silver-earrings-turquoise-stones-israeli-jewelry_002
+https://www.israel-catalog.com/jewelry/designers/anava/stylish-ring-turquoise-bead-pendant-israeli-fashion-jewelry	stylish-ring-turquoise-bead-pendant-israeli-fashion-jewelry_001
+https://www.israel-catalog.com/jewelry/designers/anava/silver-heart-charm-israeli-bracelet	silver-heart-charm-israeli-bracelet_002
+https://www.israel-catalog.com/jewelry/designers/anava/silver-love-charm-israeli-bracelet	silver-love-charm-israeli-bracelet_001
+https://www.israel-catalog.com/jewelry/designers/anava/gold-silver-medallion-star-of-david-necklace	gold-silver-medallion-star-of-david-necklace_002
+https://www.israel-catalog.com/jewelry/designers/anava/beautiful-world-charm-silver-chain-israeli-jewelry	beautiful-world-charm-silver-chain-israeli-jewelry_001
+https://www.israel-catalog.com/jewelry/designers/anava/beautiful-world-charm-leather-cord-israeli-jewelry	beautiful-world-charm-leather-cord-israeli-jewelry_002
+https://www.israel-catalog.com/jewelry/designers/anava/something-heart-sees-charm-israeli-fashion-jewelry	something-heart-sees-charm-israeli-fashion-jewelry
+https://www.israel-catalog.com/jewelry/designers/anava/silver-turquoise-beads-star-of-david-necklace	silver-turquoise-beads-star-of-david-necklace_002
+https://www.israel-catalog.com/jewelry/designers/anava/silver-heart-charms-israeli-bracelet	silver-heart-charms-israeli-bracelet_001

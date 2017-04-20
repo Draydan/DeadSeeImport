@@ -1,0 +1,2 @@
+function ajaxify_regions_success_block(data){for(key in data){if(data[key]){var block=$('#block-'+key+'-ajax-content').replaceWith(data[key]['content']);Drupal.attachBehaviors(block);}
+else{$('#block-'+ key).remove();}}}

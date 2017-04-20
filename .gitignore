@@ -8,3 +8,14 @@
 *.exe
 *.pdb
 *.cache
+*.php
+*.htm*
+*.css
+*.json
+*.exe
+*.pdb
+/DeadSeaCosmeticsImport/bin/Debug/log.txt
+*.mp4
+*.wmv
+*.rar
+*.zip

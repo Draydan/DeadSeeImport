@@ -21,3 +21,7 @@ E:\Work\DeadSeaCosmeticsImport\DeadSeaCatalogueDB\bin\Debug\FuzzyHelper.pdb
 E:\Work\DeadSeaCosmeticsImport\DeadSeaCatalogueDB\obj\Debug\DeadSeaCatalogueDB.Migrations.AddIsOurCategoryField.resources
 E:\Work\DeadSeaCosmeticsImport\DeadSeaCatalogueDB\obj\Debug\DeadSeaCatalogueDB.Migrations.AddKeyWordsToTranslations.resources
 E:\Work\DeadSeaCosmeticsImport\DeadSeaCatalogueDB\obj\Debug\DeadSeaCatalogueDB.Migrations.AntiKeyWords.resources
+E:\Work\DeadSeaCosmeticsImport\DeadSeaCatalogueDB\obj\Debug\DeadSeaCatalogueDB.Migrations.PriceIsNowPriceFull.resources
+E:\Work\DeadSeaCosmeticsImport\DeadSeaCatalogueDB\obj\Debug\DeadSeaCatalogueDB.Migrations.AddedFlagPriceFromSite.resources
+E:\Work\DeadSeaCosmeticsImport\DeadSeaCatalogueDB\obj\Debug\DeadSeaCatalogueDB.Migrations.AddWPProductUrl.resources
+E:\Work\DeadSeaCosmeticsImport\DeadSeaCatalogueDB\obj\Debug\DeadSeaCatalogueDB.Migrations.addedWpImageUrl.resources

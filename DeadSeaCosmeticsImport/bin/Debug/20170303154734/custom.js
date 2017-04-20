@@ -1,0 +1,1 @@
+Drupal.behaviors.uc_ajax_cart=function(context){jQuery('.popopen').bind('click',function(){window.location='/cart';alert('Hello');});};
