@@ -110,10 +110,12 @@ namespace DeadSeaCatalogueDAL
 
             artikul = sku;
             title = tit;
-            price = pr;
+            if(pr != "")
+                price = pr;
             desc = dsc;
             details = det;
-            imageFileName = img;
+            if(imageFileName != "")
+                imageFileName = img;
         }
     }
 }

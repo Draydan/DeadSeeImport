@@ -27,6 +27,7 @@ namespace DeadSeaTools
     {
         const string iniFileNameImportUrls = "PostUrlImportPaths.ini";
         const string iniFileNameExportYM = "YaMarketExportPaths.ini";
+        const string iniFileNameImportRoboted2IK = "ImportRobotedIKToDB.ini";
 
 
         public MainWindow()
@@ -161,5 +162,9 @@ namespace DeadSeaTools
             }
         }
 
+        private void bBrowseIKRobot_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

@@ -89,6 +89,7 @@ namespace DeadSeaVKExport
                 // забор переводов с ВК
                 using (var db = new ProductContext())
                 {
+
                     List<string> newTitles = vke.ProductList.Select(p => p.Title).
                         Where(title => !db.Products.Any(pl => pl.title.Replace("&", "") == title.Replace("and", ""))
                         && !db.Translations.Any(tr => tr.title == title)

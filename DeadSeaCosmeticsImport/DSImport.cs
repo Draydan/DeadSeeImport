@@ -184,8 +184,8 @@ namespace DeadSeaCosmeticsImport
                 Credentials = new
                         System.Net.NetworkCredential("lolaokey", "cheburashka2017")
             };
-            handler.CookieContainer = new CookieContainer();
-            handler.CookieContainer.Add(uri, new Cookie("PAPVisitorId", "05c6d7dc79e7eae167a5bpHa8ZwCgfaL")); // Adding a Cookie
+            //handler.CookieContainer = new CookieContainer();
+            //handler.CookieContainer.Add(uri, new Cookie("PAPVisitorId", "05c6d7dc79e7eae167a5bpHa8ZwCgfaL")); // Adding a Cookie
 
             HttpClient http = new HttpClient(handler);
             
@@ -458,7 +458,7 @@ namespace DeadSeaCosmeticsImport
                         if (rootTries >= maxRootTries )
                             //throw new Exception("Ошибка", ex);
                             Logger.Logger.ErrorLog("Ошибка " + ex.Message);
-            }
+                    }
                     finally
                     {
                     }
@@ -466,8 +466,8 @@ namespace DeadSeaCosmeticsImport
         }
 
         private static Product GetProductByName(ProductContext db, string titleCurr)
-        {            
-                return db.Products.FirstOrDefault(x => x.title == titleCurr);
+        {
+            return db.Products.FirstOrDefault(x => x.title == titleCurr);
         }
 
         private static void SaveProduct(string sku, string category, string title, string price, string desc, string details, string imageFileName)
