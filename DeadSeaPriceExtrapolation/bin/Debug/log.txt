@@ -1855,3 +1855,253 @@
 3/12/2017 7:41:30 PM : not set price with full $73.95 for Natural Sea Beauty Mineral ACTIVE Serum
 3/12/2017 7:41:30 PM : take price $34.11 of $68.95 from AHAVA Age Control Eye Cream, Time To Smooth
 3/12/2017 7:41:30 PM : not set price with full $99.95 for Sea of Spa Dead Sea Cosmetics Alternative Plus 4 Facial Care Products Kit
+03.06.2017 16:38:22 : not set price with full 14.95 for Natural Sea Beauty Body Mineral Soap
+03.06.2017 16:38:23 : take price 9.13 of 14.95 from Sea of Spa Dead Sea Cosmetics Essence of Vanilla and Patchouli Shower Gel
+03.06.2017 16:38:23 : not set price with full $6.01 for Soapless Body Peeling, Dead Sea Products
+6/3/2017 4:38:23 PM : not set price with full 16.95 for Soapless Peeling with Glycerin Orange Oil, Dead Sea Minerals
+6/3/2017 4:38:23 PM : take price 6.92 of 16.95 from Canaan Cleansing Milk, Dead Sea cosmetics
+6/3/2017 4:38:23 PM : not set price with full 16.95 for Dead Sea Soapless Peeling with Glycerin Orange Oil & Vitamin E
+6/3/2017 4:38:23 PM : take price 6.92 of 16.95 from Canaan Cleansing Milk, Dead Sea cosmetics
+6/3/2017 4:38:23 PM : not set price with full 18.95 for Canaan Body Peeling Soap, Dead Sea Products
+6/3/2017 4:38:23 PM : take price 8.11 of 18.95 from Nourishing Mask for Normal Hair with Jojoba Olive Oil, Dead Sea Cosmetics
+6/3/2017 4:38:23 PM : not set price with full 18.95 for Lightening Facial, Dead Sea Soap
+6/3/2017 4:38:23 PM : take price 8.11 of 18.95 from Nourishing Mask for Normal Hair with Jojoba Olive Oil, Dead Sea Cosmetics
+6/3/2017 4:38:23 PM : not set price with full 19.95 for Pomegranate Aromatherapy with Minerals, Dead Sea Soap
+6/3/2017 4:38:23 PM : take price 9.63 of 19.95 from Dead Sea Salt by Natural Sea Beauty
+6/3/2017 4:38:23 PM : not set price with full $39.95 for Dead Sea Skin Relief , Psoriasis Body Milk Soap
+6/3/2017 4:38:23 PM : take price $27.57 of $39.95 from Purifying Mud Facial Scrub by Natural Sea Beauty
+6/3/2017 4:38:23 PM : not set price with full 13.95 for Sea Buckthorn Anti-Aging Body Moisturizer, Dead Sea Minerals
+6/3/2017 4:38:23 PM : take price 6.43 of 13.95 from Natural Sea Beauty Body Mud Soap
+6/3/2017 4:38:23 PM : not set price with full 12.95 for Extra Rich Cream Shea Butter, Dead Sea Cosmetics
+6/3/2017 4:38:23 PM : take price 8.62 of 12.95 from Dead sea Black Mud Hair Conditioner by Sea of Spa
+6/3/2017 4:38:23 PM : not set price with full 12.95 for Aloe Vera Gel, Dead Sea Cosmetics
+6/3/2017 4:38:23 PM : take price 8.62 of 12.95 from Dead sea Black Mud Hair Conditioner by Sea of Spa
+6/3/2017 4:38:23 PM : not set price with full 22.95 for Bio Marine Protective Dead Sea Day Cream, Normal to Dry
+6/3/2017 4:38:23 PM : take price 9.65 of 22.95 from Dead Sea Purifying Mud Shampoo by Natural Sea Beauty
+6/3/2017 4:38:23 PM : not set price with full 19.95 for Anti–Aging Obliphicha Face Cream SPF 20, Dead Sea Cosmetics
+6/3/2017 4:38:23 PM : take price 9.63 of 19.95 from Dead Sea Salt by Natural Sea Beauty
+6/3/2017 4:38:23 PM : not set price with full 19.95 for Pomegranates Night Cream, Dead Sea Minerals
+6/3/2017 4:38:23 PM : take price 9.63 of 19.95 from Dead Sea Salt by Natural Sea Beauty
+6/3/2017 4:38:23 PM : not set price with full 19.95 for Anti Aging Day Cream Enriched with Dead Sea Minerals & Pumpkin Oil, SPF-45
+6/3/2017 4:38:23 PM : take price 9.63 of 19.95 from Dead Sea Salt by Natural Sea Beauty
+6/3/2017 4:38:23 PM : not set price with full 22.95 for Dead Sea Protective Anti-Wrinkle Cream SPF-15 for Men
+6/3/2017 4:38:23 PM : take price 9.65 of 22.95 from Dead Sea Purifying Mud Shampoo by Natural Sea Beauty
+6/3/2017 4:38:23 PM : not set price with full 22.95 for Mogador Nourishing Night Cream, Argan Oil
+6/3/2017 4:38:23 PM : take price 9.65 of 22.95 from Dead Sea Purifying Mud Shampoo by Natural Sea Beauty
+6/3/2017 4:38:23 PM : not set price with full 22.95 for Calming & Hydrating Mask with Shea Butter Aloe Vera, Dead Sea Minerals
+6/3/2017 4:38:23 PM : take price 9.65 of 22.95 from Dead Sea Purifying Mud Shampoo by Natural Sea Beauty
+6/3/2017 4:38:23 PM : not set price with full 23.95 for Mogador Gentle Facial Peeling Cream, Argan Oil
+6/3/2017 4:38:23 PM : take price 10.65 of 23.95 from Canaan Hydra-Plus Nourishing Cream, Organic Cosmetics
+6/3/2017 4:38:23 PM : not set price with full 18.95 for Mogador Hair Oil, Argan Oil
+6/3/2017 4:38:23 PM : take price 8.11 of 18.95 from Nourishing Mask for Normal Hair with Jojoba Olive Oil, Dead Sea Cosmetics
+6/3/2017 4:38:23 PM : not set price with full $44.95 for Anti-Aging Dead Sea Mineral Serum
+6/3/2017 4:38:23 PM : take price $27.57 of $44.95 from Dead Sea Body Lotion by Natural Sea Beauty 
+6/3/2017 4:38:23 PM : not set price with full $88.95 for AHAVA Age Control Day Moisterizer, Time To Smooth, SPF15
+6/3/2017 4:38:23 PM : take price 54.25 of 89.95 from Dead Sea Cosmetics Gift Set - Man Care
+6/3/2017 4:38:23 PM : not set price with full $93.95 for AHAVA Age Control Even Tone Sleeping Cream
+6/3/2017 4:38:24 PM : take price 96.34 of 99.95 from Sea of Spa Dead Sea Cosmetics Alternative Plus 4 Facial Care Products Kit
+6/3/2017 4:38:24 PM : not set price with full 9.95 for Intensive Dead Sea Minerals Hand and Nail Cream with Avocado Oil and Aloe Vera
+6/3/2017 4:38:24 PM : take price 6.08 of 9.95 from Sea of Spa Bag Contains 600 gr, Dead Sea Mud
+6/3/2017 4:38:24 PM : not set price with full 9.95 for Multi-Vitamin Anti-Crack Dead Sea Minerals Foot Cream with Argan Oil
+6/3/2017 4:38:24 PM : take price 6.08 of 9.95 from Sea of Spa Bag Contains 600 gr, Dead Sea Mud
+6/3/2017 4:38:24 PM : not set price with full 12.95 for Multi-Vitamin Dead Sea Minerals Hand Cream with Argan Oil
+6/3/2017 4:38:24 PM : take price 8.62 of 12.95 from Dead sea Black Mud Hair Conditioner by Sea of Spa
+6/3/2017 4:38:24 PM : not set price with full 13.95 for Intensive Black Mud Body Cream, Dead Sea Products
+6/3/2017 4:38:24 PM : take price 6.43 of 13.95 from Natural Sea Beauty Body Mud Soap
+6/3/2017 4:38:24 PM : not set price with full 16.95 for Bio Spa Carrot & Buckthorn, Dead Sea Mud
+6/3/2017 4:38:24 PM : take price 6.92 of 16.95 from Canaan Cleansing Milk, Dead Sea cosmetics
+6/3/2017 4:38:24 PM : not set price with full $8.05 for Sea of Spa Bags Contains 1.2 kg, Dead Sea Mud 
+6/3/2017 4:38:24 PM : not set price with full $294.95 for Sea of Spa Tub Contains 18 kg, Natural Dead Sea Mud
+6/3/2017 4:38:24 PM : not set price with full 5.95 for Bio Spa Lip Gloss, Dead Sea Cosmetics
+6/3/2017 4:38:24 PM : not set price with full 9.95 for H&B Dead Sea Makeup Remover Towelettes
+6/3/2017 4:38:24 PM : take price 6.08 of 9.95 from Sea of Spa Bag Contains 600 gr, Dead Sea Mud
+6/3/2017 4:38:24 PM : not set price with full 9.95 for Avocado Face and Body Cream, Dead Sea Minerals
+6/3/2017 4:38:24 PM : take price 6.08 of 9.95 from Sea of Spa Bag Contains 600 gr, Dead Sea Mud
+6/3/2017 4:38:24 PM : not set price with full 9.95 for Dead Sea Minerals Lip Gloss - Strawberry or Cherry Flavor
+6/3/2017 4:38:24 PM : take price 6.08 of 9.95 from Sea of Spa Bag Contains 600 gr, Dead Sea Mud
+6/3/2017 4:38:24 PM : not set price with full 11.95 for Bio Spa Lip Balm, Dead Sea Minerals
+6/3/2017 4:38:24 PM : take price 5.58 of 11.95 from Deodorant Roll On For Women, Dead Sea Minerals
+6/3/2017 4:38:24 PM : not set price with full $8.05 for Natural Sea Beauty Mineral Lipstick Gel SPF 20
+6/3/2017 4:38:24 PM : not set price with full 18.95 for Dead Sea Facial Peeling Mask by Sea of Spa
+6/3/2017 4:38:24 PM : take price 8.11 of 18.95 from Nourishing Mask for Normal Hair with Jojoba Olive Oil, Dead Sea Cosmetics
+6/3/2017 4:38:24 PM : not set price with full 16.95 for Dead Sea Soapless Face Cleanser with Obliphicha Oil
+6/3/2017 4:38:24 PM : take price 6.92 of 16.95 from Canaan Cleansing Milk, Dead Sea cosmetics
+6/3/2017 4:38:24 PM : not set price with full 16.95 for Facial Cleansing Milk, Dead Sea Cosmetics
+6/3/2017 4:38:24 PM : take price 6.92 of 16.95 from Canaan Cleansing Milk, Dead Sea cosmetics
+6/3/2017 4:38:24 PM : not set price with full 18.95 for Dead Sea Face Toner with Aloe Vera Chamomile & Vitamin A
+6/3/2017 4:38:24 PM : take price 8.11 of 18.95 from Nourishing Mask for Normal Hair with Jojoba Olive Oil, Dead Sea Cosmetics
+6/3/2017 4:38:24 PM : not set price with full 16.95 for Dead Sea Minerals Nourishing and Firming Night Cream
+6/3/2017 4:38:24 PM : take price 6.92 of 16.95 from Canaan Cleansing Milk, Dead Sea cosmetics
+6/3/2017 4:38:24 PM : not set price with full $8.05 for Peeling Mask, Dead Sea Minerals
+6/3/2017 4:38:24 PM : not set price with full $8.05 for Bio Spa Dead Sea Mud Cleansing Gel by Sea of Spa
+6/3/2017 4:38:24 PM : not set price with full 19.95 for Dead Sea Nourishing Carrot Cream
+6/3/2017 4:38:24 PM : take price 9.63 of 19.95 from Dead Sea Salt by Natural Sea Beauty
+6/3/2017 4:38:24 PM : not set price with full $8.05 for Purifying Dead Sea Mud Mask with Aloe Vera, 100 ml
+6/3/2017 4:38:24 PM : not set price with full 26.95 for Pomegranate Firming Face and Neck Cream with Dead Sea Minerals SPF 15
+6/3/2017 4:38:24 PM : take price 8.62 of 26.95 from Anti-Wrinkle Dead Sea Mineral Eye Cream SPF 20
+6/3/2017 4:38:24 PM : not set price with full 8.95 for H&B Dead Sea Minerals Refreshing Foot Cream Deodarant, 100 ml tube
+6/3/2017 4:38:24 PM : take price 4.06 of 8.95 from Bio Spa Dead Sea Mud with Carrot and Sea Buckthorn
+6/3/2017 4:38:24 PM : not set price with full 9.95 for Bio Spa Feet Salt, Dead Sea Salt
+6/3/2017 4:38:24 PM : take price 6.08 of 9.95 from Sea of Spa Bag Contains 600 gr, Dead Sea Mud
+6/3/2017 4:38:24 PM : not set price with full 9.95 for Dead Sea Multi-Intensive Foot Cream by Sea of Spa
+6/3/2017 4:38:24 PM : take price 6.08 of 9.95 from Sea of Spa Bag Contains 600 gr, Dead Sea Mud
+6/3/2017 4:38:24 PM : not set price with full 9.95 for Volcanic Foot Peeling Cream, Dead Sea Cosmetics
+6/3/2017 4:38:24 PM : take price 6.08 of 9.95 from Sea of Spa Bag Contains 600 gr, Dead Sea Mud
+6/3/2017 4:38:24 PM : not set price with full 14.95 for Multi-Vitamin Anti-Crack Treatment Dead Sea Minerals Foot Cream, 180 ml
+6/3/2017 4:38:24 PM : take price 9.13 of 14.95 from Sea of Spa Dead Sea Cosmetics Essence of Vanilla and Patchouli Shower Gel
+6/3/2017 4:38:24 PM : not set price with full 15.5 for Dead Sea Minerals Anti-Crack Multi-Vitamin Foot Treatment, 150 ml
+6/3/2017 4:38:25 PM : take price $11.84 of $15.95 from Pomegranate Extract Hair Mask with Dead Sea Minerals
+6/3/2017 4:38:25 PM : not set price with full 18.95 for Peeling Foot Cream, Dead Sea Coesmetics
+6/3/2017 4:38:25 PM : take price 8.11 of 18.95 from Nourishing Mask for Normal Hair with Jojoba Olive Oil, Dead Sea Cosmetics
+6/3/2017 4:38:25 PM : not set price with full 13.95 for AHAVA Deadsea Water, Mineral Foot Cream
+6/3/2017 4:38:25 PM : take price 6.43 of 13.95 from Natural Sea Beauty Body Mud Soap
+6/3/2017 4:38:25 PM : not set price with full 24.95 for Dead Sea Foot Repair Cream 20% Urea by Natural Sea Beauty
+6/3/2017 4:38:25 PM : take price 8.62 of 24.95 from Tearless Shampoo & Soapless Baby Wash
+6/3/2017 4:38:25 PM : not set price with full 22.95 for Dead Sea Foot Repair Cream by Natural Sea Beauty
+6/3/2017 4:38:25 PM : take price 9.65 of 22.95 from Dead Sea Purifying Mud Shampoo by Natural Sea Beauty
+6/3/2017 4:38:25 PM : not set price with full 14.95 for AHAVA Leave-on Deadsea Mud, Dermud Intensive Foot Cream
+6/3/2017 4:38:25 PM : take price 9.13 of 14.95 from Sea of Spa Dead Sea Cosmetics Essence of Vanilla and Patchouli Shower Gel
+6/3/2017 4:38:25 PM : not set price with full 26.95 for Calendula Butter for Cracked Feet, Dead Sea Cosmetics
+6/3/2017 4:38:25 PM : take price 8.62 of 26.95 from Anti-Wrinkle Dead Sea Mineral Eye Cream SPF 20
+6/3/2017 4:38:25 PM : not set price with full 18.95 for Mogador Nourishing Hair Cream, Argan Oil
+6/3/2017 4:38:25 PM : take price 8.11 of 18.95 from Nourishing Mask for Normal Hair with Jojoba Olive Oil, Dead Sea Cosmetics
+6/3/2017 4:38:25 PM : not set price with full $7.58 for Mask for Damaged Colored Hair with Argan Oil Shea Butter, Dead Sea Cosmetics
+6/3/2017 4:38:25 PM : not set price with full 9.95 for Dead Sea Avocado Hand Cream by Sea of Spa
+6/3/2017 4:38:25 PM : take price 6.08 of 9.95 from Sea of Spa Bag Contains 600 gr, Dead Sea Mud
+6/3/2017 4:38:25 PM : not set price with full 9.95 for Multi-Vitamin Hand & Nail Cream with Dead Sea Minerals
+6/3/2017 4:38:25 PM : take price 6.08 of 9.95 from Sea of Spa Bag Contains 600 gr, Dead Sea Mud
+6/3/2017 4:38:25 PM : not set price with full 9.95 for Hands and Nail Cream, Dead Sea Minerals
+6/3/2017 4:38:25 PM : take price 6.08 of 9.95 from Sea of Spa Bag Contains 600 gr, Dead Sea Mud
+6/3/2017 4:38:25 PM : not set price with full 9.95 for Dead Sea Intensive Protection Hand Cream by Sea of Spa
+6/3/2017 4:38:25 PM : take price 6.08 of 9.95 from Sea of Spa Bag Contains 600 gr, Dead Sea Mud
+6/3/2017 4:38:25 PM : not set price with full 13.95 for Treatment Vitamin Hand Cream for Men, Dead Sea Products
+6/3/2017 4:38:25 PM : take price 6.43 of 13.95 from Natural Sea Beauty Body Mud Soap
+6/3/2017 4:38:25 PM : not set price with full 14.95 for Hand & Nail Multi-Vitamin Cream with Dead Sea Minerals - 180ml
+6/3/2017 4:38:25 PM : take price 9.13 of 14.95 from Sea of Spa Dead Sea Cosmetics Essence of Vanilla and Patchouli Shower Gel
+6/3/2017 4:38:25 PM : not set price with full 15.5 for Multi-Vitamin Cream for Hands & Nails with Dead Sea Minerals - 250ml
+6/3/2017 4:38:25 PM : take price $11.84 of 15.5 from Dead Sea Minerals Anti-Crack Multi-Vitamin Foot Treatment, 150 ml
+6/3/2017 4:38:25 PM : not set price with full 12.95 for AHAVA Deadsea Water, Mineral Hand Cream
+6/3/2017 4:38:25 PM : take price 8.62 of 12.95 from Dead sea Black Mud Hair Conditioner by Sea of Spa
+6/3/2017 4:38:25 PM : not set price with full 22.95 for Dead Sea Protective Hand Cream by Natural Sea Beauty
+6/3/2017 4:38:25 PM : take price 9.65 of 22.95 from Dead Sea Purifying Mud Shampoo by Natural Sea Beauty
+6/3/2017 4:38:25 PM : not set price with full 15.95 for AHAVA Leave-on Deadsea Mud, Dermud Intensive Hand Cream
+6/3/2017 4:38:25 PM : take price 6.79 of 15.95 from Canaan Aromatic Bath Salts, Dead Sea Minerals
+6/3/2017 4:38:25 PM : not set price with full 29.95 for Dead Sea Nail Care Kit
+6/3/2017 4:38:25 PM : take price 35.49 of 29.95 from AHAVA Deadsea Water, Set of 3 Mineral Body Lotions
+6/3/2017 4:38:25 PM : not set price with full 6.95 for Bio Spa Dead Sea Various Scents, Dead Sea Bath Salt
+6/3/2017 4:38:25 PM : not set price with full 12.95 for Bio Spa Body Cream with Dead Sea Minerals
+6/3/2017 4:38:25 PM : take price 8.62 of 12.95 from Dead sea Black Mud Hair Conditioner by Sea of Spa
+6/3/2017 4:38:25 PM : not set price with full 9.95 for Natural Aloe Vera Gel, Dead Sea Minerals
+6/3/2017 4:38:25 PM : take price 6.08 of 9.95 from Sea of Spa Bag Contains 600 gr, Dead Sea Mud
+6/3/2017 4:38:25 PM : not set price with full 11.95 for Mineral Bath Salt by Sea of Spa Various Scents, Dead Sea Salt
+6/3/2017 4:38:25 PM : take price 5.58 of 11.95 from Deodorant Roll On For Women, Dead Sea Minerals
+6/3/2017 4:38:25 PM : not set price with full 12.95 for Pomegranate Firming Cream, Dead Sea Products
+6/3/2017 4:38:25 PM : take price 8.62 of 12.95 from Dead sea Black Mud Hair Conditioner by Sea of Spa
+6/3/2017 4:38:25 PM : not set price with full $7.11 for Dead Sea Anti Aging Body Lotion for Men
+6/3/2017 4:38:26 PM : not set price with full $99.95 for Dead Sea Skin Relief , Psoriasis Cream
+6/3/2017 4:38:26 PM : take price 96.34 of 99.95 from Sea of Spa Dead Sea Cosmetics Alternative Plus 4 Facial Care Products Kit
+6/3/2017 4:38:26 PM : not set price with full $109.95 for Dead Sea Psomedic , Psoriasis Multi Active Oil 
+6/3/2017 4:38:26 PM : take price 96.34 of $99.95 from Dead Sea Skin Relief , Psoriasis Cream
+6/3/2017 4:38:26 PM : not set price with full $239.95 for Dead Sea Psometic, Psoriasis Treatment Kit 
+6/3/2017 4:38:26 PM : not set price with full $8.05 for Dead Sea Protective Sun Cream SPF15
+6/3/2017 4:38:26 PM : not set price with full 26.95 for Anti–Aging Sea Buckthorn (Obliphica) Facial Moisturizer SPF 20 Dead Sea Minerals
+6/3/2017 4:38:26 PM : take price 8.62 of 26.95 from Anti-Wrinkle Dead Sea Mineral Eye Cream SPF 20
+6/3/2017 4:38:26 PM : not set price with full $6.16 for Moroccan Argan Oil Hair Mask
+6/3/2017 4:38:26 PM : not set price with full $6.16 for Moroccan Argan Oil Hair Cream
+6/3/2017 4:38:26 PM : not set price with full 12.95 for Health and Beauty Dead Sea Cosmetics Amber Body and Massage Lotion
+6/3/2017 4:38:26 PM : take price 8.62 of 12.95 from Dead sea Black Mud Hair Conditioner by Sea of Spa
+6/3/2017 4:38:26 PM : not set price with full 12.95 for Health and Beauty Dead Sea Cosmetics Passion Body and Massage Lotion
+6/3/2017 4:38:26 PM : take price 8.62 of 12.95 from Dead sea Black Mud Hair Conditioner by Sea of Spa
+6/3/2017 4:38:26 PM : not set price with full 12.95 for Health and Beauty Dead Sea Cosmetics Exotic Body and Massage Lotion
+6/3/2017 4:38:26 PM : take price 8.62 of 12.95 from Dead sea Black Mud Hair Conditioner by Sea of Spa
+6/3/2017 4:38:26 PM : not set price with full 9.95 for Intensive Dead Sea Minerals Anti-Crack Foot Cream with Avocado Oil and Aloe Vera
+6/3/2017 4:38:26 PM : take price 6.08 of 9.95 from Sea of Spa Bag Contains 600 gr, Dead Sea Mud
+6/3/2017 4:38:26 PM : not set price with full 12.95 for Health and Beauty Dead Sea Cosmetics Fresh Body and Massage Lotion
+6/3/2017 4:38:26 PM : take price 8.62 of 12.95 from Dead sea Black Mud Hair Conditioner by Sea of Spa
+6/3/2017 4:38:26 PM : not set price with full 12.95 for Health and Beauty Dead Sea Cosmetics Fantasy Body and Massage Lotion
+6/3/2017 4:38:26 PM : take price 8.62 of 12.95 from Dead sea Black Mud Hair Conditioner by Sea of Spa
+6/3/2017 4:38:26 PM : not set price with full 9.95 for Health and Beauty Dead Sea Cosmetics Protective Intimate Wash
+6/3/2017 4:38:26 PM : take price 6.08 of 9.95 from Sea of Spa Bag Contains 600 gr, Dead Sea Mud
+6/3/2017 4:38:26 PM : not set price with full 12.95 for Sea of Spa Dead Sea Cosmetics Avocado and Sea Buckthorn Body Cream
+6/3/2017 4:38:26 PM : take price 8.62 of 12.95 from Dead sea Black Mud Hair Conditioner by Sea of Spa
+6/3/2017 4:38:26 PM : not set price with full $2.61 for Sea of Spa Dead Sea Cosmetics Grapefruit Shower Gel
+6/3/2017 4:38:26 PM : not set price with full 9.95 for Sea of Spa Dead Sea Cosmetics Aloe Vera Gel
+6/3/2017 4:38:26 PM : take price 6.08 of 9.95 from Sea of Spa Bag Contains 600 gr, Dead Sea Mud
+6/3/2017 4:38:26 PM : not set price with full 11.95 for Health and Beauty Dead Sea Cosmetics Orchid Hand and Nail Cream
+6/3/2017 4:38:26 PM : take price 5.58 of 11.95 from Deodorant Roll On For Women, Dead Sea Minerals
+6/3/2017 4:38:26 PM : not set price with full 12.95 for Sea of Spa Dead Sea Cosmetics Pomegranate and Fig Milk Body Cream
+6/3/2017 4:38:26 PM : take price 8.62 of 12.95 from Dead sea Black Mud Hair Conditioner by Sea of Spa
+6/3/2017 4:38:26 PM : not set price with full 14.95 for Sea of Spa Dead Sea Cosmetics Lavendar Blossom Shower Gel
+6/3/2017 4:38:26 PM : take price 9.13 of 14.95 from Sea of Spa Dead Sea Cosmetics Essence of Vanilla and Patchouli Shower Gel
+6/3/2017 4:38:26 PM : not set price with full 23.95 for Health and Beauty Dead Sea Cosmetics Psoriasis Skin Relief Cream
+6/3/2017 4:38:26 PM : take price 10.65 of 23.95 from Canaan Hydra-Plus Nourishing Cream, Organic Cosmetics
+6/3/2017 4:38:26 PM : not set price with full 23.95 for Health and Beauty Dead Sea Cosmetics Moisturizing and Relieving Face Mask
+6/3/2017 4:38:26 PM : take price 10.65 of 23.95 from Canaan Hydra-Plus Nourishing Cream, Organic Cosmetics
+6/3/2017 4:38:27 PM : not set price with full 24.95 for Health and Beauty Dead Sea Cosmetics Obliphicha Sea Buckthorn Hair Serum
+6/3/2017 4:38:27 PM : take price 8.62 of 24.95 from Tearless Shampoo & Soapless Baby Wash
+03.06.2017 16:39:09 : not set price with full $6.01 for Soapless Body Peeling, Dead Sea Products
+6/3/2017 4:39:10 PM : not set price with full $8.05 for Sea of Spa Bags Contains 1.2 kg, Dead Sea Mud 
+6/3/2017 4:39:10 PM : not set price with full $294.95 for Sea of Spa Tub Contains 18 kg, Natural Dead Sea Mud
+6/3/2017 4:39:11 PM : not set price with full 5.95 for Bio Spa Lip Gloss, Dead Sea Cosmetics
+6/3/2017 4:39:11 PM : not set price with full $8.05 for Natural Sea Beauty Mineral Lipstick Gel SPF 20
+6/3/2017 4:39:11 PM : not set price with full $8.05 for Peeling Mask, Dead Sea Minerals
+6/3/2017 4:39:11 PM : not set price with full $8.05 for Bio Spa Dead Sea Mud Cleansing Gel by Sea of Spa
+6/3/2017 4:39:11 PM : not set price with full $8.05 for Purifying Dead Sea Mud Mask with Aloe Vera, 100 ml
+6/3/2017 4:39:11 PM : not set price with full $7.58 for Mask for Damaged Colored Hair with Argan Oil Shea Butter, Dead Sea Cosmetics
+6/3/2017 4:39:11 PM : not set price with full 6.95 for Bio Spa Dead Sea Various Scents, Dead Sea Bath Salt
+6/3/2017 4:39:11 PM : not set price with full $7.11 for Dead Sea Anti Aging Body Lotion for Men
+6/3/2017 4:39:11 PM : not set price with full $239.95 for Dead Sea Psometic, Psoriasis Treatment Kit 
+6/3/2017 4:39:11 PM : not set price with full $8.05 for Dead Sea Protective Sun Cream SPF15
+6/3/2017 4:39:11 PM : not set price with full $6.16 for Moroccan Argan Oil Hair Mask
+6/3/2017 4:39:11 PM : not set price with full $6.16 for Moroccan Argan Oil Hair Cream
+6/3/2017 4:39:11 PM : not set price with full $2.61 for Sea of Spa Dead Sea Cosmetics Grapefruit Shower Gel
+03.06.2017 16:40:18 : not set price with full $6.01 for Soapless Body Peeling, Dead Sea Products
+6/3/2017 4:40:38 PM : not set price with full $8.05 for Sea of Spa Bags Contains 1.2 kg, Dead Sea Mud 
+6/3/2017 4:40:39 PM : not set price with full $294.95 for Sea of Spa Tub Contains 18 kg, Natural Dead Sea Mud
+6/3/2017 4:40:39 PM : not set price with full 5.95 for Bio Spa Lip Gloss, Dead Sea Cosmetics
+6/3/2017 4:40:39 PM : not set price with full $8.05 for Natural Sea Beauty Mineral Lipstick Gel SPF 20
+6/3/2017 4:40:39 PM : not set price with full $8.05 for Peeling Mask, Dead Sea Minerals
+6/3/2017 4:40:39 PM : not set price with full $8.05 for Bio Spa Dead Sea Mud Cleansing Gel by Sea of Spa
+6/3/2017 4:40:39 PM : not set price with full $8.05 for Purifying Dead Sea Mud Mask with Aloe Vera, 100 ml
+6/3/2017 4:40:39 PM : not set price with full $7.58 for Mask for Damaged Colored Hair with Argan Oil Shea Butter, Dead Sea Cosmetics
+6/3/2017 4:40:39 PM : not set price with full 6.95 for Bio Spa Dead Sea Various Scents, Dead Sea Bath Salt
+6/3/2017 4:40:39 PM : not set price with full $7.11 for Dead Sea Anti Aging Body Lotion for Men
+6/3/2017 4:40:39 PM : not set price with full $239.95 for Dead Sea Psometic, Psoriasis Treatment Kit 
+6/3/2017 4:40:39 PM : not set price with full $8.05 for Dead Sea Protective Sun Cream SPF15
+6/3/2017 4:40:39 PM : not set price with full $6.16 for Moroccan Argan Oil Hair Mask
+6/3/2017 4:40:39 PM : not set price with full $6.16 for Moroccan Argan Oil Hair Cream
+6/3/2017 4:40:39 PM : not set price with full $2.61 for Sea of Spa Dead Sea Cosmetics Grapefruit Shower Gel
+03.06.2017 16:45:38 : Нету оптовой цены от полной $6.01 для Soapless Body Peeling, Dead Sea Products
+6/3/2017 4:45:38 PM : Нету оптовой цены от полной $8.05 для Sea of Spa Bags Contains 1.2 kg, Dead Sea Mud 
+6/3/2017 4:45:38 PM : Берем опт цену $5.68 при розничной $9.47 из товара Black Mud Liquid Soap, Dead Sea Products
+6/3/2017 4:45:38 PM : Нету оптовой цены от полной $294.95 для Sea of Spa Tub Contains 18 kg, Natural Dead Sea Mud
+6/3/2017 4:45:38 PM : Нету оптовой цены от полной 5.95 для Bio Spa Lip Gloss, Dead Sea Cosmetics
+6/3/2017 4:45:38 PM : Нету оптовой цены от полной $8.05 для Natural Sea Beauty Mineral Lipstick Gel SPF 20
+6/3/2017 4:45:39 PM : Берем опт цену $5.68 при розничной $9.47 из товара Black Mud Liquid Soap, Dead Sea Products
+6/3/2017 4:45:39 PM : Нету оптовой цены от полной $8.05 для Peeling Mask, Dead Sea Minerals
+6/3/2017 4:45:39 PM : Берем опт цену $5.68 при розничной $9.47 из товара Black Mud Liquid Soap, Dead Sea Products
+6/3/2017 4:45:39 PM : Нету оптовой цены от полной $8.05 для Bio Spa Dead Sea Mud Cleansing Gel by Sea of Spa
+6/3/2017 4:45:39 PM : Берем опт цену $5.68 при розничной $9.47 из товара Black Mud Liquid Soap, Dead Sea Products
+6/3/2017 4:45:39 PM : Нету оптовой цены от полной $8.05 для Purifying Dead Sea Mud Mask with Aloe Vera, 100 ml
+6/3/2017 4:45:39 PM : Берем опт цену $5.68 при розничной $9.47 из товара Black Mud Liquid Soap, Dead Sea Products
+6/3/2017 4:45:39 PM : Нету оптовой цены от полной $7.58 для Mask for Damaged Colored Hair with Argan Oil Shea Butter, Dead Sea Cosmetics
+6/3/2017 4:45:39 PM : Берем опт цену $5.68 при розничной $8.05 из товара Sea of Spa Bags Contains 1.2 kg, Dead Sea Mud 
+6/3/2017 4:45:39 PM : Нету оптовой цены от полной 6.95 для Bio Spa Dead Sea Various Scents, Dead Sea Bath Salt
+6/3/2017 4:45:39 PM : Берем опт цену $5.68 при розничной $8.05 из товара Sea of Spa Bags Contains 1.2 kg, Dead Sea Mud 
+6/3/2017 4:45:39 PM : Нету оптовой цены от полной $7.11 для Dead Sea Anti Aging Body Lotion for Men
+6/3/2017 4:45:39 PM : Берем опт цену $5.68 при розничной $8.05 из товара Sea of Spa Bags Contains 1.2 kg, Dead Sea Mud 
+6/3/2017 4:45:39 PM : Нету оптовой цены от полной $239.95 для Dead Sea Psometic, Psoriasis Treatment Kit 
+6/3/2017 4:45:39 PM : Нету оптовой цены от полной $8.05 для Dead Sea Protective Sun Cream SPF15
+6/3/2017 4:45:39 PM : Берем опт цену $5.68 при розничной $9.47 из товара Black Mud Liquid Soap, Dead Sea Products
+6/3/2017 4:45:39 PM : Нету оптовой цены от полной $6.16 для Moroccan Argan Oil Hair Mask
+6/3/2017 4:45:39 PM : Берем опт цену $5.68 при розничной 6.95 из товара Bio Spa Dead Sea Various Scents, Dead Sea Bath Salt
+6/3/2017 4:45:39 PM : Нету оптовой цены от полной $6.16 для Moroccan Argan Oil Hair Cream
+6/3/2017 4:45:39 PM : Берем опт цену $5.68 при розничной 6.95 из товара Bio Spa Dead Sea Various Scents, Dead Sea Bath Salt
+6/3/2017 4:45:39 PM : Нету оптовой цены от полной $2.61 для Sea of Spa Dead Sea Cosmetics Grapefruit Shower Gel
+03.06.2017 17:08:30 : Нету оптовой цены от полной $6.01 для Soapless Body Peeling, Dead Sea Products
+6/3/2017 5:08:30 PM : Берем опт цену $5.68 при розничной 6.95 из товара Bio Spa Dead Sea Various Scents, Dead Sea Bath Salt
+6/3/2017 5:08:30 PM : Нету оптовой цены от полной $294.95 для Sea of Spa Tub Contains 18 kg, Natural Dead Sea Mud
+6/3/2017 5:08:30 PM : Нету оптовой цены от полной 5.95 для Bio Spa Lip Gloss, Dead Sea Cosmetics
+6/3/2017 5:08:30 PM : Берем опт цену $5.68 при розничной $6.01 из товара Soapless Body Peeling, Dead Sea Products
+6/3/2017 5:08:30 PM : Нету оптовой цены от полной $239.95 для Dead Sea Psometic, Psoriasis Treatment Kit 
+6/3/2017 5:08:30 PM : Нету оптовой цены от полной $2.61 для Sea of Spa Dead Sea Cosmetics Grapefruit Shower Gel

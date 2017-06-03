@@ -385,10 +385,13 @@ namespace DeadSeaCosmeticsImport
                                         //Logger.Logger.Trace(detailPart);
                                     }
                                     // получили данные о товаре, заводим или сохраняем
-                                    SaveProduct(sku, category, title, price, desc, details, imageFileName);
+                                    ProductContext.SaveProduct(sku, category, title, "", price, desc, details, imageFileName);
                                     //Parsing(YandexTranslateURL(
                                     //    "trnsl.1.1.20160420T200115Z.006bede5b131c604.4256886cd58598ea537df059cd532b6b141910cf",
                                     //    desc + ";;;" + details), 5, category, title);
+
+                                    // пока прекращаем получать переводы яндекс, все равно не юзаем их
+                                    /*
                                     Parsing(YandexTranslateURL(category), 6, category, title, "category-");
 
                                     Parsing(YandexTranslateURL(title), 7, category, title, "title-");
@@ -396,6 +399,8 @@ namespace DeadSeaCosmeticsImport
                                     Parsing(YandexTranslateURL(desc), 3, category, title, "desc-");
 
                                     Parsing(YandexTranslateURL(details), 4, category, title, "details-");
+                                    */
+
                                     //swRes.WriteLine("{0};{1};{2};{3};{4};{5}", category, title, price, desc, details, imageFileName);
                                     //swRes.WriteLine("<tr><td>{0}</td><td>{1}</td><td>{2}</td><td>{3}</td><td>{4}</td><td><img src=images\\{5}></td></tr>", category, title, price, desc, details, imageFileName);
                                     //swRes.Flush();
@@ -470,45 +475,6 @@ namespace DeadSeaCosmeticsImport
             return db.Products.FirstOrDefault(x => x.title == titleCurr);
         }
 
-        private static void SaveProduct(string sku, string category, string title, string price, string desc, string details, string imageFileName)
-        {
-            using (ProductContext db = new ProductContext())
-            {
-                if (db.Products.Where(x => x.artikul == sku || x.title == title).Count() > 1)
-                {
-                    db.Links.RemoveRange(
-                        db.Links.Where(
-                            l => db.Products.Where(
-                                p => p.artikul == sku || p.title == title).
-                                    Contains(l.product)));
-                    db.Products.RemoveRange(db.Products.Where(x => x.artikul == sku || x.title == title));
-                    db.SaveChanges();
-                }
-                Product g = db.Products.FirstOrDefault(x => x.artikul == sku || x.title == title);
-                if (g == null)
-                {
-                    g = new Product(db, sku, category, title, price, desc, details, imageFileName);
-                    db.Products.Add(g);
-                }
-                else
-                    g.Edit(db, sku, category, title, price, desc, details, imageFileName);
-                g.priceIsFromSiteNotExtrapolated = true;
-                int tries = 0;
-                int maxtries = 10;
-                while (tries < maxtries)
-                {
-                    try
-                    {
-                        db.SaveChanges();
-                        break;
-                    }
-                    catch (Exception ex)
-                    {
-                        if (tries++ >= maxtries) throw ex;
-                    }
-                }
-            }
-        }
 
         private static string YandexTranslateURL(string text)
         {

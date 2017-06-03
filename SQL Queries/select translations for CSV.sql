@@ -48,4 +48,5 @@ inner join Categories ca on ca.ID = lpc.category_ID
 left outer join Translations tc on tc.titleEng = ca.title 
 --where artikul = '15882'
 --where p.title = 'Active Facial Toner Enriched With Dead Sea Minerals'
+--where p.title like '%lavilin%'
 order by replace(isnull(t.title, p.title), '&amp;','and')

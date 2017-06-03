@@ -20,18 +20,18 @@ namespace DeadSeaPriceExtrapolation
     /// этот проект предназначен для рассчета тех оптовых цен, которые не удалось вытянуть с сайта
     /// берется наибольшая из оптовых цен для товара, с которым совпала розничная цена
     /// </summary>
-    class Program
+    class PriceExtrapolation
     {
         static void Main(string[] args)
         {
             // допустимое отклонение цены, которую мы считаем почти равной искомой
-            const float priceSearchProximity = 0.1f;
+            const float priceSearchProximity = 0.2f;
 
             ProductContext db = new ProductContext();
             // берем все товары, у кот. опт. и розн. цены равны
             foreach (Product prodWoPrice in db.Products.Where(p => p.price == p.priceFull))
             {
-                Logger.Logger.ErrorLog("not set price with full {1} for {0}", prodWoPrice.title, prodWoPrice.priceFull);
+                Logger.Logger.ErrorLog("Нету оптовой цены от полной {1} для {0}", prodWoPrice.title, prodWoPrice.priceFull);
                 // берем товар с такой же розн.ценой и макс оптовой
                 string maxprice = db.Products.Where(p2 => p2.priceFull == prodWoPrice.priceFull
                 //&& Product.numericBaks(p2.price) < Product.numericBaks(p2.priceFull)
@@ -58,7 +58,7 @@ namespace DeadSeaPriceExtrapolation
                         continue;
                 prodWoPrice.priceIsFromSiteNotExtrapolated = false;
                 prodWoPrice.price = prodWithPrice.price;
-                Logger.Logger.SuccessLog("take price {0} of {1} from {2}", prodWithPrice.price, prodWithPrice.priceFull, prodWithPrice.title);
+                Logger.Logger.SuccessLog("Берем опт цену {0} при розничной {1} из товара {2}", prodWithPrice.price, prodWithPrice.priceFull, prodWithPrice.title);
                 // задаем
                 // профит        
             }
@@ -66,7 +66,7 @@ namespace DeadSeaPriceExtrapolation
 
             Console.WriteLine("done");
 
-            Console.ReadKey();
+            Console.Read();
         }
     }
 }

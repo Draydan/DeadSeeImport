@@ -84,19 +84,33 @@ namespace DeadSeaCatalogueDAL
         /// <param name="dsc"></param>
         /// <param name="det"></param>
         /// <param name="img"></param>
-        public Product(ProductContext db, string sku, string cat, string tit, string pr, string dsc, string det, string img)
+        public Product(ProductContext db, string sku, string cat, string tit, string pr, string prfull, string dsc, string det, string img)
         {
             Links = new List<LinkProductWithCategory>();
-            Edit(db, sku, cat, tit, pr, dsc, det, img);
+            Edit(db, sku, cat, tit, pr, prfull, dsc, det, img);
             translated = 0;
         }
 
-        public void Edit(ProductContext db, string sku, string cat, string tit, string pr, string dsc, string det, string img)
+        /// <summary>
+        /// Меняем данные об этом товаре
+        /// </summary>
+        /// <param name="db"></param>
+        /// <param name="sku"></param>
+        /// <param name="cat"></param>
+        /// <param name="tit"></param>
+        /// <param name="pr"></param>
+        /// <param name="prfull"></param>
+        /// <param name="dsc"></param>
+        /// <param name="det"></param>
+        /// <param name="img"></param>
+        public void Edit(ProductContext db, string sku, string cat, string tit, string pr, string prfull, string dsc, string det, string img)
         {
+            // добавляем ссылку на эту категорию
             //category = cate;
             LinkProductWithCategory link = new LinkProductWithCategory();
             link.category = db.Categories.FirstOrDefault(x => x.title == cat);
-            if (link.category == null)
+            // создаем категорию если нету признаков ошибки
+            if (link.category == null && cat != "" && cat != null && !cat.Contains(";;"))
             {
                 link.category = new Category(cat);// { title = cat };
                 link.category.Links.Add(link);
@@ -112,6 +126,8 @@ namespace DeadSeaCatalogueDAL
             title = tit;
             if(pr != "")
                 price = pr;
+            if (prfull != "")
+                priceFull = prfull;
             desc = dsc;
             details = det;
             if(imageFileName != "")

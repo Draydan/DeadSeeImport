@@ -1,18 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
-
+//using System.Windows.Forms;
+using Microsoft.Win32;
 using System.IO;
 using Microsoft.Win32;
 
@@ -48,7 +39,7 @@ namespace DeadSeaTools
                 sw.WriteLine(pathToCSV);
             }
         }
-        private void ReadPathFromIni(ComboBox cb, string pathToIni)
+        private void ReadPathFromIni(System.Windows.Controls.ComboBox cb, string pathToIni)
         {            
             if(File.Exists(pathToIni))
             using (StreamReader sr = new StreamReader(pathToIni))
@@ -64,7 +55,7 @@ namespace DeadSeaTools
 
         private void btnBrowse_Click(object sender, RoutedEventArgs e)
         {
-            OpenFileDialog openFileDialog = new OpenFileDialog();
+            Microsoft.Win32.OpenFileDialog openFileDialog = new Microsoft.Win32.OpenFileDialog();
             if (openFileDialog.ShowDialog() == true)
             {
                 cbPath.Text = openFileDialog.FileName;
@@ -92,7 +83,7 @@ namespace DeadSeaTools
                         string url = cells[4];
                         string sku = cells[3];
                         string image = cells[5];
-                        lbLog.Items.Insert(0, url);
+                        lbLogUrls.Items.Insert(0, url);
                         Product p = db.Products.FirstOrDefault(x => x.artikul == sku);
                         if (p != null)
                         {
@@ -164,7 +155,78 @@ namespace DeadSeaTools
 
         private void bBrowseIKRobot_Click(object sender, RoutedEventArgs e)
         {
+            System.Windows.Forms.FolderBrowserDialog browser = new System.Windows.Forms.FolderBrowserDialog();            
 
+            if (browser.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+                cbRobotPath.Text = browser.SelectedPath; // prints path
+                WritePathToIni(cbRobotPath.Text, iniFileNameImportRoboted2IK);
+            }
+        }
+
+        /// <summary>
+        /// экспорт товаров из выкачанной роботом инфы
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void bExport2DB_Click(object sender, RoutedEventArgs e)
+        {
+
+            WritePathToIni(cbRobotPath.Text, iniFileNameImportRoboted2IK);
+            string robotPath = cbRobotPath.Text;
+            //string[] fileNames = {"" };
+
+            using (ProductContext db = new ProductContext())
+            {
+                DirectoryInfo dir = new DirectoryInfo(robotPath);
+                string currTitle = "";
+                string currSku = "";
+                int totalCount = dir.GetDirectories().Count();
+                int okCount = 0;
+                foreach (DirectoryInfo skuDir in dir.GetDirectories())
+                {
+                    try {
+                        string skuDirPath = skuDir.FullName;
+                        string sku = skuDir.Name;
+                        currSku = sku;
+                        string categories = File.ReadAllText(skuDirPath + "\\categories");
+                        string title = File.ReadAllText(skuDirPath + "\\name");
+                        currTitle = title;
+                        string description = File.ReadAllText(skuDirPath + "\\description");
+                        string details = File.ReadAllText(skuDirPath + "\\details");
+                        string fullprice = File.ReadAllText(skuDirPath + "\\fullprice");
+                        string ourPriceFileName = skuDirPath + "\\ourprice";
+                        
+                        // опт.цена реально с сайта или будет экстраполяция?
+                        bool IsPriceExtrapolated = true;
+                        string ourprice = fullprice;
+                        if (File.Exists(ourPriceFileName))
+                        {
+                            IsPriceExtrapolated = false;
+                            ourprice = File.ReadAllText(ourPriceFileName);
+                        }
+
+                        string imageFileName = skuDir.GetFiles().FirstOrDefault(file => new string[] { ".jpg", ".png", ".gif" }.Contains(file.Extension)).Name;
+                        lbLogRobot.Items.Add(string.Format("Adding {0} with sku {1} and prices {2}\\{3} to category {4}",
+                            title, sku, ourprice, fullprice, categories));
+
+                        string category = categories.Split(';')[0];
+                        // получили данные о товаре, заводим или сохраняем
+                        ProductContext.SaveProduct(sku, category, title, ourprice, fullprice, description, details, imageFileName);
+                        okCount++;
+                    }
+                    catch(Exception ex)
+                    {
+                        lbLogRobot.Items.Add(string.Format("Error when adding {1}\\{0} :", currTitle, currSku, ex.ToString()));
+                    }
+                }
+                lbLogRobot.Items.Add(string.Format("Products added: {0} of {1}", okCount, totalCount ));
+            }
+        }
+
+        private void TabItemRobot_Initialized(object sender, EventArgs e)
+        {
+            ReadPathFromIni(cbRobotPath, iniFileNameImportRoboted2IK);
         }
     }
 }
