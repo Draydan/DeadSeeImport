@@ -49,4 +49,10 @@ left outer join Translations tc on tc.titleEng = ca.title
 --where artikul = '15882'
 --where p.title = 'Active Facial Toner Enriched With Dead Sea Minerals'
 --where p.title like '%lavilin%'
+where
+CASE 
+      WHEN ca.isOurCategory = 0 THEN 'Расширенный список->' + isnull(tc.title, ca.titlerus)
+      WHEN ca.isOurCategory = 1 THEN isnull(tc.title, ca.titleRus)
+   END 
+   is not null
 order by replace(isnull(t.title, p.title), '&amp;','and')

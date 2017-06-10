@@ -58,6 +58,7 @@
     <Compile Include="DB Classes\Category.cs" />
     <Compile Include="DB Classes\LinkProductWithCategory.cs" />
     <Compile Include="DB Classes\Pricer.cs" />
+    <Compile Include="DB Classes\Supplier.cs" />
     <Compile Include="Migrations\201605021230533_InitialCreate.cs" />
     <Compile Include="Migrations\201605021230533_InitialCreate.Designer.cs">
       <DependentUpon>201605021230533_InitialCreate.cs</DependentUpon>

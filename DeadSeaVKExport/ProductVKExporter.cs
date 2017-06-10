@@ -39,9 +39,10 @@ namespace DeadSeaVKExport
 
     public class ProductVKExporter
     {
-        private const float kursCurrent = 67;
-        private const float saleCoef = 0.85f;
-        private float kursBaksa = kursCurrent * saleCoef;
+        private const float kursCurrent = 60;
+        //private const float saleCoef = 0.85f;
+        private const float withMargin = 1.1f;
+        private float kursBaksa = kursCurrent * withMargin;
         private const int sleepTimeMS = 400;
 
         public const string mainAlbumTitle = "Переведенные";

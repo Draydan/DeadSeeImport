@@ -58,7 +58,7 @@ namespace DeadSeaVKExport
                             vke.DeleteProduct(prod.ID);
                     }
                 }*/
-                foreach (var album in vke.AlbumList)
+                foreach (var album in vke.AlbumList.Where(alb => alb.ID > 0))
                 {
                     var goodsInAlbum = vke.GetAllGoods(album.ID);
                     if (goodsInAlbum.Count == 0)

@@ -19,6 +19,7 @@ namespace DeadSeaTools
         const string iniFileNameImportUrls = "PostUrlImportPaths.ini";
         const string iniFileNameExportYM = "YaMarketExportPaths.ini";
         const string iniFileNameImportRoboted2IK = "ImportRobotedIKToDB.ini";
+        const string iniFileNameImportKontrakt = "KontraktCatalogPaths.ini";
 
 
         public MainWindow()
@@ -210,9 +211,10 @@ namespace DeadSeaTools
                         lbLogRobot.Items.Add(string.Format("Adding {0} with sku {1} and prices {2}\\{3} to category {4}",
                             title, sku, ourprice, fullprice, categories));
 
-                        string category = categories.Split(';')[0];
+                        //string category = categories.Split(';;')[0];
                         // получили данные о товаре, заводим или сохраняем
-                        ProductContext.SaveProduct(sku, category, title, ourprice, fullprice, description, details, imageFileName);
+                        foreach(string category in categories.Split(new string[] { ";;" }, StringSplitOptions.None))
+                            ProductContext.SaveProduct(sku, category, title, ourprice, fullprice, description, details, imageFileName);
                         okCount++;
                     }
                     catch(Exception ex)
@@ -227,6 +229,90 @@ namespace DeadSeaTools
         private void TabItemRobot_Initialized(object sender, EventArgs e)
         {
             ReadPathFromIni(cbRobotPath, iniFileNameImportRoboted2IK);
+        }
+
+        private void bBrowseKontrakt_Click(object sender, RoutedEventArgs e)
+        {
+            System.Windows.Forms.FolderBrowserDialog browser = new System.Windows.Forms.FolderBrowserDialog();
+
+            if (browser.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+                cbKontraktPath.Text = browser.SelectedPath; // prints path
+                WritePathToIni(cbKontraktPath.Text, iniFileNameImportRoboted2IK);
+            }
+        }
+
+        private void bImportKontrakt_Click(object sender, RoutedEventArgs e)
+        {
+
+            WritePathToIni(cbKontraktPath.Text, iniFileNameImportKontrakt);
+            string kontraktPath = cbKontraktPath.Text;
+            //string[] fileNames = {"" };
+
+            using (ProductContext db = new ProductContext())
+            {
+                DirectoryInfo dir = new DirectoryInfo(kontraktPath);
+                string currTitle = "";
+                string currSku = "";
+                int totalCount = dir.GetDirectories().Count();
+                int okCount = 0;
+                foreach (FileInfo csv in dir.GetFiles())
+                {
+                    StreamReader priceFile = File.OpenText(csv.FullName);
+                    bool startedData = false;
+
+                    string categories = "";
+
+                    while (!priceFile.EndOfStream)
+                        try
+                        {
+                            string line = priceFile.ReadLine();
+                            if (line.Contains("Наименование"))
+                                startedData = true;
+                            if (!startedData)
+                                continue;
+                            string[] cells = line.Split(new string[] { ";" }, StringSplitOptions.RemoveEmptyEntries);
+                            if (cells.Count() == 2)
+                            {
+                                categories = cells[1] + ";;" + cells[2];
+                                continue;
+                            }
+
+                            string skuDirPath;
+                            string sku = cells[3];
+                            currSku = sku;
+                            string title = cells[2];
+                            currTitle = title;
+                            string barcode = cells[6];
+                            string description = cells[10];
+                            string details = cells[11];
+                            string fullprice = cells[8];
+                            string ourprice = cells[9];
+
+                            bool IsPriceExtrapolated = false;
+
+                            string imageFileName = sku + ".jpg";
+                            textBlockKontraktLog.Text += (string.Format("Adding {0} with sku {1} and prices {2}\\{3} to category {4}",
+                                title, sku, ourprice, fullprice, categories));
+
+                            //string category = categories.Split(';;')[0];
+                            // получили данные о товаре, заводим или сохраняем
+                            foreach (string category in categories.Split(new string[] { ";;" }, StringSplitOptions.None))
+                                ProductContext.SaveProduct(sku, category, title, ourprice, fullprice, description, details, imageFileName);
+                            okCount++;
+                        }
+                        catch (Exception ex)
+                        {
+                            textBlockKontraktLog.Text += string.Format("Error when adding {1}\\{0} :", currTitle, currSku, ex.ToString()) + "\n";
+                        }
+                }
+                lbLogRobot.Items.Add(string.Format("Products added: {0} of {1}", okCount, totalCount));
+            }
+        }
+
+        private void TabItemKontrakt_Initialized(object sender, EventArgs e)
+        {
+            ReadPathFromIni(cbKontraktPath, iniFileNameImportKontrakt);
         }
     }
 }

@@ -2105,3 +2105,19 @@
 6/3/2017 5:08:30 PM : Берем опт цену $5.68 при розничной $6.01 из товара Soapless Body Peeling, Dead Sea Products
 6/3/2017 5:08:30 PM : Нету оптовой цены от полной $239.95 для Dead Sea Psometic, Psoriasis Treatment Kit 
 6/3/2017 5:08:30 PM : Нету оптовой цены от полной $2.61 для Sea of Spa Dead Sea Cosmetics Grapefruit Shower Gel
+05.06.2017 22:22:24 : Нету оптовой цены от полной 19.95 для Pomegranate Aromatherapy with Minerals, Dead Sea Soap
+05.06.2017 22:22:24 : Берем опт цену 9.63 при розничной 19.95 из товара Dead Sea Salt by Natural Sea Beauty
+05.06.2017 22:22:24 : Нету оптовой цены от полной 24.95 для Avocado and Aloe Vera Natural Soap with Dead Sea Minerals
+05.06.2017 22:22:24 : Берем опт цену 8.62 при розничной 24.95 из товара Tearless Shampoo & Soapless Baby Wash
+05.06.2017 22:22:24 : Нету оптовой цены от полной 59.95 для Multi-Vitamin Capsules for Neck Anda Decollete by Health and Beauty
+05.06.2017 22:22:24 : Берем опт цену 36.51 при розничной 59.95 из товара Dead Sea Psoriasis Cream for Skin Relief
+05.06.2017 22:22:24 : Нету оптовой цены от полной $294.95 для Sea of Spa Tub Contains 18 kg, Natural Dead Sea Mud
+6/5/2017 10:22:25 PM : Нету оптовой цены от полной 26.95 для Beauty & Firming Gel Peel-off Mask with Dead Sea Minerals
+6/5/2017 10:22:25 PM : Берем опт цену 8.62 при розничной 26.95 из товара Extra-Strength Dead Sea Mineral Anti-Wrinkle Face Cream SPF 20
+6/5/2017 10:22:25 PM : Нету оптовой цены от полной $239.95 для Dead Sea Psometic, Psoriasis Treatment Kit 
+6/5/2017 10:22:25 PM : Нету оптовой цены от полной 22.95 для Bio Marine Calming & Hydrating Beauty Dead Sea Mask
+6/5/2017 10:22:25 PM : Берем опт цену 9.65 при розничной 22.95 из товара Dead Sea Purifying Mud Shampoo by Natural Sea Beauty
+6/5/2017 10:22:25 PM : Нету оптовой цены от полной 26.95 для Anti–Aging Sea Buckthorn (Obliphica) Facial Moisturizer SPF 20 Dead Sea Minerals
+6/5/2017 10:22:25 PM : Берем опт цену 8.62 при розничной 26.95 из товара Extra-Strength Dead Sea Mineral Anti-Wrinkle Face Cream SPF 20
+6/5/2017 10:22:25 PM : Нету оптовой цены от полной 49.95 для Black Pearl Whitening Night Cream by Sea of Spa
+6/5/2017 10:22:25 PM : Берем опт цену 44.11 при розничной 49.95 из товара Sea of Spa Dead Sea Cosmetics Bio Spa 4 Facial Care Products Kit

@@ -30,6 +30,12 @@ namespace DeadSeaCatalogueDAL
         public string wpUrl { get; set; }
         public string wpImageUrl { get; set; }
 
+
+        public virtual Supplier supplier
+        {
+            get; set;
+        }
+
         public Product()
         { }
 

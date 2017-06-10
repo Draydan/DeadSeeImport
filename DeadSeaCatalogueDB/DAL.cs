@@ -26,7 +26,8 @@ namespace DeadSeaCatalogueDAL
             return Products.FirstOrDefault(p => p.title == productTitle);
         }
 
-        public static void SaveProduct(string sku, string category, string title, string price, string pricefull, string desc, string details, string imageFileName, bool IsPriceExtrapolated = false)
+        public static void SaveProduct
+            (string sku, string category, string title, string price, string pricefull, string desc, string details, string imageFileName, bool IsPriceExtrapolated = false)
         {
             using (ProductContext db = new ProductContext())
             {
