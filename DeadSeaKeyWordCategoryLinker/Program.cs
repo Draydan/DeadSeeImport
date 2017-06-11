@@ -40,12 +40,18 @@ namespace DeadSeaKeyWordCategoryLinker
                 }
                 db.SaveChanges();
                 Console.WriteLine("берем каждый товар");
-                foreach (Product prod in db.Products)
+                foreach (Product prod in db.Products.Where(p => p.supplier.ID == 2))
                 {
+                    
                     // берем каждую Нашу категорию
                     foreach (Translation tran in db.Translations.Where(
                         t => t.keyWords != "" && t.isOurCategory))
                     {
+                        if (prod.supplier.ID == 2)
+                        {
+                            //Logger.Logger.Trace(prod.title);
+                            //Logger.Logger.Trace(tran.title);
+                        }
                         Category cat = db.Categories.First(ca => ca.titleRus == tran.title);
                         
                         List<string> keyWords = tran.keyWords.Split(new char[]{ ','}, StringSplitOptions.RemoveEmptyEntries).ToList();
@@ -56,19 +62,22 @@ namespace DeadSeaKeyWordCategoryLinker
                         //foreach (string kw in keyWords)
                         //{
 
+                        string det = prod.details;
+                        string des = prod.desc;
+                        string tit = prod.title;
                         // если не содержит кс то пропускаем это кс
-                        if ((!antiKeyWords.Any(kw => prod.details.Contains(kw))
-                            && !antiKeyWords.Any(kw => prod.desc.Contains(kw))
-                            && !antiKeyWords.Any(kw => prod.title.Contains(kw)))
-                        && (keyWords.Any(akw => prod.details.Contains(akw))
-                             || keyWords.Any(kw => prod.desc.Contains(kw))
-                             || keyWords.Any(kw => prod.title.Contains(kw))))
+                        if ((!antiKeyWords.Any(kw => det.Contains(kw))
+                            && !antiKeyWords.Any(kw => des.Contains(kw))
+                            && !antiKeyWords.Any(kw => tit.Contains(kw)))
+                        && (keyWords.Any(akw => det.Contains(akw))
+                             || keyWords.Any(kw => des.Contains(kw))
+                             || keyWords.Any(kw => tit.Contains(kw))))
                         {
                             LinkProductWithCategory link = new LinkProductWithCategory();
                             link.category = cat;
                             link.product = prod;
                             db.Links.Add(link);
-                            if (prod.artikul == "15778")
+                            //if (prod.artikul == "15778")
                             {
                                 /*
                                 Logger.Logger.Trace("keywords");

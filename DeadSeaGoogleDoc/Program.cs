@@ -216,7 +216,7 @@ namespace DeadSeaGoogleDoc
                                     {
                                         titleEng = cells[ri, 0],
                                         title = cells[ri, 1],
-                                        isOurCategory = (cells[ri, 2] == "Наша категория"),
+                                        isOurCategory = (cells[ri, 2] == "Наша категория" || cells[ri, 2] == "Наша категория 2") ,
                                         keyWords = cells[ri, 3],
                                         antiKeyWords = cells[ri, 4]
                                     });

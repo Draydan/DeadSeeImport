@@ -247,7 +247,12 @@ namespace DeadSeaVKExport
             // сохраняем картинку товара, т.к. это может быть из-за мелкой картинки
             if (counter >= maxTries)
             {
-                File.Copy(vke.GetImageFilePath(g.imageFileName), vke.GetTooSmallImageFilePath(g.imageFileName), true);
+                try {
+                    File.Copy(vke.GetImageFilePath(g.imageFileName), vke.GetTooSmallImageFilePath(g.imageFileName), true);
+                }catch(Exception ex)
+                {
+                    Logger.Logger.ErrorLog(ex.ToString());
+                }
             }
             locker = false;
             return result;

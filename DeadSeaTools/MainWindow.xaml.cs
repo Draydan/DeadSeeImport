@@ -27,7 +27,7 @@ namespace DeadSeaTools
         const string iniFileNameImportRoboted2IK = "ImportRobotedIKToDB.ini";
         const string iniFileNameImportKontrakt = "KontraktCatalogPaths.ini";
 
-        const int KontraktExcelColumnsCount = 11;
+        const int KontraktExcelColumnsCount = 15;
         const int KontraktMaxRecordsToTake = 200;
 
 
@@ -266,7 +266,7 @@ namespace DeadSeaTools
                 int totalCount = dir.GetDirectories().Count();
                 int okCount = 0;
                 //foreach (FileInfo csv in dir.GetFiles().Where(ff => ff.Extension.Contains("csv")))
-                foreach (FileInfo csv in dir.GetFiles().Where(ff => ff.Name.Contains("Опис") && ff.Name.Contains(".xlsx")))                
+                foreach (FileInfo csv in dir.GetFiles().Where(ff => ff.Name.Contains("Опис") && ff.Name.Contains(".xlsx")))
                 {
                     List<List<List<string>>> result = ReadExcelOpenXML(csv.FullName);
                     //StreamReader priceFile = new StreamReader(csv.FullName, System.Text.Encoding.GetEncoding("windows-1251"));
@@ -276,55 +276,55 @@ namespace DeadSeaTools
 
                     //while (!priceFile.EndOfStream)
                     //while(data.ta)
-                    foreach(List<List<string>> sheet in result)
-                        foreach(List<string> cells in sheet)
-                        try
-                        {
-                            /*
-                            string line = priceFile.ReadLine();
-                            if (line.Contains("Наименование"))
-                                startedData = true;
-                            string[] cells = line.Split(new string[] { ";" }, StringSplitOptions.RemoveEmptyEntries);
-                            */
-                            //string[] cells = new string[5];
-                            if (cells.Count(cell => cell.ToString() != "") == 2)
+                    foreach (List<List<string>> sheet in result)
+                        foreach (List<string> cells in sheet)
+                            try
                             {
-                                categories = cells[1] + ";;" + cells[2];
-                                continue;
-                            }
-                            if (categories == "" || cells.Count(cell => cell.ToString() != "") < 10)
-                                continue;
+                                /*
+                                string line = priceFile.ReadLine();
+                                if (line.Contains("Наименование"))
+                                    startedData = true;
+                                string[] cells = line.Split(new string[] { ";" }, StringSplitOptions.RemoveEmptyEntries);
+                                */
+                                //string[] cells = new string[5];
+                                if (cells.Count(cell => cell.ToString() != "") == 2)
+                                {
+                                    categories = cells[1];// + ";;" + cells[2];
+                                    continue;
+                                }
+                                if (categories == "" || cells.Count(cell => cell.ToString() != "") < 10)
+                                    continue;
 
-                            string skuDirPath;
-                            string sku = cells[3];
-                            currSku = sku;
-                            string title = cells[2];
-                            currTitle = title;
-                            string barcode = cells[6];
-                            string description = cells[10];
-                            string details = cells[11];
-                            string fullprice = cells[8];
-                            string ourprice = cells[9];
+                                string skuDirPath;
+                                string sku = cells[3];
+                                currSku = sku;
+                                string title = cells[2];
+                                currTitle = title;
+                                string barcode = cells[6];
+                                string description = cells[14].Replace("_x000D_", "").Replace("\r\n", "<br>").Replace("\n", "<br>").Replace("\r", "<br>");
+                                string details = cells[15];
+                                string fullprice = cells[8];
+                                string ourprice = cells[9];
 
-                            bool IsPriceExtrapolated = false;
+                                bool IsPriceExtrapolated = false;
 
                                 title = title.Replace(barcode, "").Replace(sku, "").Replace("\r\n", "");
 
-                            string imageFileName = sku + ".jpg";
-                            textBlockKontraktLog.Text += (string.Format("Adding {0} with sku {1} and prices {2}\\{3} to category {4}",
-                                title, sku, ourprice, fullprice, categories));
+                                string imageFileName = sku + ".jpg";
+                                tbKontrakt.Text += (string.Format("Adding {0} with sku {1} and prices {2}\\{3} to category {4}",
+                                    title, sku, ourprice, fullprice, categories));
 
-                            //string category = categories.Split(';;')[0];
-                            // получили данные о товаре, заводим или сохраняем
-                            foreach (string category in categories.Split(new string[] { ";;" }, StringSplitOptions.None))
-                                ProductContext.SaveProduct(sku, category, title, ourprice, fullprice, description, details, imageFileName, 
-                                    IsPriceExtrapolated:false, supplierID:2);
-                            okCount++;
-                        }
-                        catch (Exception ex)
-                        {
-                            textBlockKontraktLog.Text += string.Format("Error when adding {1}\\{0} :", currTitle, currSku, ex.ToString()) + "\n";
-                        }
+                                //string category = categories.Split(';;')[0];
+                                // получили данные о товаре, заводим или сохраняем
+                                foreach (string category in categories.Split(new string[] { ";;" }, StringSplitOptions.None))
+                                    ProductContext.SaveProduct(sku, category, title, ourprice, fullprice, description, details, imageFileName,
+                                        IsPriceExtrapolated: false, supplierID: 2);
+                                okCount++;
+                            }
+                            catch (Exception ex)
+                            {
+                                tbKontrakt.Text += string.Format("Error when adding {1}\\{0} :", currTitle, currSku, ex.ToString()) + "\n";
+                            }
                 }
                 lbLogRobot.Items.Add(string.Format("Products added: {0} of {1}", okCount, totalCount));
             }
