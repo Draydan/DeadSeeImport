@@ -6,20 +6,29 @@ using System.Windows.Controls;
 using Microsoft.Win32;
 using System.IO;
 using Microsoft.Win32;
+using Excel = Microsoft.Office.Interop.Excel;
+
 
 using DeadSeaCatalogueDAL;
+using System.Data.OleDb;
+using System.Data;
+using System.Collections.Generic;
+using OfficeOpenXml;
 
 namespace DeadSeaTools
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class MainWindow : System.Windows.Window
     {
         const string iniFileNameImportUrls = "PostUrlImportPaths.ini";
         const string iniFileNameExportYM = "YaMarketExportPaths.ini";
         const string iniFileNameImportRoboted2IK = "ImportRobotedIKToDB.ini";
         const string iniFileNameImportKontrakt = "KontraktCatalogPaths.ini";
+
+        const int KontraktExcelColumnsCount = 11;
+        const int KontraktMaxRecordsToTake = 200;
 
 
         public MainWindow()
@@ -256,27 +265,35 @@ namespace DeadSeaTools
                 string currSku = "";
                 int totalCount = dir.GetDirectories().Count();
                 int okCount = 0;
-                foreach (FileInfo csv in dir.GetFiles())
+                //foreach (FileInfo csv in dir.GetFiles().Where(ff => ff.Extension.Contains("csv")))
+                foreach (FileInfo csv in dir.GetFiles().Where(ff => ff.Name.Contains("Опис") && ff.Name.Contains(".xlsx")))                
                 {
-                    StreamReader priceFile = File.OpenText(csv.FullName);
+                    List<List<List<string>>> result = ReadExcelOpenXML(csv.FullName);
+                    //StreamReader priceFile = new StreamReader(csv.FullName, System.Text.Encoding.GetEncoding("windows-1251"));
                     bool startedData = false;
 
                     string categories = "";
 
-                    while (!priceFile.EndOfStream)
+                    //while (!priceFile.EndOfStream)
+                    //while(data.ta)
+                    foreach(List<List<string>> sheet in result)
+                        foreach(List<string> cells in sheet)
                         try
                         {
+                            /*
                             string line = priceFile.ReadLine();
                             if (line.Contains("Наименование"))
                                 startedData = true;
-                            if (!startedData)
-                                continue;
                             string[] cells = line.Split(new string[] { ";" }, StringSplitOptions.RemoveEmptyEntries);
-                            if (cells.Count() == 2)
+                            */
+                            //string[] cells = new string[5];
+                            if (cells.Count(cell => cell.ToString() != "") == 2)
                             {
                                 categories = cells[1] + ";;" + cells[2];
                                 continue;
                             }
+                            if (categories == "" || cells.Count(cell => cell.ToString() != "") < 10)
+                                continue;
 
                             string skuDirPath;
                             string sku = cells[3];
@@ -291,6 +308,8 @@ namespace DeadSeaTools
 
                             bool IsPriceExtrapolated = false;
 
+                                title = title.Replace(barcode, "").Replace(sku, "").Replace("\r\n", "");
+
                             string imageFileName = sku + ".jpg";
                             textBlockKontraktLog.Text += (string.Format("Adding {0} with sku {1} and prices {2}\\{3} to category {4}",
                                 title, sku, ourprice, fullprice, categories));
@@ -298,7 +317,8 @@ namespace DeadSeaTools
                             //string category = categories.Split(';;')[0];
                             // получили данные о товаре, заводим или сохраняем
                             foreach (string category in categories.Split(new string[] { ";;" }, StringSplitOptions.None))
-                                ProductContext.SaveProduct(sku, category, title, ourprice, fullprice, description, details, imageFileName);
+                                ProductContext.SaveProduct(sku, category, title, ourprice, fullprice, description, details, imageFileName, 
+                                    IsPriceExtrapolated:false, supplierID:2);
                             okCount++;
                         }
                         catch (Exception ex)
@@ -313,6 +333,114 @@ namespace DeadSeaTools
         private void TabItemKontrakt_Initialized(object sender, EventArgs e)
         {
             ReadPathFromIni(cbKontraktPath, iniFileNameImportKontrakt);
+        }
+
+        //private DataSet ReadExcelDb(string fileName)
+        //{
+        //    var connectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + fileName + 
+        //        ";Extended Properties=\"Excel 12.0;IMEX=1;HDR=NO;TypeGuessRows=0;ImportMixedTypes=Text\""; ;
+        //    using (var conn = new OleDbConnection(connectionString))
+        //    {
+        //        conn.Open();
+
+        //        var sheets = conn.GetOleDbSchemaTable(System.Data.OleDb.OleDbSchemaGuid.Tables, new object[] { null, null, null, "TABLE" });
+        //        using (var cmd = conn.CreateCommand())
+        //        {
+        //            cmd.CommandText = "SELECT * FROM [" + sheets.Rows[0]["TABLE_NAME"].ToString() + "] ";
+
+        //            var adapter = new OleDbDataAdapter(cmd);
+        //            var ds = new DataSet();
+        //            adapter.Fill(ds);
+        //            return ds;
+        //        }
+        //    }
+        //}
+
+        //private void ReadExcelPackage(string existingFile)
+        //{
+        //    using (ExcelPackage xlPackage = new ExcelPackage(existingFile))
+        //    {
+        //        // get the first worksheet in the workbook
+        //        ExcelWorksheet worksheet = xlPackage.Workbook.Worksheets[1];
+        //        int iCol = 2;  // the column to read
+
+        //        // output the data in column 2
+        //        for (int iRow = 1; iRow < 6; iRow++)
+        //            Console.WriteLine("Cell({0},{1}).Value={2}", iRow, iCol,
+        //              worksheet.Cell(iRow, iCol).Value);
+
+        //        // output the formula in row 6
+        //        Console.WriteLine("Cell({0},{1}).Formula={2}", 6, iCol,
+        //          worksheet.Cell(6, iCol).Formula);
+
+        //    } // the using statement calls Dispose() which closes the package.
+        //}
+
+        private List<List<List<string>>> ReadExcel(string fileName)
+        {
+            string letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+            var excelApp = new Excel.Application();
+            // Make the object visible.
+            excelApp.Visible = false;
+            var workBook = excelApp.Workbooks.Open(fileName);
+
+            List<List<List<string>>> result = new List<List<List<string>>>();
+            foreach (Excel._Worksheet sheet in workBook.Sheets)
+            {
+                MessageBox.Show(sheet.Name);
+
+                List<List<string>> rows = new List<List<string>>();
+
+                for (int ri = 0; ; ri++)
+                {
+                    List<string> cells = new List<string>();
+                    for (int ci = 0; ci <= KontraktExcelColumnsCount; ci++)
+                        cells.Add(sheet.Cells[ri, letters[ci]]);
+                    rows.Add(cells);
+                }
+                result.Add(rows);
+            }
+            return result;            
+        }
+
+        private List<List<List<string>>> ReadExcelOpenXML(string fileName)
+        {            
+            List<List<List<string>>> result = new List<List<List<string>>>();
+            using (ExcelPackage xlPackage = new ExcelPackage(new FileInfo(fileName)))
+            {   
+                foreach (ExcelWorksheet sheet in xlPackage.Workbook.Worksheets)
+                {
+                    //MessageBox.Show(sheet.Name);
+
+                    List<List<string>> rows = new List<List<string>>();
+
+                    for (int ri = 1; ri < KontraktMaxRecordsToTake ; ri++)
+                    {
+                        List<string> cells = new List<string>();
+                        bool notEmpty = false;
+                        for (int ci = 1; ci <= KontraktExcelColumnsCount + 1; ci++)
+                        {
+                            cells.Add(sheet.Cell(ri, ci).Value);
+                            if (cells.Last().ToString() != "")
+                                notEmpty = true;
+                        }
+                        /*
+                        if (!notEmpty )
+                        {
+                            MessageBox.Show(sheet.Name + " has " +ri + " recs");
+                            break;
+                        }*/
+                        rows.Add(cells);
+                    }
+                    result.Add(rows);
+                }
+            }
+            return result;
+        }
+
+        private void tabControl_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
         }
     }
 }

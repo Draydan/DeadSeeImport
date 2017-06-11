@@ -115,6 +115,14 @@
     <Compile Include="Migrations\201704051929190_addedWpImageUrl.Designer.cs">
       <DependentUpon>201704051929190_addedWpImageUrl.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201706101505385_AddSuppliers.cs" />
+    <Compile Include="Migrations\201706101505385_AddSuppliers.Designer.cs">
+      <DependentUpon>201706101505385_AddSuppliers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201706101507519_AddSupplierTitle.cs" />
+    <Compile Include="Migrations\201706101507519_AddSupplierTitle.Designer.cs">
+      <DependentUpon>201706101507519_AddSupplierTitle.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="DAL.cs" />
     <Compile Include="DALTest.cs" />
@@ -168,6 +176,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201704051929190_addedWpImageUrl.resx">
       <DependentUpon>201704051929190_addedWpImageUrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706101505385_AddSuppliers.resx">
+      <DependentUpon>201706101505385_AddSuppliers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706101507519_AddSupplierTitle.resx">
+      <DependentUpon>201706101507519_AddSupplierTitle.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

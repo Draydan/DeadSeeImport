@@ -16,6 +16,8 @@ namespace DeadSeaCatalogueDAL
         public DbSet<LinkProductWithCategory> Links { get; set; }
 
         public DbSet<Translation> Translations { get; set; }
+        public DbSet<Supplier> Suppliers { get; set; }
+
 
         public List<Translation> GetTranslationsOfProduct(string productTitle)
         {
@@ -27,7 +29,7 @@ namespace DeadSeaCatalogueDAL
         }
 
         public static void SaveProduct
-            (string sku, string category, string title, string price, string pricefull, string desc, string details, string imageFileName, bool IsPriceExtrapolated = false)
+            (string sku, string category, string title, string price, string pricefull, string desc, string details, string imageFileName, bool IsPriceExtrapolated = false, long supplierID = 1)
         {
             using (ProductContext db = new ProductContext())
             {
@@ -51,6 +53,8 @@ namespace DeadSeaCatalogueDAL
                 else
                     g.Edit(db, sku, category, title, price, pricefull, desc, details, imageFileName);
                 g.priceIsFromSiteNotExtrapolated = ! IsPriceExtrapolated;
+
+                g.supplier = db.Suppliers.First(s => s.ID == supplierID);
 
                 int tries = 0;
                 int maxtries = 10;

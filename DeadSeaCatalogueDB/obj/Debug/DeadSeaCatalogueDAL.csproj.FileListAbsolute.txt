@@ -25,3 +25,5 @@ E:\Work\DeadSeaCosmeticsImport\DeadSeaCatalogueDB\obj\Debug\DeadSeaCatalogueDB.M
 E:\Work\DeadSeaCosmeticsImport\DeadSeaCatalogueDB\obj\Debug\DeadSeaCatalogueDB.Migrations.AddedFlagPriceFromSite.resources
 E:\Work\DeadSeaCosmeticsImport\DeadSeaCatalogueDB\obj\Debug\DeadSeaCatalogueDB.Migrations.AddWPProductUrl.resources
 E:\Work\DeadSeaCosmeticsImport\DeadSeaCatalogueDB\obj\Debug\DeadSeaCatalogueDB.Migrations.addedWpImageUrl.resources
+E:\Work\DeadSeaCosmeticsImport\DeadSeaCatalogueDB\obj\Debug\DeadSeaCatalogueDB.Migrations.AddSuppliers.resources
+E:\Work\DeadSeaCosmeticsImport\DeadSeaCatalogueDB\obj\Debug\DeadSeaCatalogueDB.Migrations.AddSupplierTitle.resources

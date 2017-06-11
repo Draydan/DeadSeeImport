@@ -2,4 +2,3 @@ E:\Work\DeadSeaCosmeticsImport\FuzzyHelper\bin\Debug\FuzzyHelper.dll
 E:\Work\DeadSeaCosmeticsImport\FuzzyHelper\bin\Debug\FuzzyHelper.pdb
 E:\Work\DeadSeaCosmeticsImport\FuzzyHelper\obj\Debug\FuzzyHelper.dll
 E:\Work\DeadSeaCosmeticsImport\FuzzyHelper\obj\Debug\FuzzyHelper.pdb
-E:\Work\DeadSeaCosmeticsImport\FuzzyHelper\obj\Debug\FuzzyHelper.csprojResolveAssemblyReference.cache

@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525"        >
     <Grid>
-        <TabControl x:Name="tabControl" Margin="10,16,0,0" SelectionChanged="tabControl_SelectionChanged">
+        <TabControl x:Name="tabControl" Margin="10,16,0,0">
             <TabItem Header="Import URLs" Initialized="TabItemURLImport_Initialized" RenderTransformOrigin="3.227,0.863">
                 <Grid Background="#FFE5E5E5">
                     <ComboBox x:Name="cbPath" HorizontalAlignment="Left" Margin="0,10,0,0" VerticalAlignment="Top" Width="300" SelectionChanged="comboBox_SelectionChanged" IsEditable="True"/>
@@ -37,7 +37,8 @@
                     <ComboBox x:Name="cbKontraktPath" HorizontalAlignment="Left" Margin="10,17,0,0" VerticalAlignment="Top" Width="297" IsEditable="True"/>
                     <Button x:Name="bBrowseKontrakt" Content="Browse" HorizontalAlignment="Left" Margin="321,17,0,0" VerticalAlignment="Top" Width="53" Click="bBrowseKontrakt_Click"/>
                     <Button x:Name="bImportKontrakt" Content="Import Kontrakt" HorizontalAlignment="Left" Margin="388,17,0,0" VerticalAlignment="Top" Width="99" Click="bImportKontrakt_Click"/>
-                    <TextBlock x:Name="textBlockKontraktLog" HorizontalAlignment="Left" Margin="10,51,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="211" Width="477"/>
+                    <TextBlock x:Name="textBlockKontraktLog" HorizontalAlignment="Left" Margin="10,51,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="211" Width="477" />
+                    
                 </Grid>
             </TabItem>
         </TabControl>

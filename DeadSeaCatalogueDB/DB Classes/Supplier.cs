@@ -12,6 +12,8 @@ namespace DeadSeaCatalogueDAL
         [Key]
         public long ID { get; set; }
 
+        public string title { get; set; }
+
         public virtual List<Product> Products { get; set; }
 
     }

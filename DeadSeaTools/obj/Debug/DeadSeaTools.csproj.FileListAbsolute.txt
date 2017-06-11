@@ -20,3 +20,5 @@ E:\Work\DeadSeaCosmeticsImport\DeadSeaTools\bin\Debug\DeadSeaCatalogueDAL.pdb
 E:\Work\DeadSeaCosmeticsImport\DeadSeaTools\bin\Debug\EntityFramework.xml
 E:\Work\DeadSeaCosmeticsImport\DeadSeaTools\bin\Debug\EntityFramework.SqlServer.xml
 E:\Work\DeadSeaCosmeticsImport\DeadSeaTools\bin\Debug\FuzzyHelper.pdb
+E:\Work\DeadSeaCosmeticsImport\DeadSeaTools\bin\Debug\ExcelPackage.dll
+E:\Work\DeadSeaCosmeticsImport\DeadSeaTools\bin\Debug\ExcelPackage.pdb
