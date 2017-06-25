@@ -27,7 +27,8 @@ namespace DeadSeaVKExport
 
         static void Main(string[] args)
         {
-            string[] modes = new string[] {"Полный импорт", "Импорт переводов", "Забрать переводы с ВК", "Удалить непереведенные дубли переводов в ВК"};
+            string[] modes = new string[] {"Полный импорт", "Импорт переводов",
+                "Забрать переводы с ВК", "Удалить непереведенные дубли переводов в ВК"};
             int chosenMode = -1;
             while (chosenMode >= modes.Length || chosenMode < 0)
             {
@@ -163,14 +164,14 @@ namespace DeadSeaVKExport
                             {
                                 rusProd = sameSKUgood;
                                 rusFound = true;
-                    Logger.Logger.Trace("Artikul {0}, Title Rus {1}", prodDB.artikul, rusProd.Title);
+                                Logger.Logger.Trace("Artikul {0}, Title Rus {1}", prodDB.artikul, rusProd.Title);
                             }
                             else Logger.Logger.ErrorLog("{0} =/= {1}", tranOfThisProd.title, sameSKUgood.Title);
                         if(prodDB.title.Replace("&", "and") == sameSKUgood.Title.Replace("&", "and"))
                         {
                             engProd = sameSKUgood;
                             engFound = true;
-                    Logger.Logger.Trace("Artikul {0}, Title Eng {1}", prodDB.artikul, engProd.Title);
+                            Logger.Logger.Trace("Artikul {0}, Title Eng {1}", prodDB.artikul, engProd.Title);
                         }
                         else Logger.Logger.ErrorLog("{0} =/= {1}", prodDB.title, sameSKUgood.Title);
                         //if(transOfThisProd.Any(t => t.title == ))
@@ -213,7 +214,8 @@ namespace DeadSeaVKExport
                     Translation translation = db.Translations.FirstOrDefault(t => t.titleEng == g.title);
                     if (translation != null)
                     {
-                        prodID = vke.ExportProduct(translation.title, translation.desc.Replace("&", " n "), g.price, g.imageFileName, g.artikul);
+                        prodID = vke.ExportProduct(translation.title, translation.desc.Replace("&", " n "), 
+                            g.price, g.imageFileName, g.artikul);
                         vke.AddProductToAlbum(g.title, prodID, ProductVKExporter.mainAlbumTitle, g.imageFileName);
                     }
                     else

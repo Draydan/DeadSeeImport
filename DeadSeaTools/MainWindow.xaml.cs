@@ -221,8 +221,10 @@ namespace DeadSeaTools
                             title, sku, ourprice, fullprice, categories));
 
                         //string category = categories.Split(';;')[0];
+                        if (title == "Mogador Nurturing Eye Cream, Argan Oil")
+                        { }
                         // получили данные о товаре, заводим или сохраняем
-                        foreach(string category in categories.Split(new string[] { ";;" }, StringSplitOptions.None))
+                        foreach (string category in categories.Split(new string[] { ";;" }, StringSplitOptions.None))
                             ProductContext.SaveProduct(sku, category, title, ourprice, fullprice, description, details, imageFileName);
                         okCount++;
                     }
@@ -289,7 +291,7 @@ namespace DeadSeaTools
                                 //string[] cells = new string[5];
                                 if (cells.Count(cell => cell.ToString() != "") == 2)
                                 {
-                                    categories = cells[1];// + ";;" + cells[2];
+                                    categories = cells[1] + ";;" + cells[2];
                                     continue;
                                 }
                                 if (categories == "" || cells.Count(cell => cell.ToString() != "") < 10)
@@ -301,10 +303,12 @@ namespace DeadSeaTools
                                 string title = cells[2];
                                 currTitle = title;
                                 string barcode = cells[6];
-                                string description = cells[14].Replace("_x000D_", "").Replace("\r\n", "<br>").Replace("\n", "<br>").Replace("\r", "<br>");
+                                string description = cells[14].Replace("_x000D_", "").Replace("\r\n", "<br>").
+                                    Replace("\n", "<br>").Replace("\r", "<br>").Replace(";",",");
                                 string details = cells[15];
                                 string fullprice = cells[8];
                                 string ourprice = cells[9];
+
 
                                 bool IsPriceExtrapolated = false;
 

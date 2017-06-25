@@ -2,6 +2,7 @@ use [DeadSeaCatalogueDAL.ProductContext]
 
 -- выдача товаров для сайта после 2017.02.18 по израильским теговым категориям
 declare @nakrutka float = 1.1
+declare @kursBaksa int = 64
 
 select distinct --p.title, t.titleEng, 
 
@@ -29,7 +30,7 @@ as [desc],
 'no' as manage_stock , 'instock' as stock_status, p.artikul, 
 
 -- берем меньшую из оптовой и розничной и добавляем 10%
-round(60 * 
+round(@kursBaksa * 
 case 
  when dbo.b2n(price) < dbo.b2n(pricefull) then dbo.b2n(price) * @nakrutka
  when dbo.b2n(price) >= dbo.b2n(pricefull) then dbo.b2n(pricefull) * @nakrutka
@@ -55,4 +56,12 @@ CASE
       WHEN ca.isOurCategory = 1 THEN isnull(tc.title, ca.titleRus)
    END 
    is not null
+--and tc.title like '%арфюм%'
+
+--and p.title = 'Mogador Nurturing Eye Cream, Argan Oil'
+--and p.title in ('Dead Sea Acive Mineral Intense by Natural Sea Beauty',
+--'Dead Sea Active Anti-Aging Eye Cream by Natural Sea Beauty',
+--'Mineral Lift Renewal Cream by Natural Sea Beauty')
+--or p.artikul in ('7622', '13080', '17012')
+
 order by replace(isnull(t.title, p.title), '&amp;','and')
