@@ -223,12 +223,16 @@ namespace DeadSeaVKExport
 
                     foreach (LinkProductWithCategory link in g.Links)
                     {
+                        
                         // если есть перевод подборки, меняем название на перевод
                         Translation translationAlbum = db.Translations.FirstOrDefault(t => t.titleEng == link.category.title);
 
-                        vke.AddProductToAlbum(g.title, prodID, 
-                            (translationAlbum == null)?(link.category.title):(translationAlbum.title), 
+                        // решил оставлять только наши сборные подборки и убрать заводские
+                        if (link.category.isOurCategory || translationAlbum.isOurCategory)
+                            vke.AddProductToAlbum(g.title, prodID,
+                            (translationAlbum == null) ? (link.category.title) : (translationAlbum.title),
                             g.imageFileName);
+
                     }
 
                     result = true;

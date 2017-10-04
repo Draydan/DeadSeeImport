@@ -1,7 +1,14 @@
 use [DeadSeaCatalogueDAL.ProductContext]
 
 -- выдача товаров для сайта после 2017.02.18 по израильским теговым категориям
-declare @nakrutka float = 1.1
+
+-- наценка составляющая долю от разницы между израильскими розничной и оптовой ценой
+-- т.е. если товар нам выдают по 100р, а розничная цена 200р, и наценка 0.2
+-- то мы ставим цену 120р и получаем 20р прибыли
+declare @nacenka float = 0.3
+-- и добавляем к цене еще нцать рублей, чтобы улучшить цену дешевых товаров для удешевления доставки
+declare @nacenkaPlus float = 0
+
 declare @kursBaksa int = 64
 
 select distinct --p.title, t.titleEng, 
@@ -32,11 +39,15 @@ as [desc],
 -- берем меньшую из оптовой и розничной и добавляем 10%
 round(@kursBaksa * 
 case 
- when dbo.b2n(price) < dbo.b2n(pricefull) then dbo.b2n(price) * @nakrutka
- when dbo.b2n(price) >= dbo.b2n(pricefull) then dbo.b2n(pricefull) * @nakrutka
+ when dbo.b2n(price) < dbo.b2n(pricefull) then dbo.b2n(price) + (dbo.b2n(priceFull)-dbo.b2n(price)) * @nacenka
+ when dbo.b2n(price) >= dbo.b2n(pricefull) then dbo.b2n(pricefull) + (dbo.b2n(price)-dbo.b2n(pricefull)) * @nacenka 
 end
 , -1)
++@nacenkaPlus
 as price,
+
+--@kursBaksa * dbo.b2n(price), 
+--@kursBaksa * dbo.b2n(pricefull),
 
 replace( replace( replace(p.imageFileName, '_003', ''), '_002', ''), '_01', '') as imageFileName,
 replace( replace( replace(p.imageFileName, '_003', ''), '_002', ''), '_01', '')+',' +

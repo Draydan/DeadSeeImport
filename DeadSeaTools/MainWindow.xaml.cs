@@ -36,6 +36,30 @@ namespace DeadSeaTools
             InitializeComponent();
         }
 
+        private void BrowseFileClick(ComboBox text , string ini)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.CheckFileExists = false;
+            openFileDialog.AddExtension = true;
+
+            if (openFileDialog.ShowDialog() == true)
+            {
+                text.Text = openFileDialog.FileName;
+                WritePathToIni(text.Text, ini);
+            }
+        }
+
+        private void BrowseDirClick(ComboBox text, string ini)
+        {
+            System.Windows.Forms.FolderBrowserDialog browser = new System.Windows.Forms.FolderBrowserDialog();
+
+            if (browser.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+                text.Text = browser.SelectedPath; // prints path
+                WritePathToIni(text.Text, ini);
+            }
+        }
+
 
         private void comboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
@@ -119,15 +143,16 @@ namespace DeadSeaTools
 
         private void bBrowseExportFile_Click(object sender, RoutedEventArgs e)
         {
-            OpenFileDialog openFileDialog = new OpenFileDialog();
-            openFileDialog.CheckFileExists = false;
-            openFileDialog.AddExtension = true;
+            BrowseFileClick(cbExportYMFile, iniFileNameExportYM);
+            //OpenFileDialog openFileDialog = new OpenFileDialog();
+            //openFileDialog.CheckFileExists = false;
+            //openFileDialog.AddExtension = true;
             
-            if (openFileDialog.ShowDialog() == true)
-            {
-                cbExportYMFile.Text = openFileDialog.FileName;
-                WritePathToIni(cbExportYMFile.Text, iniFileNameExportYM);
-            }
+            //if (openFileDialog.ShowDialog() == true)
+            //{
+            //    cbExportYMFile.Text = openFileDialog.FileName;
+            //    WritePathToIni(cbExportYMFile.Text, iniFileNameExportYM);
+            //}
         }
 
         private void bExport_Click(object sender, RoutedEventArgs e)
@@ -165,13 +190,14 @@ namespace DeadSeaTools
 
         private void bBrowseIKRobot_Click(object sender, RoutedEventArgs e)
         {
-            System.Windows.Forms.FolderBrowserDialog browser = new System.Windows.Forms.FolderBrowserDialog();            
+            BrowseDirClick(cbRobotPath, iniFileNameImportRoboted2IK);
+            //System.Windows.Forms.FolderBrowserDialog browser = new System.Windows.Forms.FolderBrowserDialog();            
 
-            if (browser.ShowDialog() == System.Windows.Forms.DialogResult.OK)
-            {
-                cbRobotPath.Text = browser.SelectedPath; // prints path
-                WritePathToIni(cbRobotPath.Text, iniFileNameImportRoboted2IK);
-            }
+            //if (browser.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            //{
+            //    cbRobotPath.Text = browser.SelectedPath; // prints path
+            //    WritePathToIni(cbRobotPath.Text, iniFileNameImportRoboted2IK);
+            //}
         }
 
         /// <summary>
@@ -300,12 +326,13 @@ namespace DeadSeaTools
                                 string skuDirPath;
                                 string sku = cells[3];
                                 currSku = sku;
-                                string title = cells[2];
+                                string title = cells[2]
+                                    .Replace("Новинка!", " (Новинка!)")
+                                    .Replace("Цена снижена!", " (Акция! Цена снижена!)");
                                 currTitle = title;
                                 string barcode = cells[6];
-                                string description = cells[14].Replace("_x000D_", "").Replace("\r\n", "<br>").
-                                    Replace("\n", "<br>").Replace("\r", "<br>").Replace(";",",");
-                                string details = cells[15];
+                                string description = DeEnterify(cells[14]);
+                                string details = DeEnterify(cells[15]);
                                 string fullprice = cells[8];
                                 string ourprice = cells[9];
 
@@ -332,6 +359,17 @@ namespace DeadSeaTools
                 }
                 lbLogRobot.Items.Add(string.Format("Products added: {0} of {1}", okCount, totalCount));
             }
+        }
+
+        /// <summary>
+        /// Метод заменяет всяческие переносы строки на тег БР
+        /// </summary>
+        /// <param name="obj"></param>
+        /// <returns></returns>
+        private string DeEnterify(string obj)
+        {
+            return obj.Replace("_x000D_", "").Replace("\r\n", "<br>").
+                                    Replace("\n", "<br>").Replace("\r", "<br>").Replace(";", ",");
         }
 
         private void TabItemKontrakt_Initialized(object sender, EventArgs e)

@@ -196,10 +196,11 @@ namespace DeadSeaVKExport
             }
         }
 
-        private decimal ConverPrice(string sprice)
-        {
-            decimal rez = (decimal)Math.Round(float.Parse(sprice.Replace("$", "").Replace(".", ",")) * kursBaksa, 0);
-            return rez;
+        private decimal ConverPrice(string sprice, int rubPriceMin = 100)
+        {            
+            double rez = float.Parse(sprice.Replace("$", "").Replace(".", ","));
+            rez = Math.Round((rez < rubPriceMin) ? (rez * kursBaksa) : (rez), 0);
+            return (decimal)rez;
         }
         public void DeleteProduct(long pId)
         {
@@ -235,6 +236,8 @@ namespace DeadSeaVKExport
             {
                 Console.WriteLine("добавляем");
                 long photoID = UploadImage(imageFilePath);
+                decimal rubPrice = ConverPrice(sprice);
+
                 long ProdID = vk.Markets.Add(new MarketProductParams
                 {
                     OwnerId = -GroupID,
